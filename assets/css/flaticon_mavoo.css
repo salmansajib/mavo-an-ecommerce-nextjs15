@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon_mavoo";
+  src: url("./flaticon_mavoo.ttf?b14ba02a4a22861bd46553a9b9ae61ca") format("truetype"), url("./flaticon_mavoo.woff?b14ba02a4a22861bd46553a9b9ae61ca") format("woff"), url("./flaticon_mavoo.woff2?b14ba02a4a22861bd46553a9b9ae61ca") format("woff2"), url("./flaticon_mavoo.eot?b14ba02a4a22861bd46553a9b9ae61ca#iefix") format("embedded-opentype"), url("./flaticon_mavoo.svg?b14ba02a4a22861bd46553a9b9ae61ca#flaticon_mavoo") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon_mavoo !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-search:before {
+  content: "";
+}
+
+.flaticon-star:before {
+  content: "";
+}
+
+.flaticon-shopping-bag:before {
+  content: "";
+}
+
+.flaticon-user:before {
+  content: "";
+}
+
+.flaticon-eye:before {
+  content: "";
+}
+
+.flaticon-sort:before {
+  content: "";
+}
+
+.flaticon-star-1:before {
+  content: "";
+}
+
+.flaticon-delivery-car:before {
+  content: "";
+}
+
+.flaticon-online-shopping:before {
+  content: "";
+}
+
+.flaticon-waranty:before {
+  content: "";
+}
+
+.flaticon-call-center-service:before {
+  content: "";
+}
+
+.flaticon-facebook-app-symbol:before {
+  content: "";
+}
+
+.flaticon-twitter:before {
+  content: "";
+}
+
+.flaticon-instagram:before {
+  content: "";
+}
+
+.flaticon-pinterest-circular-logo-symbol:before {
+  content: "";
+}
+
+.flaticon-cart:before {
+  content: "";
+}
+
+.flaticon-shopping-cart:before {
+  content: "";
+}
+
+.flaticon-cart-1:before {
+  content: "";
+}
+
+.flaticon-left:before {
+  content: "";
+}
+
+.flaticon-right:before {
+  content: "";
+}
+
+.flaticon-headphones:before {
+  content: "";
+}
+
+.flaticon-double-quotes:before {
+  content: "";
+}
+
+.flaticon-add-plus-button:before {
+  content: "";
+}
+
+.flaticon-down:before {
+  content: "";
+}
+
+.flaticon-up-arrow:before {
+  content: "";
+}
+
+.flaticon-youtube:before {
+  content: "";
+}
+
+.flaticon-instagram-1:before {
+  content: "";
+}
+
+.flaticon-shopping-bag-1:before {
+  content: "";
+}

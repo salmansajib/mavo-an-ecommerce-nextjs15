@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "flaticon_mavoo";
+  src: url("./flaticon_mavoo.ttf?b14ba02a4a22861bd46553a9b9ae61ca") format("truetype"), url("./flaticon_mavoo.woff?b14ba02a4a22861bd46553a9b9ae61ca") format("woff"), url("./flaticon_mavoo.woff2?b14ba02a4a22861bd46553a9b9ae61ca") format("woff2"), url("./flaticon_mavoo.eot?b14ba02a4a22861bd46553a9b9ae61ca#iefix") format("embedded-opentype"), url("./flaticon_mavoo.svg?b14ba02a4a22861bd46553a9b9ae61ca#flaticon_mavoo") format("svg");
+}
+i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon_mavoo !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-search:before {
+  content: "\f101";
+}
+
+.flaticon-star:before {
+  content: "\f102";
+}
+
+.flaticon-shopping-bag:before {
+  content: "\f103";
+}
+
+.flaticon-user:before {
+  content: "\f104";
+}
+
+.flaticon-eye:before {
+  content: "\f105";
+}
+
+.flaticon-sort:before {
+  content: "\f106";
+}
+
+.flaticon-star-1:before {
+  content: "\f107";
+}
+
+.flaticon-delivery-car:before {
+  content: "\f108";
+}
+
+.flaticon-online-shopping:before {
+  content: "\f109";
+}
+
+.flaticon-waranty:before {
+  content: "\f10a";
+}
+
+.flaticon-call-center-service:before {
+  content: "\f10b";
+}
+
+.flaticon-facebook-app-symbol:before {
+  content: "\f10c";
+}
+
+.flaticon-twitter:before {
+  content: "\f10d";
+}
+
+.flaticon-instagram:before {
+  content: "\f10e";
+}
+
+.flaticon-pinterest-circular-logo-symbol:before {
+  content: "\f10f";
+}
+
+.flaticon-cart:before {
+  content: "\f110";
+}
+
+.flaticon-shopping-cart:before {
+  content: "\f111";
+}
+
+.flaticon-cart-1:before {
+  content: "\f112";
+}
+
+.flaticon-left:before {
+  content: "\f113";
+}
+
+.flaticon-right:before {
+  content: "\f114";
+}
+
+.flaticon-headphones:before {
+  content: "\f115";
+}
+
+.flaticon-double-quotes:before {
+  content: "\f116";
+}
+
+.flaticon-add-plus-button:before {
+  content: "\f117";
+}
+
+.flaticon-down:before {
+  content: "\f118";
+}
+
+.flaticon-up-arrow:before {
+  content: "\f119";
+}
+
+.flaticon-youtube:before {
+  content: "\f11a";
+}
+
+.flaticon-instagram-1:before {
+  content: "\f11b";
+}
+
+.flaticon-shopping-bag-1:before {
+  content: "\f11c";
+}/*# sourceMappingURL=flaticon_mavoo.css.map */

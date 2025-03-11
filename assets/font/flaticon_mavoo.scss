@@ -1,0 +1,137 @@
+$flaticon_mavoo-font: "flaticon_mavoo";
+
+@font-face {
+    font-family: $flaticon_mavoo-font;
+    src: url("./flaticon_mavoo.ttf?b14ba02a4a22861bd46553a9b9ae61ca") format("truetype"),
+url("./flaticon_mavoo.woff?b14ba02a4a22861bd46553a9b9ae61ca") format("woff"),
+url("./flaticon_mavoo.woff2?b14ba02a4a22861bd46553a9b9ae61ca") format("woff2"),
+url("./flaticon_mavoo.eot?b14ba02a4a22861bd46553a9b9ae61ca#iefix") format("embedded-opentype"),
+url("./flaticon_mavoo.svg?b14ba02a4a22861bd46553a9b9ae61ca#flaticon_mavoo") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mavoo !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_mavoo-map: (
+    "search": "\f101",
+    "star": "\f102",
+    "shopping-bag": "\f103",
+    "user": "\f104",
+    "eye": "\f105",
+    "sort": "\f106",
+    "star-1": "\f107",
+    "delivery-car": "\f108",
+    "online-shopping": "\f109",
+    "waranty": "\f10a",
+    "call-center-service": "\f10b",
+    "facebook-app-symbol": "\f10c",
+    "twitter": "\f10d",
+    "instagram": "\f10e",
+    "pinterest-circular-logo-symbol": "\f10f",
+    "cart": "\f110",
+    "shopping-cart": "\f111",
+    "cart-1": "\f112",
+    "left": "\f113",
+    "right": "\f114",
+    "headphones": "\f115",
+    "double-quotes": "\f116",
+    "add-plus-button": "\f117",
+    "down": "\f118",
+    "up-arrow": "\f119",
+    "youtube": "\f11a",
+    "instagram-1": "\f11b",
+    "shopping-bag-1": "\f11c",
+);
+
+.flaticon-search:before {
+    content: map-get($flaticon_mavoo-map, "search");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_mavoo-map, "star");
+}
+.flaticon-shopping-bag:before {
+    content: map-get($flaticon_mavoo-map, "shopping-bag");
+}
+.flaticon-user:before {
+    content: map-get($flaticon_mavoo-map, "user");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon_mavoo-map, "eye");
+}
+.flaticon-sort:before {
+    content: map-get($flaticon_mavoo-map, "sort");
+}
+.flaticon-star-1:before {
+    content: map-get($flaticon_mavoo-map, "star-1");
+}
+.flaticon-delivery-car:before {
+    content: map-get($flaticon_mavoo-map, "delivery-car");
+}
+.flaticon-online-shopping:before {
+    content: map-get($flaticon_mavoo-map, "online-shopping");
+}
+.flaticon-waranty:before {
+    content: map-get($flaticon_mavoo-map, "waranty");
+}
+.flaticon-call-center-service:before {
+    content: map-get($flaticon_mavoo-map, "call-center-service");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon_mavoo-map, "facebook-app-symbol");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_mavoo-map, "twitter");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon_mavoo-map, "instagram");
+}
+.flaticon-pinterest-circular-logo-symbol:before {
+    content: map-get($flaticon_mavoo-map, "pinterest-circular-logo-symbol");
+}
+.flaticon-cart:before {
+    content: map-get($flaticon_mavoo-map, "cart");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon_mavoo-map, "shopping-cart");
+}
+.flaticon-cart-1:before {
+    content: map-get($flaticon_mavoo-map, "cart-1");
+}
+.flaticon-left:before {
+    content: map-get($flaticon_mavoo-map, "left");
+}
+.flaticon-right:before {
+    content: map-get($flaticon_mavoo-map, "right");
+}
+.flaticon-headphones:before {
+    content: map-get($flaticon_mavoo-map, "headphones");
+}
+.flaticon-double-quotes:before {
+    content: map-get($flaticon_mavoo-map, "double-quotes");
+}
+.flaticon-add-plus-button:before {
+    content: map-get($flaticon_mavoo-map, "add-plus-button");
+}
+.flaticon-down:before {
+    content: map-get($flaticon_mavoo-map, "down");
+}
+.flaticon-up-arrow:before {
+    content: map-get($flaticon_mavoo-map, "up-arrow");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_mavoo-map, "youtube");
+}
+.flaticon-instagram-1:before {
+    content: map-get($flaticon_mavoo-map, "instagram-1");
+}
+.flaticon-shopping-bag-1:before {
+    content: map-get($flaticon_mavoo-map, "shopping-bag-1");
+}

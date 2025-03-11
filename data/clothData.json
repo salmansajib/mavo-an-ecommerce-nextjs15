@@ -1,0 +1,941 @@
+[
+  {
+    "id": "123419",
+    "name": "PolarWrap Jacket",
+    "base_price": 150.0,
+    "currency": "USD",
+    "tags": "Sale",
+    "reviews": 2034,
+    "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
+    "variants": [
+      {
+        "color": "Pale Orange",
+        "color_code": "#FFA756",
+        "sizes": [
+          { "size": "S", "price": 155.0 },
+          { "size": "M", "price": 165.0 },
+          { "size": "L", "price": 175.0 },
+          { "size": "XL", "price": 185.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/1.jpg"]
+      },
+      {
+        "color": "Lemon Grass",
+        "color_code": "#9B9E8F",
+        "sizes": [
+          { "size": "S", "price": 160.0 },
+          { "size": "M", "price": 170.0 },
+          { "size": "L", "price": 180.0 },
+          { "size": "XL", "price": 190.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/2.jpg"]
+      },
+      {
+        "color": "Tahiti Gold",
+        "color_code": "#E28913",
+        "sizes": [
+          { "size": "S", "price": 160.0 },
+          { "size": "M", "price": 170.0 },
+          { "size": "L", "price": 180.0 },
+          { "size": "XL", "price": 190.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/3.jpg"]
+      },
+      {
+        "color": "Pirate Gold",
+        "color_code": "#BA7F03",
+        "sizes": [
+          { "size": "S", "price": 160.0 },
+          { "size": "M", "price": 170.0 },
+          { "size": "L", "price": 180.0 },
+          { "size": "XL", "price": 190.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Soft fleece-lined interior for extra warmth",
+        "Wind-resistant outer shell for protection against the elements",
+        "Zippered front pockets to store your essentials",
+        "Water-resistant finish to keep you dry in light rain",
+        "Drawstring waist for a custom fit",
+        "100% polyester for durability and comfort",
+        "Machine washable for easy care"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
+        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        {
+          "type": "Wash at below 95°C or 200°F",
+          "icon": "/icons/wash_95C.png"
+        },
+        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "The jacket fits perfectly and keeps me warm even in freezing temperatures. The color is gorgeous, and I love the sleek fit. It’s definitely my go-to for winter now!",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Good quality jacket for the price. It’s warm and comfortable, but I wish the sleeves were a bit longer. Still, a solid winter coat!",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "I love this jacket! It’s super warm, and the colors are exactly as shown in the pictures. It fits well and is perfect for winter hikes.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "Lucas Green",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "1 day ago",
+        "comment": "The jacket is nice, but the sizing runs a little small. I had to exchange for a larger size, but it’s been great since then. Still a good purchase!",
+        "helpful_votes": 2,
+        "not_helpful_votes": 2
+      }
+    ]
+  },
+  {
+    "id": "12345",
+    "name": "SharpStyle Blazer",
+    "base_price": 340.0,
+    "currency": "USD",
+    "tags": "Hots",
+    "reviews": 4075,
+    "description": "Upgrade your wardrobe with our Classic Tailored Blazer, designed for the modern professional. Crafted from a premium wool blend, this blazer offers a structured yet comfortable fit, perfect for boardroom meetings or formal occasions. The sleek lapel, refined stitching, and breathable lining ensure all-day sophistication and comfort. Pair it with dress pants for a sharp office look or jeans for a smart-casual vibe.",
+    "variants": [
+      {
+        "color": "Aircraft Exterior Grey",
+        "color_code": "#7D7F7D",
+        "sizes": [
+          { "size": "S", "price": 330.0 },
+          { "size": "M", "price": 340.0 },
+          { "size": "L", "price": 350.0 },
+          { "size": "XL", "price": 360.0 }
+        ],
+        "images": ["/product-images/clothing/blazer/1.jpg"]
+      },
+      {
+        "color": "Centaur Brown",
+        "color_code": "#9E6B46",
+        "sizes": [
+          { "size": "S", "price": 335.0 },
+          { "size": "M", "price": 345.0 },
+          { "size": "L", "price": 355.0 },
+          { "size": "XL", "price": 365.0 }
+        ],
+        "images": ["/product-images/clothing/blazer/2.jpg"]
+      },
+      {
+        "color": "Roman Silver",
+        "color_code": "#838996",
+        "sizes": [
+          { "size": "S", "price": 335.0 },
+          { "size": "M", "price": 345.0 },
+          { "size": "L", "price": 355.0 },
+          { "size": "XL", "price": 365.0 }
+        ],
+        "images": ["/product-images/clothing/blazer/3.jpg"]
+      },
+      {
+        "color": "China Blue",
+        "color_code": "#546A90",
+        "sizes": [
+          { "size": "S", "price": 335.0 },
+          { "size": "M", "price": 345.0 },
+          { "size": "L", "price": 355.0 },
+          { "size": "XL", "price": 365.0 }
+        ],
+        "images": ["/product-images/clothing/blazer/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Premium wool-blend fabric for a refined look",
+        "Single-breasted design with notch lapels",
+        "Two-button front closure for a classic fit",
+        "Fully lined with breathable satin for all-day comfort",
+        "Tailored slim fit with structured shoulders",
+        "Functional flap pockets and inner chest pocket",
+        "60% wool, 30% polyester, 10% elastane for slight stretch",
+        "Dry clean only to maintain quality"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
+        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        {
+          "type": "Wash at below 95°C or 200°F",
+          "icon": "/icons/wash_95C.png"
+        },
+        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emily Johnson",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Absolutely stunning blazer! The fit is perfect, and the fabric feels premium. I wore it to a business meeting, and I received so many compliments. Definitely a must-have in any wardrobe!",
+        "helpful_votes": 4,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "Daniel Carter",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Great quality and design! The blazer has a nice structure, but I wish the sleeves were a bit longer. Other than that, it's a fantastic addition to my collection.",
+        "helpful_votes": 2,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Williams",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "This blazer exceeded my expectations! The fabric is soft yet structured, and it fits like a dream. Perfect for both casual and formal occasions. Highly recommend!",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "James Anderson",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "1 day ago",
+        "comment": "The blazer looks great, but the sizing runs a bit small. I had to exchange it for a larger size. Otherwise, it's stylish and well-made.",
+        "helpful_votes": 1,
+        "not_helpful_votes": 2
+      }
+    ]
+  },
+  {
+    "id": "12346",
+    "name": "Comfy Hoodie",
+    "base_price": 120.0,
+    "currency": "USD",
+    "tags": "Best",
+    "reviews": 6005,
+    "description": "Stay cozy and stylish with our ultra-soft hoodie. Perfect for casual outings or lounging at home, this hoodie is made from high-quality cotton blend for all-day comfort.",
+    "variants": [
+      {
+        "color": "Black Oak",
+        "color_code": "#3E3B32",
+        "sizes": [
+          { "size": "S", "price": 130.0 },
+          { "size": "M", "price": 140.0 },
+          { "size": "L", "price": 150.0 },
+          { "size": "XL", "price": 160.0 }
+        ],
+        "images": ["/product-images/clothing/hoodie/1.jpg"]
+      },
+      {
+        "color": "Dark Summoning",
+        "color_code": "#2A1A2D",
+        "sizes": [
+          { "size": "S", "price": 135.0 },
+          { "size": "M", "price": 145.0 },
+          { "size": "L", "price": 155.0 },
+          { "size": "XL", "price": 165.0 }
+        ],
+        "images": ["/product-images/clothing/hoodie/2.jpg"]
+      },
+      {
+        "color": "Yellow Orange",
+        "color_code": "#FFB84D",
+        "sizes": [
+          { "size": "S", "price": 135.0 },
+          { "size": "M", "price": 145.0 },
+          { "size": "L", "price": 155.0 },
+          { "size": "XL", "price": 165.0 }
+        ],
+        "images": ["/product-images/clothing/hoodie/3.jpg"]
+      },
+      {
+        "color": "Hello Spring",
+        "color_code": "#9AEE7E",
+        "sizes": [
+          { "size": "S", "price": 135.0 },
+          { "size": "M", "price": 145.0 },
+          { "size": "L", "price": 155.0 },
+          { "size": "XL", "price": 165.0 }
+        ],
+        "images": ["/product-images/clothing/hoodie/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Premium wool-blend fabric for a refined look",
+        "Single-breasted design with notch lapels",
+        "Two-button front closure for a classic fit",
+        "Fully lined with breathable satin for all-day comfort",
+        "Tailored slim fit with structured shoulders",
+        "Functional flap pockets and inner chest pocket",
+        "60% wool, 30% polyester, 10% elastane for slight stretch",
+        "Dry clean only to maintain quality"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
+        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        {
+          "type": "Wash at below 95°C or 200°F",
+          "icon": "/icons/wash_95C.png"
+        },
+        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emily Johnson",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Absolutely love this hoodie! The fit is perfect, and it’s so comfortable. I’ve worn it for everything from lounging at home to a quick outing, and it’s just the right amount of cozy and stylish. Highly recommend!",
+        "helpful_votes": 4,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "Daniel Carter",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Great hoodie! The fabric is soft and warm. However, I wish there was more variety in the sizes for a more relaxed fit. Overall, a great addition to my wardrobe.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Williams",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "This hoodie exceeded my expectations! The fabric feels luxurious, and the fit is great. I got it in Black Oak, and it goes with everything! Perfect for chilly evenings or casual weekends.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "James Anderson",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "1 day ago",
+        "comment": "The hoodie is nice, but I was expecting a little more stretch in the fabric. It feels a bit tight around the arms. I’m still keeping it though because it’s really comfy.",
+        "helpful_votes": 1,
+        "not_helpful_votes": 2
+      }
+    ]
+  },
+  {
+    "id": "12347",
+    "name": "TrendFleece Jumper",
+    "base_price": 120.0,
+    "currency": "USD",
+    "tags": null,
+    "reviews": 1050,
+    "description": "Stay ahead of the fashion game with this modern jumper, crafted from premium materials for a sleek yet comfortable look. Featuring a perfect blend of style and warmth, it's an ideal layering piece for any casual or chic outfit.",
+    "variants": [
+      {
+        "color": "Charcoal Grey",
+        "color_code": "#3C4142",
+        "sizes": [
+          { "size": "S", "price": 130.0 },
+          { "size": "M", "price": 140.0 },
+          { "size": "L", "price": 150.0 },
+          { "size": "XL", "price": 160.0 }
+        ],
+        "images": ["/product-images/clothing/jumper/1.jpg"]
+      },
+      {
+        "color": "Metallic Bronze",
+        "color_code": "#49371B",
+        "sizes": [
+          { "size": "S", "price": 135.0 },
+          { "size": "M", "price": 145.0 },
+          { "size": "L", "price": 155.0 },
+          { "size": "XL", "price": 165.0 }
+        ],
+        "images": ["/product-images/clothing/jumper/2.jpg"]
+      },
+      {
+        "color": "Clam Shell",
+        "color_code": "#D4B6AF",
+        "sizes": [
+          { "size": "S", "price": 135.0 },
+          { "size": "M", "price": 145.0 },
+          { "size": "L", "price": 155.0 },
+          { "size": "XL", "price": 165.0 }
+        ],
+        "images": ["/product-images/clothing/jumper/3.jpg"]
+      },
+      {
+        "color": "Carolina Blue",
+        "color_code": "#99BADD",
+        "sizes": [
+          { "size": "S", "price": 135.0 },
+          { "size": "M", "price": 145.0 },
+          { "size": "L", "price": 155.0 },
+          { "size": "XL", "price": 165.0 }
+        ],
+        "images": ["/product-images/clothing/jumper/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Premium wool-blend fabric for a refined look",
+        "Single-breasted design with notch lapels",
+        "Two-button front closure for a classic fit",
+        "Fully lined with breathable satin for all-day comfort",
+        "Tailored slim fit with structured shoulders",
+        "Functional flap pockets and inner chest pocket",
+        "60% wool, 30% polyester, 10% elastane for slight stretch",
+        "Dry clean only to maintain quality"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
+        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        {
+          "type": "Wash at below 95°C or 200°F",
+          "icon": "/icons/wash_95C.png"
+        },
+        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emily Johnson",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Absolutely stunning blazer! The fit is perfect, and the fabric feels premium. I wore it to a business meeting, and I received so many compliments. Definitely a must-have in any wardrobe!",
+        "helpful_votes": 4,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "Daniel Carter",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Great quality and design! The blazer has a nice structure, but I wish the sleeves were a bit longer. Other than that, it's a fantastic addition to my collection.",
+        "helpful_votes": 2,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Williams",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "This blazer exceeded my expectations! The fabric is soft yet structured, and it fits like a dream. Perfect for both casual and formal occasions. Highly recommend!",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "James Anderson",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "1 day ago",
+        "comment": "The blazer looks great, but the sizing runs a bit small. I had to exchange it for a larger size. Otherwise, it's stylish and well-made.",
+        "helpful_votes": 1,
+        "not_helpful_votes": 2
+      }
+    ]
+  },
+  {
+    "id": "12348",
+    "name": "Prestige Dress Shirt",
+    "base_price": 80.0,
+    "currency": "USD",
+    "tags": "Best",
+    "reviews": 7004,
+    "description": "Upgrade your formal wardrobe with the Prestige Dress Shirt, crafted from premium cotton for a polished and comfortable fit. Designed with a tailored silhouette, it's the perfect choice for both business and special occasions.",
+    "variants": [
+      {
+        "color": "Rhino",
+        "color_code": "#2E3F62",
+        "sizes": [
+          { "size": "S", "price": 90.0 },
+          { "size": "M", "price": 95.0 },
+          { "size": "L", "price": 100.0 },
+          { "size": "XL", "price": 105.0 }
+        ],
+        "images": ["/product-images/clothing/prestige-dress-shirt/1.jpg"]
+      },
+      {
+        "color": "Thunder",
+        "color_code": "#33292F",
+        "sizes": [
+          { "size": "S", "price": 92.0 },
+          { "size": "M", "price": 97.0 },
+          { "size": "L", "price": 102.0 },
+          { "size": "XL", "price": 107.0 }
+        ],
+        "images": ["/product-images/clothing/prestige-dress-shirt/2.jpg"]
+      },
+      {
+        "color": "Racing Green",
+        "color_code": "#0E0E18",
+        "sizes": [
+          { "size": "S", "price": 92.0 },
+          { "size": "M", "price": 97.0 },
+          { "size": "L", "price": 102.0 },
+          { "size": "XL", "price": 107.0 }
+        ],
+        "images": ["/product-images/clothing/prestige-dress-shirt/3.jpg"]
+      },
+      {
+        "color": "White Smoke",
+        "color_code": "#F5F5F5",
+        "sizes": [
+          { "size": "S", "price": 92.0 },
+          { "size": "M", "price": 97.0 },
+          { "size": "L", "price": 102.0 },
+          { "size": "XL", "price": 107.0 }
+        ],
+        "images": ["/product-images/clothing/prestige-dress-shirt/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Premium 100% cotton for a soft, breathable feel",
+        "Slim-fit design for a modern, tailored look",
+        "Button-down collar for a refined appearance",
+        "Wrinkle-resistant fabric for easy maintenance",
+        "Available in versatile shades for any occasion",
+        "Reinforced stitching for long-lasting durability",
+        "Ideal for business wear or formal events",
+        "Machine washable for effortless care"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash cold", "icon": "/icons/machine_wash.png" },
+        { "type": "Do not bleach", "icon": "/icons/do_not_bleach.png" },
+        { "type": "Iron at low temperature", "icon": "/icons/iron_low.png" },
+        { "type": "Do not tumble dry", "icon": "/icons/do_not_tumble_dry.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Michael Brown",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "12 days ago",
+        "comment": "Excellent quality dress shirt! The fabric is soft, and it fits perfectly. I wear it for business meetings, and it always looks crisp. Highly recommend!",
+        "helpful_votes": 10,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "Sarah Miller",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "8 days ago",
+        "comment": "Very nice dress shirt, but the sleeves were a bit longer than expected. Otherwise, the material feels premium, and it's great for formal occasions.",
+        "helpful_votes": 5,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "David Wilson",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "One of the best dress shirts I've owned. The fit is perfect, and it looks great under a blazer. Will be buying more colors!",
+        "helpful_votes": 7,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "Emma Thompson",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "1 day ago",
+        "comment": "Good shirt, but I expected it to be slightly thicker. It’s more of a lightweight material, which is fine for warmer months.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 2
+      }
+    ]
+  },
+  {
+    "id": "123410",
+    "name": "RebelCoat",
+    "base_price": 180.0,
+    "currency": "USD",
+    "tags": null,
+    "reviews": 2010,
+    "description": "Stay stylish and protected with this weather-resistant trench coat. Designed with a water-repellent finish, deep pockets, and a tailored fit, it’s the perfect companion for unpredictable days.",
+    "variants": [
+      {
+        "color": "Pine Cone",
+        "color_code": "#6A6051",
+        "sizes": [
+          { "size": "S", "price": 190.0 },
+          { "size": "M", "price": 200.0 },
+          { "size": "L", "price": 210.0 },
+          { "size": "XL", "price": 220.0 }
+        ],
+        "images": ["/product-images/clothing/trench-coat/1.jpg"]
+      },
+      {
+        "color": "Forest Green",
+        "color_code": "#347235",
+        "sizes": [
+          { "size": "S", "price": 195.0 },
+          { "size": "M", "price": 205.0 },
+          { "size": "L", "price": 215.0 },
+          { "size": "XL", "price": 225.0 }
+        ],
+        "images": ["/product-images/clothing/trench-coat/2.jpg"]
+      },
+      {
+        "color": "Whiskey",
+        "color_code": "#D59A6F",
+        "sizes": [
+          { "size": "S", "price": 195.0 },
+          { "size": "M", "price": 205.0 },
+          { "size": "L", "price": 215.0 },
+          { "size": "XL", "price": 225.0 }
+        ],
+        "images": ["/product-images/clothing/trench-coat/3.jpg"]
+      },
+      {
+        "color": "Cloudy Grey",
+        "color_code": "#6D6968",
+        "sizes": [
+          { "size": "S", "price": 195.0 },
+          { "size": "M", "price": 205.0 },
+          { "size": "L", "price": 215.0 },
+          { "size": "XL", "price": 225.0 }
+        ],
+        "images": ["/product-images/clothing/trench-coat/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Premium wool-blend fabric for a refined look",
+        "Single-breasted design with notch lapels",
+        "Two-button front closure for a classic fit",
+        "Fully lined with breathable satin for all-day comfort",
+        "Tailored slim fit with structured shoulders",
+        "Functional flap pockets and inner chest pocket",
+        "60% wool, 30% polyester, 10% elastane for slight stretch",
+        "Dry clean only to maintain quality"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
+        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        {
+          "type": "Wash at below 95°C or 200°F",
+          "icon": "/icons/wash_95C.png"
+        },
+        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emily Johnson",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "This trench coat is a game changer! It fits like a glove and the wool-blend fabric feels luxurious. The Pine Cone color is a perfect neutral, and I’ve received tons of compliments. Worth every penny!",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "Daniel Carter",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Fantastic coat, looks amazing, and the fit is great. However, I had to size up because the sleeves felt a bit tight. Still, a great addition to my wardrobe.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Williams",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "The RebelCoat exceeded my expectations! The fit is perfect, and it keeps me warm and stylish. I’ve worn it during rainy weather, and the water-resistant finish works wonderfully. Highly recommend!",
+        "helpful_votes": 9,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "James Anderson",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "1 day ago",
+        "comment": "Nice coat, but it’s a bit heavier than I expected. The sizing is a bit snug, so I exchanged it for a larger size. Overall, it’s a stylish and durable coat.",
+        "helpful_votes": 2,
+        "not_helpful_votes": 2
+      }
+    ]
+  },
+  {
+    "id": "123411",
+    "name": "PolarWrap Jacket",
+    "base_price": 150.0,
+    "currency": "USD",
+    "tags": "Hots",
+    "reviews": 3026,
+    "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
+    "variants": [
+      {
+        "color": "Pale Orange",
+        "color_code": "#FFA756",
+        "sizes": [
+          { "size": "S", "price": 155.0 },
+          { "size": "M", "price": 165.0 },
+          { "size": "L", "price": 175.0 },
+          { "size": "XL", "price": 185.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/1.jpg"]
+      },
+      {
+        "color": "Lemon Grass",
+        "color_code": "#9B9E8F",
+        "sizes": [
+          { "size": "S", "price": 160.0 },
+          { "size": "M", "price": 170.0 },
+          { "size": "L", "price": 180.0 },
+          { "size": "XL", "price": 190.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/2.jpg"]
+      },
+      {
+        "color": "Tahiti Gold",
+        "color_code": "#E28913",
+        "sizes": [
+          { "size": "S", "price": 160.0 },
+          { "size": "M", "price": 170.0 },
+          { "size": "L", "price": 180.0 },
+          { "size": "XL", "price": 190.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/3.jpg"]
+      },
+      {
+        "color": "Pirate Gold",
+        "color_code": "#BA7F03",
+        "sizes": [
+          { "size": "S", "price": 160.0 },
+          { "size": "M", "price": 170.0 },
+          { "size": "L", "price": 180.0 },
+          { "size": "XL", "price": 190.0 }
+        ],
+        "images": ["/product-images/clothing/winter-jacket/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Soft fleece-lined interior for extra warmth",
+        "Wind-resistant outer shell for protection against the elements",
+        "Zippered front pockets to store your essentials",
+        "Water-resistant finish to keep you dry in light rain",
+        "Drawstring waist for a custom fit",
+        "100% polyester for durability and comfort",
+        "Machine washable for easy care"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
+        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        {
+          "type": "Wash at below 95°C or 200°F",
+          "icon": "/icons/wash_95C.png"
+        },
+        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "The jacket fits perfectly and keeps me warm even in freezing temperatures. The color is gorgeous, and I love the sleek fit. It’s definitely my go-to for winter now!",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Good quality jacket for the price. It’s warm and comfortable, but I wish the sleeves were a bit longer. Still, a solid winter coat!",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "I love this jacket! It’s super warm, and the colors are exactly as shown in the pictures. It fits well and is perfect for winter hikes.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "Lucas Green",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "1 day ago",
+        "comment": "The jacket is nice, but the sizing runs a little small. I had to exchange for a larger size, but it’s been great since then. Still a good purchase!",
+        "helpful_votes": 2,
+        "not_helpful_votes": 2
+      }
+    ]
+  },
+  {
+    "id": "123412",
+    "name": "Gown",
+    "base_price": 200.0,
+    "currency": "USD",
+    "tags": "Sale",
+    "reviews": 6002,
+    "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
+    "variants": [
+      {
+        "color": "Dark Raspberry",
+        "color_code": "#A50B5E",
+        "sizes": [
+          { "size": "S", "price": 210.0 },
+          { "size": "M", "price": 220.0 },
+          { "size": "L", "price": 230.0 },
+          { "size": "XL", "price": 240.0 }
+        ],
+        "images": ["/product-images/clothing/women-fashion/1.jpg"]
+      },
+      {
+        "color": "Purple Iris",
+        "color_code": "#571B7E",
+        "sizes": [
+          { "size": "S", "price": 215.0 },
+          { "size": "M", "price": 225.0 },
+          { "size": "L", "price": 235.0 },
+          { "size": "XL", "price": 245.0 }
+        ],
+        "images": ["/product-images/clothing/women-fashion/2.jpg"]
+      },
+      {
+        "color": "Rosso Corsa",
+        "color_code": "#D40000",
+        "sizes": [
+          { "size": "S", "price": 215.0 },
+          { "size": "M", "price": 225.0 },
+          { "size": "L", "price": 235.0 },
+          { "size": "XL", "price": 245.0 }
+        ],
+        "images": ["/product-images/clothing/women-fashion/3.jpg"]
+      },
+      {
+        "color": "Sapphire",
+        "color_code": "#2138AB",
+        "sizes": [
+          { "size": "S", "price": 215.0 },
+          { "size": "M", "price": 225.0 },
+          { "size": "L", "price": 235.0 },
+          { "size": "XL", "price": 245.0 }
+        ],
+        "images": ["/product-images/clothing/women-fashion/4.jpg"]
+      }
+    ],
+    "additional_info": {
+      "details": [
+        "Premium wool-blend fabric for a refined look",
+        "Single-breasted design with notch lapels",
+        "Two-button front closure for a classic fit",
+        "Fully lined with breathable satin for all-day comfort",
+        "Tailored slim fit with structured shoulders",
+        "Functional flap pockets and inner chest pocket",
+        "60% wool, 30% polyester, 10% elastane for slight stretch",
+        "Dry clean only to maintain quality"
+      ],
+      "washing_instructions": [
+        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
+        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        {
+          "type": "Wash at below 95°C or 200°F",
+          "icon": "/icons/wash_95C.png"
+        },
+        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+      ]
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Walker",
+        "profile_image": "/images/user4.jpg",
+        "rating": 5,
+        "date": "12 days ago",
+        "comment": "This gown is absolutely breathtaking! The fabric feels luxurious, and the fit is perfect. It made me feel like a queen at my event. Highly recommend for any special occasion!",
+        "helpful_votes": 10,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r2",
+        "user": "James Parker",
+        "profile_image": "/images/user5.jpg",
+        "rating": 4,
+        "date": "8 days ago",
+        "comment": "The gown looks stunning, but the material could be slightly more breathable. I had to adjust it a few times during the event. Still, a beautiful piece overall.",
+        "helpful_votes": 7,
+        "not_helpful_votes": 2
+      },
+      {
+        "id": "r3",
+        "user": "Emily Carter",
+        "profile_image": "/images/user6.jpg",
+        "rating": 5,
+        "date": "5 days ago",
+        "comment": "Perfect fit and gorgeous design! I wore it to a gala, and everyone complimented me. The color is so vibrant, and it really stands out. Totally worth the price.",
+        "helpful_votes": 15,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r4",
+        "user": "Sophia Williams",
+        "profile_image": "/images/user7.jpg",
+        "rating": 3,
+        "date": "2 days ago",
+        "comment": "The gown is beautiful, but the size ran a little big for me. I had to get it tailored, which was an added cost. However, the overall quality is great.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 5
+      }
+    ]
+  }
+]

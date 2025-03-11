@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-prata: "Prata", "serif";
+  --font-marcellus: "Marcellus", "serif";
+  --font-josefin-sans: "Josefin Sans", "sans-serif";
+  --font-gilda-display: "Gilda Display", "serif";
+  --font-chivo: "Chivo", "sans-serif";
+  --font-sofia: "Sofia", "cursive";
+}
