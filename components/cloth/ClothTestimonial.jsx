@@ -36,14 +36,7 @@ const ClothTestimonial = () => {
   return (
     <div className="mavo-testimonial-1 mavo-pb-115 mavo-md-pb-75">
       <div className="mavo-heading-area text-center mavo-mb-40">
-        <h3
-          className="mavo-title"
-          style={{
-            fontSize: "36px",
-          }}
-        >
-          Mavoo Success Stories
-        </h3>
+        <h3 className="mavo-title">Mavoo Success Stories</h3>
       </div>
       <div className="container-fluid">
         {/* Swiper */}
@@ -66,29 +59,18 @@ const ClothTestimonial = () => {
             <SwiperSlide key={testimonial.id}>
               <div className="container">
                 <div className="mavo-testimonial-single text-center">
-                  <div
-                    className="mavo-author-img"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
+                  <div className="mavo-author-img flex items-center justify-center">
                     <Image
                       src={testimonial.image}
                       alt="author"
-                      width={100}
-                      height={100}
+                      width={500}
+                      height={500}
                       quality={100}
+                      className="w-[100px] h-auto"
                     />
                   </div>
                   <div className="mavo-author-name">
-                    <h5
-                      className="mavo-test-title mavo-mt-15"
-                      style={{
-                        fontSize: "24px",
-                      }}
-                    >
+                    <h5 className="mavo-test-title mavo-mt-15">
                       {testimonial.name}
                     </h5>
                     <span className="sub-title">{testimonial.role}</span>

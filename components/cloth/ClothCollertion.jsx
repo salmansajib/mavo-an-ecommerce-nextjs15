@@ -58,13 +58,7 @@ const ClothCollection = () => {
               {item.type === "info" ? (
                 <div className="mavo-collection-info mavo-md-mb-50">
                   <div className="mavo-collection-title">
-                    <h3
-                      style={{
-                        fontSize: "36px",
-                      }}
-                    >
-                      {item.title}
-                    </h3>
+                    <h3>{item.title}</h3>
                   </div>
                 </div>
               ) : (
@@ -95,9 +89,6 @@ const ClothCollection = () => {
                   <h6 className="mavo-mt-25">
                     <Link
                       className="mavo-collect-title text-uppercase"
-                      style={{
-                        textDecoration: "none",
-                      }}
                       href={item.link}
                     >
                       {item.title}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getLastFourClothProducts } from "@/utils/fetchClothData"; // Adjust path if needed
+import { getLastFourClothProducts } from "@/lib/fetchClothData"; // Adjust path if needed
 
 const ProductSectionSecond = async () => {
   const lastFourProducts = await getLastFourClothProducts(); // Fetch last 4 products
@@ -22,10 +22,7 @@ const ProductSectionSecond = async () => {
                           width={500}
                           height={500}
                           quality={100}
-                          style={{
-                            width: "100%",
-                            height: "auto",
-                          }}
+                          className="w-[500px] h-auto"
                         />
                       </div>
                       {product.tags && (
@@ -38,37 +35,19 @@ const ProductSectionSecond = async () => {
                       <div className="mavo-product-social">
                         <ul>
                           <li>
-                            <Link
-                              href="/#"
-                              style={{
-                                textDecoration: "none",
-                                color: "#000",
-                              }}
-                            >
+                            <Link href="/#">
                               <i className="flaticon-eye"></i>
                               <span> Quick view</span>
                             </Link>
                           </li>
                           <li>
-                            <Link
-                              href="/#"
-                              style={{
-                                textDecoration: "none",
-                                color: "#000",
-                              }}
-                            >
+                            <Link href="/#">
                               <i className="flaticon-star"></i>
                               <span> Compare</span>
                             </Link>
                           </li>
                           <li>
-                            <Link
-                              href="/#"
-                              style={{
-                                textDecoration: "none",
-                                color: "#000",
-                              }}
-                            >
+                            <Link href="/#">
                               <i className="flaticon-sort"></i>
                               <span> Wishlist</span>
                             </Link>
@@ -76,15 +55,7 @@ const ProductSectionSecond = async () => {
                         </ul>
                       </div>
                       <div className="mavo-product-cart">
-                        <Link
-                          href="/#"
-                          style={{
-                            textDecoration: "none",
-                            color: "#000",
-                          }}
-                        >
-                          Buy Now
-                        </Link>
+                        <Link href="/#">Buy Now</Link>
                       </div>
                     </div>
                     <div className="mavo-product-meta mavo-mt-35 mavo-mb-40">
@@ -93,19 +64,11 @@ const ProductSectionSecond = async () => {
                           <Link
                             className="mavo-product-title-link"
                             href="/cloth-product-single"
-                            style={{
-                              textDecoration: "none",
-                              fontSize: "20px",
-                              color: "#000",
-                            }}
                           >
                             {product.name}
                           </Link>
                         </h6>
-                        <span
-                          className="product-sub-title font-prata"
-                          style={{ fontSize: "20px" }}
-                        >
+                        <span className="product-sub-title font-prata">
                           ${product.base_price.toFixed(2)}
                         </span>
                       </div>
@@ -114,11 +77,7 @@ const ProductSectionSecond = async () => {
                           {[...Array(5)].map((_, i) => (
                             <i key={i} className="flaticon-star-1"></i>
                           ))}
-                          <Link
-                            href="#"
-                            className="rating-count font-prata"
-                            style={{ textDecoration: "none" }}
-                          >
+                          <Link href="#" className="rating-count font-prata">
                             {product.reviews} Reviews
                           </Link>
                         </div>
@@ -157,11 +116,8 @@ const ProductSectionSecond = async () => {
                   width={1000}
                   height={1000}
                   quality={100}
-                  priority={true}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                  }}
+                  // priority={true}
+                  className="w-[1000px] h-auto"
                 />
               </div>
             </div>

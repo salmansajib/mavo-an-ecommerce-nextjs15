@@ -39,13 +39,7 @@ const ShopInfo = () => {
                   <img src={info.icon} alt={info.alt} />
                 </div>
                 <div className="mavo-info-title mavo-mb-20">
-                  <h4
-                    style={{
-                      fontSize: "30px",
-                    }}
-                  >
-                    {info.title}
-                  </h4>
+                  <h4>{info.title}</h4>
                 </div>
                 <div className="mavo-info-desc">
                   <p>{info.description}</p>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getFirstFourClothProducts } from "@/utils/fetchClothData";
+import { getFirstFourClothProducts } from "@/lib/fetchClothData";
 
 const ProductSectionFirst = async () => {
   const firstFourProducts = await getFirstFourClothProducts();
@@ -9,9 +9,7 @@ const ProductSectionFirst = async () => {
     <div className="mavo-product-1 mavo-pb-120 mavo-md-pb-20">
       <div className="container-fluid">
         <div className="mavo-heading-area text-center mavo-mb-70 mavo-md-mb-35">
-          <h3 className="mavo-title" style={{ fontSize: "40px" }}>
-            Popular This Season
-          </h3>
+          <h3 className="mavo-title">Popular This Season</h3>
         </div>
         <div className="row">
           <div className="col-lg-6">
@@ -23,11 +21,7 @@ const ProductSectionFirst = async () => {
                   width={1500}
                   height={1500}
                   quality={100}
-                  priority={true}
-                  style={{
-                    width: "1000px",
-                    height: "auto",
-                  }}
+                  className="w-[1000px] h-auto"
                 />
               </div>
             </div>
@@ -44,10 +38,8 @@ const ProductSectionFirst = async () => {
                           alt="products"
                           width={500}
                           height={500}
-                          style={{
-                            width: "500px",
-                            height: "auto",
-                          }}
+                          quality={100}
+                          className="w-[500px] h-auto"
                         />
                       </div>
                       {product.tags && (
@@ -60,28 +52,19 @@ const ProductSectionFirst = async () => {
                       <div className="mavo-product-social">
                         <ul>
                           <li>
-                            <Link
-                              href="/#"
-                              style={{ textDecoration: "none", color: "#000" }}
-                            >
+                            <Link href="/#">
                               <i className="flaticon-eye"></i>
                               <span>Quick view</span>
                             </Link>
                           </li>
                           <li>
-                            <Link
-                              href="/#"
-                              style={{ textDecoration: "none", color: "#000" }}
-                            >
+                            <Link href="/#">
                               <i className="flaticon-star"></i>
                               <span> Compare</span>
                             </Link>
                           </li>
                           <li>
-                            <Link
-                              href="/#"
-                              style={{ textDecoration: "none", color: "#000" }}
-                            >
+                            <Link href="/#">
                               <i className="flaticon-sort"></i>
                               <span> Wishlist</span>
                             </Link>
@@ -89,12 +72,7 @@ const ProductSectionFirst = async () => {
                         </ul>
                       </div>
                       <div className="mavo-product-cart">
-                        <Link
-                          href="/#"
-                          style={{ textDecoration: "none", color: "#000" }}
-                        >
-                          Buy Now
-                        </Link>
+                        <Link href="/#">Buy Now</Link>
                       </div>
                     </div>
                     <div className="mavo-product-meta mavo-mt-35 mavo-mb-40">
