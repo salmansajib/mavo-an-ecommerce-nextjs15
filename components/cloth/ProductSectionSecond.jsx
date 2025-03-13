@@ -1,9 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { getLastFourClothProducts } from "@/lib/fetchClothData"; // Adjust path if needed
+import { useProducts } from "@/hooks/useProducts";
 
-const ProductSectionSecond = async () => {
-  const lastFourProducts = await getLastFourClothProducts(); // Fetch last 4 products
+const ProductSectionSecond = () => {
+  const { data: products, isLoading, error } = useProducts();
+
+  if (isLoading) return <p>Loading products...</p>;
+  if (error) return <p>{error.message}</p>;
+  if (!products) return <p>No products available.</p>;
+
+  const lastFourProducts = products.length > 0 ? products.slice(-4) : [];
 
   return (
     <div className="mavo-product-1 mavo-pt-120 mavo-md-pt-80 mavo-pb-110 mavo-md-pb-70">
@@ -104,7 +112,6 @@ const ProductSectionSecond = async () => {
                   </div>
                 </div>
               ))}
-              {lastFourProducts.length === 0 && <p>Loading products...</p>}
             </div>
           </div>
           <div className="col-lg-6">

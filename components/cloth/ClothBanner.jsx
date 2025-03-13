@@ -55,7 +55,7 @@ const ClothBanner = () => {
                   <h1>{item.title}</h1>
                 </div>
                 <p className="mavo-banner-desc">{item.description}</p>
-                <Link href="#" className="mavo-read-more">
+                <Link href="/cloth/product" className="mavo-read-more">
                   Shop Now
                 </Link>
               </div>
@@ -63,14 +63,11 @@ const ClothBanner = () => {
                 <Image
                   src={item.image}
                   alt="model"
-                  width={1000}
-                  height={1000}
+                  width={2000}
+                  height={2000}
                   priority={true}
                   quality={100}
-                  style={{
-                    width: "580px",
-                    height: "auto",
-                  }}
+                  className="w-[580px] h-auto"
                 />
               </div>
             </SwiperSlide>

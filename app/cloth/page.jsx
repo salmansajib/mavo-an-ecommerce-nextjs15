@@ -1,6 +1,6 @@
 import React from "react";
 import ClothBanner from "@/components/cloth/ClothBanner";
-import ClothCollertion from "@/components/cloth/ClothCollertion";
+import ClothCollertion from "@/components/cloth/ClothCollection";
 import ClothTestimonial from "@/components/cloth/ClothTestimonial";
 import CollectionSection from "@/components/cloth/CollectionSection";
 import ProductSectionFirst from "@/components/cloth/ProductSectionFirst";

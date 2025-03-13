@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 
 import "./globals.css";
+import Providers from "@/components/Providers";
 
 import "@/assets/font/flaticon_mavoo.css";
 import "@/assets/css/bootstrap.min.css";
@@ -59,8 +60,8 @@ const sofia = Sofia({
 });
 
 export const metadata = {
-  title: "Mavoo - An eCommerce HTML5 Template",
-  description: "Mavoo - An eCommerce HTML5 Template",
+  title: "Mavoo - An eCommerce NextJs Template",
+  description: "Mavoo - An eCommerce NextJs Template",
   keywords: [
     "shop",
     "ecommerce",
@@ -73,6 +74,10 @@ export const metadata = {
     "bag",
     "shoes",
     "clothing",
+    "tailwind",
+    "nextjs",
+    "reactjs",
+    "redux toolkit",
   ],
 };
 
@@ -82,7 +87,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${marcellus.variable} ${prata.variable} ${josefin_sans.variable} ${gilda_display.variable} ${chivo.variable} ${sofia.variable} antialiased`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

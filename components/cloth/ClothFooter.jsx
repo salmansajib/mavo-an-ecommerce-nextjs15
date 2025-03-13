@@ -179,8 +179,8 @@ const ClothFooter = () => {
                 <Image
                   src="/images/logos/light-logo.svg"
                   alt="logo"
-                  width={150} // Set appropriate width
-                  height={50} // Set appropriate height
+                  width={150}
+                  height={50}
                 />
               </div>
               <div className="mavo-footer-title2">
@@ -237,7 +237,7 @@ const ClothFooter = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 flex items-center lg:justify-end justify-center">
               <div className="bank-account text-end">
                 <Image
                   src="/images/logos/bank-account.png"

@@ -1,9 +1,16 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { getFirstFourClothProducts } from "@/lib/fetchClothData";
+import { useProducts } from "@/hooks/useProducts";
 
-const ProductSectionFirst = async () => {
-  const firstFourProducts = await getFirstFourClothProducts();
+const ProductSectionFirst = () => {
+  const { data: products, isLoading, error } = useProducts();
+
+  if (isLoading) return <p>Loading products...</p>;
+  if (error) return <p>{error.message}</p>;
+  if (!products) return <p>No products available.</p>;
+
+  const firstFourProducts = products.length > 0 ? products.slice(0, 4) : [];
 
   return (
     <div className="mavo-product-1 mavo-pb-120 mavo-md-pb-20">
@@ -133,7 +140,6 @@ const ProductSectionFirst = async () => {
                   </div>
                 </div>
               ))}
-              {/* {products.length === 0 && <p>Loading products...</p>} */}
             </div>
           </div>
         </div>
