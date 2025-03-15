@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const ClothBreadcrumb = () => {
+const BreadcrumbCloth = () => {
   return (
     <div className="mavo-breadcrumb-page mavo-breadcrumb-product-page mavo-pt-155 mavo-pb-135">
       <div className="container">
@@ -35,4 +35,4 @@ const ClothBreadcrumb = () => {
   );
 };
 
-export default ClothBreadcrumb;
+export default BreadcrumbCloth;

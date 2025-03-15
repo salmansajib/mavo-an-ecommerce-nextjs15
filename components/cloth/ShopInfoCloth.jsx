@@ -27,7 +27,7 @@ const shopInfoData = [
   },
 ];
 
-const ShopInfo = () => {
+const ShopInfoCloth = () => {
   return (
     <div className="mavo-shop-info-1 mavo-pt-100 mavo-md-pt-80 mavo-pb-80 mavo-md-pb-30">
       <div className="container">
@@ -53,4 +53,4 @@ const ShopInfo = () => {
   );
 };
 
-export default ShopInfo;
+export default ShopInfoCloth;

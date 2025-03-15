@@ -32,7 +32,7 @@ const testimonials = [
   },
 ];
 
-const ClothTestimonial = () => {
+const TestimonialCloth = () => {
   return (
     <div className="mavo-testimonial-1 mavo-pb-115 mavo-md-pb-75">
       <div className="mavo-heading-area text-center mavo-mb-40">
@@ -110,4 +110,4 @@ const ClothTestimonial = () => {
   );
 };
 
-export default ClothTestimonial;
+export default TestimonialCloth;

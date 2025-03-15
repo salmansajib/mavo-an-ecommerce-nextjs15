@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ClothFooter = () => {
+const FooterCloth = () => {
   return (
     <footer className="mavo-footer mavo-pt-100 mavo-md-pt-75 mavo-pb-30">
       <div className="container">
@@ -259,4 +259,4 @@ const ClothFooter = () => {
   );
 };
 
-export default ClothFooter;
+export default FooterCloth;

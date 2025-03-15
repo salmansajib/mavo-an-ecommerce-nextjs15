@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useProducts } from "@/hooks/useProducts";
 
-const ProductSectionSecond = () => {
+const ProductSectionSecondCloth = () => {
   const { data: products, isLoading, error } = useProducts();
 
   if (isLoading) return <p>Loading products...</p>;
@@ -135,4 +135,4 @@ const ProductSectionSecond = () => {
   );
 };
 
-export default ProductSectionSecond;
+export default ProductSectionSecondCloth;

@@ -20,7 +20,7 @@ const filterData = [
   },
 ];
 
-const FilterSection = () => {
+const FilterSectionCloth = () => {
   return (
     <div className="row mavo-mb-70">
       <div className="col-lg-8">
@@ -83,4 +83,4 @@ const FilterSection = () => {
   );
 };
 
-export default FilterSection;
+export default FilterSectionCloth;

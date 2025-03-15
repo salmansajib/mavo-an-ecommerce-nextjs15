@@ -126,7 +126,7 @@ const langAndCurrencyItems = [
   },
 ];
 
-const Header = () => {
+const HeaderCloth = () => {
   const [hoveredMenuId, setHoveredMenuId] = useState(null);
   const [hoverLangAndCurrencyId, setHoverLangAndCurrencyId] = useState(null);
   const [visibleSvgId, setVisibleSvgId] = useState(null);
@@ -308,4 +308,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderCloth;

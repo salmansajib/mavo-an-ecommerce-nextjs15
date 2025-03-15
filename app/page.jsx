@@ -1,25 +1,25 @@
-import ClothBanner from "@/components/cloth/BannerCloth";
-import ClothCollertion from "@/components/cloth/CollectionCloth";
-import ClothFooter from "@/components/cloth/FooterCloth";
-import ClothTestimonial from "@/components/cloth/TestimonialCloth";
-import CollectionSection from "@/components/cloth/CollectionSectionCloth";
-import ProductSectionFirst from "@/components/cloth/ProductSectionFirstCloth";
-import ProductSectionSecond from "@/components/cloth/ProductSectionSecondCloth";
-import ShopInfo from "@/components/cloth/ShopInfoCloth";
-import Header from "@/components/cloth/HeaderCloth";
+import BannerCloth from "@/components/cloth/BannerCloth";
+import CollectionCloth from "@/components/cloth/CollectionCloth";
+import FooterCloth from "@/components/cloth/FooterCloth";
+import TestimonialCloth from "@/components/cloth/TestimonialCloth";
+import CollectionSectionCloth from "@/components/cloth/CollectionSectionCloth";
+import ProductSectionFirstCloth from "@/components/cloth/ProductSectionFirstCloth";
+import ProductSectionSecondCloth from "@/components/cloth/ProductSectionSecondCloth";
+import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
+import HeaderCloth from "@/components/cloth/HeaderCloth";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <ClothBanner />
-      <ClothCollertion />
-      <ProductSectionFirst />
-      <CollectionSection />
-      <ProductSectionSecond />
-      <ClothTestimonial />
-      <ShopInfo />
-      <ClothFooter />
+      <HeaderCloth />
+      <BannerCloth />
+      <CollectionCloth />
+      <ProductSectionFirstCloth />
+      <CollectionSectionCloth />
+      <ProductSectionSecondCloth />
+      <TestimonialCloth />
+      <ShopInfoCloth />
+      <FooterCloth />
     </>
   );
 }

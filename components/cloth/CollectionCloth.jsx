@@ -40,7 +40,7 @@ const collectionData = [
   },
 ];
 
-const ClothCollection = () => {
+const CollectionCloth = () => {
   return (
     <div
       id="mavoo-scroll"
@@ -104,4 +104,4 @@ const ClothCollection = () => {
   );
 };
 
-export default ClothCollection;
+export default CollectionCloth;

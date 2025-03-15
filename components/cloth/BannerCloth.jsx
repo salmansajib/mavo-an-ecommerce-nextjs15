@@ -29,7 +29,7 @@ const bannerData = [
   },
 ];
 
-const ClothBanner = () => {
+const BannerCloth = () => {
   return (
     <div className="mavo-banner-1">
       <div className="container-fluid header-menu">
@@ -91,4 +91,4 @@ const ClothBanner = () => {
   );
 };
 
-export default ClothBanner;
+export default BannerCloth;

@@ -1,12 +1,12 @@
-import ClothBreadcrumb from "@/components/cloth/BreadcrumbCloth";
-import ProductSectionAllProduct from "@/components/cloth/ProductSectionAllProductCloth";
+import BreadcrumbCloth from "@/components/cloth/BreadcrumbCloth";
+import AllProductCloth from "@/components/cloth/AllProductCloth";
 import React from "react";
 
 export default function ProductPageCloth() {
   return (
     <>
-      <ClothBreadcrumb />
-      <ProductSectionAllProduct />
+      <BreadcrumbCloth />
+      <AllProductCloth />
     </>
   );
 }

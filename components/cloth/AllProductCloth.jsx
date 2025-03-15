@@ -3,10 +3,10 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useProducts } from "@/hooks/useProducts";
-import FilterSection from "@/components/cloth/FilterSectionCloth";
+import FilterSectionCloth from "@/components/cloth/FilterSectionCloth";
 import LoaderSpinner from "../LoaderSpinner";
 
-const ProductSectionAllProduct = () => {
+const AllProductCloth = () => {
   const { data: products, isLoading, error } = useProducts();
   const [page, setPage] = useState(1);
   const limit = 6; // Products per page
@@ -34,7 +34,7 @@ const ProductSectionAllProduct = () => {
     >
       <div className="container">
         {/* Filtering Section */}
-        <FilterSection />
+        <FilterSectionCloth />
 
         {/* Product Section */}
         <div className="row">
@@ -195,4 +195,4 @@ const ProductSectionAllProduct = () => {
   );
 };
 
-export default ProductSectionAllProduct;
+export default AllProductCloth;
