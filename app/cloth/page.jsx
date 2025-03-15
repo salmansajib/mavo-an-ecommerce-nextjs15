@@ -1,11 +1,11 @@
 import React from "react";
-import ClothBanner from "@/components/cloth/ClothBanner";
-import ClothCollertion from "@/components/cloth/ClothCollection";
-import ClothTestimonial from "@/components/cloth/ClothTestimonial";
-import CollectionSection from "@/components/cloth/CollectionSection";
-import ProductSectionFirst from "@/components/cloth/ProductSectionFirst";
-import ProductSectionSecond from "@/components/cloth/ProductSectionSecond";
-import ShopInfo from "@/components/cloth/ShopInfo";
+import ClothBanner from "@/components/cloth/BannerCloth";
+import ClothCollertion from "@/components/cloth/CollectionCloth";
+import ClothTestimonial from "@/components/cloth/TestimonialCloth";
+import CollectionSection from "@/components/cloth/CollectionSectionCloth";
+import ProductSectionFirst from "@/components/cloth/ProductSectionFirstCloth";
+import ProductSectionSecond from "@/components/cloth/ProductSectionSecondCloth";
+import ShopInfo from "@/components/cloth/ShopInfoCloth";
 
 export default function ClothPage() {
   return (

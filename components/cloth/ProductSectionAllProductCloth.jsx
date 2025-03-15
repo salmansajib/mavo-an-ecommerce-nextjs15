@@ -3,14 +3,20 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useProducts } from "@/hooks/useProducts";
-import FilterSection from "@/components/cloth/FilterSection";
+import FilterSection from "@/components/cloth/FilterSectionCloth";
+import LoaderSpinner from "../LoaderSpinner";
 
 const ProductSectionAllProduct = () => {
   const { data: products, isLoading, error } = useProducts();
   const [page, setPage] = useState(1);
   const limit = 6; // Products per page
 
-  if (isLoading) return <p>Loading products...</p>;
+  if (isLoading)
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <LoaderSpinner />
+      </div>
+    );
   if (error) return <p>{error.message}</p>;
   if (!products || products.length === 0) return <p>No products available.</p>;
 
