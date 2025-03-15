@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "../Logo";
 import {
   Search,
   Star,
@@ -17,7 +17,7 @@ const navItems = [
     label: "Home",
     link: "/",
     subItems: [
-      { id: 11, label: "Home 01", link: "index.html" },
+      { id: 11, label: "Home 01", link: "/" },
       { id: 12, label: "Home 02", link: "index2.html" },
       { id: 13, label: "Home 03", link: "index3.html" },
       { id: 14, label: "Home 04", link: "index4.html" },
@@ -32,7 +32,7 @@ const navItems = [
     subItems: [
       { id: 21, label: "Bag Shop", link: "bag-shop.html" },
       { id: 22, label: "Beauty Shop", link: "beauty-shop.html" },
-      { id: 23, label: "Cloth Shop", link: "cloth-shop.html" },
+      { id: 23, label: "Cloth Shop", link: "/cloth/product" },
       { id: 24, label: "Watch Shop", link: "watch-shop.html" },
       { id: 25, label: "Shoes Shop", link: "shoes-shop.html" },
       { id: 26, label: "Jewellery Shop", link: "jewellery-shop.html" },
@@ -129,57 +129,57 @@ const langAndCurrencyItems = [
 const Header = () => {
   const [hoveredMenuId, setHoveredMenuId] = useState(null);
   const [hoverLangAndCurrencyId, setHoverLangAndCurrencyId] = useState(null);
+  const [visibleSvgId, setVisibleSvgId] = useState(null);
 
   return (
-    <header className="absolute top-10 left-1/2 -translate-x-1/2 z-50 flex items-center px-2.5 w-full max-w-[1600px] font-josefin-sans">
+    <header className="absolute top-10 left-1/2 -translate-x-1/2 z-50 flex items-center px-[12px] w-full max-w-[1600px] font-josefin-sans">
       {/* desktop navigation */}
       <div className="w-full flex items-center justify-between">
         {/* logo and nav menu section */}
-        <div className="flex items-center justify-center gap-[150px] ">
+        <div className="flex items-center justify-center gap-[50px] xl:gap-[150px] ">
           {/* logo */}
-          <div>
-            <Link href="/">
-              <Image
-                src="/images/logos/light-logo.svg"
-                alt="company logo"
-                width={125}
-                height={100}
-              />
-            </Link>
-          </div>
+          <Logo color="light" />
           {/* nav manu items */}
           <nav>
-            <ul className="flex items-center gap-[40px]">
+            <ul className="flex items-center gap-[20px] lg:gap-[40px]">
               {navItems.map((item) => (
                 <li
                   key={item.id}
                   className="relative"
-                  onMouseEnter={() => setHoveredMenuId(item.id)}
-                  onMouseLeave={() => setHoveredMenuId(null)}
+                  onMouseEnter={() => {
+                    setHoveredMenuId(item.id);
+                    setVisibleSvgId(item.id); // Show this item's SVG
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredMenuId(null);
+                    setVisibleSvgId(null); // Hide all SVGs
+                  }}
                 >
                   <Link
                     href={item.link}
                     className="p-2 !text-[#fff] uppercase text-[15px] font-medium flex items-center gap-2"
                   >
-                    {/* <svg
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="7px"
-                      height="8px"
+                      width="8px"
+                      height="9px"
                       viewBox="0 0 7 8"
-                      className="mb-[3px]"
+                      className={`${
+                        visibleSvgId === item.id ? "opacity-100" : "opacity-0"
+                      } mb-[5px] transition-opacity duration-300 ease-in-out`}
                     >
                       <path
                         fillRule="evenodd"
                         fill="rgb(255, 255, 255)"
                         d="M1.040,-0.015 C1.040,1.852 3.235,3.122 7.013,3.122 L7.013,4.844 C3.204,4.844 1.041,5.859 1.040,8.012 L0.004,8.012 L0.004,-0.015 L1.040,-0.015 Z"
                       />
-                    </svg> */}
+                    </svg>
                     {item.label}
                   </Link>
-                  {/* submenu */}
+                  {/* submenu - unchanged */}
                   {item.subItems && (
                     <ul
-                      className={`absolute top-12 left-1.5 w-[210px] bg-white transition-opacity duration-400 ${
+                      className={`absolute top-12 left-1.5 w-[210px] bg-white transition-opacity duration-300 ${
                         hoveredMenuId === item.id
                           ? "opacity-100"
                           : "opacity-0 pointer-events-none"
@@ -199,7 +199,7 @@ const Header = () => {
                               xmlns="http://www.w3.org/2000/svg"
                               width="7px"
                               height="8px"
-                              className="mb-[3px]"
+                              className="mb-[5px]"
                             >
                               <path
                                 fillRule="evenodd"
@@ -218,8 +218,9 @@ const Header = () => {
             </ul>
           </nav>
         </div>
+
         {/* icons, language and currency section */}
-        <div className="flex items-center gap-[40px]">
+        <div className="flex items-center gap-[25px] xl:gap-[40px]">
           {/* cart and other icons */}
           <div className="flex items-center gap-4">
             <Link href="/" className="">
@@ -254,7 +255,7 @@ const Header = () => {
             </Link>
           </div>
           {/* vertical line */}
-          <div className="w-[1px] h-[25px] bg-gray-50/30" />
+          <div className="w-[1px] h-[25px] bg-gray-50/20" />
           {/* language and currdency */}
           <div>
             <ul className="flex items-center gap-3">
