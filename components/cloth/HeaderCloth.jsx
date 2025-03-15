@@ -136,12 +136,12 @@ const Header = () => {
       {/* desktop navigation */}
       <div className="w-full flex items-center justify-between">
         {/* logo and nav menu section */}
-        <div className="flex items-center justify-center gap-[50px] xl:gap-[150px] ">
+        <div className="flex items-center justify-center gap-[50px] xl:gap-[130px] ">
           {/* logo */}
           <Logo color="light" />
           {/* nav manu items */}
           <nav>
-            <ul className="flex items-center gap-[20px] lg:gap-[40px]">
+            <ul className="flex items-center gap-[20px] lg:gap-[30px]">
               {navItems.map((item) => (
                 <li
                   key={item.id}

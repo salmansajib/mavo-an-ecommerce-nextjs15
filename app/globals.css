@@ -8,7 +8,3 @@
   --font-chivo: "Chivo", "sans-serif";
   --font-sofia: "Sofia", "cursive";
 }
-
-.hover-svg-parent:hover svg {
-  opacity: 1 !important;
-}
