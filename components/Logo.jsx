@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Logo = ({ color = "light" }) => {
+const Logo = ({ color = "light", width = 125, height = 100 }) => {
   const logoSrc =
     color === "dark"
       ? "/images/logos/dark-logo.svg"
@@ -11,13 +11,13 @@ const Logo = ({ color = "light" }) => {
   return (
     <div>
       <Link href="/">
-        <img
+        <Image
           src={logoSrc}
           alt="company logo"
-          width={125}
-          height={100}
+          width={width}
+          height={height}
           style={{
-            width: "125px",
+            width: `${width}px`,
             height: "auto",
           }}
         />

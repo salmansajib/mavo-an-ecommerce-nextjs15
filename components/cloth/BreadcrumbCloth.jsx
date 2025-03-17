@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BreadcrumbCloth = () => {
   return (
-    <div className="mavo-breadcrumb-page mavo-breadcrumb-product-page mavo-pt-155 mavo-pb-135">
+    <div className="mavo-breadcrumb-page mavo-breadcrumb-product-page">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
