@@ -445,70 +445,80 @@ const HeaderCloth = () => {
       </header>
 
       {/* off screen mobile navigaion items  */}
-      <nav
-        className={`${
-          showMobileMenu ? "translate-x-0" : "translate-x-[100%]"
-        } fixed z-50 w-full max-w-[450px] h-full top-0 right-0 bg-[#000] font-marcellus lg:hidden p-[30px] transition-transform ease-in-out duration-500`}
-      >
-        <div className="flex items-center justify-between border-b border-[#fff]/40 pb-[20px]">
-          <Logo color="light" width={90} />
-          <button
-            onClick={() => {
-              setShowMobileMenu(false);
-              setShowMobileSubmenu(null);
-            }}
-          >
-            <X color="#fff" size={38} />
-          </button>
-        </div>
-        <div className="pt-[30px]">
-          <ul>
-            {navItemsMobile.map((item) => (
-              <li key={item.id}>
-                <button
-                  className="!text-[#fff] w-full py-3 text-base flex items-center justify-between"
-                  onClick={() => handleToggleSubmenu(item.id)}
-                >
-                  {item.label}
-                  {item.subItems && (
-                    <Plus
-                      size={20}
-                      color="#fff"
-                      className={`${
-                        showMobileSubmenu === item.id ? "-rotate-45" : ""
-                      } transition-all duration-500 ease-in-out`}
-                    />
-                  )}
-                </button>
-
-                {item.subItems && (
-                  <ul
-                    ref={(el) => (submenuRefs.current[item.id] = el)}
-                    style={{
-                      height:
-                        showMobileSubmenu === item.id
-                          ? submenuRefs.current[item.id]?.scrollHeight + "px"
-                          : "0px",
-                    }}
-                    className="overflow-hidden transition-all duration-500"
+      <div>
+        {/* Overlay */}
+        {showMobileMenu && (
+          <div
+            className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-opacity duration-500"
+            onClick={() => setShowMobileMenu(false)} // Closes menu when clicked
+          />
+        )}
+        {/* Mobile Navigation */}
+        <nav
+          className={`${
+            showMobileMenu ? "translate-x-0" : "translate-x-[100%]"
+          } fixed z-50 w-full max-w-[450px] h-full top-0 right-0 bg-[#000] font-marcellus lg:hidden p-[30px] transition-transform ease-in-out duration-500`}
+        >
+          <div className="flex items-center justify-between border-b border-[#fff]/40 pb-[20px]">
+            <Logo color="light" width={90} />
+            <button
+              onClick={() => {
+                setShowMobileMenu(false);
+                setShowMobileSubmenu(null);
+              }}
+            >
+              <X color="#fff" size={38} />
+            </button>
+          </div>
+          <div className="pt-[30px]">
+            <ul>
+              {navItemsMobile.map((item) => (
+                <li key={item.id}>
+                  <button
+                    className="!text-[#fff] w-full py-3 text-base flex items-center justify-between"
+                    onClick={() => handleToggleSubmenu(item.id)}
                   >
-                    {item.subItems.map((subitem) => (
-                      <li key={subitem.id}>
-                        <Link
-                          href={subitem.link}
-                          className="block !text-[#fff] pl-[30px] py-[8px]"
-                        >
-                          {subitem.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
+                    {item.label}
+                    {item.subItems && (
+                      <Plus
+                        size={20}
+                        color="#fff"
+                        className={`${
+                          showMobileSubmenu === item.id ? "-rotate-45" : ""
+                        } transition-all duration-500 ease-in-out`}
+                      />
+                    )}
+                  </button>
+
+                  {item.subItems && (
+                    <ul
+                      ref={(el) => (submenuRefs.current[item.id] = el)}
+                      style={{
+                        height:
+                          showMobileSubmenu === item.id
+                            ? submenuRefs.current[item.id]?.scrollHeight + "px"
+                            : "0px",
+                      }}
+                      className="overflow-hidden transition-all duration-500"
+                    >
+                      {item.subItems.map((subitem) => (
+                        <li key={subitem.id}>
+                          <Link
+                            href={subitem.link}
+                            className="block !text-[#fff] pl-[30px] py-[8px]"
+                          >
+                            {subitem.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </div>
     </>
   );
 };
