@@ -6,7 +6,7 @@ import CollectionSectionCloth from "@/components/cloth/CollectionSectionCloth";
 import ProductSectionFirstCloth from "@/components/cloth/ProductSectionFirstCloth";
 import ProductSectionSecondCloth from "@/components/cloth/ProductSectionSecondCloth";
 import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
-import HeaderCloth from "@/components/cloth/HeaderCloth";
+import HeaderCloth from "@/components/cloth/header-cloth/HeaderCloth";
 
 export default function Home() {
   return (
