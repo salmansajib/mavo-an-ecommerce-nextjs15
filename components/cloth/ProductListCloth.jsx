@@ -3,7 +3,11 @@ import Link from "next/link";
 
 const ProductListCloth = ({ products }) => {
   if (!products || products.length === 0) {
-    return <p>No products available.</p>;
+    return (
+      <p className="text-3xl font-medium !text-green-500">
+        No products available.
+      </p>
+    );
   }
 
   return (

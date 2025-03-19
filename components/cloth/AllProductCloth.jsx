@@ -30,7 +30,6 @@ const AllProductCloth = () => {
       </div>
     );
   if (error) return <p>{error.message}</p>;
-  if (!products || products.length === 0) return <p>No products available.</p>;
 
   return (
     <div

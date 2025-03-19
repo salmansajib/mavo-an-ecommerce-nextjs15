@@ -14,7 +14,7 @@ const DesktopHeader = () => {
 
   return (
     <div className="hidden w-full lg:flex items-center justify-between">
-      <div className="flex items-center justify-center gap-[50px] xl:gap-[130px]">
+      <div className="flex items-center justify-center gap-[30px] xl:gap-[130px]">
         <Logo color="light" />
         <NavMenu
           navItems={navItems}
