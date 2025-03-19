@@ -24,7 +24,7 @@ const AllProductCloth = () => {
   const startIndex = (page - 1) * limit;
   const paginatedProducts = products.slice(startIndex, startIndex + limit);
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 300, behavior: "smooth" });
   };
 
   return (

@@ -11,31 +11,31 @@ const collectionData = [
   {
     id: 2,
     image: "/images/about/Collection1.1.jpg",
-    link: "#",
+    link: "/cloth/product",
     title: "Men's Cloth",
   },
   {
     id: 3,
     image: "/images/about/Collection1.2.jpg",
-    link: "#",
+    link: "/cloth/product",
     title: "Winter Cloth",
   },
   {
     id: 4,
     image: "/images/about/Collection1.3.jpg",
-    link: "#",
+    link: "/cloth/product",
     title: "Accessories",
   },
   {
     id: 5,
     image: "/images/about/Collection1.4.jpg",
-    link: "#",
+    link: "/cloth/product",
     title: "Bags",
   },
   {
     id: 6,
     image: "/images/about/Collection1.5.jpg",
-    link: "#",
+    link: "/cloth/product",
     title: "Women's cloth",
   },
 ];

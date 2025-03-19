@@ -7,9 +7,10 @@ import {
   Sofia,
 } from "next/font/google";
 
-import "./globals.css";
 import Providers from "@/components/Providers";
+import BackToTop from "@/components/BackToTop";
 
+import "./globals.css";
 import "@/assets/font/flaticon_mavoo.css";
 import "@/assets/css/bootstrap.min.css";
 import "@/assets/css/swiper-bundle.min.css";
@@ -87,7 +88,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${marcellus.variable} ${prata.variable} ${josefin_sans.variable} ${gilda_display.variable} ${chivo.variable} ${sofia.variable} antialiased`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <BackToTop />
+        </Providers>
       </body>
     </html>
   );
