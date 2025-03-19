@@ -27,7 +27,7 @@ const MobileNavigation = ({
           showMobileMenu
             ? "translate-x-0 opacity-100"
             : "translate-x-[100%] opacity-0"
-        } fixed z-50 w-full max-w-[450px] h-full top-0 right-0 bg-[#000] font-marcellus lg:hidden p-[30px] transition-all ease-in-out duration-500`}
+        } fixed z-50 w-full max-w-[450px] h-full top-0 right-0 bg-[#000] font-marcellus lg:hidden p-[30px] transition-all ease-in-out duration-500 overflow-y-auto`}
       >
         <div className="flex items-center justify-between border-b border-[#fff]/40 pb-[20px]">
           <Logo color="light" width={90} />
