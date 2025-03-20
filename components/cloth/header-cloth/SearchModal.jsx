@@ -12,19 +12,22 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
       <div className="flex flex-col md:flex-row items-center gap-[30px] md:gap-[120px] w-full max-w-[1300px] mx-auto">
         <Logo color="light" className="w-[100px] md:w-[200px]" />
 
-        <div className="w-full h-[45px] relative">
+        <form className="w-full h-[45px] relative">
           <input
             type="text"
             placeholder="Search Your Product"
-            className="border-0 outline-0 bg-zinc-900 pl-[20px] pr-[60px] w-full h-full placeholder:!text-zinc-500"
+            className="border-0 outline-0 bg-zinc-900 pl-[20px] pr-[60px] w-full h-full placeholder:!text-zinc-500 rounded-[5px]"
             style={{
               fontSize: "15px",
             }}
           />
-          <button className="absolute top-0 right-0 w-[50px] h-full bg-zinc-800 flex items-center justify-center">
+          <button
+            type="submit"
+            className="absolute top-0 right-0 w-[50px] h-full bg-zinc-800 flex items-center justify-center !rounded-r-[5px]"
+          >
             <Search size={20} className="text-white" />
           </button>
-        </div>
+        </form>
       </div>
 
       <button
