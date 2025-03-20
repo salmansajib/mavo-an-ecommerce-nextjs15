@@ -761,6 +761,7 @@ __metadata:
     react-dom: "npm:^19.0.0"
     react-loader-spinner: "npm:^6.1.6"
     swiper: "npm:^11.2.5"
+    tailwind-merge: "npm:^3.0.2"
     tailwindcss: "npm:^4"
   languageName: unknown
   linkType: soft
@@ -1128,6 +1129,13 @@ __metadata:
   version: 11.2.5
   resolution: "swiper@npm:11.2.5"
   checksum: 10c0/dd1e598a810ee4e38316dc6bb80d27be374faf78385f44669f24c46427929d8532e96fc52fb45b8c9edb956074408ce14208355ff8410d68a71e5f8f39287da1
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "tailwind-merge@npm:3.0.2"
+  checksum: 10c0/73f528345e5130e7690c5c57701155849ae4f0834e0a4bf56bc03e25d4563d45d4905ff9c487a7dce9efdfa18689a223e78365962105ad0e2f2d1226216c66ef
   languageName: node
   linkType: hard
 

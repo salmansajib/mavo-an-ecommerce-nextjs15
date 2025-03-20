@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
-const Logo = ({ color = "light", width = 125, height = 100 }) => {
+const Logo = ({ color = "light", width = 125, height = 100, className }) => {
   const logoSrc =
     color === "dark"
       ? "/images/logos/dark-logo.svg"
@@ -16,10 +17,7 @@ const Logo = ({ color = "light", width = 125, height = 100 }) => {
           alt="company logo"
           width={width}
           height={height}
-          style={{
-            width: `${width}px`,
-            height: "auto",
-          }}
+          className={twMerge("w-[125px] h-auto", className)}
         />
       </Link>
     </div>

@@ -7,7 +7,7 @@ import LangCurrencyMenu from "./LangCurrencyMenu";
 import { Search, Star, ShoppingBag, UserRound } from "lucide-react";
 import { navItems, langAndCurrencyItems } from "@/data/navigationData";
 
-const DesktopHeader = () => {
+const DesktopHeader = ({ setIsSearchFormActive }) => {
   const [hoveredMenuId, setHoveredMenuId] = useState(null);
   const [hoverLangAndCurrencyId, setHoverLangAndCurrencyId] = useState(null);
   const [visibleSvgId, setVisibleSvgId] = useState(null);
@@ -27,12 +27,12 @@ const DesktopHeader = () => {
 
       <div className="flex items-center gap-[25px] xl:gap-[40px]">
         <div className="flex items-center gap-4">
-          <Link href="/">
+          <button onClick={() => setIsSearchFormActive(true)}>
             <Search
               size={18}
               className="text-[#fff] hover:text-[#ce2d37] transition-colors duration-300 ease-in-out"
             />
-          </Link>
+          </button>
           <Link href="/" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
               0
