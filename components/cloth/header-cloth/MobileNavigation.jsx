@@ -30,7 +30,7 @@ const MobileNavigation = ({
         } fixed z-50 w-full max-w-[450px] h-full top-0 right-0 bg-[#000] font-marcellus lg:hidden p-[30px] transition-all ease-in-out duration-500 overflow-y-auto`}
       >
         <div className="flex items-center justify-between border-b border-[#fff]/40 pb-[20px]">
-          <Logo color="light" width={90} />
+          <Logo color="light" className="w-[90px]" />
           <button
             onClick={() => {
               setShowMobileMenu(false);
