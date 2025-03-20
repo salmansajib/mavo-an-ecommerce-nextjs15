@@ -1,9 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
 
 const fetchProducts = async () => {
-  const res = await fetch("/api/products");
-  if (!res.ok) throw new Error("Failed to fetch products");
-  return res.json();
+  try {
+    const res = await fetch("/api/products");
+    if (!res.ok) {
+      throw new Error(
+        `Failed to fetch products: ${res.status} ${res.statusText}`,
+      );
+    }
+    return await res.json();
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    throw error; // Rethrow the error so react-query can handle it
+  }
 };
 
 export const useProducts = () => {
