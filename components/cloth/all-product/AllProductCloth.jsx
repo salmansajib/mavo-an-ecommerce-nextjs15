@@ -1,6 +1,6 @@
 "use client";
 import FilterSectionCloth from "@/components/cloth/FilterSectionCloth";
-import LoaderSpinner from "../LoaderSpinner";
+import LoaderSpinner from "../../LoaderSpinner";
 import PaginationCloth from "./PaginationCloth";
 import ProductListCloth from "./ProductListCloth";
 import { useProducts } from "@/hooks/useProducts";
