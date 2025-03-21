@@ -9,10 +9,13 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
         isSearchFormActive ? "translate-y-0" : "-translate-y-full"
       } absolute z-[100] top-0 left-0 text-white font-prata w-full bg-black px-[50px] py-[50px] transition-transform duration-300`}
     >
-      <div className="flex flex-col md:flex-row items-center gap-[30px] md:gap-[120px] w-full max-w-[1300px] mx-auto">
+      <div className="flex flex-col md:flex-row items-center gap-[30px] md:gap-[120px] w-full max-w-[1200px] mx-auto">
         <Logo color="light" className="w-[100px] md:w-[200px]" />
 
-        <form className="w-full h-[45px] relative">
+        <form
+          className="w-full h-[45px] relative"
+          onSubmit={(e) => e.preventDefault()}
+        >
           <input
             type="text"
             placeholder="Search Your Product"
@@ -32,7 +35,7 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
 
       <button
         onClick={onClose}
-        className="absolute top-[10px] right-[10px] p-[5px] hover:text-red-400 transition-colors"
+        className="absolute top-[5px] right-[5px] p-[5px] hover:text-red-400 transition-colors"
       >
         <X />
       </button>

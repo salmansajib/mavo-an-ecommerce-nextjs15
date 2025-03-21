@@ -61,8 +61,8 @@ const sofia = Sofia({
 });
 
 export const metadata = {
-  title: "Mavoo - An eCommerce NextJs Template",
-  description: "Mavoo - An eCommerce NextJs Template",
+  title: "Mavoo - An eCommerce Template",
+  description: "Mavoo - An eCommerce Template With NextJs, ReduxToolkit",
   keywords: [
     "shop",
     "ecommerce",
@@ -76,8 +76,12 @@ export const metadata = {
     "shoes",
     "clothing",
     "tailwind",
+    "tailwind v4",
     "nextjs",
+    "nextjs 15",
+    "nextjs app router",
     "reactjs",
+    "reactjs 19",
     "redux toolkit",
   ],
 };
