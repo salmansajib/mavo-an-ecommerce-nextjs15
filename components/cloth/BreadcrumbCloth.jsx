@@ -14,14 +14,14 @@ const BreadcrumbCloth = () => {
               <div className="mavo-breadcrumb-list">
                 <ul>
                   <li>
-                    <Link className="text-uppercase" href="/#">
+                    <Link className="text-uppercase" href="/">
                       Home
                     </Link>
-                    <Link className="text-uppercase" href="/#">
+                    <Link className="text-uppercase" href="/">
                       {" "}
                       /{" "}
                     </Link>
-                    <Link className="text-uppercase" href="/#">
+                    <Link className="text-uppercase" href="/cloth/product">
                       Shop
                     </Link>
                   </li>

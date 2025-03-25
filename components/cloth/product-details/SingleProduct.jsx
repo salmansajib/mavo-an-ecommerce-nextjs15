@@ -85,7 +85,7 @@ const SingleProduct = ({ product }) => {
 
   const handleAddToCart = () => {
     if (!selectedColor || !selectedSize) {
-      setErrorMessage("Please select the size and color first!");
+      setErrorMessage("Please select the size and color!");
       return;
     }
 
