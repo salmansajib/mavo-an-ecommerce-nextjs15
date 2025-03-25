@@ -1,25 +1,77 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Plus, Minus } from "lucide-react";
 
+const useCountdown = (initialDays) => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: initialDays,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const totalSeconds =
+        timeLeft.days * 24 * 60 * 60 +
+        timeLeft.hours * 60 * 60 +
+        timeLeft.minutes * 60 +
+        timeLeft.seconds;
+
+      if (totalSeconds <= 0) {
+        // Reset to 30 days when countdown reaches 0
+        return {
+          days: 30,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        };
+      }
+
+      const newTotalSeconds = totalSeconds - 1;
+      const days = Math.floor(newTotalSeconds / (24 * 60 * 60));
+      const hours = Math.floor((newTotalSeconds % (24 * 60 * 60)) / (60 * 60));
+      const minutes = Math.floor((newTotalSeconds % (60 * 60)) / 60);
+      const seconds = newTotalSeconds % 60;
+
+      return {
+        days,
+        hours,
+        minutes,
+        seconds,
+      };
+    };
+
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
+  return timeLeft;
+};
+
 const SingleProduct = ({ product }) => {
-  const [selectedColor, setSelectedColor] = useState(product.variants[0].color);
+  const [selectedColor, setSelectedColor] = useState(null);
   const [selectedImage, setSelectedImage] = useState(0);
-  const [selectedSize, setSelectedSize] = useState(
-    product.variants[0].sizes[0].size,
-  );
+  const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
+  const [errorMessage, setErrorMessage] = useState("");
+  const timeLeft = useCountdown(30);
 
   const handleColorSelect = (variant, index) => {
     setSelectedColor(variant.color);
     setSelectedImage(index);
+    setErrorMessage("");
   };
 
   const handleSizeSelect = (size) => {
     setSelectedSize(size);
+    setErrorMessage("");
   };
 
   const handleQuantityChange = (type) => {
@@ -30,14 +82,12 @@ const SingleProduct = ({ product }) => {
     }
   };
 
-  const handleQuantityInput = (e) => {
-    const value = parseInt(e.target.value);
-    if (value > 0) {
-      setQuantity(value);
-    }
-  };
-
   const handleAddToCart = () => {
+    if (!selectedColor || !selectedSize) {
+      setErrorMessage("Please select the size and color first!");
+      return;
+    }
+
     const cartItem = {
       id: product.id,
       name: product.name,
@@ -56,15 +106,14 @@ const SingleProduct = ({ product }) => {
   // Get all images from all variants
   const allImages = product.variants.flatMap((variant) => variant.images);
 
-  // Get current price based on selected color and size
+  // Get current price based on selected size
   const getCurrentPrice = () => {
-    const selectedVariant = product.variants.find(
-      (v) => v.color === selectedColor,
-    );
-    const selectedSizeData = selectedVariant.sizes.find(
-      (s) => s.size === selectedSize,
-    );
-    return selectedSizeData.price;
+    if (!selectedSize) return product.base_price || 0;
+
+    // Get the first variant's sizes since we're only considering size for price
+    const sizes = product.variants[0].sizes;
+    const selectedSizeData = sizes.find((s) => s.size === selectedSize);
+    return selectedSizeData ? selectedSizeData.price : product.base_price || 0;
   };
 
   // Handle thumbnail click
@@ -182,10 +231,48 @@ const SingleProduct = ({ product }) => {
                   </li>
                 </ul>
               </div>
+              <div className="mavo-product-discount">
+                <div className="discount">
+                  <span>-25% oFF</span>
+                </div>
+                <div className="discount-sale flex items-center">
+                  <span>Discount Sale end in:</span>
+                  <div id="countdown">
+                    <ul className="flex items-center justify-center gap-4">
+                      <li className="">
+                        <span className="text-2xl font-bold">
+                          {timeLeft.days}
+                        </span>
+                        <span className="text-sm">D</span>
+                      </li>
+                      <li className="">
+                        <span className="text-2xl font-bold">
+                          {timeLeft.hours}
+                        </span>
+                        <span className="text-sm">H</span>
+                      </li>
+                      <li className="">
+                        <span className="text-2xl font-bold">
+                          {timeLeft.minutes}
+                        </span>
+                        <span className="text-sm">M</span>
+                      </li>
+                      <li className="">
+                        <span className="text-2xl font-bold">
+                          {timeLeft.seconds}
+                        </span>
+                        <span className="text-sm">S</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div className="mavo-product-size my-[30px] space-y-[20px]">
                 <div className="space-x-2">
                   <span>Size:</span>
-                  <span className="size">{selectedSize}</span>
+                  <span className="size">
+                    {selectedSize || "Select a size"}
+                  </span>
                 </div>
                 <div className="flex gap-2">
                   {product.variants[0].sizes.map((size, index) => (
@@ -206,7 +293,9 @@ const SingleProduct = ({ product }) => {
               </div>
               <div className="mavo-product-color mavo-mb-20">
                 <span className="mavo-color">Colour : </span>
-                <span className="mavo-lapisblue">{selectedColor}</span>
+                <span className="mavo-lapisblue">
+                  {selectedColor || "Select a color"}
+                </span>
                 <div className="product-color mavo-mt-10 d-flex gap-3">
                   {product.variants.map((variant, index) => (
                     <button
@@ -253,6 +342,11 @@ const SingleProduct = ({ product }) => {
                   </button>
                 </div>
               </div>
+              {errorMessage && (
+                <div className="text-red-500 mb-4 font-josefin-sans">
+                  {errorMessage}
+                </div>
+              )}
               <div className="mavo-product-categorie mavo-mb-20 d-flex align-items-center justify-content-between">
                 <div className="categorie">
                   <span>Categories:</span>

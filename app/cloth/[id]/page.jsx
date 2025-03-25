@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import BreadCrumbClothDetails from "@/components/cloth/product-details/BreadCrumbClothDetails";
-import SingleProduct from "@/components/cloth/product-details/SingleProduct";
 import { useProducts } from "@/hooks/useProducts";
 import { useParams } from "next/navigation";
+import BreadCrumbClothDetails from "@/components/cloth/product-details/BreadCrumbClothDetails";
+import SingleProduct from "@/components/cloth/product-details/SingleProduct";
 
 function Page() {
   const { id } = useParams();
