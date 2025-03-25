@@ -123,12 +123,15 @@ const SingleProduct = ({ product }) => {
 
   // Get current price based on selected size
   const getCurrentPrice = () => {
-    if (!selectedSize) return product.base_price || 0;
+    if (!selectedSize) return (product.base_price || 0) * quantity;
 
     // Get the first variant's sizes since we're only considering size for price
     const sizes = product.variants[0].sizes;
     const selectedSizeData = sizes.find((s) => s.size === selectedSize);
-    return selectedSizeData ? selectedSizeData.price : product.base_price || 0;
+
+    return selectedSizeData
+      ? selectedSizeData.price * quantity
+      : (product.base_price || 0) * quantity;
   };
 
   // Handle thumbnail click
