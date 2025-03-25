@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Plus, Minus } from "lucide-react";
 import toast from "react-hot-toast";
+import LoaderSpinner from "@/components/LoaderSpinner";
 
 const useCountdown = (initialDays) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -62,8 +63,8 @@ const SingleProduct = ({ product }) => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
+  const [loadedImages, setLoadedImages] = useState(new Set());
   const [isImageLoading, setIsImageLoading] = useState(false);
-  const [isFirstThumbnailClick, setIsFirstThumbnailClick] = useState(true);
   const timeLeft = useCountdown(10);
 
   const handleColorSelect = (variant, index) => {
@@ -132,12 +133,12 @@ const SingleProduct = ({ product }) => {
 
   // Handle thumbnail click
   const handleThumbnailClick = (index) => {
-    if (isFirstThumbnailClick) {
-      setIsImageLoading(true);
-      setIsFirstThumbnailClick(false);
+    if (!loadedImages.has(index)) {
+      setIsImageLoading(true); // Show loader if image has not been loaded before
     }
 
     setSelectedImage(index);
+
     // Find the variant that contains this image
     const variantIndex = product.variants.findIndex((variant) =>
       variant.images.includes(allImages[index]),
@@ -169,7 +170,7 @@ const SingleProduct = ({ product }) => {
                       <div className="relative w-full aspect-square">
                         {isImageLoading && selectedImage === index && (
                           <div className="absolute inset-0 bg-gray-100 animate-pulse flex items-center justify-center">
-                            <div className="w-8 h-8 border-4 border-black border-t-transparent rounded-full animate-spin"></div>
+                            <LoaderSpinner />
                           </div>
                         )}
                         <Image
@@ -179,7 +180,10 @@ const SingleProduct = ({ product }) => {
                           height={500}
                           quality={100}
                           className="w-full h-full object-cover"
-                          onLoadingComplete={() => setIsImageLoading(false)}
+                          onLoadingComplete={() => {
+                            setLoadedImages((prev) => new Set(prev).add(index)); // Mark image as loaded
+                            setIsImageLoading(false); // Hide loader after image loads
+                          }}
                         />
                       </div>
                       <div className="mavo-single-product-view">
