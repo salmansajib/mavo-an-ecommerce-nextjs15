@@ -6,56 +6,7 @@ import { Navigation } from "swiper/modules";
 import { Plus, Minus } from "lucide-react";
 import toast from "react-hot-toast";
 import LoaderSpinner from "@/components/LoaderSpinner";
-
-const useCountdown = (initialDays) => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: initialDays,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const totalSeconds =
-        timeLeft.days * 24 * 60 * 60 +
-        timeLeft.hours * 60 * 60 +
-        timeLeft.minutes * 60 +
-        timeLeft.seconds;
-
-      if (totalSeconds <= 0) {
-        // Reset to 10 days when countdown reaches 0
-        return {
-          days: 10,
-          hours: 0,
-          minutes: 0,
-          seconds: 0,
-        };
-      }
-
-      const newTotalSeconds = totalSeconds - 1;
-      const days = Math.floor(newTotalSeconds / (24 * 60 * 60));
-      const hours = Math.floor((newTotalSeconds % (24 * 60 * 60)) / (60 * 60));
-      const minutes = Math.floor((newTotalSeconds % (60 * 60)) / 60);
-      const seconds = newTotalSeconds % 60;
-
-      return {
-        days,
-        hours,
-        minutes,
-        seconds,
-      };
-    };
-
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [timeLeft]);
-
-  return timeLeft;
-};
+import useCountdown from "@/hooks/useCountdown";
 
 const SingleProduct = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(null);
@@ -65,7 +16,9 @@ const SingleProduct = ({ product }) => {
   const [errorMessage, setErrorMessage] = useState("");
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [isImageLoading, setIsImageLoading] = useState(false);
+
   const timeLeft = useCountdown(10);
+  const allImages = product.variants.flatMap((variant) => variant.images);
 
   const handleColorSelect = (variant, index) => {
     setSelectedColor(variant.color);
@@ -83,6 +36,34 @@ const SingleProduct = ({ product }) => {
       setQuantity((prev) => prev + 1);
     } else if (type === "decrease" && quantity > 1) {
       setQuantity((prev) => prev - 1);
+    }
+  };
+
+  const getCurrentPrice = () => {
+    if (!selectedSize) return (product.base_price || 0) * quantity;
+
+    // Get the first variant's sizes since we're only considering size for price
+    const sizes = product.variants[0].sizes;
+    const selectedSizeData = sizes.find((s) => s.size === selectedSize);
+
+    return selectedSizeData
+      ? selectedSizeData.price * quantity
+      : (product.base_price || 0) * quantity;
+  };
+
+  const handleThumbnailClick = (index) => {
+    if (!loadedImages.has(index)) {
+      setIsImageLoading(true); // Show loader if image has not been loaded before
+    }
+
+    setSelectedImage(index);
+
+    // Find the variant that contains this image
+    const variantIndex = product.variants.findIndex((variant) =>
+      variant.images.includes(allImages[index]),
+    );
+    if (variantIndex !== -1) {
+      setSelectedColor(product.variants[variantIndex].color);
     }
   };
 
@@ -116,39 +97,6 @@ const SingleProduct = ({ product }) => {
         fontFamily: "var(--font-josefin-sans)",
       },
     });
-  };
-
-  // Get all images from all variants
-  const allImages = product.variants.flatMap((variant) => variant.images);
-
-  // Get current price based on selected size
-  const getCurrentPrice = () => {
-    if (!selectedSize) return (product.base_price || 0) * quantity;
-
-    // Get the first variant's sizes since we're only considering size for price
-    const sizes = product.variants[0].sizes;
-    const selectedSizeData = sizes.find((s) => s.size === selectedSize);
-
-    return selectedSizeData
-      ? selectedSizeData.price * quantity
-      : (product.base_price || 0) * quantity;
-  };
-
-  // Handle thumbnail click
-  const handleThumbnailClick = (index) => {
-    if (!loadedImages.has(index)) {
-      setIsImageLoading(true); // Show loader if image has not been loaded before
-    }
-
-    setSelectedImage(index);
-
-    // Find the variant that contains this image
-    const variantIndex = product.variants.findIndex((variant) =>
-      variant.images.includes(allImages[index]),
-    );
-    if (variantIndex !== -1) {
-      setSelectedColor(product.variants[variantIndex].color);
-    }
   };
 
   return (

@@ -5,13 +5,18 @@ import { useParams } from "next/navigation";
 import BreadCrumbClothDetails from "@/components/cloth/product-details/BreadCrumbClothDetails";
 import SingleProduct from "@/components/cloth/product-details/SingleProduct";
 import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
+import LoaderSpinner from "@/components/LoaderSpinner";
 
 function Page() {
   const { id } = useParams();
   const { data: products, isLoading, error } = useProducts();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="w-full min-h-screen flex items-center justify-center">
+        <LoaderSpinner />
+      </div>
+    );
   }
 
   if (error) {
