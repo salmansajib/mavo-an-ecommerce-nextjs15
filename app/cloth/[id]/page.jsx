@@ -4,6 +4,7 @@ import { useProducts } from "@/hooks/useProducts";
 import { useParams } from "next/navigation";
 import BreadCrumbClothDetails from "@/components/cloth/product-details/BreadCrumbClothDetails";
 import SingleProduct from "@/components/cloth/product-details/SingleProduct";
+import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
 
 function Page() {
   const { id } = useParams();
@@ -27,6 +28,7 @@ function Page() {
     <>
       <BreadCrumbClothDetails />
       <SingleProduct product={product} />
+      <ShopInfoCloth />
     </>
   );
 }

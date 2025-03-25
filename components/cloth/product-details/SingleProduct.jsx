@@ -23,9 +23,9 @@ const useCountdown = (initialDays) => {
         timeLeft.seconds;
 
       if (totalSeconds <= 0) {
-        // Reset to 30 days when countdown reaches 0
+        // Reset to 10 days when countdown reaches 0
         return {
-          days: 30,
+          days: 10,
           hours: 0,
           minutes: 0,
           seconds: 0,
@@ -62,7 +62,7 @@ const SingleProduct = ({ product }) => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
-  const timeLeft = useCountdown(30);
+  const timeLeft = useCountdown(10);
 
   const handleColorSelect = (variant, index) => {
     setSelectedColor(variant.color);
@@ -251,25 +251,25 @@ const SingleProduct = ({ product }) => {
                   <span>Discount Sale end in:</span>
                   <div id="countdown">
                     <ul className="flex items-center justify-center gap-4">
-                      <li className="">
+                      <li className="space-x-1">
                         <span className="text-2xl font-bold">
                           {timeLeft.days}
                         </span>
                         <span className="text-sm">D</span>
                       </li>
-                      <li className="">
+                      <li className="space-x-1">
                         <span className="text-2xl font-bold">
                           {timeLeft.hours}
                         </span>
                         <span className="text-sm">H</span>
                       </li>
-                      <li className="">
+                      <li className="space-x-1">
                         <span className="text-2xl font-bold">
                           {timeLeft.minutes}
                         </span>
                         <span className="text-sm">M</span>
                       </li>
-                      <li className="">
+                      <li className="space-x-1">
                         <span className="text-2xl font-bold">
                           {timeLeft.seconds}
                         </span>
