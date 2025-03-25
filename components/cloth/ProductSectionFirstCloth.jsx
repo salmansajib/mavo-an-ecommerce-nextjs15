@@ -59,19 +59,19 @@ const ProductSectionFirstCloth = () => {
                       <div className="mavo-product-social">
                         <ul>
                           <li>
-                            <Link href="/#">
+                            <Link href={`/cloth/${product.id}`}>
                               <i className="flaticon-eye"></i>
                               <span>Quick view</span>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/#">
+                            <Link href={`/cloth/${product.id}`}>
                               <i className="flaticon-star"></i>
                               <span> Compare</span>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/#">
+                            <Link href={`/cloth/${product.id}`}>
                               <i className="flaticon-sort"></i>
                               <span> Wishlist</span>
                             </Link>
@@ -79,7 +79,7 @@ const ProductSectionFirstCloth = () => {
                         </ul>
                       </div>
                       <div className="mavo-product-cart">
-                        <Link href="/#">Buy Now</Link>
+                        <Link href={`/cloth/${product.id}`}>Buy Now</Link>
                       </div>
                     </div>
                     <div className="mavo-product-meta mavo-mt-35 mavo-mb-40">
@@ -87,7 +87,7 @@ const ProductSectionFirstCloth = () => {
                         <h6>
                           <Link
                             className="mavo-product-title-link"
-                            href="/#"
+                            href={`/cloth/${product.id}`}
                             style={{
                               textDecoration: "none",
                               fontSize: "20px",

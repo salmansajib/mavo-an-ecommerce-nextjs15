@@ -42,19 +42,19 @@ const ProductListCloth = ({ products }) => {
               <div className="mavo-product-social">
                 <ul>
                   <li>
-                    <Link href={`/product/${product.id}`}>
+                    <Link href={`/cloth/${product.id}`}>
                       <i className="flaticon-eye"></i>
                       <span> Quick view</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/product/${product.id}`}>
+                    <Link href={`/cloth/${product.id}`}>
                       <i className="flaticon-star"></i>
                       <span> Compare</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/product/${product.id}`}>
+                    <Link href={`/cloth/${product.id}`}>
                       <i className="flaticon-sort"></i>
                       <span> Wishlist</span>
                     </Link>
@@ -62,7 +62,7 @@ const ProductListCloth = ({ products }) => {
                 </ul>
               </div>
               <div className="mavo-product-cart">
-                <Link href="/checkout">Buy Now</Link>
+                <Link href={`/cloth/${product.id}`}>Buy Now</Link>
               </div>
             </div>
             <div className="mavo-product-meta mavo-mt-35 mavo-mb-40">
@@ -70,7 +70,7 @@ const ProductListCloth = ({ products }) => {
                 <h6>
                   <Link
                     className="mavo-product-title-link"
-                    href={`/product/${product.id}`}
+                    href={`/cloth/${product.id}`}
                   >
                     {product.name}
                   </Link>
