@@ -49,10 +49,29 @@ const SingleProduct = ({ product }) => {
   };
 
   const handleAddToCart = () => {
-    if (!selectedColor || !selectedSize) {
-      setErrorMessage("Please select the size and color!");
+    if (!selectedColor && !selectedSize) {
+      setErrorMessage("Please select a size and a color!");
       return;
     }
+    if (!selectedColor) {
+      setErrorMessage("Please select a color!");
+      return;
+    }
+    if (!selectedSize) {
+      setErrorMessage("Please select a size!");
+      return;
+    }
+
+    const selectedVariant = product.variants.find(
+      (v) => v.color === selectedColor,
+    );
+    if (!selectedVariant) {
+      console.error("Selected variant not found!");
+      return;
+    }
+
+    const selectedImageSrc =
+      selectedVariant.images[selectedImage] || selectedVariant.images[0];
 
     const cartItem = {
       id: product.id,
@@ -61,10 +80,8 @@ const SingleProduct = ({ product }) => {
       quantity,
       selectedColor,
       selectedSize,
-      image: product.variants.find((v) => v.color === selectedColor).images[
-        selectedImage
-      ],
-      variant: product.variants.find((v) => v.color === selectedColor),
+      image: selectedImageSrc,
+      variant: selectedVariant,
     };
 
     console.log("Added to cart:", cartItem);
