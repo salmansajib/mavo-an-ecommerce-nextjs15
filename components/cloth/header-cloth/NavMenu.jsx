@@ -47,7 +47,7 @@ const NavMenu = ({
             </Link>
             {item.subItems && (
               <ul
-                className={`absolute top-12 left-1.5 w-[210px] bg-white transition-opacity duration-300 ${
+                className={`absolute top-12 left-1.5 w-auto whitespace-nowrap bg-white transition-opacity duration-300 ${
                   hoveredMenuId === item.id
                     ? "opacity-100"
                     : "opacity-0 pointer-events-none"
@@ -61,7 +61,7 @@ const NavMenu = ({
                   >
                     <Link
                       href={subitem.link}
-                      className="text-sm font-medium text-[#000] uppercase hover:translate-x-1.5 transition-transform duration-400 ease-in-out w-full py-2.5 px-[20px] flex items-center gap-2"
+                      className="text-[14px] font-semibold text-[#000] uppercase hover:translate-x-1.5 transition-transform duration-400 ease-in-out py-[12px] pl-[17px] pr-[80px] flex items-center gap-2"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
