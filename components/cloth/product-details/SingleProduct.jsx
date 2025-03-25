@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Plus, Minus } from "lucide-react";
+import toast from "react-hot-toast";
 
 const useCountdown = (initialDays) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -101,6 +102,17 @@ const SingleProduct = ({ product }) => {
 
     // This will be replaced with Redux dispatch
     console.log("Adding to cart:", cartItem);
+
+    // Show success toast
+    toast.success("Product added to cart successfully!", {
+      duration: 3000,
+      position: "top-center",
+      style: {
+        background: "#000",
+        color: "#fff",
+        fontFamily: "var(--font-josefin-sans)",
+      },
+    });
   };
 
   // Get all images from all variants
@@ -233,7 +245,7 @@ const SingleProduct = ({ product }) => {
               </div>
               <div className="mavo-product-discount">
                 <div className="discount">
-                  <span>-25% oFF</span>
+                  <span>25% oFF</span>
                 </div>
                 <div className="discount-sale flex items-center">
                   <span>Discount Sale end in:</span>
