@@ -15,7 +15,7 @@ const SimilarProducts = ({ similarProducts }) => {
         <Swiper
           modules={[Autoplay]}
           spaceBetween={25}
-          slidesPerView={4}
+          slidesPerView={5}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
