@@ -117,10 +117,7 @@ const SingleProduct = ({ product }) => {
                 <h3>{product.name}</h3>
               </div>
 
-              <ProductPriceSection
-                price={getCurrentPrice()}
-                quantity={quantity}
-              />
+              <ProductPriceSection price={getCurrentPrice()} />
 
               <ProductMetaInfo />
               <ProductDiscountTimer />
