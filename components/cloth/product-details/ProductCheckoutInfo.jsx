@@ -18,14 +18,14 @@ const ProductCheckoutInfo = () => {
       <div className="mavo-product-delivery mavo-mb-20 flex items-center gap-2">
         <img src="/images/icons/delivery-van-1.png" alt="png" />
         <div>
-          <span>Estimated Delivery :</span>
+          <span className="!capitalize">Estimated Delivery :</span>
           <span>3 - 5 Working Days</span>
         </div>
       </div>
       <div className="mavo-product-delivery mavo-mb-25 flex items-center gap-2">
         <img src="/images/icons/box.png" alt="png" />
         <div>
-          <span>Free Shipping & Returns :</span>
+          <span className="!capitalize">Free Shipping & Returns :</span>
           <span>On all orders over $199.00</span>
         </div>
       </div>

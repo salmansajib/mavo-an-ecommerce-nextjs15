@@ -17,11 +17,11 @@ const SimilarProducts = ({ similarProducts }) => {
           spaceBetween={25}
           slidesPerView={5}
           autoplay={{
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           loop={true}
-          speed={1000}
+          speed={1200}
           breakpoints={{
             320: { slidesPerView: 1 },
             640: { slidesPerView: 2 },

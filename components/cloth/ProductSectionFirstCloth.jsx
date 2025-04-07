@@ -86,7 +86,7 @@ const ProductSectionFirstCloth = () => {
                       <div className="mavo-product-category">
                         <h6>
                           <Link
-                            className="mavo-product-title-link"
+                            className="mavo-product-title-link hover:!text-[#c9a96b]"
                             href={`/cloth/${product.id}`}
                             style={{
                               textDecoration: "none",
@@ -122,7 +122,7 @@ const ProductSectionFirstCloth = () => {
                             {product.variants.map((variant, index) => (
                               <li key={index}>
                                 <Link
-                                  href="/#"
+                                  href={`/cloth/${product.id}`}
                                   style={{
                                     display: "block",
                                     width: "20px",

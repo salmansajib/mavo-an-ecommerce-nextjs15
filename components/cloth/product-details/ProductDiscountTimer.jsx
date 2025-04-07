@@ -2,7 +2,7 @@ import React from "react";
 import useCountdown from "@/hooks/useCountdown";
 
 const ProductDiscountTimer = () => {
-  const timeLeft = useCountdown(10);
+  const timeLeft = useCountdown(7);
 
   return (
     <div className="mavo-product-discount">
@@ -19,7 +19,7 @@ const ProductDiscountTimer = () => {
               { label: "M", value: timeLeft.minutes },
               { label: "S", value: timeLeft.seconds },
             ].map((item, index) => (
-              <li key={index} className="space-x-1">
+              <li key={index} className="space-x-1 w-[60px]">
                 <span className="text-2xl font-bold">{item.value}</span>
                 <span className="text-sm">{item.label}</span>
               </li>
