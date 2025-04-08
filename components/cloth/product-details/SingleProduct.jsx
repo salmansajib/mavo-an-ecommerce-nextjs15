@@ -1,5 +1,9 @@
 "use client";
 import React, { useState } from "react";
+
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/slices/clothSlice";
+
 import toast from "react-hot-toast";
 import ProductGallery from "./ProductGallery";
 import ProductRating from "./ProductRating";
@@ -18,6 +22,8 @@ const SingleProduct = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
   const [selectedImage, setSelectedImage] = useState(0);
+
+  const dispatch = useDispatch();
 
   const getCurrentPrice = () => {
     if (!selectedSize) return (product.base_price || 0) * quantity;
@@ -49,44 +55,8 @@ const SingleProduct = ({ product }) => {
   };
 
   const handleAddToCart = () => {
-    if (!selectedColor && !selectedSize) {
-      setErrorMessage("Please select a size and a color!");
-      return;
-    }
-    if (!selectedColor) {
-      setErrorMessage("Please select a color!");
-      return;
-    }
-    if (!selectedSize) {
-      setErrorMessage("Please select a size!");
-      return;
-    }
-
-    const selectedVariant = product.variants.find(
-      (v) => v.color === selectedColor,
-    );
-    if (!selectedVariant) {
-      console.error("Selected variant not found!");
-      return;
-    }
-
-    const selectedImageSrc =
-      selectedVariant.images[selectedImage] || selectedVariant.images[0];
-
-    const cartItem = {
-      id: product.id,
-      name: product.name,
-      price: getCurrentPrice(),
-      quantity,
-      selectedColor,
-      selectedSize,
-      image: selectedImageSrc,
-      variant: selectedVariant,
-    };
-
-    console.log("Added to cart:", cartItem);
-
-    toast.success("Product added to cart successfully!", {
+    // Configuration for toast notifications
+    const toastConfig = {
       duration: 3000,
       position: "top-center",
       style: {
@@ -94,7 +64,63 @@ const SingleProduct = ({ product }) => {
         color: "#fff",
         fontFamily: "var(--font-josefin-sans)",
       },
-    });
+    };
+
+    // Validation helper function
+    const validateSelection = () => {
+      if (!selectedColor && !selectedSize) {
+        return "Please select a size and a color!";
+      }
+      if (!selectedColor) {
+        return "Please select a color!";
+      }
+      if (!selectedSize) {
+        return "Please select a size!";
+      }
+      return null;
+    };
+
+    try {
+      // Perform validation
+      const errorMessage = validateSelection();
+      if (errorMessage) {
+        setErrorMessage(errorMessage);
+        toast.error(errorMessage, toastConfig);
+        return;
+      }
+
+      // Get selected variant with error handling
+      const selectedVariant = product.variants.find(
+        (v) => v.color === selectedColor,
+      );
+      if (!selectedVariant) {
+        throw new Error("Selected product variant not found!");
+      }
+
+      // Prepare cart item
+      const cartItem = {
+        id: product.id,
+        name: product.name,
+        price: getCurrentPrice(),
+        quantity,
+        selectedColor,
+        selectedSize,
+        image:
+          selectedVariant.images[selectedImage] || selectedVariant.images[0],
+        variant: selectedVariant,
+      };
+
+      // Add to cart and notify success
+      dispatch(addToCart(cartItem));
+      toast.success("Product added to cart successfully!", toastConfig);
+    } catch (error) {
+      // Unified error handling
+      const message =
+        error.message || "Failed to add product to cart. Please try again.";
+      console.error("Error adding to cart:", error);
+      setErrorMessage(message);
+      toast.error(message, toastConfig);
+    }
   };
 
   return (
