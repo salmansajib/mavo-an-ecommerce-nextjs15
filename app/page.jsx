@@ -1,6 +1,6 @@
 import BannerCloth from "@/components/cloth/BannerCloth";
 import CollectionCloth from "@/components/cloth/CollectionCloth";
-import FooterCloth from "@/components/cloth/FooterCloth";
+import FooterCloth from "@/components/cloth/footer-cloth/FooterCloth";
 import TestimonialCloth from "@/components/cloth/TestimonialCloth";
 import CollectionSectionCloth from "@/components/cloth/CollectionSectionCloth";
 import ProductSectionFirstCloth from "@/components/cloth/ProductSectionFirstCloth";
