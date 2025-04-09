@@ -6,11 +6,14 @@ import NavMenu from "./NavMenu";
 import LangCurrencyMenu from "./LangCurrencyMenu";
 import { Search, Star, ShoppingBag, UserRound } from "lucide-react";
 import { navItems, langAndCurrencyItems } from "@/data/navigationData";
+import { useSelector } from "react-redux";
 
 const DesktopHeader = ({ setIsSearchFormActive }) => {
   const [hoveredMenuId, setHoveredMenuId] = useState(null);
   const [hoverLangAndCurrencyId, setHoverLangAndCurrencyId] = useState(null);
   const [visibleSvgId, setVisibleSvgId] = useState(null);
+
+  const totalQuantity = useSelector((state) => state.cloth.totalQuantity || 0);
 
   return (
     <div className="hidden w-full lg:flex items-center justify-between">
@@ -44,7 +47,7 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
           </Link>
           <Link href="/" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
-              0
+              {totalQuantity}
             </span>
             <ShoppingBag
               size={18}

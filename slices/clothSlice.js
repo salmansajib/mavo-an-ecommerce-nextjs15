@@ -1,9 +1,40 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  cartItems: [], // Array to store cart items
-  totalQuantity: 0, // Total number of items in the cart
-  totalPrice: 0, // Total price of items in the cart
+const loadState = () => {
+  try {
+    const serializedState = localStorage.getItem("cart");
+    if (serializedState === null) {
+      return {
+        cartItems: [],
+        totalQuantity: 0,
+        totalPrice: 0,
+      };
+    }
+    const state = JSON.parse(serializedState);
+    return {
+      cartItems: Array.isArray(state.cartItems) ? state.cartItems : [],
+      totalQuantity: state.totalQuantity || 0,
+      totalPrice: state.totalPrice || 0,
+    };
+  } catch (err) {
+    console.error("Error loading state from localStorage:", err);
+    return {
+      cartItems: [],
+      totalQuantity: 0,
+      totalPrice: 0,
+    };
+  }
+};
+
+const initialState = loadState();
+
+const saveState = (state) => {
+  try {
+    const serializedState = JSON.stringify(state);
+    localStorage.setItem("cart", serializedState);
+  } catch (err) {
+    console.error("Could not save to localStorage:", err);
+  }
 };
 
 const clothSlice = createSlice({
@@ -12,6 +43,13 @@ const clothSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const newItem = action.payload;
+      if (!newItem || !newItem.id) {
+        console.error("Invalid payload:", newItem);
+        return;
+      }
+      if (!Array.isArray(state.cartItems)) {
+        state.cartItems = [];
+      }
       const existingItem = state.cartItems.find(
         (item) =>
           item.id === newItem.id &&
@@ -20,15 +58,12 @@ const clothSlice = createSlice({
       );
 
       if (existingItem) {
-        // If the item already exists in the cart (same id, color, and size), update its quantity
         existingItem.quantity += newItem.quantity;
         existingItem.price += newItem.price;
       } else {
-        // If it's a new item, add it to the cart
         state.cartItems.push(newItem);
       }
 
-      // Update total quantity and total price
       state.totalQuantity = state.cartItems.reduce(
         (total, item) => total + item.quantity,
         0,
@@ -37,10 +72,15 @@ const clothSlice = createSlice({
         (total, item) => total + item.price,
         0,
       );
+
+      saveState(state);
     },
 
     removeFromCart: (state, action) => {
-      const itemToRemove = action.payload; // Expecting { id, selectedColor, selectedSize }
+      const itemToRemove = action.payload;
+      if (!Array.isArray(state.cartItems)) {
+        state.cartItems = [];
+      }
       const itemIndex = state.cartItems.findIndex(
         (item) =>
           item.id === itemToRemove.id &&
@@ -49,10 +89,8 @@ const clothSlice = createSlice({
       );
 
       if (itemIndex !== -1) {
-        // Remove the item from cartItems array
         state.cartItems.splice(itemIndex, 1);
 
-        // Recalculate totals
         state.totalQuantity = state.cartItems.reduce(
           (total, item) => total + item.quantity,
           0,
@@ -62,13 +100,15 @@ const clothSlice = createSlice({
           0,
         );
       }
+
+      saveState(state);
     },
 
     clearCart: (state) => {
-      // Reset state to initial values
       state.cartItems = [];
       state.totalQuantity = 0;
       state.totalPrice = 0;
+      saveState(state);
     },
   },
 });

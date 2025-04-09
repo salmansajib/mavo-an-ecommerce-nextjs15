@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/slices/clothSlice";
-
 import toast from "react-hot-toast";
+
 import ProductGallery from "./ProductGallery";
 import ProductRating from "./ProductRating";
 import ProductPriceSection from "./ProductPriceSection";

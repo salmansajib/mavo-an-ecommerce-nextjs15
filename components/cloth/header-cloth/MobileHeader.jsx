@@ -3,8 +3,11 @@ import React from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import { Search, ShoppingBag, Menu } from "lucide-react";
+import { useSelector } from "react-redux";
 
 const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
+  const totalQuantity = useSelector((state) => state.cloth.totalQuantity || 0);
+
   return (
     <div className="w-full lg:hidden">
       <div className="flex items-center justify-between">
@@ -18,7 +21,7 @@ const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
           </button>
           <Link href="/" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
-              0
+              {totalQuantity}
             </span>
             <ShoppingBag
               size={18}

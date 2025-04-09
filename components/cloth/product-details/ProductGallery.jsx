@@ -86,8 +86,8 @@ const ProductGallery = ({
                   alt={`${product.name} - Image ${index + 1}`}
                   width={500}
                   height={500}
-                  quality={100}
-                  className="w-full h-full object-cover"
+                  quality={70}
+                  className="w-full h-auto object-cover"
                   onLoadingComplete={() => {
                     setLoadedImages((prev) => new Set(prev).add(index));
                     setIsImageLoading(false);
