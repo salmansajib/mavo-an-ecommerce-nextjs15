@@ -4,7 +4,7 @@ import Link from "next/link";
 import Logo from "@/components/Logo";
 import NavMenu from "./NavMenu";
 import LangCurrencyMenu from "./LangCurrencyMenu";
-import { Search, Star, ShoppingBag, UserRound } from "lucide-react";
+import Icon from "@/components/Icon";
 import { navItems, langAndCurrencyItems } from "@/data/navigationData";
 import { useSelector } from "react-redux";
 
@@ -31,33 +31,37 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
       <div className="flex items-center gap-[25px] xl:gap-[40px]">
         <div className="flex items-center gap-4">
           <button onClick={() => setIsSearchFormActive(true)}>
-            <Search
+            <Icon
+              name="Search"
               size={18}
-              className="text-[#fff] hover:text-[#ce2d37] transition-colors duration-300 ease-in-out"
+              className="text-[#fff] hover:text-[#ce2d37]"
             />
           </button>
           <Link href="/" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
               0
             </span>
-            <Star
+            <Icon
+              name="Star"
               size={18}
-              className="text-[#fff] hover:text-[#ce2d37] transition-colors duration-300 ease-in-out"
+              className="text-[#fff] hover:text-[#ce2d37]"
             />
           </Link>
           <Link href="/" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
               {totalQuantity}
             </span>
-            <ShoppingBag
+            <Icon
+              name="ShoppingBag"
               size={18}
-              className="text-[#fff] hover:text-[#ce2d37] transition-colors duration-300 ease-in-out"
+              className="text-[#fff] hover:text-[#ce2d37]"
             />
           </Link>
           <Link href="/">
-            <UserRound
+            <Icon
+              name="UserRound"
               size={18}
-              className="text-[#fff] hover:text-[#ce2d37] transition-colors duration-300 ease-in-out"
+              className="text-[#fff] hover:text-[#ce2d37]"
             />
           </Link>
         </div>

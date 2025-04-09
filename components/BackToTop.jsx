@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import { MoveUp } from "lucide-react";
+import Icon from "./Icon";
 
 const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,7 +52,7 @@ const BackToTop = () => {
         duration: 0.3,
       }}
     >
-      <MoveUp size={22} />
+      <Icon name="MoveUp" size={22} />
     </motion.button>
   );
 };
