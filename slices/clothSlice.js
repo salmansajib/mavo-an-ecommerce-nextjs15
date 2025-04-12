@@ -2,6 +2,15 @@ import { createSlice } from "@reduxjs/toolkit";
 
 // load state from local storage if exists
 const loadState = () => {
+  if (typeof window === "undefined") {
+    // Running on the server
+    return {
+      cartItems: [],
+      totalQuantity: 0,
+      totalPrice: 0,
+    };
+  }
+
   try {
     const serializedState = localStorage.getItem("cart");
     if (serializedState === null) {
@@ -31,6 +40,8 @@ const initialState = loadState();
 
 // save state to local storage
 const saveState = (state) => {
+  if (typeof window === "undefined") return;
+
   try {
     const serializedState = JSON.stringify(state);
     localStorage.setItem("cart", serializedState);
