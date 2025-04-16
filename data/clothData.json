@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "cloth1",
     "name": "PolarWrap Jacket",
     "type": "Clothing",
     "base_price": 150.0,
@@ -13,10 +13,10 @@
         "color": "Pale Orange",
         "color_code": "#FFA756",
         "sizes": [
-          { "size": "S", "price": 155.0 },
-          { "size": "M", "price": 165.0 },
-          { "size": "L", "price": 175.0 },
-          { "size": "XL", "price": 185.0 }
+          { "size": "S", "price": 155.0, "stock": 50 },
+          { "size": "M", "price": 165.0, "stock": 50 },
+          { "size": "L", "price": 175.0, "stock": 50 },
+          { "size": "XL", "price": 185.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/1.jpg"]
       },
@@ -24,10 +24,10 @@
         "color": "Lemon Grass",
         "color_code": "#9B9E8F",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/2.jpg"]
       },
@@ -35,10 +35,10 @@
         "color": "Tahiti Gold",
         "color_code": "#E28913",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/3.jpg"]
       },
@@ -46,10 +46,10 @@
         "color": "Pirate Gold",
         "color_code": "#BA7F03",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/4.jpg"]
       }
@@ -118,7 +118,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "cloth2",
     "name": "SharpStyle Blazer",
     "type": "Clothing",
     "base_price": 340.0,
@@ -131,10 +131,10 @@
         "color": "Aircraft Exterior Grey",
         "color_code": "#7D7F7D",
         "sizes": [
-          { "size": "S", "price": 330.0 },
-          { "size": "M", "price": 340.0 },
-          { "size": "L", "price": 350.0 },
-          { "size": "XL", "price": 360.0 }
+          { "size": "S", "price": 330.0, "stock": 50 },
+          { "size": "M", "price": 340.0, "stock": 50 },
+          { "size": "L", "price": 350.0, "stock": 50 },
+          { "size": "XL", "price": 360.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/1.jpg"]
       },
@@ -142,10 +142,10 @@
         "color": "Centaur Brown",
         "color_code": "#9E6B46",
         "sizes": [
-          { "size": "S", "price": 335.0 },
-          { "size": "M", "price": 345.0 },
-          { "size": "L", "price": 355.0 },
-          { "size": "XL", "price": 365.0 }
+          { "size": "S", "price": 335.0, "stock": 50 },
+          { "size": "M", "price": 345.0, "stock": 50 },
+          { "size": "L", "price": 355.0, "stock": 50 },
+          { "size": "XL", "price": 365.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/2.jpg"]
       },
@@ -153,10 +153,10 @@
         "color": "Roman Silver",
         "color_code": "#838996",
         "sizes": [
-          { "size": "S", "price": 335.0 },
-          { "size": "M", "price": 345.0 },
-          { "size": "L", "price": 355.0 },
-          { "size": "XL", "price": 365.0 }
+          { "size": "S", "price": 335.0, "stock": 50 },
+          { "size": "M", "price": 345.0, "stock": 50 },
+          { "size": "L", "price": 355.0, "stock": 50 },
+          { "size": "XL", "price": 365.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/3.jpg"]
       },
@@ -164,10 +164,10 @@
         "color": "China Blue",
         "color_code": "#546A90",
         "sizes": [
-          { "size": "S", "price": 335.0 },
-          { "size": "M", "price": 345.0 },
-          { "size": "L", "price": 355.0 },
-          { "size": "XL", "price": 365.0 }
+          { "size": "S", "price": 335.0, "stock": 50 },
+          { "size": "M", "price": 345.0, "stock": 50 },
+          { "size": "L", "price": 355.0, "stock": 50 },
+          { "size": "XL", "price": 365.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/4.jpg"]
       }
@@ -237,7 +237,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "cloth3",
     "name": "Comfy Hoodie",
     "type": "Clothing",
     "base_price": 120.0,
@@ -250,10 +250,10 @@
         "color": "Black Oak",
         "color_code": "#3E3B32",
         "sizes": [
-          { "size": "S", "price": 130.0 },
-          { "size": "M", "price": 140.0 },
-          { "size": "L", "price": 150.0 },
-          { "size": "XL", "price": 160.0 }
+          { "size": "S", "price": 130.0, "stock": 50 },
+          { "size": "M", "price": 140.0, "stock": 50 },
+          { "size": "L", "price": 150.0, "stock": 50 },
+          { "size": "XL", "price": 160.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/1.jpg"]
       },
@@ -261,10 +261,10 @@
         "color": "Dark Summoning",
         "color_code": "#2A1A2D",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/2.jpg"]
       },
@@ -272,10 +272,10 @@
         "color": "Yellow Orange",
         "color_code": "#FFB84D",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/3.jpg"]
       },
@@ -283,10 +283,10 @@
         "color": "Hello Spring",
         "color_code": "#9AEE7E",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/4.jpg"]
       }
@@ -356,7 +356,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "cloth4",
     "name": "TrendFleece Jumper",
     "type": "Clothing",
     "base_price": 120.0,
@@ -369,10 +369,10 @@
         "color": "Charcoal Grey",
         "color_code": "#3C4142",
         "sizes": [
-          { "size": "S", "price": 130.0 },
-          { "size": "M", "price": 140.0 },
-          { "size": "L", "price": 150.0 },
-          { "size": "XL", "price": 160.0 }
+          { "size": "S", "price": 130.0, "stock": 50 },
+          { "size": "M", "price": 140.0, "stock": 50 },
+          { "size": "L", "price": 150.0, "stock": 50 },
+          { "size": "XL", "price": 160.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/1.jpg"]
       },
@@ -380,10 +380,10 @@
         "color": "Metallic Bronze",
         "color_code": "#49371B",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/2.jpg"]
       },
@@ -391,10 +391,10 @@
         "color": "Clam Shell",
         "color_code": "#D4B6AF",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/3.jpg"]
       },
@@ -402,10 +402,10 @@
         "color": "Carolina Blue",
         "color_code": "#99BADD",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/4.jpg"]
       }
@@ -475,7 +475,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "cloth5",
     "name": "Prestige Dress Shirt",
     "type": "Clothing",
     "base_price": 80.0,
@@ -488,10 +488,10 @@
         "color": "Rhino",
         "color_code": "#2E3F62",
         "sizes": [
-          { "size": "S", "price": 90.0 },
-          { "size": "M", "price": 95.0 },
-          { "size": "L", "price": 100.0 },
-          { "size": "XL", "price": 105.0 }
+          { "size": "S", "price": 90.0, "stock": 50 },
+          { "size": "M", "price": 95.0, "stock": 50 },
+          { "size": "L", "price": 100.0, "stock": 50 },
+          { "size": "XL", "price": 105.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/1.jpg"]
       },
@@ -499,10 +499,10 @@
         "color": "Thunder",
         "color_code": "#33292F",
         "sizes": [
-          { "size": "S", "price": 92.0 },
-          { "size": "M", "price": 97.0 },
-          { "size": "L", "price": 102.0 },
-          { "size": "XL", "price": 107.0 }
+          { "size": "S", "price": 92.0, "stock": 50 },
+          { "size": "M", "price": 97.0, "stock": 50 },
+          { "size": "L", "price": 102.0, "stock": 50 },
+          { "size": "XL", "price": 107.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/2.jpg"]
       },
@@ -510,10 +510,10 @@
         "color": "Racing Green",
         "color_code": "#0E0E18",
         "sizes": [
-          { "size": "S", "price": 92.0 },
-          { "size": "M", "price": 97.0 },
-          { "size": "L", "price": 102.0 },
-          { "size": "XL", "price": 107.0 }
+          { "size": "S", "price": 92.0, "stock": 50 },
+          { "size": "M", "price": 97.0, "stock": 50 },
+          { "size": "L", "price": 102.0, "stock": 50 },
+          { "size": "XL", "price": 107.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/3.jpg"]
       },
@@ -521,10 +521,10 @@
         "color": "White Smoke",
         "color_code": "#F5F5F5",
         "sizes": [
-          { "size": "S", "price": 92.0 },
-          { "size": "M", "price": 97.0 },
-          { "size": "L", "price": 102.0 },
-          { "size": "XL", "price": 107.0 }
+          { "size": "S", "price": 92.0, "stock": 50 },
+          { "size": "M", "price": 97.0, "stock": 50 },
+          { "size": "L", "price": 102.0, "stock": 50 },
+          { "size": "XL", "price": 107.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/4.jpg"]
       }
@@ -591,7 +591,7 @@
     ]
   },
   {
-    "id": "6",
+    "id": "cloth6",
     "name": "RebelCoat",
     "type": "Clothing",
     "base_price": 180.0,
@@ -604,10 +604,10 @@
         "color": "Pine Cone",
         "color_code": "#6A6051",
         "sizes": [
-          { "size": "S", "price": 190.0 },
-          { "size": "M", "price": 200.0 },
-          { "size": "L", "price": 210.0 },
-          { "size": "XL", "price": 220.0 }
+          { "size": "S", "price": 190.0, "stock": 50 },
+          { "size": "M", "price": 200.0, "stock": 50 },
+          { "size": "L", "price": 210.0, "stock": 50 },
+          { "size": "XL", "price": 220.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/1.jpg"]
       },
@@ -615,10 +615,10 @@
         "color": "Forest Green",
         "color_code": "#347235",
         "sizes": [
-          { "size": "S", "price": 195.0 },
-          { "size": "M", "price": 205.0 },
-          { "size": "L", "price": 215.0 },
-          { "size": "XL", "price": 225.0 }
+          { "size": "S", "price": 195.0, "stock": 50 },
+          { "size": "M", "price": 205.0, "stock": 50 },
+          { "size": "L", "price": 215.0, "stock": 50 },
+          { "size": "XL", "price": 225.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/2.jpg"]
       },
@@ -626,10 +626,10 @@
         "color": "Whiskey",
         "color_code": "#D59A6F",
         "sizes": [
-          { "size": "S", "price": 195.0 },
-          { "size": "M", "price": 205.0 },
-          { "size": "L", "price": 215.0 },
-          { "size": "XL", "price": 225.0 }
+          { "size": "S", "price": 195.0, "stock": 50 },
+          { "size": "M", "price": 205.0, "stock": 50 },
+          { "size": "L", "price": 215.0, "stock": 50 },
+          { "size": "XL", "price": 225.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/3.jpg"]
       },
@@ -637,10 +637,10 @@
         "color": "Cloudy Grey",
         "color_code": "#6D6968",
         "sizes": [
-          { "size": "S", "price": 195.0 },
-          { "size": "M", "price": 205.0 },
-          { "size": "L", "price": 215.0 },
-          { "size": "XL", "price": 225.0 }
+          { "size": "S", "price": 195.0, "stock": 50 },
+          { "size": "M", "price": 205.0, "stock": 50 },
+          { "size": "L", "price": 215.0, "stock": 50 },
+          { "size": "XL", "price": 225.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/4.jpg"]
       }
@@ -710,7 +710,7 @@
     ]
   },
   {
-    "id": "7",
+    "id": "cloth7",
     "name": "PolarWrap Jacket",
     "type": "Clothing",
     "base_price": 150.0,
@@ -723,10 +723,10 @@
         "color": "Pale Orange",
         "color_code": "#FFA756",
         "sizes": [
-          { "size": "S", "price": 155.0 },
-          { "size": "M", "price": 165.0 },
-          { "size": "L", "price": 175.0 },
-          { "size": "XL", "price": 185.0 }
+          { "size": "S", "price": 155.0, "stock": 50 },
+          { "size": "M", "price": 165.0, "stock": 50 },
+          { "size": "L", "price": 175.0, "stock": 50 },
+          { "size": "XL", "price": 185.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/1.jpg"]
       },
@@ -734,10 +734,10 @@
         "color": "Lemon Grass",
         "color_code": "#9B9E8F",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/2.jpg"]
       },
@@ -745,10 +745,10 @@
         "color": "Tahiti Gold",
         "color_code": "#E28913",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/3.jpg"]
       },
@@ -756,10 +756,10 @@
         "color": "Pirate Gold",
         "color_code": "#BA7F03",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/4.jpg"]
       }
@@ -828,7 +828,7 @@
     ]
   },
   {
-    "id": "8",
+    "id": "cloth8",
     "name": "Gown",
     "type": "Clothing",
     "base_price": 200.0,
@@ -841,10 +841,10 @@
         "color": "Dark Raspberry",
         "color_code": "#A50B5E",
         "sizes": [
-          { "size": "S", "price": 210.0 },
-          { "size": "M", "price": 220.0 },
-          { "size": "L", "price": 230.0 },
-          { "size": "XL", "price": 240.0 }
+          { "size": "S", "price": 210.0, "stock": 50 },
+          { "size": "M", "price": 220.0, "stock": 50 },
+          { "size": "L", "price": 230.0, "stock": 50 },
+          { "size": "XL", "price": 240.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/1.jpg"]
       },
@@ -852,10 +852,10 @@
         "color": "Purple Iris",
         "color_code": "#571B7E",
         "sizes": [
-          { "size": "S", "price": 215.0 },
-          { "size": "M", "price": 225.0 },
-          { "size": "L", "price": 235.0 },
-          { "size": "XL", "price": 245.0 }
+          { "size": "S", "price": 215.0, "stock": 50 },
+          { "size": "M", "price": 225.0, "stock": 50 },
+          { "size": "L", "price": 235.0, "stock": 50 },
+          { "size": "XL", "price": 245.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/2.jpg"]
       },
@@ -863,10 +863,10 @@
         "color": "Rosso Corsa",
         "color_code": "#D40000",
         "sizes": [
-          { "size": "S", "price": 215.0 },
-          { "size": "M", "price": 225.0 },
-          { "size": "L", "price": 235.0 },
-          { "size": "XL", "price": 245.0 }
+          { "size": "S", "price": 215.0, "stock": 50 },
+          { "size": "M", "price": 225.0, "stock": 50 },
+          { "size": "L", "price": 235.0, "stock": 50 },
+          { "size": "XL", "price": 245.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/3.jpg"]
       },
@@ -874,10 +874,10 @@
         "color": "Sapphire",
         "color_code": "#2138AB",
         "sizes": [
-          { "size": "S", "price": 215.0 },
-          { "size": "M", "price": 225.0 },
-          { "size": "L", "price": 235.0 },
-          { "size": "XL", "price": 245.0 }
+          { "size": "S", "price": 215.0, "stock": 50 },
+          { "size": "M", "price": 225.0, "stock": 50 },
+          { "size": "L", "price": 235.0, "stock": 50 },
+          { "size": "XL", "price": 245.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/4.jpg"]
       }
@@ -947,7 +947,7 @@
     ]
   },
   {
-    "id": "9",
+    "id": "cloth9",
     "name": "PolarWrap Jacket",
     "type": "Clothing",
     "base_price": 150.0,
@@ -960,10 +960,10 @@
         "color": "Pale Orange",
         "color_code": "#FFA756",
         "sizes": [
-          { "size": "S", "price": 155.0 },
-          { "size": "M", "price": 165.0 },
-          { "size": "L", "price": 175.0 },
-          { "size": "XL", "price": 185.0 }
+          { "size": "S", "price": 155.0, "stock": 50 },
+          { "size": "M", "price": 165.0, "stock": 50 },
+          { "size": "L", "price": 175.0, "stock": 50 },
+          { "size": "XL", "price": 185.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/1.jpg"]
       },
@@ -971,10 +971,10 @@
         "color": "Lemon Grass",
         "color_code": "#9B9E8F",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/2.jpg"]
       },
@@ -982,10 +982,10 @@
         "color": "Tahiti Gold",
         "color_code": "#E28913",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/3.jpg"]
       },
@@ -993,10 +993,10 @@
         "color": "Pirate Gold",
         "color_code": "#BA7F03",
         "sizes": [
-          { "size": "S", "price": 160.0 },
-          { "size": "M", "price": 170.0 },
-          { "size": "L", "price": 180.0 },
-          { "size": "XL", "price": 190.0 }
+          { "size": "S", "price": 160.0, "stock": 50 },
+          { "size": "M", "price": 170.0, "stock": 50 },
+          { "size": "L", "price": 180.0, "stock": 50 },
+          { "size": "XL", "price": 190.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/winter-jacket/4.jpg"]
       }
@@ -1065,7 +1065,7 @@
     ]
   },
   {
-    "id": "10",
+    "id": "cloth10",
     "name": "SharpStyle Blazer",
     "type": "Clothing",
     "base_price": 340.0,
@@ -1078,10 +1078,10 @@
         "color": "Aircraft Exterior Grey",
         "color_code": "#7D7F7D",
         "sizes": [
-          { "size": "S", "price": 330.0 },
-          { "size": "M", "price": 340.0 },
-          { "size": "L", "price": 350.0 },
-          { "size": "XL", "price": 360.0 }
+          { "size": "S", "price": 330.0, "stock": 50 },
+          { "size": "M", "price": 340.0, "stock": 50 },
+          { "size": "L", "price": 350.0, "stock": 50 },
+          { "size": "XL", "price": 360.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/1.jpg"]
       },
@@ -1089,10 +1089,10 @@
         "color": "Centaur Brown",
         "color_code": "#9E6B46",
         "sizes": [
-          { "size": "S", "price": 335.0 },
-          { "size": "M", "price": 345.0 },
-          { "size": "L", "price": 355.0 },
-          { "size": "XL", "price": 365.0 }
+          { "size": "S", "price": 335.0, "stock": 50 },
+          { "size": "M", "price": 345.0, "stock": 50 },
+          { "size": "L", "price": 355.0, "stock": 50 },
+          { "size": "XL", "price": 365.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/2.jpg"]
       },
@@ -1100,10 +1100,10 @@
         "color": "Roman Silver",
         "color_code": "#838996",
         "sizes": [
-          { "size": "S", "price": 335.0 },
-          { "size": "M", "price": 345.0 },
-          { "size": "L", "price": 355.0 },
-          { "size": "XL", "price": 365.0 }
+          { "size": "S", "price": 335.0, "stock": 50 },
+          { "size": "M", "price": 345.0, "stock": 50 },
+          { "size": "L", "price": 355.0, "stock": 50 },
+          { "size": "XL", "price": 365.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/3.jpg"]
       },
@@ -1111,10 +1111,10 @@
         "color": "China Blue",
         "color_code": "#546A90",
         "sizes": [
-          { "size": "S", "price": 335.0 },
-          { "size": "M", "price": 345.0 },
-          { "size": "L", "price": 355.0 },
-          { "size": "XL", "price": 365.0 }
+          { "size": "S", "price": 335.0, "stock": 50 },
+          { "size": "M", "price": 345.0, "stock": 50 },
+          { "size": "L", "price": 355.0, "stock": 50 },
+          { "size": "XL", "price": 365.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/blazer/4.jpg"]
       }
@@ -1184,7 +1184,7 @@
     ]
   },
   {
-    "id": "11",
+    "id": "cloth11",
     "name": "Comfy Hoodie",
     "type": "Clothing",
     "base_price": 120.0,
@@ -1197,10 +1197,10 @@
         "color": "Black Oak",
         "color_code": "#3E3B32",
         "sizes": [
-          { "size": "S", "price": 130.0 },
-          { "size": "M", "price": 140.0 },
-          { "size": "L", "price": 150.0 },
-          { "size": "XL", "price": 160.0 }
+          { "size": "S", "price": 130.0, "stock": 50 },
+          { "size": "M", "price": 140.0, "stock": 50 },
+          { "size": "L", "price": 150.0, "stock": 50 },
+          { "size": "XL", "price": 160.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/1.jpg"]
       },
@@ -1208,10 +1208,10 @@
         "color": "Dark Summoning",
         "color_code": "#2A1A2D",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/2.jpg"]
       },
@@ -1219,10 +1219,10 @@
         "color": "Yellow Orange",
         "color_code": "#FFB84D",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/3.jpg"]
       },
@@ -1230,10 +1230,10 @@
         "color": "Hello Spring",
         "color_code": "#9AEE7E",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/hoodie/4.jpg"]
       }
@@ -1303,7 +1303,7 @@
     ]
   },
   {
-    "id": "12",
+    "id": "cloth12",
     "name": "TrendFleece Jumper",
     "type": "Clothing",
     "base_price": 120.0,
@@ -1316,10 +1316,10 @@
         "color": "Charcoal Grey",
         "color_code": "#3C4142",
         "sizes": [
-          { "size": "S", "price": 130.0 },
-          { "size": "M", "price": 140.0 },
-          { "size": "L", "price": 150.0 },
-          { "size": "XL", "price": 160.0 }
+          { "size": "S", "price": 130.0, "stock": 50 },
+          { "size": "M", "price": 140.0, "stock": 50 },
+          { "size": "L", "price": 150.0, "stock": 50 },
+          { "size": "XL", "price": 160.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/1.jpg"]
       },
@@ -1327,10 +1327,10 @@
         "color": "Metallic Bronze",
         "color_code": "#49371B",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/2.jpg"]
       },
@@ -1338,10 +1338,10 @@
         "color": "Clam Shell",
         "color_code": "#D4B6AF",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/3.jpg"]
       },
@@ -1349,10 +1349,10 @@
         "color": "Carolina Blue",
         "color_code": "#99BADD",
         "sizes": [
-          { "size": "S", "price": 135.0 },
-          { "size": "M", "price": 145.0 },
-          { "size": "L", "price": 155.0 },
-          { "size": "XL", "price": 165.0 }
+          { "size": "S", "price": 135.0, "stock": 50 },
+          { "size": "M", "price": 145.0, "stock": 50 },
+          { "size": "L", "price": 155.0, "stock": 50 },
+          { "size": "XL", "price": 165.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/jumper/4.jpg"]
       }
@@ -1422,7 +1422,7 @@
     ]
   },
   {
-    "id": "13",
+    "id": "cloth13",
     "name": "Prestige Dress Shirt",
     "type": "Clothing",
     "base_price": 80.0,
@@ -1435,10 +1435,10 @@
         "color": "Rhino",
         "color_code": "#2E3F62",
         "sizes": [
-          { "size": "S", "price": 90.0 },
-          { "size": "M", "price": 95.0 },
-          { "size": "L", "price": 100.0 },
-          { "size": "XL", "price": 105.0 }
+          { "size": "S", "price": 90.0, "stock": 50 },
+          { "size": "M", "price": 95.0, "stock": 50 },
+          { "size": "L", "price": 100.0, "stock": 50 },
+          { "size": "XL", "price": 105.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/1.jpg"]
       },
@@ -1446,10 +1446,10 @@
         "color": "Thunder",
         "color_code": "#33292F",
         "sizes": [
-          { "size": "S", "price": 92.0 },
-          { "size": "M", "price": 97.0 },
-          { "size": "L", "price": 102.0 },
-          { "size": "XL", "price": 107.0 }
+          { "size": "S", "price": 92.0, "stock": 50 },
+          { "size": "M", "price": 97.0, "stock": 50 },
+          { "size": "L", "price": 102.0, "stock": 50 },
+          { "size": "XL", "price": 107.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/2.jpg"]
       },
@@ -1457,10 +1457,10 @@
         "color": "Racing Green",
         "color_code": "#0E0E18",
         "sizes": [
-          { "size": "S", "price": 92.0 },
-          { "size": "M", "price": 97.0 },
-          { "size": "L", "price": 102.0 },
-          { "size": "XL", "price": 107.0 }
+          { "size": "S", "price": 92.0, "stock": 50 },
+          { "size": "M", "price": 97.0, "stock": 50 },
+          { "size": "L", "price": 102.0, "stock": 50 },
+          { "size": "XL", "price": 107.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/3.jpg"]
       },
@@ -1468,10 +1468,10 @@
         "color": "White Smoke",
         "color_code": "#F5F5F5",
         "sizes": [
-          { "size": "S", "price": 92.0 },
-          { "size": "M", "price": 97.0 },
-          { "size": "L", "price": 102.0 },
-          { "size": "XL", "price": 107.0 }
+          { "size": "S", "price": 92.0, "stock": 50 },
+          { "size": "M", "price": 97.0, "stock": 50 },
+          { "size": "L", "price": 102.0, "stock": 50 },
+          { "size": "XL", "price": 107.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/prestige-dress-shirt/4.jpg"]
       }
@@ -1538,7 +1538,7 @@
     ]
   },
   {
-    "id": "14",
+    "id": "cloth14",
     "name": "RebelCoat",
     "type": "Clothing",
     "base_price": 180.0,
@@ -1551,10 +1551,10 @@
         "color": "Pine Cone",
         "color_code": "#6A6051",
         "sizes": [
-          { "size": "S", "price": 190.0 },
-          { "size": "M", "price": 200.0 },
-          { "size": "L", "price": 210.0 },
-          { "size": "XL", "price": 220.0 }
+          { "size": "S", "price": 190.0, "stock": 50 },
+          { "size": "M", "price": 200.0, "stock": 50 },
+          { "size": "L", "price": 210.0, "stock": 50 },
+          { "size": "XL", "price": 220.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/1.jpg"]
       },
@@ -1562,10 +1562,10 @@
         "color": "Forest Green",
         "color_code": "#347235",
         "sizes": [
-          { "size": "S", "price": 195.0 },
-          { "size": "M", "price": 205.0 },
-          { "size": "L", "price": 215.0 },
-          { "size": "XL", "price": 225.0 }
+          { "size": "S", "price": 195.0, "stock": 50 },
+          { "size": "M", "price": 205.0, "stock": 50 },
+          { "size": "L", "price": 215.0, "stock": 50 },
+          { "size": "XL", "price": 225.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/2.jpg"]
       },
@@ -1573,10 +1573,10 @@
         "color": "Whiskey",
         "color_code": "#D59A6F",
         "sizes": [
-          { "size": "S", "price": 195.0 },
-          { "size": "M", "price": 205.0 },
-          { "size": "L", "price": 215.0 },
-          { "size": "XL", "price": 225.0 }
+          { "size": "S", "price": 195.0, "stock": 50 },
+          { "size": "M", "price": 205.0, "stock": 50 },
+          { "size": "L", "price": 215.0, "stock": 50 },
+          { "size": "XL", "price": 225.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/3.jpg"]
       },
@@ -1584,10 +1584,10 @@
         "color": "Cloudy Grey",
         "color_code": "#6D6968",
         "sizes": [
-          { "size": "S", "price": 195.0 },
-          { "size": "M", "price": 205.0 },
-          { "size": "L", "price": 215.0 },
-          { "size": "XL", "price": 225.0 }
+          { "size": "S", "price": 195.0, "stock": 50 },
+          { "size": "M", "price": 205.0, "stock": 50 },
+          { "size": "L", "price": 215.0, "stock": 50 },
+          { "size": "XL", "price": 225.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/trench-coat/4.jpg"]
       }
@@ -1657,7 +1657,7 @@
     ]
   },
   {
-    "id": "15",
+    "id": "cloth15",
     "name": "PolarWrap Jacket",
     "type": "Clothing",
     "base_price": 150.0,
@@ -1775,7 +1775,7 @@
     ]
   },
   {
-    "id": "16",
+    "id": "cloth16",
     "name": "Gown",
     "type": "Clothing",
     "base_price": 200.0,
@@ -1788,10 +1788,10 @@
         "color": "Dark Raspberry",
         "color_code": "#A50B5E",
         "sizes": [
-          { "size": "S", "price": 210.0 },
-          { "size": "M", "price": 220.0 },
-          { "size": "L", "price": 230.0 },
-          { "size": "XL", "price": 240.0 }
+          { "size": "S", "price": 210.0, "stock": 50 },
+          { "size": "M", "price": 220.0, "stock": 50 },
+          { "size": "L", "price": 230.0, "stock": 50 },
+          { "size": "XL", "price": 240.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/1.jpg"]
       },
@@ -1799,10 +1799,10 @@
         "color": "Purple Iris",
         "color_code": "#571B7E",
         "sizes": [
-          { "size": "S", "price": 215.0 },
-          { "size": "M", "price": 225.0 },
-          { "size": "L", "price": 235.0 },
-          { "size": "XL", "price": 245.0 }
+          { "size": "S", "price": 215.0, "stock": 50 },
+          { "size": "M", "price": 225.0, "stock": 50 },
+          { "size": "L", "price": 235.0, "stock": 50 },
+          { "size": "XL", "price": 245.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/2.jpg"]
       },
@@ -1810,10 +1810,10 @@
         "color": "Rosso Corsa",
         "color_code": "#D40000",
         "sizes": [
-          { "size": "S", "price": 215.0 },
-          { "size": "M", "price": 225.0 },
-          { "size": "L", "price": 235.0 },
-          { "size": "XL", "price": 245.0 }
+          { "size": "S", "price": 215.0, "stock": 50 },
+          { "size": "M", "price": 225.0, "stock": 50 },
+          { "size": "L", "price": 235.0, "stock": 50 },
+          { "size": "XL", "price": 245.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/3.jpg"]
       },
@@ -1821,10 +1821,10 @@
         "color": "Sapphire",
         "color_code": "#2138AB",
         "sizes": [
-          { "size": "S", "price": 215.0 },
-          { "size": "M", "price": 225.0 },
-          { "size": "L", "price": 235.0 },
-          { "size": "XL", "price": 245.0 }
+          { "size": "S", "price": 215.0, "stock": 50 },
+          { "size": "M", "price": 225.0, "stock": 50 },
+          { "size": "L", "price": 235.0, "stock": 50 },
+          { "size": "XL", "price": 245.0, "stock": 50 }
         ],
         "images": ["/product-images/clothing/women-fashion/4.jpg"]
       }
