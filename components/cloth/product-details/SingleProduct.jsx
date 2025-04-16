@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import { useDispatch } from "react-redux";
-import { addToCart } from "@/slices/clothSlice";
+import { addToCart } from "@/slices/cartSlice";
 import toast from "react-hot-toast";
 
 import ProductGallery from "./ProductGallery";
@@ -19,21 +19,19 @@ import ProductCategoryTags from "./ProductCategoryTags";
 const SingleProduct = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
-  const [selectedImage, setSelectedImage] = useState(0);
 
   const dispatch = useDispatch();
 
   const getCurrentPrice = () => {
-    if (!selectedSize) return (product.base_price || 0) * quantity;
+    if (!selectedSize) return product.base_price || 0;
 
     const sizes = product.variants[0].sizes;
     const selectedSizeData = sizes.find((s) => s.size === selectedSize);
 
-    return selectedSizeData
-      ? selectedSizeData.price * quantity
-      : (product.base_price || 0) * quantity;
+    return selectedSizeData ? selectedSizeData.price : product.base_price || 0;
   };
 
   const handleColorSelect = (variant) => {
@@ -101,13 +99,17 @@ const SingleProduct = ({ product }) => {
       const cartItem = {
         id: product.id,
         name: product.name,
-        price: getCurrentPrice(),
+        unitPrice: getCurrentPrice(), // Optional: for display purposes
+        price: getCurrentPrice() * quantity, // Total price for the quantity
         quantity,
-        selectedColor,
-        selectedSize,
+        type: product.type || "clothing", // Add type, with fallback
+        attributes: {
+          color: selectedColor,
+          size: selectedSize,
+        },
         image:
           selectedVariant.images[selectedImage] || selectedVariant.images[0],
-        variant: selectedVariant,
+        // variant: selectedVariant,
       };
 
       // Add to cart and notify success

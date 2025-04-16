@@ -13,7 +13,7 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
   const [hoverLangAndCurrencyId, setHoverLangAndCurrencyId] = useState(null);
   const [visibleSvgId, setVisibleSvgId] = useState(null);
 
-  const totalQuantity = useSelector((state) => state.cloth.totalQuantity || 0);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity || 0);
 
   return (
     <div className="hidden w-full lg:flex items-center justify-between">

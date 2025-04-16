@@ -7,7 +7,7 @@ import Icon from "@/components/Icon";
 import { useSelector } from "react-redux";
 
 const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
-  const totalQuantity = useSelector((state) => state.cloth.totalQuantity || 0);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity || 0);
 
   return (
     <div className="w-full lg:hidden">

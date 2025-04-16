@@ -2,6 +2,7 @@
   {
     "id": "1",
     "name": "PolarWrap Jacket",
+    "type": "Clothing",
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Sale",
@@ -119,6 +120,7 @@
   {
     "id": "2",
     "name": "SharpStyle Blazer",
+    "type": "Clothing",
     "base_price": 340.0,
     "currency": "USD",
     "tags": "Hots",
@@ -237,6 +239,7 @@
   {
     "id": "3",
     "name": "Comfy Hoodie",
+    "type": "Clothing",
     "base_price": 120.0,
     "currency": "USD",
     "tags": "Best",
@@ -355,6 +358,7 @@
   {
     "id": "4",
     "name": "TrendFleece Jumper",
+    "type": "Clothing",
     "base_price": 120.0,
     "currency": "USD",
     "tags": null,
@@ -473,6 +477,7 @@
   {
     "id": "5",
     "name": "Prestige Dress Shirt",
+    "type": "Clothing",
     "base_price": 80.0,
     "currency": "USD",
     "tags": "Best",
@@ -588,6 +593,7 @@
   {
     "id": "6",
     "name": "RebelCoat",
+    "type": "Clothing",
     "base_price": 180.0,
     "currency": "USD",
     "tags": null,
@@ -706,6 +712,7 @@
   {
     "id": "7",
     "name": "PolarWrap Jacket",
+    "type": "Clothing",
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Hots",
@@ -823,6 +830,7 @@
   {
     "id": "8",
     "name": "Gown",
+    "type": "Clothing",
     "base_price": 200.0,
     "currency": "USD",
     "tags": "Sale",
@@ -941,6 +949,7 @@
   {
     "id": "9",
     "name": "PolarWrap Jacket",
+    "type": "Clothing",
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Sale",
@@ -1058,6 +1067,7 @@
   {
     "id": "10",
     "name": "SharpStyle Blazer",
+    "type": "Clothing",
     "base_price": 340.0,
     "currency": "USD",
     "tags": "Hots",
@@ -1176,6 +1186,7 @@
   {
     "id": "11",
     "name": "Comfy Hoodie",
+    "type": "Clothing",
     "base_price": 120.0,
     "currency": "USD",
     "tags": "Best",
@@ -1294,6 +1305,7 @@
   {
     "id": "12",
     "name": "TrendFleece Jumper",
+    "type": "Clothing",
     "base_price": 120.0,
     "currency": "USD",
     "tags": null,
@@ -1412,6 +1424,7 @@
   {
     "id": "13",
     "name": "Prestige Dress Shirt",
+    "type": "Clothing",
     "base_price": 80.0,
     "currency": "USD",
     "tags": "Best",
@@ -1527,6 +1540,7 @@
   {
     "id": "14",
     "name": "RebelCoat",
+    "type": "Clothing",
     "base_price": 180.0,
     "currency": "USD",
     "tags": null,
@@ -1645,6 +1659,7 @@
   {
     "id": "15",
     "name": "PolarWrap Jacket",
+    "type": "Clothing",
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Hots",
@@ -1762,6 +1777,7 @@
   {
     "id": "16",
     "name": "Gown",
+    "type": "Clothing",
     "base_price": 200.0,
     "currency": "USD",
     "tags": "Sale",
