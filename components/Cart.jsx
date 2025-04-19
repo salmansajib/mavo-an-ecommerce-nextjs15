@@ -1,12 +1,17 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateQuantity, removeFromCart } from "@/slices/cartSlice";
 import toast from "react-hot-toast";
 import Icon from "./Icon";
+import ConfirmDeleteModal from "./ConfirmDeleteModal";
 
 function Cart() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [itemToDelete, setItemToDelete] = useState(null);
+
   const dispatch = useDispatch();
   const { cartItems, totalPrice } = useSelector((state) => state.cart);
 
@@ -44,20 +49,33 @@ function Cart() {
     }
   };
 
-  const handleRemoveItem = (item) => {
-    try {
-      dispatch(
-        removeFromCart({
-          id: item.id,
-          type: item.type,
-          attributes: item.attributes,
-        }),
-      );
-      toast.success("Item removed from cart!", toastConfig);
-    } catch (error) {
-      console.error("Error removing item:", error);
-      toast.error("Failed to remove item.", toastConfig);
+  const openDeleteModal = (item) => {
+    setItemToDelete(item);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setItemToDelete(null);
+  };
+
+  const confirmRemoveItem = () => {
+    if (itemToDelete) {
+      try {
+        dispatch(
+          removeFromCart({
+            id: itemToDelete.id,
+            type: itemToDelete.type,
+            attributes: itemToDelete.attributes,
+          }),
+        );
+        toast.success("Item removed from cart!", toastConfig);
+      } catch (error) {
+        console.error("Error removing item:", error);
+        toast.error("Failed to remove item.", toastConfig);
+      }
     }
+    closeModal();
   };
 
   return (
@@ -132,7 +150,7 @@ function Cart() {
                           </div>
                           <div
                             className="mavo-delete-icon"
-                            onClick={() => handleRemoveItem(item)}
+                            onClick={() => openDeleteModal(item)}
                             style={{ cursor: "pointer" }}
                           >
                             <img src="/images/icons/delete.png" alt="Delete" />
@@ -201,6 +219,23 @@ function Cart() {
           </div>
         </div>
       </div>
+
+      {/* Delete Confirmation Modal */}
+      <ConfirmDeleteModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        onConfirm={confirmRemoveItem}
+        title="Confirm Deletion"
+        message={
+          <>
+            Are you sure you want to remove{" "}
+            <span className="font-bold">{itemToDelete?.name}</span> from your
+            cart?
+          </>
+        }
+        confirmText="Confirm"
+        cancelText="Cancel"
+      />
     </div>
   );
 }
