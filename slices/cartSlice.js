@@ -100,16 +100,46 @@ const cartSlice = createSlice({
       saveToLocalStorage(state);
     },
 
+    updateQuantity: (state, action) => {
+      const { id, type, attributes, newQuantity } = action.payload;
+
+      // Find the item to update
+      const item = state.cartItems.find(
+        (item) =>
+          item.id === id &&
+          item.type === type &&
+          JSON.stringify(item.attributes) === JSON.stringify(attributes),
+      );
+
+      if (item && newQuantity >= 1) {
+        // Update quantity and price
+        item.quantity = newQuantity;
+        item.price = item.unitPrice * newQuantity; // Recalculate total price for item
+
+        // Recalculate totals
+        state.totalQuantity = state.cartItems.reduce(
+          (total, item) => total + item.quantity,
+          0,
+        );
+        state.totalPrice = state.cartItems.reduce(
+          (total, item) => total + item.price,
+          0,
+        );
+
+        saveToLocalStorage(state);
+      }
+      // If newQuantity < 1, do nothing (handled in component with toast)
+    },
+
     clearCart: (state) => {
       state.cartItems = [];
       state.totalQuantity = 0;
       state.totalPrice = 0;
-
-      // Save updated state to localStorage
       saveToLocalStorage(state);
     },
   },
 });
 
-export const { addToCart, removeFromCart, clearCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, updateQuantity, clearCart } =
+  cartSlice.actions;
 export default cartSlice.reducer;

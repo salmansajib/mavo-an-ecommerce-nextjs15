@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 
-import { useDispatch } from "react-redux";
-import { addToCart } from "@/slices/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, updateQuantity } from "@/slices/cartSlice";
 import toast from "react-hot-toast";
 
 import ProductGallery from "./ProductGallery";
@@ -24,6 +24,7 @@ const SingleProduct = ({ product }) => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const dispatch = useDispatch();
+  const { cartItems } = useSelector((state) => state.cart);
 
   const getCurrentPrice = () => {
     if (!selectedSize) return product.base_price || 0;
@@ -45,10 +46,57 @@ const SingleProduct = ({ product }) => {
   };
 
   const handleQuantityChange = (type) => {
-    if (type === "increase") {
-      setQuantity((prev) => prev + 1);
-    } else if (type === "decrease" && quantity > 1) {
-      setQuantity((prev) => prev - 1);
+    // Check if item exists in cart with same id, type, color, and size
+    const existingItem = cartItems.find(
+      (item) =>
+        item.id === product.id &&
+        item.type === (product.type || "clothing") &&
+        item.attributes.color === selectedColor &&
+        item.attributes.size === selectedSize,
+    );
+
+    const toastConfig = {
+      duration: 3000,
+      position: "top-center",
+      style: {
+        background: "#000",
+        color: "#fff",
+        fontFamily: "var(--font-josefin-sans)",
+      },
+    };
+
+    if (existingItem) {
+      // Update quantity in cart
+      const newQuantity =
+        type === "increase"
+          ? existingItem.quantity + 1
+          : existingItem.quantity > 1
+          ? existingItem.quantity - 1
+          : 1;
+
+      try {
+        dispatch(
+          updateQuantity({
+            id: product.id,
+            type: product.type || "clothing",
+            attributes: { color: selectedColor, size: selectedSize },
+            newQuantity,
+          }),
+        );
+        toast.success("Cart quantity updated!", toastConfig);
+      } catch (error) {
+        console.error("Error updating quantity:", error);
+        toast.error("Failed to update quantity.", toastConfig);
+      }
+    } else {
+      // Update local quantity state for adding to cart
+      if (type === "increase") {
+        setQuantity((prev) => prev + 1);
+      } else if (type === "decrease" && quantity > 1) {
+        setQuantity((prev) => prev - 1);
+      } else {
+        toast.error("Minimum quantity is 1.", toastConfig);
+      }
     }
   };
 
@@ -99,7 +147,7 @@ const SingleProduct = ({ product }) => {
       const cartItem = {
         id: product.id,
         name: product.name,
-        unitPrice: getCurrentPrice(), // Optional: for display purposes
+        unitPrice: getCurrentPrice(),
         price: getCurrentPrice() * quantity, // Total price for the quantity
         quantity,
         type: product.type || "clothing", // Add type, with fallback
