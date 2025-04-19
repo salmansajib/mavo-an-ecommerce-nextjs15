@@ -47,7 +47,7 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
               className="text-[#fff] hover:text-[#ce2d37]"
             />
           </Link>
-          <Link href="/" className="relative">
+          <Link href="/cart" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
               {totalQuantity}
             </span>

@@ -5,7 +5,13 @@ import React from "react";
 export default function NotFound() {
   return (
     <div>
-      <BreadcrumbContact />
+      <BreadcrumbContact
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Page", href: "/some-page" },
+          { label: "404" },
+        ]}
+      />
       <NotFoundComponent />
     </div>
   );
