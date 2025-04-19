@@ -8,6 +8,8 @@ import {
   UserRound,
   Menu,
   MoveUp,
+  Plus,
+  Minus,
 } from "lucide-react";
 
 // Define a map of available icons
@@ -18,6 +20,8 @@ const icons = {
   UserRound,
   Menu,
   MoveUp,
+  Plus,
+  Minus,
 };
 
 const Icon = ({ name, size = 18, className = "", color, ...props }) => {

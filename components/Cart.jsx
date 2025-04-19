@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import { updateQuantity, removeFromCart } from "@/slices/cartSlice";
 import toast from "react-hot-toast";
+import Icon from "./Icon";
 
 function Cart() {
   const dispatch = useDispatch();
@@ -78,9 +79,7 @@ function Cart() {
                   {/* Map through cart items */}
                   {cartItems.map((item) => (
                     <div
-                      key={`${item.id}-${item.type}-${JSON.stringify(
-                        item.attributes,
-                      )}`}
+                      key={item.id}
                       className="mavo-cart-item mavo-pb-45 mavo-mb-45 d-flex align-items-center justify-content-between"
                     >
                       <div className="mavo-cart-text-box d-flex align-items-center">
@@ -92,11 +91,14 @@ function Cart() {
                             height={100}
                           />
                         </div>
-                        <div className="mavo-cart-text">
+                        <div className="mavo-cart-text flex flex-col items-start">
                           <h5 className="mavo-title">{item.name}</h5>
                           <span className="cart-price">
                             ${item.unitPrice.toFixed(2)}
                           </span>
+                          <div className="mavo-mt-10 font-josefin-sans">
+                            <span>Size:</span> {item.attributes.size}
+                          </div>
                           <div className="cart-color mavo-mt-10">
                             <span>Color:</span> {item.attributes.color}
                           </div>
@@ -112,20 +114,20 @@ function Cart() {
                               readOnly
                             />
                             <button
-                              className="minus"
+                              className="minus bg-gray-100 flex items-center justify-center"
                               onClick={() =>
                                 handleQuantityChange(item, item.quantity - 1)
                               }
                             >
-                              -
+                              <Icon name="Minus" size={16} />
                             </button>
                             <button
-                              className="plus"
+                              className="plus bg-gray-100 flex items-center justify-center"
                               onClick={() =>
                                 handleQuantityChange(item, item.quantity + 1)
                               }
                             >
-                              +
+                              <Icon name="Plus" size={16} />
                             </button>
                           </div>
                           <div
@@ -182,7 +184,7 @@ function Cart() {
               <div className="sub-title mavo-pl-120">:</div>
               <div className="sub-title body-color text-end">
                 Flat rate shipping to UK -<br />
-                Lindon <br />
+                London <br />
                 <span className="active-color"> Change address</span>
               </div>
             </div>

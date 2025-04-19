@@ -23,7 +23,7 @@ const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
           </button>
           <Link href="/cart" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
-              {totalQuantity}
+              {totalQuantity > 10 ? "10+" : totalQuantity}
             </span>
             <Icon
               name="ShoppingBag"
