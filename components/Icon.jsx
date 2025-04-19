@@ -1,5 +1,4 @@
 "use client";
-// src/components/Icon.jsx
 import { twMerge } from "tailwind-merge";
 import {
   Search,

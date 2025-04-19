@@ -73,7 +73,7 @@ function Cart() {
               </div>
 
               {cartItems.length === 0 ? (
-                <p>Your cart is empty</p>
+                <p className="font-josefin-sans">Your cart is empty</p>
               ) : (
                 <>
                   {/* Map through cart items */}
