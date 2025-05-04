@@ -7,6 +7,7 @@ import SingleProduct from "@/components/cloth/product-details/SingleProduct";
 import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
 import LoaderSpinner from "@/components/LoaderSpinner";
 import SimilarProducts from "@/components/cloth/product-details/SimilarProducts";
+import ProductTabs from "@/components/cloth/product-details/ProductTabs";
 
 function Page() {
   const { id } = useParams();
@@ -43,6 +44,7 @@ function Page() {
     <>
       <BreadCrumbClothDetails />
       <SingleProduct product={product} />
+      <ProductTabs product={product} />
       <SimilarProducts similarProducts={similarProducts} />
       <ShopInfoCloth />
     </>

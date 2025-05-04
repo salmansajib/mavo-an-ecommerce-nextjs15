@@ -65,20 +65,20 @@
         "Machine washable for easy care"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Olivia Smith",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "The jacket fits perfectly and keeps me warm even in freezing temperatures. The color is gorgeous, and I love the sleek fit. It’s definitely my go-to for winter now!",
@@ -88,7 +88,7 @@
       {
         "id": "r2",
         "user": "David Lee",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Good quality jacket for the price. It’s warm and comfortable, but I wish the sleeves were a bit longer. Still, a solid winter coat!",
@@ -98,7 +98,7 @@
       {
         "id": "r3",
         "user": "Sophia Turner",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "I love this jacket! It’s super warm, and the colors are exactly as shown in the pictures. It fits well and is perfect for winter hikes.",
@@ -108,7 +108,7 @@
       {
         "id": "r4",
         "user": "Lucas Green",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The jacket is nice, but the sizing runs a little small. I had to exchange for a larger size, but it’s been great since then. Still a good purchase!",
@@ -184,20 +184,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "Absolutely stunning blazer! The fit is perfect, and the fabric feels premium. I wore it to a business meeting, and I received so many compliments. Definitely a must-have in any wardrobe!",
@@ -207,7 +207,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Great quality and design! The blazer has a nice structure, but I wish the sleeves were a bit longer. Other than that, it's a fantastic addition to my collection.",
@@ -217,7 +217,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "This blazer exceeded my expectations! The fabric is soft yet structured, and it fits like a dream. Perfect for both casual and formal occasions. Highly recommend!",
@@ -227,7 +227,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The blazer looks great, but the sizing runs a bit small. I had to exchange it for a larger size. Otherwise, it's stylish and well-made.",
@@ -303,20 +303,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "Absolutely love this hoodie! The fit is perfect, and it’s so comfortable. I’ve worn it for everything from lounging at home to a quick outing, and it’s just the right amount of cozy and stylish. Highly recommend!",
@@ -326,7 +326,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Great hoodie! The fabric is soft and warm. However, I wish there was more variety in the sizes for a more relaxed fit. Overall, a great addition to my wardrobe.",
@@ -336,7 +336,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "This hoodie exceeded my expectations! The fabric feels luxurious, and the fit is great. I got it in Black Oak, and it goes with everything! Perfect for chilly evenings or casual weekends.",
@@ -346,7 +346,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The hoodie is nice, but I was expecting a little more stretch in the fabric. It feels a bit tight around the arms. I’m still keeping it though because it’s really comfy.",
@@ -422,20 +422,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "Absolutely stunning blazer! The fit is perfect, and the fabric feels premium. I wore it to a business meeting, and I received so many compliments. Definitely a must-have in any wardrobe!",
@@ -445,7 +445,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Great quality and design! The blazer has a nice structure, but I wish the sleeves were a bit longer. Other than that, it's a fantastic addition to my collection.",
@@ -455,7 +455,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "This blazer exceeded my expectations! The fabric is soft yet structured, and it fits like a dream. Perfect for both casual and formal occasions. Highly recommend!",
@@ -465,7 +465,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The blazer looks great, but the sizing runs a bit small. I had to exchange it for a larger size. Otherwise, it's stylish and well-made.",
@@ -541,17 +541,20 @@
         "Machine washable for effortless care"
       ],
       "washing_instructions": [
-        { "type": "Machine wash cold", "icon": "/icons/machine_wash.png" },
-        { "type": "Do not bleach", "icon": "/icons/do_not_bleach.png" },
-        { "type": "Iron at low temperature", "icon": "/icons/iron_low.png" },
-        { "type": "Do not tumble dry", "icon": "/icons/do_not_tumble_dry.png" }
+        { "type": "Machine wash cold", "icon": "/images/icons/tab-2.png" },
+        { "type": "Do not bleach", "icon": "/images/icons/tab-3.png" },
+        {
+          "type": "Iron at low temperature",
+          "icon": "/images/icons/tab-4.png"
+        },
+        { "type": "Do not tumble dry", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Michael Brown",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "12 days ago",
         "comment": "Excellent quality dress shirt! The fabric is soft, and it fits perfectly. I wear it for business meetings, and it always looks crisp. Highly recommend!",
@@ -561,7 +564,7 @@
       {
         "id": "r2",
         "user": "Sarah Miller",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "8 days ago",
         "comment": "Very nice dress shirt, but the sleeves were a bit longer than expected. Otherwise, the material feels premium, and it's great for formal occasions.",
@@ -571,7 +574,7 @@
       {
         "id": "r3",
         "user": "David Wilson",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "One of the best dress shirts I've owned. The fit is perfect, and it looks great under a blazer. Will be buying more colors!",
@@ -581,7 +584,7 @@
       {
         "id": "r4",
         "user": "Emma Thompson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "Good shirt, but I expected it to be slightly thicker. It’s more of a lightweight material, which is fine for warmer months.",
@@ -657,20 +660,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "This trench coat is a game changer! It fits like a glove and the wool-blend fabric feels luxurious. The Pine Cone color is a perfect neutral, and I’ve received tons of compliments. Worth every penny!",
@@ -680,7 +683,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Fantastic coat, looks amazing, and the fit is great. However, I had to size up because the sleeves felt a bit tight. Still, a great addition to my wardrobe.",
@@ -690,7 +693,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "The RebelCoat exceeded my expectations! The fit is perfect, and it keeps me warm and stylish. I’ve worn it during rainy weather, and the water-resistant finish works wonderfully. Highly recommend!",
@@ -700,7 +703,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "Nice coat, but it’s a bit heavier than I expected. The sizing is a bit snug, so I exchanged it for a larger size. Overall, it’s a stylish and durable coat.",
@@ -775,20 +778,20 @@
         "Machine washable for easy care"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Olivia Smith",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "The jacket fits perfectly and keeps me warm even in freezing temperatures. The color is gorgeous, and I love the sleek fit. It’s definitely my go-to for winter now!",
@@ -798,7 +801,7 @@
       {
         "id": "r2",
         "user": "David Lee",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Good quality jacket for the price. It’s warm and comfortable, but I wish the sleeves were a bit longer. Still, a solid winter coat!",
@@ -808,7 +811,7 @@
       {
         "id": "r3",
         "user": "Sophia Turner",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "I love this jacket! It’s super warm, and the colors are exactly as shown in the pictures. It fits well and is perfect for winter hikes.",
@@ -818,7 +821,7 @@
       {
         "id": "r4",
         "user": "Lucas Green",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The jacket is nice, but the sizing runs a little small. I had to exchange for a larger size, but it’s been great since then. Still a good purchase!",
@@ -894,20 +897,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Olivia Walker",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "12 days ago",
         "comment": "This gown is absolutely breathtaking! The fabric feels luxurious, and the fit is perfect. It made me feel like a queen at my event. Highly recommend for any special occasion!",
@@ -917,7 +920,7 @@
       {
         "id": "r2",
         "user": "James Parker",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "8 days ago",
         "comment": "The gown looks stunning, but the material could be slightly more breathable. I had to adjust it a few times during the event. Still, a beautiful piece overall.",
@@ -927,7 +930,7 @@
       {
         "id": "r3",
         "user": "Emily Carter",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "5 days ago",
         "comment": "Perfect fit and gorgeous design! I wore it to a gala, and everyone complimented me. The color is so vibrant, and it really stands out. Totally worth the price.",
@@ -937,7 +940,7 @@
       {
         "id": "r4",
         "user": "Sophia Williams",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "2 days ago",
         "comment": "The gown is beautiful, but the size ran a little big for me. I had to get it tailored, which was an added cost. However, the overall quality is great.",
@@ -1012,20 +1015,20 @@
         "Machine washable for easy care"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Olivia Smith",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "The jacket fits perfectly and keeps me warm even in freezing temperatures. The color is gorgeous, and I love the sleek fit. It’s definitely my go-to for winter now!",
@@ -1035,7 +1038,7 @@
       {
         "id": "r2",
         "user": "David Lee",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Good quality jacket for the price. It’s warm and comfortable, but I wish the sleeves were a bit longer. Still, a solid winter coat!",
@@ -1045,7 +1048,7 @@
       {
         "id": "r3",
         "user": "Sophia Turner",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "I love this jacket! It’s super warm, and the colors are exactly as shown in the pictures. It fits well and is perfect for winter hikes.",
@@ -1055,7 +1058,7 @@
       {
         "id": "r4",
         "user": "Lucas Green",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The jacket is nice, but the sizing runs a little small. I had to exchange for a larger size, but it’s been great since then. Still a good purchase!",
@@ -1131,20 +1134,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "Absolutely stunning blazer! The fit is perfect, and the fabric feels premium. I wore it to a business meeting, and I received so many compliments. Definitely a must-have in any wardrobe!",
@@ -1154,7 +1157,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Great quality and design! The blazer has a nice structure, but I wish the sleeves were a bit longer. Other than that, it's a fantastic addition to my collection.",
@@ -1164,7 +1167,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "This blazer exceeded my expectations! The fabric is soft yet structured, and it fits like a dream. Perfect for both casual and formal occasions. Highly recommend!",
@@ -1174,7 +1177,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The blazer looks great, but the sizing runs a bit small. I had to exchange it for a larger size. Otherwise, it's stylish and well-made.",
@@ -1250,20 +1253,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "Absolutely love this hoodie! The fit is perfect, and it’s so comfortable. I’ve worn it for everything from lounging at home to a quick outing, and it’s just the right amount of cozy and stylish. Highly recommend!",
@@ -1273,7 +1276,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Great hoodie! The fabric is soft and warm. However, I wish there was more variety in the sizes for a more relaxed fit. Overall, a great addition to my wardrobe.",
@@ -1283,7 +1286,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "This hoodie exceeded my expectations! The fabric feels luxurious, and the fit is great. I got it in Black Oak, and it goes with everything! Perfect for chilly evenings or casual weekends.",
@@ -1293,7 +1296,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The hoodie is nice, but I was expecting a little more stretch in the fabric. It feels a bit tight around the arms. I’m still keeping it though because it’s really comfy.",
@@ -1369,20 +1372,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "Absolutely stunning blazer! The fit is perfect, and the fabric feels premium. I wore it to a business meeting, and I received so many compliments. Definitely a must-have in any wardrobe!",
@@ -1392,7 +1395,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Great quality and design! The blazer has a nice structure, but I wish the sleeves were a bit longer. Other than that, it's a fantastic addition to my collection.",
@@ -1402,7 +1405,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "This blazer exceeded my expectations! The fabric is soft yet structured, and it fits like a dream. Perfect for both casual and formal occasions. Highly recommend!",
@@ -1412,7 +1415,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The blazer looks great, but the sizing runs a bit small. I had to exchange it for a larger size. Otherwise, it's stylish and well-made.",
@@ -1488,17 +1491,20 @@
         "Machine washable for effortless care"
       ],
       "washing_instructions": [
-        { "type": "Machine wash cold", "icon": "/icons/machine_wash.png" },
-        { "type": "Do not bleach", "icon": "/icons/do_not_bleach.png" },
-        { "type": "Iron at low temperature", "icon": "/icons/iron_low.png" },
-        { "type": "Do not tumble dry", "icon": "/icons/do_not_tumble_dry.png" }
+        { "type": "Machine wash cold", "icon": "/images/icons/tab-2.png" },
+        { "type": "Do not bleach", "icon": "/images/icons/tab-3.png" },
+        {
+          "type": "Iron at low temperature",
+          "icon": "/images/icons/tab-4.png"
+        },
+        { "type": "Do not tumble dry", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Michael Brown",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "12 days ago",
         "comment": "Excellent quality dress shirt! The fabric is soft, and it fits perfectly. I wear it for business meetings, and it always looks crisp. Highly recommend!",
@@ -1508,7 +1514,7 @@
       {
         "id": "r2",
         "user": "Sarah Miller",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "8 days ago",
         "comment": "Very nice dress shirt, but the sleeves were a bit longer than expected. Otherwise, the material feels premium, and it's great for formal occasions.",
@@ -1518,7 +1524,7 @@
       {
         "id": "r3",
         "user": "David Wilson",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "One of the best dress shirts I've owned. The fit is perfect, and it looks great under a blazer. Will be buying more colors!",
@@ -1528,7 +1534,7 @@
       {
         "id": "r4",
         "user": "Emma Thompson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "Good shirt, but I expected it to be slightly thicker. It’s more of a lightweight material, which is fine for warmer months.",
@@ -1604,20 +1610,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Emily Johnson",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "This trench coat is a game changer! It fits like a glove and the wool-blend fabric feels luxurious. The Pine Cone color is a perfect neutral, and I’ve received tons of compliments. Worth every penny!",
@@ -1627,7 +1633,7 @@
       {
         "id": "r2",
         "user": "Daniel Carter",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Fantastic coat, looks amazing, and the fit is great. However, I had to size up because the sleeves felt a bit tight. Still, a great addition to my wardrobe.",
@@ -1637,7 +1643,7 @@
       {
         "id": "r3",
         "user": "Sophia Williams",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "The RebelCoat exceeded my expectations! The fit is perfect, and it keeps me warm and stylish. I’ve worn it during rainy weather, and the water-resistant finish works wonderfully. Highly recommend!",
@@ -1647,7 +1653,7 @@
       {
         "id": "r4",
         "user": "James Anderson",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "Nice coat, but it’s a bit heavier than I expected. The sizing is a bit snug, so I exchanged it for a larger size. Overall, it’s a stylish and durable coat.",
@@ -1722,20 +1728,20 @@
         "Machine washable for easy care"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Olivia Smith",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "10 days ago",
         "comment": "The jacket fits perfectly and keeps me warm even in freezing temperatures. The color is gorgeous, and I love the sleek fit. It’s definitely my go-to for winter now!",
@@ -1745,7 +1751,7 @@
       {
         "id": "r2",
         "user": "David Lee",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "5 days ago",
         "comment": "Good quality jacket for the price. It’s warm and comfortable, but I wish the sleeves were a bit longer. Still, a solid winter coat!",
@@ -1755,7 +1761,7 @@
       {
         "id": "r3",
         "user": "Sophia Turner",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "3 days ago",
         "comment": "I love this jacket! It’s super warm, and the colors are exactly as shown in the pictures. It fits well and is perfect for winter hikes.",
@@ -1765,7 +1771,7 @@
       {
         "id": "r4",
         "user": "Lucas Green",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "1 day ago",
         "comment": "The jacket is nice, but the sizing runs a little small. I had to exchange for a larger size, but it’s been great since then. Still a good purchase!",
@@ -1841,20 +1847,20 @@
         "Dry clean only to maintain quality"
       ],
       "washing_instructions": [
-        { "type": "Machine wash", "icon": "/icons/machine_wash.png" },
-        { "type": "Hand wash, normal", "icon": "/icons/hand_wash.png" },
+        { "type": "Machine wash", "icon": "/images/icons/tab-2.png" },
+        { "type": "Hand wash, normal", "icon": "/images/icons/tab-3.png" },
         {
           "type": "Wash at below 95°C or 200°F",
-          "icon": "/icons/wash_95C.png"
+          "icon": "/images/icons/tab-4.png"
         },
-        { "type": "Do not wash", "icon": "/icons/do_not_wash.png" }
+        { "type": "Do not wash", "icon": "/images/icons/tab-5.png" }
       ]
     },
     "customer_reviews": [
       {
         "id": "r1",
         "user": "Olivia Walker",
-        "profile_image": "/images/user4.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 5,
         "date": "12 days ago",
         "comment": "This gown is absolutely breathtaking! The fabric feels luxurious, and the fit is perfect. It made me feel like a queen at my event. Highly recommend for any special occasion!",
@@ -1864,7 +1870,7 @@
       {
         "id": "r2",
         "user": "James Parker",
-        "profile_image": "/images/user5.jpg",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
         "rating": 4,
         "date": "8 days ago",
         "comment": "The gown looks stunning, but the material could be slightly more breathable. I had to adjust it a few times during the event. Still, a beautiful piece overall.",
@@ -1874,7 +1880,7 @@
       {
         "id": "r3",
         "user": "Emily Carter",
-        "profile_image": "/images/user6.jpg",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
         "rating": 5,
         "date": "5 days ago",
         "comment": "Perfect fit and gorgeous design! I wore it to a gala, and everyone complimented me. The color is so vibrant, and it really stands out. Totally worth the price.",
@@ -1884,7 +1890,7 @@
       {
         "id": "r4",
         "user": "Sophia Williams",
-        "profile_image": "/images/user7.jpg",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
         "rating": 3,
         "date": "2 days ago",
         "comment": "The gown is beautiful, but the size ran a little big for me. I had to get it tailored, which was an added cost. However, the overall quality is great.",
