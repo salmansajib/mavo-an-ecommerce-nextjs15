@@ -27,7 +27,7 @@ export default function ProductTabs({ product }) {
   };
 
   return (
-    <div className="mavo-tab-1 my-40">
+    <div className="mavo-tab-1 mb-20">
       <div className="container">
         <ul className="nav nav-tabs mavo-mb-40" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">

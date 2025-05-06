@@ -2,15 +2,43 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useProducts } from "@/hooks/useProducts";
+import LoaderSpinner from "../LoaderSpinner";
+
+const FEATURED_PRODUCTS_LIMIT = 4;
 
 const ProductSectionFirstCloth = () => {
-  const { data: products, isLoading, error } = useProducts("cloth");
+  // Fetch first 4 products (page=1, limit=4)
+  const { data, isLoading, error } = useProducts(
+    "cloth",
+    1,
+    FEATURED_PRODUCTS_LIMIT,
+    "first",
+  );
 
-  if (isLoading) return <p>Loading products...</p>;
-  if (error) return <p>{error.message}</p>;
-  if (!products) return <p>No products available.</p>;
+  // Loading state
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-[500px]">
+        <LoaderSpinner />
+      </div>
+    );
+  }
 
-  const firstFourProducts = products.length > 0 ? products.slice(0, 4) : [];
+  // Error state
+  if (error) {
+    return (
+      <p className="text-red-500 text-center">
+        Failed to load products. Please try again.
+      </p>
+    );
+  }
+
+  // No products state
+  if (!data || !data.products || data.products.length === 0) {
+    return <p className="text-center">No products available.</p>;
+  }
+
+  const products = data.products; // Already limited to 4 by the server
 
   return (
     <div className="mavo-product-1 mavo-pb-120 mavo-md-pb-20">
@@ -35,7 +63,7 @@ const ProductSectionFirstCloth = () => {
           </div>
           <div className="col-lg-6">
             <div className="row">
-              {firstFourProducts.map((product) => (
+              {products.map((product) => (
                 <div className="col-lg-6 col-md-6 col-sm-6" key={product.id}>
                   <div className="mavo-product-single mavo-md-mb-55">
                     <div className="mavo-product-info">

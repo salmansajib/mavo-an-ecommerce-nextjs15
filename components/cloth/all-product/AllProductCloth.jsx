@@ -1,23 +1,38 @@
 "use client";
+import { useState } from "react";
 import FilterSectionCloth from "@/components/cloth/FilterSectionCloth";
 import LoaderSpinner from "../../LoaderSpinner";
-import PaginationCloth from "./PaginationCloth";
 import ProductListCloth from "./ProductListCloth";
+import Pagination from "@/components/Pagination";
 import { useProducts } from "@/hooks/useProducts";
-import usePagination from "@/hooks/usePagination";
+
+const DEFAULT_LIMIT = 6;
 
 const AllProductCloth = () => {
-  const { data: products, isLoading, error } = useProducts("cloth");
-  const { currentPage, totalPages, paginatedItems, handlePageChange } =
-    usePagination(products);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = DEFAULT_LIMIT;
+
+  // Fetch products for the current page (explicitly set direction="first" for clarity)
+  const { data, isLoading, error } = useProducts(
+    "cloth",
+    currentPage,
+    itemsPerPage,
+    "first",
+  );
+  const totalPages = data ? Math.ceil(data.total / itemsPerPage) : 0;
 
   if (isLoading)
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="flex items-center justify-center h-[800px]">
         <LoaderSpinner />
       </div>
     );
-  if (error) return <p>{error.message}</p>;
+  if (error)
+    return (
+      <p className="text-red-500 text-center text-2xl">
+        Failed to load products. Please try again.
+      </p>
+    );
 
   return (
     <div
@@ -26,11 +41,14 @@ const AllProductCloth = () => {
     >
       <div className="container">
         <FilterSectionCloth />
-        <ProductListCloth products={paginatedItems} />
-        <PaginationCloth
+        <ProductListCloth products={data.products} />
+        <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
-          onPageChange={handlePageChange}
+          onPageChange={(page) => {
+            setCurrentPage(page);
+            window.scrollTo({ top: 350, behavior: "smooth" });
+          }}
         />
       </div>
     </div>

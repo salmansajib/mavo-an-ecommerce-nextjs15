@@ -1,25 +1,49 @@
 import { useQuery } from "@tanstack/react-query";
 
-const fetchProducts = async (category) => {
+const DEFAULT_LIMIT = 6;
+
+const fetchProducts = async (
+  category,
+  page,
+  limit = DEFAULT_LIMIT,
+  direction = "first",
+  random = false,
+  excludeFirst = 0,
+) => {
   try {
-    const res = await fetch(`/api/products/${category}`);
+    const url = `/api/products/${category}?page=${page}&limit=${limit}&direction=${direction}&random=${random}&excludeFirst=${excludeFirst}`;
+    const res = await fetch(url);
     if (!res.ok) {
-      throw new Error(
-        `Failed to fetch ${category} products: ${res.status} ${res.statusText}`,
-      );
+      throw new Error(`Failed to fetch ${category} products`);
     }
-    return await res.json();
+    return await res.json(); // { products, total }
   } catch (error) {
-    console.error(`Error fetching ${category} products:`, error);
+    console.error(error); // Replace with proper logging in production
     throw error;
   }
 };
 
-export const useProducts = (category) => {
+export const useProducts = (
+  category,
+  page,
+  limit = DEFAULT_LIMIT,
+  direction = "first",
+  random = false,
+  excludeFirst = 0,
+) => {
   return useQuery({
-    queryKey: [category, "products"], // Unique key per category
-    queryFn: () => fetchProducts(category),
-    staleTime: 600000, // Cache for 10 minutes
-    refetchOnWindowFocus: false, // Prevent refetch on tab switch
+    queryKey: [
+      category,
+      "products",
+      page,
+      limit,
+      direction,
+      random,
+      excludeFirst,
+    ],
+    queryFn: () =>
+      fetchProducts(category, page, limit, direction, random, excludeFirst),
+    staleTime: 600000, // 10 minutes
+    refetchOnWindowFocus: false,
   });
 };

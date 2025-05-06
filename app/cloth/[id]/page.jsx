@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useParams } from "next/navigation";
+import { useSingleProduct } from "@/hooks/useSingleProduct";
 import { useProducts } from "@/hooks/useProducts";
 import BreadCrumbClothDetails from "@/components/cloth/product-details/BreadCrumbClothDetails";
 import SingleProduct from "@/components/cloth/product-details/SingleProduct";
@@ -9,36 +10,55 @@ import LoaderSpinner from "@/components/LoaderSpinner";
 import SimilarProducts from "@/components/cloth/product-details/SimilarProducts";
 import ProductTabs from "@/components/cloth/product-details/ProductTabs";
 
+const SIMILAR_PRODUCTS_LIMIT = 8;
+
 function Page() {
   const { id } = useParams();
-  const { data: products = [], isLoading, error } = useProducts("cloth");
 
-  if (isLoading || !products.length) {
+  // Fetch single product by ID
+  const {
+    data: singleProductData,
+    isLoading: isProductLoading,
+    error: productError,
+  } = useSingleProduct("cloth", id);
+
+  // Fetch similar products (random, excluding current product)
+  const {
+    data: similarProductsData,
+    isLoading: isSimilarLoading,
+    error: similarError,
+  } = useProducts("cloth", 1, SIMILAR_PRODUCTS_LIMIT, "first", true, 0, [id]);
+
+  // Loading state
+  if (isProductLoading || isSimilarLoading) {
     return (
-      <div className="w-full min-h-screen flex items-center justify-center">
+      <div className="flex items-center justify-center h-[800px]">
         <LoaderSpinner />
       </div>
     );
   }
 
-  if (error) {
-    return <div>Error loading product</div>;
+  // Error state
+  if (productError) {
+    return (
+      <div className="text-red-500 text-center text-2xl">
+        Failed to load product. Please try again.
+      </div>
+    );
   }
 
-  const product = products.find((product) => product.id.toString() === id);
-
-  if (!product) {
-    return <div>Product not found</div>;
+  if (similarError) {
+    // Log similar products error but don't block rendering
+    console.error("Failed to load similar products:", similarError.message);
   }
 
-  const getSimilarProducts = (currentProduct, allProducts) => {
-    return allProducts
-      .filter((p) => p.id !== currentProduct.id)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 8);
-  };
+  // Product not found
+  if (!singleProductData || !singleProductData.product) {
+    return <div className="text-center text-2xl">Product not found</div>;
+  }
 
-  const similarProducts = getSimilarProducts(product, products);
+  const product = singleProductData.product;
+  const similarProducts = similarProductsData?.products || [];
 
   return (
     <>
