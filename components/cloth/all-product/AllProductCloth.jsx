@@ -7,7 +7,7 @@ import { useProducts } from "@/hooks/useProducts";
 import usePagination from "@/hooks/usePagination";
 
 const AllProductCloth = () => {
-  const { data: products, isLoading, error } = useProducts();
+  const { data: products, isLoading, error } = useProducts("cloth");
   const { currentPage, totalPages, paginatedItems, handlePageChange } =
     usePagination(products);
 

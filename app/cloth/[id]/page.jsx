@@ -11,7 +11,7 @@ import ProductTabs from "@/components/cloth/product-details/ProductTabs";
 
 function Page() {
   const { id } = useParams();
-  const { data: products = [], isLoading, error } = useProducts();
+  const { data: products = [], isLoading, error } = useProducts("cloth");
 
   if (isLoading || !products.length) {
     return (

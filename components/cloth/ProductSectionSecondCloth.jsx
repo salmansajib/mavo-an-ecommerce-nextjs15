@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useProducts } from "@/hooks/useProducts";
 
 const ProductSectionSecondCloth = () => {
-  const { data: products, isLoading, error } = useProducts();
+  const { data: products, isLoading, error } = useProducts("cloth");
 
   if (isLoading) return <p>Loading products...</p>;
   if (error) return <p>{error.message}</p>;
