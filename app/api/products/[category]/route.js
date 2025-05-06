@@ -1,7 +1,7 @@
 import { getProductsByCategory } from "@/lib/fetchProductData";
 
 export async function GET(request, { params }) {
-  const { category } = params;
+  const { category } = await params; // Await params before destructuring
   try {
     const products = await getProductsByCategory(category);
     return Response.json(products);
