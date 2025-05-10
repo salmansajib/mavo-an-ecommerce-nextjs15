@@ -14,13 +14,13 @@ import "./globals.css";
 import "@/assets/font/flaticon_mavoo.css";
 import "@/assets/css/bootstrap.min.css";
 import "@/assets/css/swiper-bundle.min.css";
-import "@/assets/css/magnific-popup.css";
-// import "@/assets/css/odometer.min.css";
-import "@/assets/css/sal.css";
-import "@/assets/css/animate.css";
 import "@/assets/css/style.css";
 import "@/assets/css/mavo-spacing.css";
 import "@/assets/css/responsive.css";
+// import "@/assets/css/magnific-popup.css";
+// import "@/assets/css/odometer.min.css";
+// import "@/assets/css/sal.css";
+// import "@/assets/css/animate.css";
 
 const marcellus = Marcellus({
   variable: "--font-marcellus",

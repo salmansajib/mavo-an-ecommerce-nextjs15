@@ -5,7 +5,7 @@ export const navItems = [
     link: "/",
     subItems: [
       { id: 11, label: "Cloth", link: "/" },
-      { id: 12, label: "Home 02", link: "index2.html" },
+      { id: 12, label: "Shoes", link: "/shoes" },
       { id: 13, label: "Home 03", link: "index3.html" },
       { id: 14, label: "Home 04", link: "index4.html" },
       { id: 15, label: "Home 05", link: "index5.html" },
@@ -93,7 +93,7 @@ export const navItemsMobile = [
     link: "/",
     subItems: [
       { id: 11, label: "Cloth", link: "/" },
-      { id: 12, label: "Home 02", link: "index2.html" },
+      { id: 12, label: "Shoes", link: "/shoes" },
       { id: 13, label: "Home 03", link: "index3.html" },
       { id: 14, label: "Home 04", link: "index4.html" },
       { id: 15, label: "Home 05", link: "index5.html" },
