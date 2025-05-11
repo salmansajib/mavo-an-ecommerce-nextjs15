@@ -72,7 +72,7 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
               />
             </Link>
           </div>
-          <div className="w-[1px] h-[25px] bg-gray-50/20" />
+          {/* <div className="w-[1px] h-[25px] bg-gray-50/20" /> */}
         </div>
       </div>
     </div>

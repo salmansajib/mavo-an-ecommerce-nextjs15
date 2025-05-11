@@ -665,5 +665,672 @@
         "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
       }
     ]
+  },
+  {
+    "id": "shoe9",
+    "name": "Tropical Surge",
+    "type": "shoes",
+    "base_price": 190.0,
+    "currency": "USD",
+    "tags": "-20%",
+    "reviews": 121,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Pac-Man",
+        "color_code": "#fde52b",
+        "sizes": [
+          { "size": 35, "price": 190.0, "stock": 50 },
+          { "size": 36, "price": 200.0, "stock": 50 },
+          { "size": 37, "price": 210.0, "stock": 50 },
+          { "size": 38, "price": 220.0, "stock": 50 },
+          { "size": 39, "price": 230.0, "stock": 50 },
+          { "size": 40, "price": 240.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/01-01.jpg"]
+      },
+      {
+        "color": "Rich Gold",
+        "color_code": "#a68a1f",
+        "sizes": [
+          { "size": 35, "price": 190.0, "stock": 50 },
+          { "size": 36, "price": 200.0, "stock": 50 },
+          { "size": 37, "price": 210.0, "stock": 50 },
+          { "size": 38, "price": 220.0, "stock": 50 },
+          { "size": 39, "price": 230.0, "stock": 50 },
+          { "size": 40, "price": 240.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/01-02.jpg"]
+      },
+      {
+        "color": "Venus Violet",
+        "color_code": "#8274c1",
+        "sizes": [
+          { "size": 35, "price": 190.0, "stock": 50 },
+          { "size": 36, "price": 200.0, "stock": 50 },
+          { "size": 37, "price": 210.0, "stock": 50 },
+          { "size": 38, "price": 220.0, "stock": 50 },
+          { "size": 39, "price": 230.0, "stock": 50 },
+          { "size": 40, "price": 240.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/01-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "shoe10",
+    "name": "PeakPulse Explorer",
+    "type": "shoes",
+    "base_price": 320.0,
+    "currency": "USD",
+    "tags": "new",
+    "reviews": 121,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Komodo Dragon",
+        "color_code": "#b27f46",
+        "sizes": [
+          { "size": 35, "price": 320.0, "stock": 50 },
+          { "size": 36, "price": 330.0, "stock": 50 },
+          { "size": 37, "price": 340.0, "stock": 50 },
+          { "size": 38, "price": 350.0, "stock": 50 },
+          { "size": 39, "price": 360.0, "stock": 50 },
+          { "size": 40, "price": 370.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/02-01.jpg"]
+      },
+      {
+        "color": "Celery",
+        "color_code": "#b9c652",
+        "sizes": [
+          { "size": 35, "price": 320.0, "stock": 50 },
+          { "size": 36, "price": 330.0, "stock": 50 },
+          { "size": 37, "price": 340.0, "stock": 50 },
+          { "size": 38, "price": 350.0, "stock": 50 },
+          { "size": 39, "price": 360.0, "stock": 50 },
+          { "size": 40, "price": 370.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/02-02.jpg"]
+      },
+      {
+        "color": "Blasphemous Blue",
+        "color_code": "#3b52a2",
+        "sizes": [
+          { "size": 35, "price": 320.0, "stock": 50 },
+          { "size": 36, "price": 330.0, "stock": 50 },
+          { "size": 37, "price": 340.0, "stock": 50 },
+          { "size": 38, "price": 350.0, "stock": 50 },
+          { "size": 39, "price": 360.0, "stock": 50 },
+          { "size": 40, "price": 370.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/02-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "shoe11",
+    "name": "SkyVolt Runner",
+    "type": "shoes",
+    "base_price": 250.0,
+    "currency": "USD",
+    "tags": "new",
+    "reviews": 1230,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Magical Merlin",
+        "color_code": "#328ed7",
+        "sizes": [
+          { "size": 35, "price": 250.0, "stock": 50 },
+          { "size": 36, "price": 260.0, "stock": 50 },
+          { "size": 37, "price": 270.0, "stock": 50 },
+          { "size": 38, "price": 280.0, "stock": 50 },
+          { "size": 39, "price": 290.0, "stock": 50 },
+          { "size": 40, "price": 300.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/03-01.jpg"]
+      },
+      {
+        "color": "Mandarin",
+        "color_code": "#f17744",
+        "sizes": [
+          { "size": 35, "price": 250.0, "stock": 50 },
+          { "size": 36, "price": 260.0, "stock": 50 },
+          { "size": 37, "price": 270.0, "stock": 50 },
+          { "size": 38, "price": 280.0, "stock": 50 },
+          { "size": 39, "price": 290.0, "stock": 50 },
+          { "size": 40, "price": 300.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/03-02.jpg"]
+      },
+      {
+        "color": "Shadows",
+        "color_code": "#6e6e6e",
+        "sizes": [
+          { "size": 35, "price": 250.0, "stock": 50 },
+          { "size": 36, "price": 260.0, "stock": 50 },
+          { "size": 37, "price": 270.0, "stock": 50 },
+          { "size": 38, "price": 280.0, "stock": 50 },
+          { "size": 39, "price": 290.0, "stock": 50 },
+          { "size": 40, "price": 300.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/03-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "shoe12",
+    "name": "Newton Gravity",
+    "type": "shoes",
+    "base_price": 180.0,
+    "currency": "USD",
+    "reviews": 230,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Carbon Fiber",
+        "color_code": "#2d2d2f",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/04-01.jpg"]
+      },
+      {
+        "color": "Dark Galaxy",
+        "color_code": "#0318a7",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/04-02.jpg"]
+      },
+      {
+        "color": "Gory Red",
+        "color_code": "#a2080a",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/04-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "shoe13",
+    "name": "Suede Strider",
+    "type": "shoes",
+    "base_price": 180.0,
+    "currency": "USD",
+    "reviews": 410,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Porcini",
+        "color_code": "#d5af88",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/05-01.jpg"]
+      },
+      {
+        "color": "Casper",
+        "color_code": "#adb6bf",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/05-02.jpg"]
+      },
+      {
+        "color": "Windfall",
+        "color_code": "#85a9cd",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/05-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "shoe14",
+    "name": "TrailMaster",
+    "type": "shoes",
+    "base_price": 180.0,
+    "currency": "USD",
+    "reviews": 367,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Turtle",
+        "color_code": "#523d2c",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/06-01.jpg"]
+      },
+      {
+        "color": "Heavy Charcoal",
+        "color_code": "#535353",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/06-02.jpg"]
+      },
+      {
+        "color": "Nocturne Blue",
+        "color_code": "#355468",
+        "sizes": [
+          { "size": 35, "price": 180.0, "stock": 50 },
+          { "size": 36, "price": 190.0, "stock": 50 },
+          { "size": 37, "price": 200.0, "stock": 50 },
+          { "size": 38, "price": 210.0, "stock": 50 },
+          { "size": 39, "price": 220.0, "stock": 50 },
+          { "size": 40, "price": 230.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/06-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "shoe15",
+    "name": "Royer RuggedGuard",
+    "type": "shoes",
+    "base_price": 250.0,
+    "currency": "USD",
+    "reviews": 167,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Bengal",
+        "color_code": "#d19855",
+        "sizes": [
+          { "size": 35, "price": 250.0, "stock": 50 },
+          { "size": 36, "price": 260.0, "stock": 50 },
+          { "size": 37, "price": 270.0, "stock": 50 },
+          { "size": 38, "price": 280.0, "stock": 50 },
+          { "size": 39, "price": 290.0, "stock": 50 },
+          { "size": 40, "price": 300.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/07-01.jpg"]
+      },
+      {
+        "color": "Bellflower",
+        "color_code": "#575da7",
+        "sizes": [
+          { "size": 35, "price": 250.0, "stock": 50 },
+          { "size": 36, "price": 260.0, "stock": 50 },
+          { "size": 37, "price": 270.0, "stock": 50 },
+          { "size": 38, "price": 280.0, "stock": 50 },
+          { "size": 39, "price": 290.0, "stock": 50 },
+          { "size": 40, "price": 300.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/07-02.jpg"]
+      },
+      {
+        "color": "NMoon Rock",
+        "color_code": "#897b7a",
+        "sizes": [
+          { "size": 35, "price": 250.0, "stock": 50 },
+          { "size": 36, "price": 260.0, "stock": 50 },
+          { "size": 37, "price": 270.0, "stock": 50 },
+          { "size": 38, "price": 280.0, "stock": 50 },
+          { "size": 39, "price": 290.0, "stock": 50 },
+          { "size": 40, "price": 300.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/07-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "shoe16",
+    "name": "Neon Sprint",
+    "type": "shoes",
+    "base_price": 150.0,
+    "currency": "USD",
+    "reviews": 167,
+    "description": "Ut pulvinar libero eget arcu pharetra vehicula. Integer leo sapien, eleifend vitae tristique sit amet, facilisis quis justo. Mauris non commodo velit. Etiam porttitor nibh vitae dolor auctor elementum. Ut volutpat, felis vitae feugiat mattis, eros erat ornare nulla, non sagittis leo ligula vitae neque. Phasellus ullamcorper faucibus ligula eu fermentum. Aenean iaculis, lectus at tempor posuere, nibh diam mollis nisi, eget fringilla sapien nisi sit amet orci. Vestibulum facilisis, dui quis auctor hendrerit, metus nisl consequat sapien, vel malesuada neque massa et felis. Proin sit amet sem sit amet nulla blandit condimentum ac id justo.",
+    "variants": [
+      {
+        "color": "Sour Green",
+        "color_code": "#bbe309",
+        "sizes": [
+          { "size": 35, "price": 150.0, "stock": 50 },
+          { "size": 36, "price": 160.0, "stock": 50 },
+          { "size": 37, "price": 170.0, "stock": 50 },
+          { "size": 38, "price": 180.0, "stock": 50 },
+          { "size": 39, "price": 190.0, "stock": 50 },
+          { "size": 40, "price": 200.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/08-01.jpg"]
+      },
+      {
+        "color": "Shivering Green",
+        "color_code": "#0fe880",
+        "sizes": [
+          { "size": 35, "price": 150.0, "stock": 50 },
+          { "size": 36, "price": 160.0, "stock": 50 },
+          { "size": 37, "price": 170.0, "stock": 50 },
+          { "size": 38, "price": 180.0, "stock": 50 },
+          { "size": 39, "price": 190.0, "stock": 50 },
+          { "size": 40, "price": 200.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/08-02.jpg"]
+      },
+      {
+        "color": "Hyper Blue",
+        "color_code": "#075b99",
+        "sizes": [
+          { "size": 35, "price": 150.0, "stock": 50 },
+          { "size": 36, "price": 160.0, "stock": 50 },
+          { "size": 37, "price": 170.0, "stock": 50 },
+          { "size": 38, "price": 180.0, "stock": 50 },
+          { "size": 39, "price": 190.0, "stock": 50 },
+          { "size": 40, "price": 200.0, "stock": 50 }
+        ],
+        "images": ["/product-images/shoes/08-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r1",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
   }
 ]

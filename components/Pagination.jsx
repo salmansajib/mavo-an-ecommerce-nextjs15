@@ -39,7 +39,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
   return (
     <div className="mavo-watch-navigation mavo-mt-20 text-center">
-      <ul>
+      <ul className="flex items-center justify-center gap-3">
         {currentPage > 1 && (
           <li>
             <button
