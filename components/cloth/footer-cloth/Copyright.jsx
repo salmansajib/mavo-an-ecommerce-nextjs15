@@ -11,7 +11,7 @@ const Copyright = () => {
             <div className="text-area d-flex align-items-center">
               <div className="copy-right mavo-md-mb-15">
                 <div className="text">
-                  © 2022 Mavoo, Powered by <Link href="/#">Thecodude</Link>
+                  © 2025 Mavoo, Powered by <Link href="/#">Thecodude</Link>
                 </div>
               </div>
               <div className="right-text">

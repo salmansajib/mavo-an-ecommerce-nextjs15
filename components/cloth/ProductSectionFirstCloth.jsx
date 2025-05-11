@@ -35,7 +35,7 @@ const ProductSectionFirstCloth = () => {
 
   // No products state
   if (!data || !data.products || data.products.length === 0) {
-    return <p className="text-center">No products available.</p>;
+    return <p className="text-center text-xl">No products available.</p>;
   }
 
   const products = data.products; // Already limited to 4 by the server
