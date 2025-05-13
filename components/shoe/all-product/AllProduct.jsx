@@ -36,7 +36,7 @@ const AllProduct = () => {
     );
 
   return (
-    <div className="!bg-gray-100 mavo-post-slider-2 mavo-post-page mavo-pt-120 mavo-md-pt-80 mavo-pb-75 mavo-md-pb-30">
+    <div className="!bg-gray-50 mavo-post-slider-2 mavo-post-page mavo-pt-120 mavo-md-pt-80 mavo-pb-75 mavo-md-pb-30">
       <div className="container">
         <div className="row">
           <Sidebar />
