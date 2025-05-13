@@ -15,7 +15,7 @@ const SimilarProducts = ({ similarProducts }) => {
         <Swiper
           modules={[Autoplay]}
           spaceBetween={25}
-          slidesPerView={5}
+          slidesPerView={1}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -23,7 +23,7 @@ const SimilarProducts = ({ similarProducts }) => {
           loop={true}
           speed={1200}
           breakpoints={{
-            320: { slidesPerView: 1 },
+            // 320: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
             1280: { slidesPerView: 5 },
