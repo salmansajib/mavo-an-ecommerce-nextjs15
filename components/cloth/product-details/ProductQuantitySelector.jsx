@@ -1,5 +1,5 @@
 import React from "react";
-import { Plus, Minus } from "lucide-react";
+import Icon from "@/components/Icon";
 
 const ProductQuantitySelector = ({ quantity, onIncrease, onDecrease }) => {
   return (
@@ -9,7 +9,7 @@ const ProductQuantitySelector = ({ quantity, onIncrease, onDecrease }) => {
         onClick={onDecrease}
         disabled={quantity <= 1}
       >
-        <Minus size={16} />
+        <Icon name="Minus" size={16} />
       </button>
       <span className="size-[25px] text-lg flex items-center justify-center font-josefin-sans">
         {quantity}
@@ -18,7 +18,7 @@ const ProductQuantitySelector = ({ quantity, onIncrease, onDecrease }) => {
         className="h-full w-[35px] flex items-center justify-center border-l !border-black/40"
         onClick={onIncrease}
       >
-        <Plus size={16} />
+        <Icon name="Plus" size={16} />
       </button>
     </div>
   );

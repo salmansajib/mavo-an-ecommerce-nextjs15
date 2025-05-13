@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, updateQuantity } from "@/slices/cartSlice";
-import toast from "react-hot-toast";
 
 import ProductGallery from "./ProductGallery";
 import ProductRating from "./ProductRating";
