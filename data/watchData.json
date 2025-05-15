@@ -1,0 +1,806 @@
+[
+  {
+    "id": "watch1",
+    "name": "Chrono Elegance",
+    "type": "watch",
+    "base_price": 599.0,
+    "currency": "USD",
+    "tags": "Swiss-Made",
+    "reviews": 1987,
+    "description": "The Chrono Elegance is a refined timepiece blending classic and modern styles. Its brown leather strap, featuring a crocodile-skin texture, ensures comfort and durability, paired with a secure buckle clasp. The skeleton dial reveals intricate golden gears against a deep blue background, framed by Roman numerals for a traditional touch. Luminous hands enhance readability in low light. Encased in polished stainless steel, the 40-42mm watch houses an automatic movement, showcasing the mesmerizing mechanics through a likely transparent case back. At 10-12mm thick, it balances boldness and wearability, with water resistance suitable for daily use (30-50 meters). Priced at $150-$200, it offers affordable luxury for watch enthusiasts, ideal for both casual and formal wear. This mid-range piece delivers quality and style, perfect for gifting or personal enjoyment.",
+    "variants": [
+      {
+        "color": "Dark Sienna",
+        "color_code": "#44130f",
+        "materials": [
+          {
+            "material": "Leather",
+            "price": 599.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/01-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Black Pearl",
+        "color_code": "#1c272b",
+        "materials": [
+          {
+            "material": "Leather",
+            "price": 659.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/01-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Aotake Bamboo",
+        "color_code": "#006044",
+        "materials": [
+          {
+            "material": "Leather",
+            "price": 599.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/01-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch2",
+    "name": "Vanguard Field",
+    "type": "watch",
+    "base_price": 399.0,
+    "currency": "USD",
+    "tags": "Limited Edition",
+    "reviews": 1987,
+    "description": "The Vanguard Field is a rugged yet stylish timepiece designed for durability and practicality. It features a sleek black leather strap with white stitching, offering a sturdy yet comfortable fit with a traditional buckle clasp. The matte black dial, marked with bold white Arabic numerals, ensures excellent legibility, complemented by luminous hands for low-light visibility. Housed in a polished stainless steel case, approximately 38-40mm in diameter and 10mm thick, it balances functionality with a minimalist aesthetic. Likely powered by a quartz movement, it promises reliable timekeeping. With a water resistance of around 50 meters, it’s suitable for everyday wear and light outdoor activities. Priced between $120 and $180, this mid-range watch appeals to those seeking a versatile, military-inspired design for casual or professional settings, blending timeless craftsmanship with modern utility.",
+    "variants": [
+      {
+        "color": "Missouri Mud",
+        "color_code": "#a5a09a",
+        "materials": [
+          {
+            "material": "Leather",
+            "price": 399.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/02-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Tradewinds",
+        "color_code": "#7d868f",
+        "materials": [
+          {
+            "material": "Leather",
+            "price": 399.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/02-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Silver Lake",
+        "color_code": "#dedede",
+        "materials": [
+          {
+            "material": "Leather",
+            "price": 429.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/02-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch3",
+    "name": "Obsidian Pulse",
+    "type": "watch",
+    "base_price": 799.0,
+    "currency": "USD",
+    "reviews": 1987,
+    "description": "The Vanguard Field is a rugged yet stylish timepiece designed for durability and practicality. It features a sleek black leather strap with white stitching, offering a sturdy yet comfortable fit with a traditional buckle clasp. The matte black dial, marked with bold white Arabic numerals, ensures excellent legibility, complemented by luminous hands for low-light visibility. Housed in a polished stainless steel case, approximately 38-40mm in diameter and 10mm thick, it balances functionality with a minimalist aesthetic. Likely powered by a quartz movement, it promises reliable timekeeping. With a water resistance of around 50 meters, it’s suitable for everyday wear and light outdoor activities. Priced between $120 and $180, this mid-range watch appeals to those seeking a versatile, military-inspired design for casual or professional settings, blending timeless craftsmanship with modern utility.",
+    "variants": [
+      {
+        "color": "Black Panther",
+        "color_code": "#434343",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 799.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/03-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Brainstem Grey",
+        "color_code": "#b6b6b6",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 899.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/03-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Fog of War",
+        "color_code": "#122333",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 759.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/03-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch4",
+    "name": "Nova Chrono",
+    "type": "watch",
+    "base_price": 1250.0,
+    "currency": "USD",
+    "reviews": 2367,
+    "description": "The Nova Chrono is a dynamic smartwatch that merges classic design with modern technology. Its 42-44mm stainless steel case, finished in a sleek black coating, houses a vibrant digital display with Roman numerals and three sub-dials, likely tracking heart rate, steps, and notifications. The black silicone strap, perforated for breathability, ensures a comfortable fit for active lifestyles, secured with a sturdy buckle clasp. With a thickness of around 10-12mm, it balances functionality and wearability. The watch offers smart features like fitness tracking, smartphone connectivity, and possibly AMOLED display technology, with a water resistance of 50 meters, ideal for swimming or daily use. Priced at $250-$350, the Nova Chrono appeals to tech-savvy users seeking a blend of style and utility, making it a versatile companion for both workouts and professional settings.",
+    "variants": [
+      {
+        "color": "Young Night",
+        "color_code": "#232523",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 1250.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/04-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Maniac Mansion",
+        "color_code": "#003a56",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 1270.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/04-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Black Metal",
+        "color_code": "#050805",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 1299.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/04-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch5",
+    "name": "Eclipse Sync",
+    "type": "watch",
+    "base_price": 3120.0,
+    "tags": "New",
+    "currency": "USD",
+    "reviews": 764,
+    "description": "The Eclipse Sync is a sleek, modern smartwatch designed for seamless integration into daily life. Its 40mm stainless steel case, paired with a flexible black silicone strap featuring perforated ventilation, offers comfort and durability, secured with a minimalist buckle clasp. The black dial showcases a digital display, currently showing 12:15 on a Saturday in November, likely indicating date, time, and possibly fitness stats, with a touch interface for navigation. At around 9-11mm thick, it’s lightweight and suitable for all-day wear. Equipped with smart features like notifications, heart rate monitoring, and a water resistance of 50 meters, it’s ideal for active users. Priced at $180-$250, the Eclipse Sync blends futuristic design with practical technology, making it a stylish choice for tech enthusiasts and casual wearers alike.",
+    "variants": [
+      {
+        "color": "Lead",
+        "color_code": "#1d1e20",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 3120.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/05-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Centipede Brown",
+        "color_code": "#6a2902",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 3250.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/05-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Anti-Flash White",
+        "color_code": "#f2f4f3",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 1299.0,
+            "stock": 50,
+            "images": ["/product-images/watch/long/05-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch6",
+    "name": "Regal Harmony",
+    "type": "watch",
+    "base_price": 1600.0,
+    "tags": "Hot",
+    "currency": "USD",
+    "reviews": 3267,
+    "description": "The Regal Harmony is a luxurious timepiece that exudes timeless elegance. Its 40mm case, crafted from a combination of polished stainless steel and 18k gold, features a fluted bezel that adds a sophisticated touch. The white dial, adorned with simple gold hour markers and hands, includes a date window at 3 o’clock, offering both style and functionality. The bracelet, alternating steel and gold links, ensures a comfortable fit with a secure folding clasp. Likely powered by an automatic movement, it promises precision and reliability. With a thickness of around 11-13mm and water resistance of 100 meters, it’s suitable for daily wear and light water activities. Priced at $400-$600, the Regal Harmony appeals to those seeking a classic, high-quality watch that blends opulence with practicality, perfect for formal occasions or investment pieces.",
+    "variants": [
+      {
+        "color": "Saturn",
+        "color_code": "#f8e5bf",
+        "materials": [
+          {
+            "material": "Stainless steel & Gold",
+            "price": 1600.0,
+            "stock": 50,
+            "images": ["/product-images/watch/01-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Kraft Paper",
+        "color_code": "#d5b79d",
+        "materials": [
+          {
+            "material": "Stainless steel & Gold",
+            "price": 1720.0,
+            "stock": 50,
+            "images": ["/product-images/watch/01-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Blue Dolphin",
+        "color_code": "#bac4ce",
+        "materials": [
+          {
+            "material": "Stainless steel & Gold",
+            "price": 1649.0,
+            "stock": 50,
+            "images": ["/product-images/watch/01-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch7",
+    "name": "Amber Precision",
+    "type": "watch",
+    "base_price": 800.0,
+    "currency": "USD",
+    "reviews": 923,
+    "description": "The Amber Precision is an exquisite chronograph that merges luxury with mechanical artistry. Its 42-44mm case, crafted from 18k gold-plated stainless steel, showcases a skeleton dial, revealing intricate gears and three sub-dials for chronograph functions, likely tracking seconds, minutes, and 24-hour time. The white dial with blue accents adds contrast, while the gold hands and markers ensure readability. The brown leather strap, featuring a crocodile pattern, offers a refined touch and comfortable wear, secured with a gold-plated buckle. At around 12-14mm thick, it’s bold yet elegant, with a water resistance of 50 meters, suitable for daily use. Priced at $300-$450, the Amber Precision appeals to those who value craftsmanship and style, making it an ideal choice for formal occasions or as a statement piece for collectors.",
+    "variants": [
+      {
+        "color": "Apple Custard",
+        "color_code": "#fedeaf",
+        "materials": [
+          {
+            "material": "Gold-plated stainless steel",
+            "price": 800.0,
+            "stock": 50,
+            "images": ["/product-images/watch/02-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Forgotten Sunset",
+        "color_code": "#fcd3ae",
+        "materials": [
+          {
+            "material": "Gold-plated stainless steel",
+            "price": 939.0,
+            "stock": 50,
+            "images": ["/product-images/watch/02-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Lotion",
+        "color_code": "#fefdf8",
+        "materials": [
+          {
+            "material": "Gold-plated stainless steel",
+            "price": 845.0,
+            "stock": 50,
+            "images": ["/product-images/watch/02-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch8",
+    "name": "Terra Chrono",
+    "type": "watch",
+    "base_price": 450.0,
+    "currency": "USD",
+    "reviews": 456,
+    "description": "The Terra Chrono is a bold, sporty chronograph that combines rugged elegance with modern design. Its 42mm stainless steel case, finished in matte black, houses a striking black dial with three orange-accented sub-dials, likely for chronograph functions, and luminous markers for readability. The tan leather strap, featuring a crocodile texture, adds a warm, luxurious contrast, secured with a sturdy buckle clasp. At around 11-13mm thick, it offers a substantial yet comfortable fit, with a water resistance of 50 meters, suitable for daily wear and light outdoor activities. Likely powered by a quartz movement, it ensures precise timekeeping. Priced at $200-$300, the Terra Chrono appeals to those seeking a versatile timepiece that transitions seamlessly from casual to semi-formal settings, blending durability with a distinctive aesthetic.",
+    "variants": [
+      {
+        "color": "Northern Barrens Dust",
+        "color_code": "#e2753d",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 450.0,
+            "stock": 50,
+            "images": ["/product-images/watch/03-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Wax",
+        "color_code": "#2c2c2c",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 550.0,
+            "stock": 50,
+            "images": ["/product-images/watch/03-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Inca Yellow",
+        "color_code": "#fdd203",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 499.0,
+            "stock": 50,
+            "images": ["/product-images/watch/03-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch9",
+    "name": "Horizon Fit",
+    "type": "watch",
+    "base_price": 450.0,
+    "currency": "USD",
+    "reviews": 1425,
+    "description": "The Horizon Fit is a sleek, fitness-focused smartwatch designed for active lifestyles. Its 42-44mm stainless steel case, with a black finish, houses a vibrant digital display showing metrics like steps (6,389), heart rate (93 bpm), and temperature (37°C), alongside the date (26 May). The black silicone strap, designed for breathability, ensures comfort during workouts, secured with a sturdy clasp. At around 10-12mm thick, it’s lightweight yet durable, with a water resistance of 50 meters, ideal for swimming or daily wear. Features likely include fitness tracking, notifications, and smartphone connectivity, with a high-resolution AMOLED display. Priced at $200-$300, the Horizon Fit offers a blend of style and functionality, making it a perfect companion for health-conscious individuals seeking a reliable, modern smartwatch for both casual and athletic use.",
+    "variants": [
+      {
+        "color": "Rainy Grey",
+        "color_code": "#a4a4a4",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 450.0,
+            "stock": 50,
+            "images": ["/product-images/watch/04-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Mountain Dew",
+        "color_code": "#d0e0df",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 550.0,
+            "stock": 50,
+            "images": ["/product-images/watch/04-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Cavernous",
+        "color_code": "#525250",
+        "materials": [
+          {
+            "material": "Stainless steel",
+            "price": 499.0,
+            "stock": 50,
+            "images": ["/product-images/watch/04-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "watch10",
+    "name": "Stellar Onyx",
+    "type": "watch",
+    "base_price": 999.0,
+    "currency": "USD",
+    "reviews": 4321,
+    "description": "The Stellar Onyx is a luxurious timepiece that radiates elegance and precision. Its 40mm stainless steel case, featuring a fluted bezel, houses a striking black dial adorned with diamond hour markers, adding a touch of opulence. The date window at 3 o’clock enhances functionality, while the luminous hands ensure readability. The matching stainless steel bracelet, with a polished finish, offers a secure fit via a folding clasp, blending durability with sophistication. At around 11-13mm thick, it’s ideal for formal wear, with a water resistance of 100 meters, suitable for light water exposure. Likely powered by an automatic movement, it delivers reliable timekeeping. Priced at $500-$700, the Stellar Onyx appeals to those seeking a high-end watch that combines classic design with modern luxury, perfect for special occasions or as a collector’s piece.",
+    "variants": [
+      {
+        "color": "Pipe Clay",
+        "color_code": "#cbc9bd",
+        "materials": [
+          {
+            "material": "Diamond Accents",
+            "price": 999.0,
+            "stock": 50,
+            "images": ["/product-images/watch/05-01.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Sēn Lín Lǜ Forest",
+        "color_code": "#48a674",
+        "materials": [
+          {
+            "material": "Diamond Accents",
+            "price": 1199.0,
+            "stock": 50,
+            "images": ["/product-images/watch/05-02.jpg"]
+          }
+        ]
+      },
+      {
+        "color": "Deep Breath",
+        "color_code": "#232963",
+        "materials": [
+          {
+            "material": "Diamond Accents",
+            "price": 1099.0,
+            "stock": 50,
+            "images": ["/product-images/watch/05-03.jpg"]
+          }
+        ]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  }
+]

@@ -69,10 +69,7 @@ const CollectionCloth = () => {
                       alt="Collection"
                       width={300}
                       height={300}
-                      style={{
-                        width: "300px",
-                        height: "auto",
-                      }}
+                      className="w-[300px] h-auto"
                     />
                     <Link
                       href={item.link}
@@ -81,8 +78,9 @@ const CollectionCloth = () => {
                       <Image
                         src="/images/icons/right-arrow.svg"
                         alt="read-more"
-                        width={350}
-                        height={350}
+                        width={100}
+                        height={100}
+                        className="w-[25px] h-auto"
                       />
                     </Link>
                   </div>

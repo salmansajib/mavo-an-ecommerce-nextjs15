@@ -74,10 +74,22 @@ const BannerCloth = () => {
           ))}
 
           <div className="swiper-button-next">
-            <img src="/images/icons/left-arrow.svg" alt="arrow" />
+            <Image
+              width={100}
+              height={100}
+              className="w-[55px] h-auto"
+              src="/images/icons/left-arrow.svg"
+              alt="arrow"
+            />
           </div>
           <div className="swiper-button-prev">
-            <img src="/images/icons/left-arrow.svg" alt="arrow" />
+            <Image
+              width={100}
+              height={100}
+              className="w-[55px] h-auto"
+              src="/images/icons/left-arrow.svg"
+              alt="arrow"
+            />
           </div>
         </Swiper>
 
