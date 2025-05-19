@@ -48,7 +48,7 @@ const ProductTabs = ({ product }) => {
               type="button"
               onClick={() => setActiveTab("reviews")}
             >
-              Reviews (0)
+              Reviews ({reviews.length})
             </button>
           </div>
 

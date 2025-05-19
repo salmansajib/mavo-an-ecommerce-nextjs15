@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import ProductList from "./ProductList";
 import { useProducts } from "@/hooks/useProducts";
 import LoaderSpinner from "@/components/LoaderSpinner";
-import Pagination from "@/components/Pagination";
+import Pagination from "@/components/shoe/Pagination";
 
 const DEFAULT_LIMIT = 12;
 

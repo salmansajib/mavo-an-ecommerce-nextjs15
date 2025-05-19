@@ -7,7 +7,7 @@ import ProductSectionFirstCloth from "@/components/cloth/ProductSectionFirstClot
 import ProductSectionSecondCloth from "@/components/cloth/ProductSectionSecondCloth";
 import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
 
-export default function ClothPage() {
+const ClothHome = () => {
   return (
     <>
       <BannerCloth />
@@ -19,4 +19,6 @@ export default function ClothPage() {
       <ShopInfoCloth />
     </>
   );
-}
+};
+
+export default ClothHome;

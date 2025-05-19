@@ -3,7 +3,7 @@ import { useState } from "react";
 import FilterSectionCloth from "@/components/cloth/FilterSectionCloth";
 import LoaderSpinner from "../../LoaderSpinner";
 import ProductListCloth from "./ProductListCloth";
-import Pagination from "@/components/Pagination";
+import Pagination from "@/components/shoe/Pagination";
 import { useProducts } from "@/hooks/useProducts";
 
 const DEFAULT_LIMIT = 6;

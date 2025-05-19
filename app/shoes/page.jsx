@@ -8,7 +8,7 @@ import NewestProducts from "@/components/shoe/NewestProducts";
 import RecentPosts from "@/components/shoe/RecentPosts";
 import ShopInfo from "@/components/shoe/ShopInfo";
 
-const page = () => {
+const ShoesHome = () => {
   return (
     <>
       <BannerShoe />
@@ -23,4 +23,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ShoesHome;
