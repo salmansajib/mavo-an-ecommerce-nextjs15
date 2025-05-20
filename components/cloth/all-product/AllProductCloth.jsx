@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import FilterSectionCloth from "@/components/cloth/FilterSectionCloth";
 import LoaderSpinner from "../../LoaderSpinner";
 import ProductListCloth from "./ProductListCloth";
-import Pagination from "@/components/shoe/Pagination";
+import Pagination from "./Pagination";
 import { useProducts } from "@/hooks/useProducts";
 
 const DEFAULT_LIMIT = 6;
@@ -20,6 +21,12 @@ const AllProductCloth = () => {
     "first",
   );
   const totalPages = data ? Math.ceil(data.total / itemsPerPage) : 0;
+
+  // Scroll to top after page change
+  useEffect(() => {
+    window.scrollTo({ top: 500, behavior: "smooth" });
+    // console.log("Scrolled to top: 500, Current page:", currentPage);
+  }, [currentPage]);
 
   if (isLoading)
     return (
@@ -45,10 +52,7 @@ const AllProductCloth = () => {
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
-          onPageChange={(page) => {
-            setCurrentPage(page);
-            window.scrollTo({ top: 350, behavior: "smooth" });
-          }}
+          onPageChange={(page) => setCurrentPage(page)}
         />
       </div>
     </div>

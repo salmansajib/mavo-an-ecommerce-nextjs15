@@ -19,9 +19,9 @@ export const navItems = [
     subItems: [
       { id: 23, label: "Cloth Shop", link: "/cloth/product" },
       { id: 25, label: "Shoes Shop", link: "/shoes/product" },
+      { id: 24, label: "Watch Shop", link: "/watch/product" },
       { id: 21, label: "Bag Shop", link: "bag-shop.html" },
       { id: 22, label: "Beauty Shop", link: "beauty-shop.html" },
-      { id: 24, label: "Watch Shop", link: "watch-shop.html" },
       { id: 26, label: "Jewellery Shop", link: "jewellery-shop.html" },
     ],
   },
@@ -107,9 +107,9 @@ export const navItemsMobile = [
     subItems: [
       { id: 23, label: "Cloth Shop", link: "/cloth/product" },
       { id: 25, label: "Shoes Shop", link: "/shoes/product" },
+      { id: 24, label: "Watch Shop", link: "/watch/product" },
       { id: 21, label: "Bag Shop", link: "bag-shop.html" },
       { id: 22, label: "Beauty Shop", link: "beauty-shop.html" },
-      { id: 24, label: "Watch Shop", link: "watch-shop.html" },
       { id: 26, label: "Jewellery Shop", link: "jewellery-shop.html" },
     ],
   },

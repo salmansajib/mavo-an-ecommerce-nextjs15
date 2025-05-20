@@ -43,7 +43,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         {currentPage > 1 && (
           <li>
             <button
-              onClick={() => onPageChange(currentPage - 1)}
+              onClick={(e) => {
+                e.preventDefault();
+                onPageChange(currentPage - 1);
+              }}
               disabled={currentPage === 1}
               className="hover:text-[#cb222c]"
               aria-label="Previous page"
@@ -59,7 +62,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
               <span className="px-2">...</span>
             ) : (
               <button
-                onClick={() => onPageChange(page)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onPageChange(page);
+                }}
                 disabled={currentPage === page}
                 className={`${
                   currentPage === page ? "active" : ""
@@ -76,7 +82,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         {currentPage < totalPages && (
           <li className="mavo-arrow-navigation">
             <button
-              onClick={() => onPageChange(currentPage + 1)}
+              onClick={(e) => {
+                e.preventDefault();
+                onPageChange(currentPage + 1);
+              }}
               disabled={currentPage === totalPages}
               className="hover:text-[#cb222c]"
               aria-label="Next page"

@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import Sidebar from "./Sidebar";
-import ProductList from "./ProductList";
+import ShopHeading from "./ShopHeading";
+import FilterSection from "./FilterSection";
 import { useProducts } from "@/hooks/useProducts";
 import LoaderSpinner from "@/components/LoaderSpinner";
+import ProductList from "./ProductList";
 import Pagination from "./Pagination";
 
-const DEFAULT_LIMIT = 12;
+const DEFAULT_LIMIT = 8;
 
 const AllProduct = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -15,7 +16,7 @@ const AllProduct = () => {
 
   // Fetch products for the current page (explicitly set direction="first" for clarity)
   const { data, isLoading, error } = useProducts(
-    "shoes",
+    "watch",
     currentPage,
     itemsPerPage,
     "first",
@@ -34,6 +35,7 @@ const AllProduct = () => {
         <LoaderSpinner />
       </div>
     );
+
   if (error)
     return (
       <p className="text-red-500 text-center text-2xl">
@@ -42,12 +44,14 @@ const AllProduct = () => {
     );
 
   return (
-    <div className="!bg-gray-50 mavo-post-slider-2 mavo-post-page mavo-pt-120 mavo-md-pt-80 mavo-pb-75 mavo-md-pb-30">
+    <div
+      id="sc-popular-courses"
+      className="mavo-product-style-2 mavo-pt-110 mavo-md-pt-75 mavo-pb-120 mavo-md-pb-75 bg-gray-50"
+    >
       <div className="container">
-        <div className="row">
-          <Sidebar />
-          <ProductList products={data.products} />
-        </div>
+        <ShopHeading />
+        <FilterSection />
+        <ProductList products={data.products} />
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
