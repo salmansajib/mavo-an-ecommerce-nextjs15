@@ -223,26 +223,26 @@ const ProductDetail = ({ product }) => {
               </div>
 
               <div className="mavo-product-meta mavo-mb-15 flex flex-wrap items-center">
-                <a
+                <Link
                   className="review-icon mavo-mr-30 flex items-center gap-2"
                   href="#"
                 >
                   <img src="/images/icons/share.png" alt="png" /> Share
-                </a>
-                <a
+                </Link>
+                <Link
                   className="review-icon mavo-mr-30 flex items-center gap-2"
                   href="#"
                 >
                   <img src="/images/icons/quetions.png" alt="png" /> Ask a
                   Question
-                </a>
-                <a
+                </Link>
+                <Link
                   className="review-icon mavo-mr-30 flex items-center gap-2"
                   href="#"
                 >
                   <img src="/images/icons/view.png" alt="png" /> 50 people are
                   viewing this right now
-                </a>
+                </Link>
               </div>
 
               <div className="mavo-product-size">
@@ -250,7 +250,7 @@ const ProductDetail = ({ product }) => {
                 <ul>
                   {sizes.map((size) => (
                     <li key={size}>
-                      <a
+                      <Link
                         href="#"
                         className={
                           selectedSize === size ? "bg-black text-white" : ""
@@ -261,7 +261,7 @@ const ProductDetail = ({ product }) => {
                         }}
                       >
                         {size}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -366,12 +366,12 @@ const ProductDetail = ({ product }) => {
               <div className="mavo-product-categorie">
                 <div className="categorie">
                   <span>Categories :</span>
-                  <a href="#">Shoe,</a>
-                  <a href="#"> Sneaker</a>
+                  <Link href="#">Shoe,</Link>
+                  <Link href="#"> Sneaker</Link>
                 </div>
                 <div className="categorie-tag">
                   <span>Sku :</span>
-                  <a href="#">{product.id}</a>
+                  <Link href="#">{product.id}</Link>
                 </div>
               </div>
             </div>
