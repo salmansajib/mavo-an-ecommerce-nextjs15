@@ -1,9 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import LoaderSpinner from "@/components/LoaderSpinner";
 
 const ProductGallery = ({
   product,
@@ -11,52 +9,81 @@ const ProductGallery = ({
   onColorChange,
   onImageChange,
 }) => {
-  const [selectedImage, setSelectedImage] = useState(0);
-  const [loadedImages, setLoadedImages] = useState(new Set());
-  const [isImageLoading, setIsImageLoading] = useState(false);
+  // State for selected image index
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  // Ref to access Swiper instance
+  const swiperRef = useRef(null);
 
-  // Get all images from variants
-  const allImages = product.variants.flatMap((variant) => variant.images);
+  // Get all images from all variants for gallery and thumbnails
+  const getGalleryImages = () => {
+    const allImages = [];
+    const seenSrcs = new Set();
 
-  // Update selected image when color changes
+    product.variants.forEach((variant, variantIndex) => {
+      variant.images.forEach((src, imageIndex) => {
+        if (!seenSrcs.has(src)) {
+          seenSrcs.add(src);
+          allImages.push({
+            id: `${variantIndex}-${imageIndex}`,
+            src,
+            alt: `${variant.color} variant image ${imageIndex + 1}`,
+            color: variant.color,
+          });
+        }
+      });
+    });
+
+    return allImages;
+  };
+
+  const galleryImages = getGalleryImages();
+  const thumbnails = galleryImages.map((image) => ({
+    ...image,
+    src: image.src,
+  }));
+
+  // Preload all gallery images on component mount
+  useEffect(() => {
+    galleryImages.forEach((image) => {
+      const img = new window.Image();
+      img.src = image.src;
+      img.onload = () => {
+        console.log(`Preloaded image: ${image.src}`);
+      };
+      img.onerror = () => {
+        console.error(`Failed to preload image: ${image.src}`);
+      };
+    });
+  }, [galleryImages]);
+
+  // Sync gallery and thumbnails with selected color
   useEffect(() => {
     if (selectedColor) {
-      // Find the variant with the selected color
-      const variantIndex = product.variants.findIndex(
-        (variant) => variant.color === selectedColor,
+      const firstImageIndex = galleryImages.findIndex(
+        (image) => image.color === selectedColor,
       );
-
-      if (variantIndex !== -1) {
-        // Find the index of the first image in this variant's images
-        const firstImageInVariant = allImages.findIndex(
-          (img) => img === product.variants[variantIndex].images[0],
-        );
-
-        if (firstImageInVariant !== -1) {
-          setSelectedImage(firstImageInVariant);
-          onImageChange(firstImageInVariant);
+      if (firstImageIndex >= 0) {
+        setSelectedImageIndex(firstImageIndex);
+        onImageChange(firstImageIndex);
+        // Slide to the thumbnail corresponding to the selected color
+        if (swiperRef.current && swiperRef.current.swiper) {
+          swiperRef.current.swiper.slideTo(firstImageIndex);
         }
       }
     }
-  }, [selectedColor, product.variants]);
+  }, [selectedColor, galleryImages, onImageChange]);
 
+  // Handle thumbnail click
   const handleThumbnailClick = (index) => {
-    if (!loadedImages.has(index)) {
-      setIsImageLoading(true);
-    }
-
-    setSelectedImage(index);
+    setSelectedImageIndex(index);
     onImageChange(index);
-
-    // Find the variant that contains this image
-    const variantIndex = product.variants.findIndex((variant) =>
-      variant.images.includes(allImages[index]),
-    );
-
-    if (variantIndex !== -1) {
-      // Change the color to the variant of the selected image
-      const newColor = product.variants[variantIndex].color;
-      onColorChange(product.variants[variantIndex]);
+    const clickedImage = galleryImages[index];
+    if (clickedImage.color !== selectedColor) {
+      onColorChange(clickedImage.color);
+    }
+    // Slide to the clicked thumbnail
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(index);
     }
   };
 
@@ -65,33 +92,24 @@ const ProductGallery = ({
       {/* Main Image */}
       <div className="swiper-container gallery-slider">
         <div className="swiper-wrapper">
-          {allImages.map((image, index) => (
+          {galleryImages.map((image, index) => (
             <div
-              key={index}
+              key={image.id}
               className={`swiper-slide relative ${
-                selectedImage === index ? "active" : ""
+                selectedImageIndex === index ? "active" : ""
               }`}
               style={{
-                display: selectedImage === index ? "block" : "none",
+                display: selectedImageIndex === index ? "block" : "none",
               }}
             >
               <div className="relative w-full aspect-square">
-                {isImageLoading && selectedImage === index && (
-                  <div className="absolute inset-0 bg-gray-100 animate-pulse flex items-center justify-center">
-                    <LoaderSpinner />
-                  </div>
-                )}
                 <Image
-                  src={image}
-                  alt={`${product.name} - Image ${index + 1}`}
+                  src={image.src}
+                  alt={image.alt}
                   width={500}
                   height={500}
                   quality={70}
                   className="w-full h-auto object-cover"
-                  onLoadingComplete={() => {
-                    setLoadedImages((prev) => new Set(prev).add(index));
-                    setIsImageLoading(false);
-                  }}
                 />
               </div>
               <div className="mavo-single-product-view">
@@ -110,24 +128,23 @@ const ProductGallery = ({
       {/* Thumbnail Images */}
       <div className="swiper-container overflow-hidden">
         <Swiper
-          modules={[Navigation]}
-          spaceBetween={10}
-          slidesPerView={4}
-          navigation={false}
+          spaceBetween={3}
+          slidesPerView={3}
+          ref={swiperRef} // Attach ref to Swiper
         >
-          {allImages.map((image, index) => (
-            <SwiperSlide key={index}>
+          {thumbnails.map((thumb, index) => (
+            <SwiperSlide key={thumb.id}>
               <Image
-                src={image}
-                alt={`${product.name} - Thumbnail ${index + 1}`}
-                width={100}
-                height={100}
+                src={thumb.src}
+                alt={thumb.alt}
+                width={200}
+                height={200}
                 quality={100}
                 className={`${
-                  selectedImage === index
+                  selectedImageIndex === index
                     ? "border-[5px] !border-[#000]/10"
                     : "border-[5px] border-transparent"
-                } w-full h-auto cursor-pointer`}
+                } w-[150px] h-auto cursor-pointer`}
                 onClick={() => handleThumbnailClick(index)}
               />
             </SwiperSlide>

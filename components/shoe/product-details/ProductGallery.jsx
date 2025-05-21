@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -12,6 +12,8 @@ const ProductGallery = ({
 }) => {
   // State for selected image index
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  // Ref to access Swiper instance
+  const swiperRef = useRef(null);
 
   // Get all images from all variants for gallery and thumbnails
   const getGalleryImages = () => {
@@ -61,9 +63,16 @@ const ProductGallery = ({
       const firstImageIndex = galleryImages.findIndex(
         (image) => image.color === selectedColor,
       );
-      setSelectedImageIndex(firstImageIndex >= 0 ? firstImageIndex : 0);
+      if (firstImageIndex >= 0) {
+        setSelectedImageIndex(firstImageIndex);
+        onImageSelect(firstImageIndex);
+        // Slide to the thumbnail corresponding to the selected color
+        if (swiperRef.current && swiperRef.current.swiper) {
+          swiperRef.current.swiper.slideTo(firstImageIndex);
+        }
+      }
     }
-  }, [selectedColor, galleryImages]);
+  }, [selectedColor, galleryImages, onImageSelect]);
 
   // Handle thumbnail click
   const handleThumbnailClick = (index) => {
@@ -73,10 +82,15 @@ const ProductGallery = ({
     if (clickedImage.color !== selectedColor) {
       onColorSelect(clickedImage.color); // Update color in parent
     }
+    // Slide to the clicked thumbnail
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(index);
+    }
   };
 
   return (
     <div className="gallery mavo-md-mb-50 relative">
+      {/* main image */}
       <div className="swiper-container gallery-slider">
         <div className="swiper-wrapper mavo-slider-large">
           {galleryImages.map((image, index) => (
@@ -102,13 +116,10 @@ const ProductGallery = ({
           ))}
         </div>
       </div>
+
+      {/* Thumbnail Images */}
       <div className="swiper-container overflow-hidden">
-        <Swiper
-          modules={[Navigation]}
-          slidesPerView="3"
-          spaceBetween={3}
-          navigation
-        >
+        <Swiper slidesPerView={3} spaceBetween={3} ref={swiperRef}>
           {thumbnails.map((thumb, index) => (
             <SwiperSlide key={thumb.id}>
               <Image
