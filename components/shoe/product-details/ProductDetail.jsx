@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, updateQuantity } from "@/slices/cartSlice";
@@ -305,7 +306,7 @@ const ProductDetail = ({ product }) => {
                 </span>
               </div>
 
-              <div className="mavo-product-cown flex flex-wrap items-center gap-3">
+              <div className="mb-[20px] flex flex-col md:flex-row items-center gap-[30px] py-[20px]">
                 <div className="flex items-center justify-between w-[180px] h-[60px] border !border-black/40">
                   <button
                     className="h-full w-[35px] flex items-center justify-center border-r !border-black/40"
@@ -333,17 +334,26 @@ const ProductDetail = ({ product }) => {
                     <Icon name="Plus" size={16} />
                   </button>
                 </div>
-                <div className="mavo-product-add-cart flex flex-wrap items-center !ml-0 mt-2 md:!mt-0 gap-2">
+                <div className="font-marcellus flex flex-col md:flex-row items-center gap-[30px]">
                   <button
                     onClick={handleAddToCart}
                     className="!uppercase w-[180px] h-[60px] border !border-black flex items-center justify-center bg-black text-white"
                   >
                     Add to Cart
                   </button>
-                  <a href="#" className="flex flex-wrap items-center gap-2">
-                    <img src="/images/icons/wishlist.png" alt="wishlist" /> Add
-                    to wish list
-                  </a>
+                  <Link
+                    href="/cart"
+                    className="flex flex-wrap items-center gap-2"
+                  >
+                    <Image
+                      width={50}
+                      height={50}
+                      className="w-[20px] h-auto"
+                      src="/images/icons/wishlist.png"
+                      alt="wishlist"
+                    />{" "}
+                    Add to wish list
+                  </Link>
                 </div>
               </div>
 
