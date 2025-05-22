@@ -14,22 +14,34 @@ const ProductGallery = ({
   // Ref to access Swiper instance
   const swiperRef = useRef(null);
 
-  // Get all images from all variants for gallery and thumbnails
+  // Get all images from all variants' materials for gallery and thumbnails
   const getGalleryImages = () => {
     const allImages = [];
     const seenSrcs = new Set();
 
+    // Check if product and variants exist
+    if (!product || !product.variants) {
+      console.warn("Product or variants is undefined:", product);
+      return allImages;
+    }
+
     product.variants.forEach((variant, variantIndex) => {
-      variant.images.forEach((src, imageIndex) => {
-        if (!seenSrcs.has(src)) {
-          seenSrcs.add(src);
-          allImages.push({
-            id: `${variantIndex}-${imageIndex}`,
-            src,
-            alt: `${variant.color} variant image ${imageIndex + 1}`,
-            color: variant.color,
-          });
-        }
+      // Access images from materials array
+      variant.materials.forEach((material, materialIndex) => {
+        material.images.forEach((src, imageIndex) => {
+          if (!seenSrcs.has(src)) {
+            seenSrcs.add(src);
+            allImages.push({
+              id: `${variantIndex}-${materialIndex}-${imageIndex}`,
+              src,
+              alt: `${variant.color} ${material.material} variant image ${
+                imageIndex + 1
+              }`,
+              color: variant.color,
+              material: material.material,
+            });
+          }
+        });
       });
     });
 
@@ -58,7 +70,7 @@ const ProductGallery = ({
 
   // Sync gallery with selected color
   useEffect(() => {
-    if (selectedColor) {
+    if (selectedColor && galleryImages.length > 0) {
       const firstImageIndex = galleryImages.findIndex(
         (image) => image.color === selectedColor,
       );
@@ -89,52 +101,76 @@ const ProductGallery = ({
 
   return (
     <div className="gallery mavo-md-mb-50 relative">
-      {/* main image */}
+      {/* Main image */}
       <div className="swiper-container gallery-slider">
         <div className="swiper-wrapper mavo-slider-large">
-          {galleryImages.map((image, index) => (
-            <div
-              className={`swiper-slide ${
-                index === selectedImageIndex ? "block" : "hidden"
-              }`}
-              key={image.id}
-            >
-              <div className="gallery-title">
-                <a href="about-us-1.html">
-                  <i className="icofont-search"></i>
-                </a>
+          {galleryImages.length > 0 ? (
+            galleryImages.map((image, index) => (
+              <div
+                className={`swiper-slide ${
+                  index === selectedImageIndex ? "block" : "hidden"
+                }`}
+                key={image.id}
+              >
+                <div className="gallery-title">
+                  <a href="about-us-1.html">
+                    <i className="icofont-search"></i>
+                  </a>
+                </div>
+                <Image
+                  width={500}
+                  height={500}
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-[455px] h-auto"
+                />
               </div>
+            ))
+          ) : (
+            <div className="swiper-slide">
               <Image
                 width={500}
                 height={500}
-                src={image.src}
-                alt={image.alt}
+                src="/images/placeholder.jpg"
+                alt="No image available"
                 className="w-[455px] h-auto"
               />
             </div>
-          ))}
+          )}
         </div>
       </div>
 
       {/* Thumbnail Images */}
       <div className="swiper-container overflow-hidden">
         <Swiper slidesPerView={3} spaceBetween={3} ref={swiperRef}>
-          {thumbnails.map((thumb, index) => (
-            <SwiperSlide key={thumb.id}>
+          {thumbnails.length > 0 ? (
+            thumbnails.map((thumb, index) => (
+              <SwiperSlide key={thumb.id}>
+                <Image
+                  width={500}
+                  height={500}
+                  src={thumb.src}
+                  alt={thumb.alt}
+                  className={`${
+                    index === selectedImageIndex
+                      ? "border-[5px] !border-[#000]/10"
+                      : "border-[5px] border-transparent"
+                  } w-[300px] h-[200px] object-cover cursor-pointer`}
+                  onClick={() => handleThumbnailClick(index)}
+                />
+              </SwiperSlide>
+            ))
+          ) : (
+            <SwiperSlide>
               <Image
                 width={500}
                 height={500}
-                src={thumb.src}
-                alt={thumb.alt}
-                className={`${
-                  index === selectedImageIndex
-                    ? "border-[5px] !border-[#000]/10"
-                    : "border-[5px] border-transparent"
-                } w-[300px] h-auto object-cover cursor-pointer`}
-                onClick={() => handleThumbnailClick(index)}
+                src="/images/placeholder.jpg"
+                alt="No thumbnail available"
+                className="w-[300px] h-auto object-cover"
               />
             </SwiperSlide>
-          ))}
+          )}
         </Swiper>
       </div>
     </div>
