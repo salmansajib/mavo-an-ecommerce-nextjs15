@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "jewel1",
+    "name": "Serpent Crown Ring",
+    "type": "Jewelry",
+    "base_price": 450.0,
+    "currency": "USD",
+    "tags": "New",
+    "reviews": 325,
+    "description": "The Serpent Crown Ring is a luxurious masterpiece, crafted from 18K gold and adorned with meticulously placed pearl inlays. Its bold design features a striking serpent coiled around a radiant sunburst, symbolizing strength and eternity. The ring’s polished finish and intricate detailing make it a standout piece, perfect for those who appreciate timeless elegance with a touch of mystique. Ideal for formal occasions or as a statement piece in everyday wear, this ring combines durability and beauty. The pearls add a subtle shimmer, enhancing the golden hue, while the ergonomic band ensures comfort. Elevate your jewelry collection with this unique, handcrafted treasure, blending ancient symbolism with modern craftsmanship.",
+    "variants": [
+      {
+        "material": "18K Gold with Pearl Inlays",
+        "lengths": [
+          { "length": 16, "price": 460.0, "stock": 30 },
+          { "length": 18, "price": 470.0, "stock": 30 },
+          { "length": 20, "price": 480.0, "stock": 30 },
+          { "length": 24, "price": 490.0, "stock": 30 },
+          { "length": 30, "price": 500.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/01.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel2",
+    "name": "Celestial Moon and Star Earrings",
+    "type": "Jewelry",
+    "base_price": 120.0,
+    "currency": "USD",
+    "reviews": 1230,
+    "description": "The Celestial Moon and Star Earrings are a dazzling pair, crafted from sterling silver and embellished with sparkling cubic zirconia stones. Featuring a crescent moon and a radiant star, these earrings blend celestial charm with elegant design. The twisted hoop bases add a touch of sophistication, ensuring a secure and comfortable fit. Perfect for everyday wear or special occasions, they capture the magic of the night sky with their intricate detailing and brilliant shine. Lightweight yet striking, these earrings are ideal for those who love unique, nature-inspired jewelry. Elevate your style with this enchanting set, combining durability and timeless beauty.",
+    "variants": [
+      {
+        "material": "Sterling Silver with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 120.0, "stock": 30 },
+          { "length": 18, "price": 130.0, "stock": 30 },
+          { "length": 20, "price": 140.0, "stock": 30 },
+          { "length": 24, "price": 150.0, "stock": 30 },
+          { "length": 30, "price": 160.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/02.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel3",
+    "name": "Lunar Charm Necklace",
+    "type": "Jewelry",
+    "base_price": 180.0,
+    "currency": "USD",
+    "reviews": 579,
+    "description": "The Lunar Charm Necklace is a captivating piece, crafted with 18K gold plating and accented with vibrant enamel. Featuring a crescent moon, sun, star, and butterfly charms, it blends celestial and nature-inspired elegance. The sturdy chain ensures durability, while the delicate pendants add a whimsical touch. Perfect for layering or wearing solo, this necklace shines with every movement, making it ideal for both casual and formal settings. Its lightweight design promises all-day comfort, and the rich gold finish complements any outfit. A stunning addition to any jewelry collection, it embodies timeless beauty and charm.",
+    "variants": [
+      {
+        "material": "18K Gold Plated with Enamel Accents",
+        "lengths": [
+          { "length": 16, "price": 180.0, "stock": 30 },
+          { "length": 18, "price": 190.0, "stock": 30 },
+          { "length": 20, "price": 200.0, "stock": 30 },
+          { "length": 24, "price": 210.0, "stock": 30 },
+          { "length": 30, "price": 220.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/03.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel4",
+    "name": "Crystal Bar Bracelet",
+    "type": "Jewelry",
+    "tags": "Top",
+    "base_price": 130.0,
+    "currency": "USD",
+    "reviews": 302,
+    "description": "The Crystal Bar Bracelet is a chic and elegant accessory, crafted from 18K gold plating and adorned with sparkling cubic zirconia stones. Featuring a sleek bar design embedded with crystals, it pairs beautifully with the sturdy, twisted chain. The heart-shaped clasp adds a romantic touch, ensuring both security and style. Ideal for everyday wear or special events, this lightweight bracelet offers a dazzling shine and comfortable fit. Its versatile design complements any outfit, making it a perfect addition to your jewelry collection. Elevate your wrist game with this timeless piece of craftsmanship.",
+    "variants": [
+      {
+        "material": "18K Gold Plated with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 140.0, "stock": 30 },
+          { "length": 18, "price": 150.0, "stock": 30 },
+          { "length": 20, "price": 160.0, "stock": 30 },
+          { "length": 24, "price": 170.0, "stock": 30 },
+          { "length": 30, "price": 180.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/04.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel5",
+    "name": "Radiant Gem Drop Earring",
+    "type": "Jewelry",
+    "base_price": 90.0,
+    "currency": "USD",
+    "reviews": 302,
+    "description": "The Radiant Gem Drop Earring is a captivating single piece, crafted from 18K gold and featuring a brilliant cubic zirconia centerpiece. Surrounded by smaller sparkling stones, the central gem creates a stunning halo effect, perfect for adding elegance to any look. The secure clasp ensures comfort and durability, making it ideal for both daily wear and special occasions. Its dangling design catches the light beautifully, enhancing your style with a touch of sophistication. This earring pairs effortlessly with any outfit, offering a timeless sparkle that elevates your jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold Plated with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 90.0, "stock": 30 },
+          { "length": 18, "price": 100.0, "stock": 30 },
+          { "length": 20, "price": 110.0, "stock": 30 },
+          { "length": 24, "price": 120.0, "stock": 30 },
+          { "length": 30, "price": 130.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/05.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel6",
+    "name": "Ruby Teardrop Necklace",
+    "type": "Jewelry",
+    "tags": "Top",
+    "base_price": 250.0,
+    "currency": "USD",
+    "reviews": 278,
+    "description": "The Ruby Teardrop Necklace is an exquisite piece, crafted from sterling silver and featuring a stunning pear-shaped ruby pendant. The rich red gemstone gleams with natural brilliance, set in a delicate claw design that enhances its elegance. Paired with a fine silver chain, this necklace offers a perfect balance of sophistication and comfort. Ideal for special occasions or as a bold everyday statement, its timeless design complements any attire. The ruby’s deep hue adds a touch of luxury, making this necklace a cherished addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "Sterling Silver with Ruby Gemstone",
+        "lengths": [
+          { "length": 16, "price": 250.0, "stock": 30 },
+          { "length": 18, "price": 260.0, "stock": 30 },
+          { "length": 20, "price": 270.0, "stock": 30 },
+          { "length": 24, "price": 280.0, "stock": 30 },
+          { "length": 30, "price": 290.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/06.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel7",
+    "name": "Diamond Eternity Bangles",
+    "type": "Jewelry",
+    "base_price": 300.0,
+    "currency": "USD",
+    "reviews": 519,
+    "description": "The Diamond Eternity Bangles are a pair of stunning accessories, crafted from sterling silver and encrusted with shimmering cubic zirconia stones. Each bangle features a continuous line of sparkling gems, symbolizing endless elegance and sophistication. Their sleek design ensures a comfortable fit, making them perfect for both daily wear and special occasions. The reflective silver finish enhances the brilliance of the stones, adding a touch of luxury to any ensemble. Ideal for gifting or cherishing yourself, these bangles are a timeless addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "Sterling Silver with Ruby Gemstone",
+        "lengths": [
+          { "length": 16, "price": 300.0, "stock": 30 },
+          { "length": 18, "price": 310.0, "stock": 30 },
+          { "length": 20, "price": 320.0, "stock": 30 },
+          { "length": 24, "price": 330.0, "stock": 30 },
+          { "length": 30, "price": 340.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/07.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel8",
+    "name": "Textured Gold Hoop Earrings",
+    "type": "Jewelry",
+    "base_price": 200.0,
+    "currency": "USD",
+    "reviews": 937,
+    "description": "The Textured Gold Hoop Earrings are a bold yet elegant pair, crafted from 18K gold with a unique hammered texture. Their organic, wavy design adds a modern twist to classic hoops, making them a versatile accessory for any occasion. The rich gold finish reflects light beautifully, enhancing their sophisticated appeal. Lightweight and comfortable, these earrings are perfect for all-day wear, whether for casual outings or formal events. The secure post closure ensures they stay in place, offering both style and practicality. A timeless addition to your jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold",
+        "lengths": [
+          { "length": 16, "price": 200.0, "stock": 30 },
+          { "length": 18, "price": 210.0, "stock": 30 },
+          { "length": 20, "price": 220.0, "stock": 30 },
+          { "length": 24, "price": 230.0, "stock": 30 },
+          { "length": 30, "price": 240.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/08.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel9",
+    "name": "Leaf Dew Necklace",
+    "type": "Jewelry",
+    "base_price": 220.0,
+    "currency": "USD",
+    "reviews": 937,
+    "description": "The Leaf Dew Necklace is a delicate and nature-inspired piece, crafted from 18K gold and featuring two intricately designed leaves. A sparkling cubic zirconia stone, resembling a dewdrop, hangs from the leaves, adding a touch of brilliance. The fine gold chain ensures a lightweight and comfortable fit, making it perfect for daily wear or special occasions. Its organic design and radiant finish bring a fresh elegance to any outfit, ideal for those who love botanical motifs. A stunning addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 220.0, "stock": 30 },
+          { "length": 18, "price": 230.0, "stock": 30 },
+          { "length": 20, "price": 240.0, "stock": 30 },
+          { "length": 24, "price": 250.0, "stock": 30 },
+          { "length": 30, "price": 260.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/09.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel10",
+    "name": "Geometric Crystal Ring",
+    "type": "Jewelry",
+    "base_price": 280.0,
+    "currency": "USD",
+    "reviews": 387,
+    "description": "The Geometric Crystal Ring is a modern masterpiece, crafted from 18K gold and adorned with shimmering cubic zirconia stones. Its unique open-band design features interlocking rectangular frames, encrusted with sparkling gems for a bold, contemporary look. The rich gold finish enhances its luxurious appeal, making it perfect for both casual and formal settings. Comfortable and lightweight, this ring adds a touch of architectural elegance to any outfit. Ideal for those who love statement pieces, it’s a striking addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 280.0, "stock": 30 },
+          { "length": 18, "price": 300.0, "stock": 30 },
+          { "length": 20, "price": 310.0, "stock": 30 },
+          { "length": 24, "price": 320.0, "stock": 30 },
+          { "length": 30, "price": 330.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/10.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel11",
+    "name": "Diamond Cluster Ring",
+    "type": "Jewelry",
+    "base_price": 350.0,
+    "currency": "USD",
+    "reviews": 387,
+    "description": "The Diamond Cluster Ring is a breathtaking piece, crafted from 18K gold and featuring a stunning cluster of diamonds. The arrangement of varying diamond sizes creates a sparkling focal point, exuding elegance and sophistication. Its sleek gold band ensures a comfortable fit, making it perfect for daily wear or special occasions. The radiant diamonds catch the light beautifully, adding a touch of luxury to any look. Ideal for those who appreciate timeless beauty, this ring is a dazzling addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold with Diamond",
+        "lengths": [
+          { "length": 16, "price": 350.0, "stock": 30 },
+          { "length": 18, "price": 360.0, "stock": 30 },
+          { "length": 20, "price": 370.0, "stock": 30 },
+          { "length": 24, "price": 380.0, "stock": 30 },
+          { "length": 30, "price": 390.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/11.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel12",
+    "name": "Heart Link Ring",
+    "type": "Jewelry",
+    "base_price": 260.0,
+    "currency": "USD",
+    "reviews": 387,
+    "description": "The Heart Link Ring is a romantic and stylish piece, crafted from 18K gold. Its design features interlocking heart shapes, creating a bold yet delicate look that symbolizes love and connection. The polished gold finish adds a luxurious shine, making it a perfect accessory for any occasion, from casual outings to formal events. Lightweight and comfortable, this ring fits beautifully, offering a timeless elegance. Ideal for gifting or cherishing yourself, it’s a heartfelt addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold",
+        "lengths": [
+          { "length": 16, "price": 270.0, "stock": 30 },
+          { "length": 18, "price": 280.0, "stock": 30 },
+          { "length": 20, "price": 290.0, "stock": 30 },
+          { "length": 24, "price": 300.0, "stock": 30 },
+          { "length": 30, "price": 310.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/12.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel13",
+    "name": "Serpent Crown Ring",
+    "type": "Jewelry",
+    "base_price": 450.0,
+    "currency": "USD",
+    "tags": "New",
+    "reviews": 325,
+    "description": "The Serpent Crown Ring is a luxurious masterpiece, crafted from 18K gold and adorned with meticulously placed pearl inlays. Its bold design features a striking serpent coiled around a radiant sunburst, symbolizing strength and eternity. The ring’s polished finish and intricate detailing make it a standout piece, perfect for those who appreciate timeless elegance with a touch of mystique. Ideal for formal occasions or as a statement piece in everyday wear, this ring combines durability and beauty. The pearls add a subtle shimmer, enhancing the golden hue, while the ergonomic band ensures comfort. Elevate your jewelry collection with this unique, handcrafted treasure, blending ancient symbolism with modern craftsmanship.",
+    "variants": [
+      {
+        "material": "18K Gold with Pearl Inlays",
+        "lengths": [
+          { "length": 16, "price": 460.0, "stock": 30 },
+          { "length": 18, "price": 470.0, "stock": 30 },
+          { "length": 20, "price": 480.0, "stock": 30 },
+          { "length": 24, "price": 490.0, "stock": 30 },
+          { "length": 30, "price": 500.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/01.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel14",
+    "name": "Celestial Moon and Star Earrings",
+    "type": "Jewelry",
+    "base_price": 120.0,
+    "currency": "USD",
+    "reviews": 1230,
+    "description": "The Celestial Moon and Star Earrings are a dazzling pair, crafted from sterling silver and embellished with sparkling cubic zirconia stones. Featuring a crescent moon and a radiant star, these earrings blend celestial charm with elegant design. The twisted hoop bases add a touch of sophistication, ensuring a secure and comfortable fit. Perfect for everyday wear or special occasions, they capture the magic of the night sky with their intricate detailing and brilliant shine. Lightweight yet striking, these earrings are ideal for those who love unique, nature-inspired jewelry. Elevate your style with this enchanting set, combining durability and timeless beauty.",
+    "variants": [
+      {
+        "material": "Sterling Silver with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 120.0, "stock": 30 },
+          { "length": 18, "price": 130.0, "stock": 30 },
+          { "length": 20, "price": 140.0, "stock": 30 },
+          { "length": 24, "price": 150.0, "stock": 30 },
+          { "length": 30, "price": 160.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/02.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel15",
+    "name": "Lunar Charm Necklace",
+    "type": "Jewelry",
+    "base_price": 180.0,
+    "currency": "USD",
+    "reviews": 579,
+    "description": "The Lunar Charm Necklace is a captivating piece, crafted with 18K gold plating and accented with vibrant enamel. Featuring a crescent moon, sun, star, and butterfly charms, it blends celestial and nature-inspired elegance. The sturdy chain ensures durability, while the delicate pendants add a whimsical touch. Perfect for layering or wearing solo, this necklace shines with every movement, making it ideal for both casual and formal settings. Its lightweight design promises all-day comfort, and the rich gold finish complements any outfit. A stunning addition to any jewelry collection, it embodies timeless beauty and charm.",
+    "variants": [
+      {
+        "material": "18K Gold Plated with Enamel Accents",
+        "lengths": [
+          { "length": 16, "price": 180.0, "stock": 30 },
+          { "length": 18, "price": 190.0, "stock": 30 },
+          { "length": 20, "price": 200.0, "stock": 30 },
+          { "length": 24, "price": 210.0, "stock": 30 },
+          { "length": 30, "price": 220.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/03.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel16",
+    "name": "Crystal Bar Bracelet",
+    "type": "Jewelry",
+    "tags": "Top",
+    "base_price": 130.0,
+    "currency": "USD",
+    "reviews": 302,
+    "description": "The Crystal Bar Bracelet is a chic and elegant accessory, crafted from 18K gold plating and adorned with sparkling cubic zirconia stones. Featuring a sleek bar design embedded with crystals, it pairs beautifully with the sturdy, twisted chain. The heart-shaped clasp adds a romantic touch, ensuring both security and style. Ideal for everyday wear or special events, this lightweight bracelet offers a dazzling shine and comfortable fit. Its versatile design complements any outfit, making it a perfect addition to your jewelry collection. Elevate your wrist game with this timeless piece of craftsmanship.",
+    "variants": [
+      {
+        "material": "18K Gold Plated with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 140.0, "stock": 30 },
+          { "length": 18, "price": 150.0, "stock": 30 },
+          { "length": 20, "price": 160.0, "stock": 30 },
+          { "length": 24, "price": 170.0, "stock": 30 },
+          { "length": 30, "price": 180.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/04.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel17",
+    "name": "Radiant Gem Drop Earring",
+    "type": "Jewelry",
+    "base_price": 90.0,
+    "currency": "USD",
+    "reviews": 302,
+    "description": "The Radiant Gem Drop Earring is a captivating single piece, crafted from 18K gold and featuring a brilliant cubic zirconia centerpiece. Surrounded by smaller sparkling stones, the central gem creates a stunning halo effect, perfect for adding elegance to any look. The secure clasp ensures comfort and durability, making it ideal for both daily wear and special occasions. Its dangling design catches the light beautifully, enhancing your style with a touch of sophistication. This earring pairs effortlessly with any outfit, offering a timeless sparkle that elevates your jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold Plated with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 90.0, "stock": 30 },
+          { "length": 18, "price": 100.0, "stock": 30 },
+          { "length": 20, "price": 110.0, "stock": 30 },
+          { "length": 24, "price": 120.0, "stock": 30 },
+          { "length": 30, "price": 130.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/05.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel18",
+    "name": "Ruby Teardrop Necklace",
+    "type": "Jewelry",
+    "tags": "Top",
+    "base_price": 250.0,
+    "currency": "USD",
+    "reviews": 278,
+    "description": "The Ruby Teardrop Necklace is an exquisite piece, crafted from sterling silver and featuring a stunning pear-shaped ruby pendant. The rich red gemstone gleams with natural brilliance, set in a delicate claw design that enhances its elegance. Paired with a fine silver chain, this necklace offers a perfect balance of sophistication and comfort. Ideal for special occasions or as a bold everyday statement, its timeless design complements any attire. The ruby’s deep hue adds a touch of luxury, making this necklace a cherished addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "Sterling Silver with Ruby Gemstone",
+        "lengths": [
+          { "length": 16, "price": 250.0, "stock": 30 },
+          { "length": 18, "price": 260.0, "stock": 30 },
+          { "length": 20, "price": 270.0, "stock": 30 },
+          { "length": 24, "price": 280.0, "stock": 30 },
+          { "length": 30, "price": 290.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/06.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel19",
+    "name": "Diamond Eternity Bangles",
+    "type": "Jewelry",
+    "base_price": 300.0,
+    "currency": "USD",
+    "reviews": 519,
+    "description": "The Diamond Eternity Bangles are a pair of stunning accessories, crafted from sterling silver and encrusted with shimmering cubic zirconia stones. Each bangle features a continuous line of sparkling gems, symbolizing endless elegance and sophistication. Their sleek design ensures a comfortable fit, making them perfect for both daily wear and special occasions. The reflective silver finish enhances the brilliance of the stones, adding a touch of luxury to any ensemble. Ideal for gifting or cherishing yourself, these bangles are a timeless addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "Sterling Silver with Ruby Gemstone",
+        "lengths": [
+          { "length": 16, "price": 300.0, "stock": 30 },
+          { "length": 18, "price": 310.0, "stock": 30 },
+          { "length": 20, "price": 320.0, "stock": 30 },
+          { "length": 24, "price": 330.0, "stock": 30 },
+          { "length": 30, "price": 340.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/07.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel20",
+    "name": "Textured Gold Hoop Earrings",
+    "type": "Jewelry",
+    "base_price": 200.0,
+    "currency": "USD",
+    "reviews": 937,
+    "description": "The Textured Gold Hoop Earrings are a bold yet elegant pair, crafted from 18K gold with a unique hammered texture. Their organic, wavy design adds a modern twist to classic hoops, making them a versatile accessory for any occasion. The rich gold finish reflects light beautifully, enhancing their sophisticated appeal. Lightweight and comfortable, these earrings are perfect for all-day wear, whether for casual outings or formal events. The secure post closure ensures they stay in place, offering both style and practicality. A timeless addition to your jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold",
+        "lengths": [
+          { "length": 16, "price": 200.0, "stock": 30 },
+          { "length": 18, "price": 210.0, "stock": 30 },
+          { "length": 20, "price": 220.0, "stock": 30 },
+          { "length": 24, "price": 230.0, "stock": 30 },
+          { "length": 30, "price": 240.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/08.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel21",
+    "name": "Leaf Dew Necklace",
+    "type": "Jewelry",
+    "base_price": 220.0,
+    "currency": "USD",
+    "reviews": 937,
+    "description": "The Leaf Dew Necklace is a delicate and nature-inspired piece, crafted from 18K gold and featuring two intricately designed leaves. A sparkling cubic zirconia stone, resembling a dewdrop, hangs from the leaves, adding a touch of brilliance. The fine gold chain ensures a lightweight and comfortable fit, making it perfect for daily wear or special occasions. Its organic design and radiant finish bring a fresh elegance to any outfit, ideal for those who love botanical motifs. A stunning addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 220.0, "stock": 30 },
+          { "length": 18, "price": 230.0, "stock": 30 },
+          { "length": 20, "price": 240.0, "stock": 30 },
+          { "length": 24, "price": 250.0, "stock": 30 },
+          { "length": 30, "price": 260.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/09.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel22",
+    "name": "Geometric Crystal Ring",
+    "type": "Jewelry",
+    "base_price": 280.0,
+    "currency": "USD",
+    "reviews": 387,
+    "description": "The Geometric Crystal Ring is a modern masterpiece, crafted from 18K gold and adorned with shimmering cubic zirconia stones. Its unique open-band design features interlocking rectangular frames, encrusted with sparkling gems for a bold, contemporary look. The rich gold finish enhances its luxurious appeal, making it perfect for both casual and formal settings. Comfortable and lightweight, this ring adds a touch of architectural elegance to any outfit. Ideal for those who love statement pieces, it’s a striking addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold with Cubic Zirconia",
+        "lengths": [
+          { "length": 16, "price": 280.0, "stock": 30 },
+          { "length": 18, "price": 300.0, "stock": 30 },
+          { "length": 20, "price": 310.0, "stock": 30 },
+          { "length": 24, "price": 320.0, "stock": 30 },
+          { "length": 30, "price": 330.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/10.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel23",
+    "name": "Diamond Cluster Ring",
+    "type": "Jewelry",
+    "base_price": 350.0,
+    "currency": "USD",
+    "reviews": 387,
+    "description": "The Diamond Cluster Ring is a breathtaking piece, crafted from 18K gold and featuring a stunning cluster of diamonds. The arrangement of varying diamond sizes creates a sparkling focal point, exuding elegance and sophistication. Its sleek gold band ensures a comfortable fit, making it perfect for daily wear or special occasions. The radiant diamonds catch the light beautifully, adding a touch of luxury to any look. Ideal for those who appreciate timeless beauty, this ring is a dazzling addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold with Diamond",
+        "lengths": [
+          { "length": 16, "price": 350.0, "stock": 30 },
+          { "length": 18, "price": 360.0, "stock": 30 },
+          { "length": 20, "price": 370.0, "stock": 30 },
+          { "length": 24, "price": 380.0, "stock": 30 },
+          { "length": 30, "price": 390.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/11.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  },
+  {
+    "id": "jewel24",
+    "name": "Heart Link Ring",
+    "type": "Jewelry",
+    "base_price": 260.0,
+    "currency": "USD",
+    "reviews": 387,
+    "description": "The Heart Link Ring is a romantic and stylish piece, crafted from 18K gold. Its design features interlocking heart shapes, creating a bold yet delicate look that symbolizes love and connection. The polished gold finish adds a luxurious shine, making it a perfect accessory for any occasion, from casual outings to formal events. Lightweight and comfortable, this ring fits beautifully, offering a timeless elegance. Ideal for gifting or cherishing yourself, it’s a heartfelt addition to any jewelry collection.",
+    "variants": [
+      {
+        "material": "18K Gold",
+        "lengths": [
+          { "length": 16, "price": 270.0, "stock": 30 },
+          { "length": 18, "price": 280.0, "stock": 30 },
+          { "length": 20, "price": 290.0, "stock": 30 },
+          { "length": 24, "price": 300.0, "stock": 30 },
+          { "length": 30, "price": 310.0, "stock": 30 }
+        ],
+        "images": ["/product-images/jewelry/12.jpg"]
+      }
+    ],
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Olivia Smith",
+        "profile_image": "/images/services/rivew-customar-1.jpg",
+        "rating": 5,
+        "date": "10 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 6,
+        "not_helpful_votes": 0
+      },
+      {
+        "id": "r2",
+        "user": "David Lee",
+        "profile_image": "/images/services/rivew-customar-2.jpg",
+        "rating": 4,
+        "date": "5 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 3,
+        "not_helpful_votes": 1
+      },
+      {
+        "id": "r3",
+        "user": "Sophia Turner",
+        "profile_image": "/images/services/rivew-customar-3.jpg",
+        "rating": 5,
+        "date": "3 days ago",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin, nulla et vestibulum scelerisque, neque libero ornare tortor, et pulvinar eros nisi eget ex. Cras consectetur at magna vitae fermentum.",
+        "helpful_votes": 8,
+        "not_helpful_votes": 0
+      }
+    ]
+  }
+]
