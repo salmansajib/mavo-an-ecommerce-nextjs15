@@ -803,6 +803,7 @@ __metadata:
     next: "npm:15.2.1"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
+    react-fast-marquee: "npm:^1.6.5"
     react-hot-toast: "npm:^2.5.2"
     react-loader-spinner: "npm:^6.1.6"
     react-redux: "npm:^9.2.0"
@@ -983,6 +984,16 @@ __metadata:
   peerDependencies:
     react: ^19.0.0
   checksum: 10c0/a36ce7ab507b237ae2759c984cdaad4af4096d8199fb65b3815c16825e5cfeb7293da790a3fc2184b52bfba7ba3ff31c058c01947aff6fd1a3701632aabaa6a9
+  languageName: node
+  linkType: hard
+
+"react-fast-marquee@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "react-fast-marquee@npm:1.6.5"
+  peerDependencies:
+    react: ">= 16.8.0 || ^18.0.0"
+    react-dom: ">= 16.8.0 || ^18.0.0"
+  checksum: 10c0/ea2378c4cd1eb323d004e8c2ff6222a7a4def311e00f0bd0c99adebc906aa56a078c2101b3c6697109b15dcf177bfa31edd95b9f7a114887072e3103fe234ecd
   languageName: node
   linkType: hard
 

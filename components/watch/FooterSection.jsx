@@ -38,6 +38,9 @@ const contactInfo = [
 ];
 
 const FooterSection = () => {
+  // Get current year
+  const currentYear = new Date().getFullYear();
+
   const [email, setEmail] = useState("");
 
   const handleSubscribe = () => {
@@ -157,7 +160,8 @@ const FooterSection = () => {
             <div className="container">
               <div className="copy-right">
                 <p>
-                  © 2022 Mavoo, Powered by <a href="#">Thecodude</a>
+                  &copy; {currentYear} Mavoo, Powered by{" "}
+                  <a href="#">Thecodude</a>
                 </p>
               </div>
             </div>

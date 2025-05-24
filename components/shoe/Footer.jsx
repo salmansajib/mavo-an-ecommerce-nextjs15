@@ -3,6 +3,9 @@ import Image from "next/image";
 import Logo from "../Logo";
 
 const Footer = () => {
+  // Get current year
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="mavo-footer-2 mavo-pt-120 mavo-md-pt-75 mavo-pb-10">
       <div className="container">
@@ -119,7 +122,7 @@ const Footer = () => {
           <div className="container">
             <div className="copy-right">
               <p>
-                © 2025 Mavoo, Powered by <a href="#">Thecodude</a>
+                &copy; {currentYear} Mavoo, Powered by <a href="#">Thecodude</a>
               </p>
             </div>
           </div>

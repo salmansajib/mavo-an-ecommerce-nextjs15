@@ -20,9 +20,9 @@ export const navItems = [
       { id: 23, label: "Cloth Shop", link: "/cloth/product" },
       { id: 25, label: "Shoes Shop", link: "/shoes/product" },
       { id: 24, label: "Watch Shop", link: "/watch/product" },
+      { id: 26, label: "Jewelry Shop", link: "/jewelry/product" },
       { id: 21, label: "Bag Shop", link: "bag-shop.html" },
       { id: 22, label: "Beauty Shop", link: "beauty-shop.html" },
-      { id: 26, label: "Jewelry Shop", link: "/jewelry/product" },
     ],
   },
   {
