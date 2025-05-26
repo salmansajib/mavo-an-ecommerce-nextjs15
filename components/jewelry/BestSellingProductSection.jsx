@@ -6,10 +6,11 @@ import { useProducts } from "@/hooks/useProducts";
 import LoaderSpinner from "../LoaderSpinner";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import ItemCardTwo from "./ItemCardTwo";
 
 const FEATURED_PRODUCTS_LIMIT = 6;
 
-const BestSellingProductSection = () => {
+const BestSellingProductSection = ({ title }) => {
   // Fetch first 6 products (page=1, limit=6)
   const { data, isLoading, error } = useProducts(
     "jewelry",
@@ -47,9 +48,7 @@ const BestSellingProductSection = () => {
     <div className="mavo-product-4 mavo-pt-110 mavo-md-pt-75 mavo-pb-110 mavo-md-pb-75">
       <div className="container-fluid">
         <div className="mavo-heading-area text-center mavo-mb-70 mavo-md-mb-50">
-          <h2 className="mavo-title2 text-uppercase">
-            Our Best-Selling Products
-          </h2>
+          <h2 className="mavo-title2 text-uppercase">{title}</h2>
         </div>
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -92,53 +91,7 @@ const BestSellingProductSection = () => {
         >
           {products.map((product) => (
             <SwiperSlide className="swiper-slide" key={product.id}>
-              <div className="mavo-product-info">
-                <div className="mavo-product-img">
-                  <Image
-                    width={700}
-                    height={700}
-                    quality={100}
-                    className="w-[500px] h-[430px] object-cover"
-                    src={product.variants[0].images[0]}
-                    alt="product"
-                  />
-                  <div className="mavo-product-social">
-                    <ul>
-                      <li>
-                        <Link href={`/jewelry/${product.id}`}>
-                          <i className="flaticon-eye"></i>
-                        </Link>
-                        <span> Quick view</span>
-                      </li>
-                      <li>
-                        <Link href={`/jewelry/${product.id}`}>
-                          <i className="flaticon-star"></i>
-                        </Link>
-                        <span> Compare</span>
-                      </li>
-                      <li>
-                        <Link href={`/jewelry/${product.id}`}>
-                          <i className="flaticon-sort"></i>
-                        </Link>
-                        <span> Wishlist</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="product-meta">
-                    <h5>
-                      <Link
-                        className="mavo-product-link"
-                        href={`/jewelry/${product.id}`}
-                      >
-                        {product.name}
-                      </Link>
-                    </h5>
-                    <span className="meta-sub-title">
-                      ${product.base_price}
-                    </span>
-                  </div>
-                </div>
-              </div>
+              <ItemCardTwo product={product} />
             </SwiperSlide>
           ))}
 

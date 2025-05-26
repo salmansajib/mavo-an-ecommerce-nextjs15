@@ -17,7 +17,7 @@ const JewelryHome = () => {
       <MarqueeSlideSection />
       <ProductSectionSecond />
       <TestimonialSection />
-      <BestSellingProductSection />
+      <BestSellingProductSection title="out best selling products" />
       <NewsSection />
     </>
   );
