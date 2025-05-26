@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ItemCard = ({ product }) => {
+const ItemCard = ({ product, wrapperClass = "mavo-pl-75" }) => {
   return (
-    <div className="mavo-collection-info mavo-pl-75 mavo-mb-30">
+    <div className={`mavo-collection-info mavo-mb-30 ${wrapperClass}`}>
       <div
         className={`mavo-collection-info-img ${
           product.tags ? "mavo-top-text" : ""

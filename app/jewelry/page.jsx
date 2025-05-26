@@ -7,7 +7,6 @@ import ProductSectionSecond from "@/components/jewelry/ProductSectionSecond";
 import TestimonialSection from "@/components/jewelry/TestimonialSection";
 import BestSellingProductSection from "@/components/jewelry/BestSellingProductSection";
 import NewsSection from "@/components/jewelry/NewsSection";
-import ShopInfo from "@/components/jewelry/ShopInfo";
 
 const JewelryHome = () => {
   return (
@@ -20,7 +19,6 @@ const JewelryHome = () => {
       <TestimonialSection />
       <BestSellingProductSection />
       <NewsSection />
-      <ShopInfo />
     </>
   );
 };
