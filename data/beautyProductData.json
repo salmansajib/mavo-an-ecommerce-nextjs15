@@ -1,0 +1,856 @@
+[
+  {
+    "id": "beauty1",
+    "name": "Beauty Cream Radiance",
+    "type": "Beauty Product",
+    "base_price": 30.0,
+    "currency": "USD",
+    "tags": "New",
+    "reviews": 520,
+    "description": "Elevate your skincare routine with Beauty Cream Radiance, a luxurious moisturizer crafted to hydrate and brighten your skin. Infused with natural extracts and enriched with vitamins, this cream promotes a healthy glow while reducing the appearance of fine lines. Its lightweight, non-greasy formula absorbs quickly, leaving your skin soft and revitalized. Perfect for daily use, it suits all skin types, offering long-lasting hydration and a radiant finish. Packaged in an elegant design, this cream combines functionality with sophistication.",
+    "sizes": [
+      { "size": "50ML", "price": 30.0, "stock": 100 },
+      { "size": "80ML", "price": 45.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/01.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty2",
+    "name": "Cosmetics Protect Gel",
+    "type": "Beauty Product",
+    "base_price": 18.0,
+    "currency": "USD",
+    "reviews": 169,
+    "description": "Cosmetics Protect Gel is a lightweight, fast-absorbing gel designed to shield and nourish your skin. Infused with protective ingredients, it provides a barrier against environmental stressors while keeping skin hydrated. Ideal for daily use, its non-sticky formula suits all skin types, offering a refreshed and smooth finish. Perfect for on-the-go application, this gel combines efficacy with convenience.",
+    "sizes": [
+      { "size": "30ML", "price": 18.0, "stock": 100 },
+      { "size": "50ML", "price": 25.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/02.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty3",
+    "name": "Face Cream Container",
+    "type": "Beauty Product",
+    "base_price": 22.0,
+    "currency": "USD",
+    "reviews": 720,
+    "description": "Face Cream Container by Mockup is a premium moisturizer designed to nourish and protect your skin. Enriched with natural ingredients, it offers deep hydration and a smooth texture, perfect for daily use. The elegant bottle design ensures quality and convenience, making it a stylish addition to your skincare routine. Ideal for all skin types, this 150g cream delivers long-lasting moisture and a healthy glow.",
+    "sizes": [
+      { "size": "150GM", "price": 22.0, "stock": 100 },
+      { "size": "250GM", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/03.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty4",
+    "name": "Cream Jar Thecodude",
+    "type": "Beauty Product",
+    "base_price": 30.0,
+    "currency": "USD",
+    "tags": "-20%",
+    "reviews": 356,
+    "description": "Cream Jar Thecodude is a luxurious skincare solution by Thecodude, formulated with 4% tretinoin to rejuvenate and hydrate your skin. This cream targets fine lines and uneven texture, delivering a radiant, flawless complexion. Its rich yet lightweight formula absorbs easily, making it ideal for daily use across all skin types. Packaged in a sleek, golden jar, it combines elegance with efficacy for a premium skincare experience.",
+    "sizes": [
+      { "size": "50ML", "price": 30.0, "stock": 100 },
+      { "size": "75ML", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/04.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty5",
+    "name": "Mavoo Facial Moisturizing Pump",
+    "type": "Beauty Product",
+    "base_price": 20.0,
+    "currency": "USD",
+    "reviews": 502,
+    "description": "Mavoo Facial Moisturizing Pump is a gentle, hydrating cleanser designed to nourish and cleanse your skin. Infused with natural ingredients, it removes impurities while maintaining moisture, leaving your skin soft and refreshed. The convenient pump bottle ensures easy application, making it perfect for daily use on all skin types. Ideal for a revitalizing skincare routine.",
+    "sizes": [
+      { "size": "200ML", "price": 20.0, "stock": 100 },
+      { "size": "300ML", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/05.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty6",
+    "name": "Glass Dropper Beauty Oil",
+    "type": "Beauty Product",
+    "base_price": 25.0,
+    "currency": "USD",
+    "tags": "Hot",
+    "reviews": 892,
+    "description": "Glass Dropper Beauty Oil is a luxurious facial oil designed to hydrate and rejuvenate your skin. Packed with natural oils, it provides deep nourishment and a radiant glow. The convenient dropper bottle ensures precise application, making it perfect for daily use on all skin types. Its lightweight formula absorbs quickly, leaving skin soft and smooth.",
+    "sizes": [
+      { "size": "30ML", "price": 25.0, "stock": 100 },
+      { "size": "50ML", "price": 40.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/06.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty7",
+    "name": "Eye Tool Mascara",
+    "type": "Beauty Product",
+    "base_price": 15.0,
+    "currency": "USD",
+    "reviews": 348,
+    "description": "Eye Tool Mascara is a vibrant, long-lasting formula designed to enhance your lashes. With its precision brush, it delivers bold color and volume, perfect for a striking look. Easy to apply and smudge-resistant, this mascara suits all occasions and skin types, offering a flawless finish all day.",
+    "sizes": [
+      { "size": "10ML", "price": 15.0, "stock": 100 },
+      { "size": "20ML", "price": 25.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/07.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty8",
+    "name": "Mavoo Glass Toner",
+    "type": "Beauty Product",
+    "base_price": 30.0,
+    "currency": "USD",
+    "reviews": 497,
+    "description": "Mavoo Glass Toner is a refreshing mist designed to hydrate and balance your skin. Formulated with natural extracts, it soothes and preps your skin for further skincare steps. The sleek spray bottle ensures easy application, making it ideal for daily use on all skin types. Perfect for a quick refresh anytime, anywhere.",
+    "sizes": [
+      { "size": "100ML", "price": 30.0, "stock": 100 },
+      { "size": "150ML", "price": 20.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/08.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty9",
+    "name": "Mavoo Eucalyptus Moisturizer",
+    "type": "Beauty Product",
+    "base_price": 25.0,
+    "currency": "USD",
+    "tags": "-15%",
+    "reviews": 972,
+    "description": "Mavoo Eucalyptus Moisturizer is a refreshing skincare essential that hydrates and rejuvenates with its eucalyptus-infused formula. Designed to soothe and nourish, it leaves skin soft and revitalized. Perfect for daily use, this lightweight moisturizer suits all skin types, offering a natural glow with every application.",
+    "sizes": [
+      { "size": "240ML", "price": 25.0, "stock": 100 },
+      { "size": "410ML", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/09.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty10",
+    "name": "Beauty Cream Radiance",
+    "type": "Beauty Product",
+    "base_price": 30.0,
+    "currency": "USD",
+    "tags": "New",
+    "reviews": 520,
+    "description": "Elevate your skincare routine with Beauty Cream Radiance, a luxurious moisturizer crafted to hydrate and brighten your skin. Infused with natural extracts and enriched with vitamins, this cream promotes a healthy glow while reducing the appearance of fine lines. Its lightweight, non-greasy formula absorbs quickly, leaving your skin soft and revitalized. Perfect for daily use, it suits all skin types, offering long-lasting hydration and a radiant finish. Packaged in an elegant design, this cream combines functionality with sophistication.",
+    "sizes": [
+      { "size": "50ML", "price": 30.0, "stock": 100 },
+      { "size": "80ML", "price": 45.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/01.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty11",
+    "name": "Cosmetics Protect Gel",
+    "type": "Beauty Product",
+    "base_price": 18.0,
+    "currency": "USD",
+    "reviews": 169,
+    "description": "Cosmetics Protect Gel is a lightweight, fast-absorbing gel designed to shield and nourish your skin. Infused with protective ingredients, it provides a barrier against environmental stressors while keeping skin hydrated. Ideal for daily use, its non-sticky formula suits all skin types, offering a refreshed and smooth finish. Perfect for on-the-go application, this gel combines efficacy with convenience.",
+    "sizes": [
+      { "size": "30ML", "price": 18.0, "stock": 100 },
+      { "size": "50ML", "price": 25.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/02.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty12",
+    "name": "Face Cream Container",
+    "type": "Beauty Product",
+    "base_price": 22.0,
+    "currency": "USD",
+    "reviews": 720,
+    "description": "Face Cream Container by Mockup is a premium moisturizer designed to nourish and protect your skin. Enriched with natural ingredients, it offers deep hydration and a smooth texture, perfect for daily use. The elegant bottle design ensures quality and convenience, making it a stylish addition to your skincare routine. Ideal for all skin types, this 150g cream delivers long-lasting moisture and a healthy glow.",
+    "sizes": [
+      { "size": "150GM", "price": 22.0, "stock": 100 },
+      { "size": "250GM", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/03.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty13",
+    "name": "Cream Jar Thecodude",
+    "type": "Beauty Product",
+    "base_price": 30.0,
+    "currency": "USD",
+    "tags": "-20%",
+    "reviews": 356,
+    "description": "Cream Jar Thecodude is a luxurious skincare solution by Thecodude, formulated with 4% tretinoin to rejuvenate and hydrate your skin. This cream targets fine lines and uneven texture, delivering a radiant, flawless complexion. Its rich yet lightweight formula absorbs easily, making it ideal for daily use across all skin types. Packaged in a sleek, golden jar, it combines elegance with efficacy for a premium skincare experience.",
+    "sizes": [
+      { "size": "50ML", "price": 30.0, "stock": 100 },
+      { "size": "75ML", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/04.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty14",
+    "name": "Mavoo Facial Moisturizing Pump",
+    "type": "Beauty Product",
+    "base_price": 20.0,
+    "currency": "USD",
+    "reviews": 502,
+    "description": "Mavoo Facial Moisturizing Pump is a gentle, hydrating cleanser designed to nourish and cleanse your skin. Infused with natural ingredients, it removes impurities while maintaining moisture, leaving your skin soft and refreshed. The convenient pump bottle ensures easy application, making it perfect for daily use on all skin types. Ideal for a revitalizing skincare routine.",
+    "sizes": [
+      { "size": "200ML", "price": 20.0, "stock": 100 },
+      { "size": "300ML", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/05.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty15",
+    "name": "Glass Dropper Beauty Oil",
+    "type": "Beauty Product",
+    "base_price": 25.0,
+    "currency": "USD",
+    "tags": "Hot",
+    "reviews": 892,
+    "description": "Glass Dropper Beauty Oil is a luxurious facial oil designed to hydrate and rejuvenate your skin. Packed with natural oils, it provides deep nourishment and a radiant glow. The convenient dropper bottle ensures precise application, making it perfect for daily use on all skin types. Its lightweight formula absorbs quickly, leaving skin soft and smooth.",
+    "sizes": [
+      { "size": "30ML", "price": 25.0, "stock": 100 },
+      { "size": "50ML", "price": 40.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/06.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty16",
+    "name": "Eye Tool Mascara",
+    "type": "Beauty Product",
+    "base_price": 15.0,
+    "currency": "USD",
+    "reviews": 348,
+    "description": "Eye Tool Mascara is a vibrant, long-lasting formula designed to enhance your lashes. With its precision brush, it delivers bold color and volume, perfect for a striking look. Easy to apply and smudge-resistant, this mascara suits all occasions and skin types, offering a flawless finish all day.",
+    "sizes": [
+      { "size": "10ML", "price": 15.0, "stock": 100 },
+      { "size": "20ML", "price": 25.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/07.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty17",
+    "name": "Mavoo Glass Toner",
+    "type": "Beauty Product",
+    "base_price": 30.0,
+    "currency": "USD",
+    "reviews": 497,
+    "description": "Mavoo Glass Toner is a refreshing mist designed to hydrate and balance your skin. Formulated with natural extracts, it soothes and preps your skin for further skincare steps. The sleek spray bottle ensures easy application, making it ideal for daily use on all skin types. Perfect for a quick refresh anytime, anywhere.",
+    "sizes": [
+      { "size": "100ML", "price": 30.0, "stock": 100 },
+      { "size": "150ML", "price": 20.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/08.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  },
+  {
+    "id": "beauty18",
+    "name": "Mavoo Eucalyptus Moisturizer",
+    "type": "Beauty Product",
+    "base_price": 25.0,
+    "currency": "USD",
+    "tags": "-15%",
+    "reviews": 972,
+    "description": "Mavoo Eucalyptus Moisturizer is a refreshing skincare essential that hydrates and rejuvenates with its eucalyptus-infused formula. Designed to soothe and nourish, it leaves skin soft and revitalized. Perfect for daily use, this lightweight moisturizer suits all skin types, offering a natural glow with every application.",
+    "sizes": [
+      { "size": "240ML", "price": 25.0, "stock": 100 },
+      { "size": "410ML", "price": 35.0, "stock": 100 }
+    ],
+    "images": ["/product-images/beauty-product/09.jpg"],
+    "additional_info": {
+      "Gender": "Men, Women",
+      "Type": "Classic",
+      "Laces_and_closure": "Cord",
+      "Type_of_Sole_or_heel": "Flat",
+      "Style": "Casual",
+      "Characteristic": "Padded insole",
+      "Material": "Textile",
+      "Colour": "Fizzy light - nitro Orange",
+      "Season": "unknown"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Alicia W. James",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 4,
+        "date": "N/A",
+        "comment": "So comfy",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      },
+      {
+        "id": "r2",
+        "user": "Necola John",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 5,
+        "date": "N/A",
+        "comment": "Walking on air",
+        "additional_text": "Eaque natus, perferendis iusto pariatur inceptos fugit aliquid, inceptos. Bulputate condimentum oi feugiat disode pariatur veniam laborum."
+      }
+    ]
+  }
+]
