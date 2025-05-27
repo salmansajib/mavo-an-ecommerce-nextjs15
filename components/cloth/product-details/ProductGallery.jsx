@@ -9,13 +9,10 @@ const ProductGallery = ({
   onColorChange,
   onImageChange,
 }) => {
-  // State for selected image index
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  // Refs to access Swiper instances
   const mainSwiperRef = useRef(null);
   const thumbSwiperRef = useRef(null);
 
-  // Get all images from all variants for gallery and thumbnails
   const getGalleryImages = () => {
     const allImages = [];
     const seenSrcs = new Set();
@@ -43,7 +40,6 @@ const ProductGallery = ({
     src: image.src,
   }));
 
-  // Preload all gallery images on component mount
   useEffect(() => {
     galleryImages.forEach((image) => {
       const img = new window.Image();
@@ -57,7 +53,6 @@ const ProductGallery = ({
     });
   }, [galleryImages]);
 
-  // Sync gallery with selected color only on initial load or color change
   useEffect(() => {
     if (selectedColor) {
       const firstImageIndex = galleryImages.findIndex(
@@ -74,14 +69,16 @@ const ProductGallery = ({
         }
       }
     }
-  }, [selectedColor, galleryImages]);
+  }, [selectedColor, galleryImages, selectedImageIndex, onImageChange]);
 
-  // Handle thumbnail click
   const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index);
     onImageChange(index);
+    // Only update color if it differs from the current selectedColor
     const clickedImage = galleryImages[index];
-    onColorChange(clickedImage.color); // Always update color on thumbnail click
+    if (clickedImage.color !== selectedColor) {
+      onColorChange({ color: clickedImage.color });
+    }
     if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
       mainSwiperRef.current.swiper.slideTo(index);
     }
@@ -90,13 +87,15 @@ const ProductGallery = ({
     }
   };
 
-  // Handle main slider change
   const handleMainSlideChange = (swiper) => {
     const newIndex = swiper.activeIndex;
     setSelectedImageIndex(newIndex);
     onImageChange(newIndex);
+    // Only update color if it differs from the current selectedColor
     const currentImage = galleryImages[newIndex];
-    onColorChange(currentImage.color); // Always update color on slide change
+    if (currentImage.color !== selectedColor) {
+      onColorChange({ color: currentImage.color });
+    }
     if (thumbSwiperRef.current && thumbSwiperRef.current.swiper) {
       thumbSwiperRef.current.swiper.slideTo(newIndex);
     }
@@ -104,7 +103,6 @@ const ProductGallery = ({
 
   return (
     <div className="gallery">
-      {/* Main Image Slider */}
       <div className="swiper-container gallery-slider">
         <Swiper
           spaceBetween={0}
@@ -137,7 +135,6 @@ const ProductGallery = ({
         </Swiper>
       </div>
 
-      {/* Thumbnail Slider */}
       <div className="swiper-container overflow-hidden">
         <Swiper spaceBetween={3} slidesPerView={3} ref={thumbSwiperRef}>
           {thumbnails.map((thumb, index) => (

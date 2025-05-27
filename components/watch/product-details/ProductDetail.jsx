@@ -274,7 +274,7 @@ const ProductDetail = ({ product }) => {
 
               <div className="mavo-product-color mavo-mb-25">
                 <span className="color">Colour:</span>
-                <p>{selectedColor || product.additional_info.Colour}</p>
+                <p>{selectedColor || "Select a color"}</p>
                 <div className="mavo-product-variation mavo-mb-20 flex flex-wrap items-center">
                   {product.variants.map((variant) => (
                     <div

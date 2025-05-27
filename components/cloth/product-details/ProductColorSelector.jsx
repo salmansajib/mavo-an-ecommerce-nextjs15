@@ -17,7 +17,7 @@ const ProductColorSelector = ({ variants, selectedColor, onColorSelect }) => {
             style={{
               backgroundColor: variant.color_code,
             }}
-            onClick={() => onColorSelect(variant, index)}
+            onClick={() => onColorSelect(variant)} // Pass only variant
             title={variant.color}
           ></button>
         ))}
