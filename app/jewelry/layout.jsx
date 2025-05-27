@@ -5,11 +5,11 @@ import React from "react";
 
 export default function JewelryLayout({ children }) {
   return (
-    <main>
+    <>
       <Header />
-      {children}
+      <main>{children}</main>
       <ShopInfo />
       <Footer />
-    </main>
+    </>
   );
 }

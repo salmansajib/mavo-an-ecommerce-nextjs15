@@ -11,8 +11,9 @@ const ProductGallery = ({
 }) => {
   // State for selected image index
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  // Ref to access Swiper instance
-  const swiperRef = useRef(null);
+  // Refs to access Swiper instances
+  const mainSwiperRef = useRef(null);
+  const thumbSwiperRef = useRef(null);
 
   // Get all images from all variants for gallery and thumbnails
   const getGalleryImages = () => {
@@ -56,52 +57,63 @@ const ProductGallery = ({
     });
   }, [galleryImages]);
 
-  // Sync gallery and thumbnails with selected color
+  // Sync gallery with selected color only on initial load or color change
   useEffect(() => {
     if (selectedColor) {
       const firstImageIndex = galleryImages.findIndex(
         (image) => image.color === selectedColor,
       );
-      if (firstImageIndex >= 0) {
+      if (firstImageIndex >= 0 && firstImageIndex !== selectedImageIndex) {
         setSelectedImageIndex(firstImageIndex);
         onImageChange(firstImageIndex);
-        // Slide to the thumbnail corresponding to the selected color
-        if (swiperRef.current && swiperRef.current.swiper) {
-          swiperRef.current.swiper.slideTo(firstImageIndex);
+        if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
+          mainSwiperRef.current.swiper.slideTo(firstImageIndex);
+        }
+        if (thumbSwiperRef.current && thumbSwiperRef.current.swiper) {
+          thumbSwiperRef.current.swiper.slideTo(firstImageIndex);
         }
       }
     }
-  }, [selectedColor, galleryImages, onImageChange]);
+  }, [selectedColor, galleryImages]);
 
   // Handle thumbnail click
   const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index);
     onImageChange(index);
     const clickedImage = galleryImages[index];
-    if (clickedImage.color !== selectedColor) {
-      onColorChange(clickedImage.color);
+    onColorChange(clickedImage.color); // Always update color on thumbnail click
+    if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
+      mainSwiperRef.current.swiper.slideTo(index);
     }
-    // Slide to the clicked thumbnail
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(index);
+    if (thumbSwiperRef.current && thumbSwiperRef.current.swiper) {
+      thumbSwiperRef.current.swiper.slideTo(index);
+    }
+  };
+
+  // Handle main slider change
+  const handleMainSlideChange = (swiper) => {
+    const newIndex = swiper.activeIndex;
+    setSelectedImageIndex(newIndex);
+    onImageChange(newIndex);
+    const currentImage = galleryImages[newIndex];
+    onColorChange(currentImage.color); // Always update color on slide change
+    if (thumbSwiperRef.current && thumbSwiperRef.current.swiper) {
+      thumbSwiperRef.current.swiper.slideTo(newIndex);
     }
   };
 
   return (
     <div className="gallery">
-      {/* Main Image */}
+      {/* Main Image Slider */}
       <div className="swiper-container gallery-slider">
-        <div className="swiper-wrapper">
-          {galleryImages.map((image, index) => (
-            <div
-              key={image.id}
-              className={`swiper-slide relative ${
-                selectedImageIndex === index ? "active" : ""
-              }`}
-              style={{
-                display: selectedImageIndex === index ? "block" : "none",
-              }}
-            >
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          ref={mainSwiperRef}
+          onSlideChange={handleMainSlideChange}
+        >
+          {galleryImages.map((image) => (
+            <SwiperSlide key={image.id}>
               <div className="relative w-full aspect-square">
                 <Image
                   src={image.src}
@@ -120,20 +132,19 @@ const ProductGallery = ({
                   <i className="flaticon-sort"></i>
                 </a>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
 
-      {/* Thumbnail Images */}
+      {/* Thumbnail Slider */}
       <div className="swiper-container overflow-hidden">
-        <Swiper
-          spaceBetween={3}
-          slidesPerView={3}
-          ref={swiperRef} // Attach ref to Swiper
-        >
+        <Swiper spaceBetween={3} slidesPerView={3} ref={thumbSwiperRef}>
           {thumbnails.map((thumb, index) => (
-            <SwiperSlide key={thumb.id}>
+            <SwiperSlide
+              key={thumb.id}
+              className="!w-fit flex justify-center items-center"
+            >
               <Image
                 src={thumb.src}
                 alt={thumb.alt}

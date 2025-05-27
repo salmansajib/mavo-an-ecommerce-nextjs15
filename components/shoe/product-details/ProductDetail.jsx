@@ -269,10 +269,10 @@ const ProductDetail = ({ product }) => {
 
               <div className="mavo-product-color">
                 <h5 className="color">Colour:</h5>
-                <p>{selectedColor || product.additional_info.Colour}</p>
+                <p>{selectedColor || "Select a color"}</p>
                 <div className="mavo-product-variation mavo-mb-20 flex flex-wrap items-center">
                   {product.variants.map((variant) => (
-                    <div
+                    <button
                       key={variant.color}
                       className="color-swatch"
                       style={{
@@ -284,12 +284,12 @@ const ProductDetail = ({ product }) => {
                         cursor: "pointer",
                         border:
                           selectedColor === variant.color
-                            ? "2px solid #000"
-                            : "1px solid #ccc",
+                            ? "4px solid rgba(255, 255, 255, 0.5)"
+                            : "4px solid transparent",
                       }}
                       title={variant.color}
                       onClick={() => handleColorSelect(variant.color)}
-                    ></div>
+                    ></button>
                   ))}
                 </div>
                 <span

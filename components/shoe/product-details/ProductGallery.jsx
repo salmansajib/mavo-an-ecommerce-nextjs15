@@ -11,8 +11,9 @@ const ProductGallery = ({
 }) => {
   // State for selected image index
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  // Ref to access Swiper instance
-  const swiperRef = useRef(null);
+  // Refs to access Swiper instances
+  const mainSwiperRef = useRef(null);
+  const thumbSwiperRef = useRef(null);
 
   // Get all images from all variants for gallery and thumbnails
   const getGalleryImages = () => {
@@ -65,9 +66,12 @@ const ProductGallery = ({
       if (firstImageIndex >= 0) {
         setSelectedImageIndex(firstImageIndex);
         onImageSelect(firstImageIndex);
-        // Slide to the thumbnail corresponding to the selected color
-        if (swiperRef.current && swiperRef.current.swiper) {
-          swiperRef.current.swiper.slideTo(firstImageIndex);
+        // Slide both main and thumbnail sliders to the selected image
+        if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
+          mainSwiperRef.current.swiper.slideTo(firstImageIndex);
+        }
+        if (thumbSwiperRef.current && thumbSwiperRef.current.swiper) {
+          thumbSwiperRef.current.swiper.slideTo(firstImageIndex);
         }
       }
     }
@@ -76,29 +80,47 @@ const ProductGallery = ({
   // Handle thumbnail click
   const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index);
-    onImageSelect(index); // Notify parent of image selection
+    onImageSelect(index);
     const clickedImage = galleryImages[index];
     if (clickedImage.color !== selectedColor) {
-      onColorSelect(clickedImage.color); // Update color in parent
+      onColorSelect(clickedImage.color);
     }
-    // Slide to the clicked thumbnail
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(index);
+    // Slide both main and thumbnail sliders to the clicked image
+    if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
+      mainSwiperRef.current.swiper.slideTo(index);
+    }
+    if (thumbSwiperRef.current && thumbSwiperRef.current.swiper) {
+      thumbSwiperRef.current.swiper.slideTo(index);
+    }
+  };
+
+  // Sync main slider with selected image index
+  const handleMainSlideChange = (swiper) => {
+    const newIndex = swiper.activeIndex;
+    setSelectedImageIndex(newIndex);
+    onImageSelect(newIndex);
+    const clickedImage = galleryImages[newIndex];
+    if (clickedImage.color !== selectedColor) {
+      onColorSelect(clickedImage.color);
+    }
+    if (thumbSwiperRef.current && thumbSwiperRef.current.swiper) {
+      thumbSwiperRef.current.swiper.slideTo(newIndex);
     }
   };
 
   return (
     <div className="gallery mavo-md-mb-50 relative">
-      {/* main image */}
+      {/* Main Image Slider */}
       <div className="swiper-container gallery-slider">
-        <div className="swiper-wrapper mavo-slider-large">
-          {galleryImages.map((image, index) => (
-            <div
-              className={`swiper-slide ${
-                index === selectedImageIndex ? "block" : "hidden"
-              }`}
-              key={image.id}
-            >
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={0}
+          ref={mainSwiperRef}
+          onSlideChange={handleMainSlideChange}
+          className="mavo-slider-large"
+        >
+          {galleryImages.map((image) => (
+            <SwiperSlide key={image.id}>
               <div className="gallery-title">
                 <a href="about-us-1.html">
                   <i className="icofont-search"></i>
@@ -111,16 +133,19 @@ const ProductGallery = ({
                 alt={image.alt}
                 className="w-[455px] h-auto"
               />
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
 
-      {/* Thumbnail Images */}
+      {/* Thumbnail Slider */}
       <div className="swiper-container overflow-hidden">
-        <Swiper slidesPerView={3} spaceBetween={3} ref={swiperRef}>
+        <Swiper slidesPerView={3} spaceBetween="auto" ref={thumbSwiperRef}>
           {thumbnails.map((thumb, index) => (
-            <SwiperSlide key={thumb.id}>
+            <SwiperSlide
+              key={thumb.id}
+              className="!w-fit flex justify-center items-center"
+            >
               <Image
                 width={500}
                 height={500}
@@ -130,7 +155,7 @@ const ProductGallery = ({
                   index === selectedImageIndex
                     ? "border-[5px] !border-[#000]/10"
                     : "border-[5px] border-transparent"
-                } w-[300px] h-auto object-cover cursor-pointer`}
+                } w-[100px] h-auto object-cover cursor-pointer`}
                 onClick={() => handleThumbnailClick(index)}
               />
             </SwiperSlide>

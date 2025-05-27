@@ -15,7 +15,7 @@ const ProductTabs = ({ product }) => {
   const reviews = product.customer_reviews;
 
   return (
-    <div className="mavo-tab-2 pb-[100px]">
+    <div className="mavo-tab-2 py-[100px]">
       <div className="container">
         <div className="mavo-shoes-product-one d-flex align-items-start">
           {/* Tab Navigation */}

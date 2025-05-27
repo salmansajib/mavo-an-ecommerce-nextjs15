@@ -188,7 +188,7 @@ const ProductDetail = ({ product }) => {
   };
 
   return (
-    <div className="mavo-single-product watch mavo-pt-75 mavo-pb-120 mavo-md-pb-70 mt-[100px]">
+    <div className="mavo-single-product watch mavo-pt-75 mavo-pb-120 mavo-md-pb-70 mt-[100px] bg-gray-50">
       <div className="container">
         <div className="row">
           {/* Product Gallery */}
@@ -289,8 +289,8 @@ const ProductDetail = ({ product }) => {
                         cursor: "pointer",
                         border:
                           selectedColor === variant.color
-                            ? "2px solid #000"
-                            : "1px solid #ccc",
+                            ? "5px solid rgba(255, 255, 255, 0.5)"
+                            : "5px solid transparent",
                       }}
                       title={variant.color}
                       onClick={() => handleColorSelect(variant.color)}

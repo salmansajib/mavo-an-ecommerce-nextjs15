@@ -3,10 +3,10 @@ import Header from "@/components/shoe/header/Header";
 
 export default function ShoesLayout({ children }) {
   return (
-    <main>
+    <>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
-    </main>
+    </>
   );
 }
