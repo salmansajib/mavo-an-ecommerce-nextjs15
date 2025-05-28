@@ -273,8 +273,10 @@ const ProductDetail = ({ product }) => {
               </div>
 
               <div className="mavo-product-color mavo-mb-25">
-                <span className="color">Colour:</span>
-                <p>{selectedColor || "Select a color"}</p>
+                <div className="flex items-center gap-[20px] mb-[10px]">
+                  <span className="!m-0">Colour:</span>
+                  <p className="!m-0">{selectedColor || "Select a color"}</p>
+                </div>
                 <div className="mavo-product-variation mavo-mb-20 flex flex-wrap items-center">
                   {product.variants.map((variant) => (
                     <div

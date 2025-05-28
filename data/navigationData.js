@@ -31,7 +31,6 @@ export const navItems = [
     link: "#",
     subItems: [
       { id: 31, label: "Shoes Blog", link: "shoes-blog.html" },
-      { id: 32, label: "Shoes Blog2", link: "shoes-blog2.html" },
       { id: 33, label: "Jewellery Blog", link: "jewellery-blog.html" },
       { id: 34, label: "Beauty Blog", link: "beauty-blog.html" },
       { id: 35, label: "Bag Blog", link: "bag-blog.html" },
@@ -119,7 +118,6 @@ export const navItemsMobile = [
     link: "#",
     subItems: [
       { id: 31, label: "Shoes Blog", link: "shoes-blog.html" },
-      { id: 32, label: "Shoes Blog2", link: "shoes-blog2.html" },
       { id: 33, label: "Jewellery Blog", link: "jewellery-blog.html" },
       { id: 34, label: "Beauty Blog", link: "beauty-blog.html" },
       { id: 35, label: "Bag Blog", link: "bag-blog.html" },

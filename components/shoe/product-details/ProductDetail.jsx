@@ -268,8 +268,10 @@ const ProductDetail = ({ product }) => {
               </div>
 
               <div className="mavo-product-color">
-                <h5 className="color">Colour:</h5>
-                <p>{selectedColor || "Select a color"}</p>
+                <div className="flex items-center gap-[20px] mb-[10px]">
+                  <h5 className="!m-0">Colour:</h5>
+                  <p className="!m-0">{selectedColor || "Select a color"}</p>
+                </div>
                 <div className="mavo-product-variation mavo-mb-20 flex flex-wrap items-center">
                   {product.variants.map((variant) => (
                     <button
@@ -302,7 +304,14 @@ const ProductDetail = ({ product }) => {
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  <img src="/images/icons/clear.png" alt="Clear" /> Clear
+                  <Image
+                    width={100}
+                    height={100}
+                    className="w-[15px] h-auto"
+                    src="/images/icons/clear.png"
+                    alt="Clear"
+                  />{" "}
+                  Clear
                 </span>
               </div>
 
