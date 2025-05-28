@@ -45,7 +45,7 @@ const BestSellingProductSection = ({ title }) => {
   const products = data.products;
 
   return (
-    <div className="mavo-product-4 mavo-pt-110 mavo-md-pt-75 mavo-pb-110 mavo-md-pb-75">
+    <div className="mavo-product-4 mavo-pt-110 mavo-md-pt-75 mavo-pb-110 mavo-md-pb-75 !bg-gray-50">
       <div className="container-fluid">
         <div className="mavo-heading-area text-center mavo-mb-70 mavo-md-mb-50">
           <h2 className="mavo-title2 text-uppercase">{title}</h2>
