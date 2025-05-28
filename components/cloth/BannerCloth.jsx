@@ -46,7 +46,7 @@ const BannerCloth = () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          className="swiper mavoBanner1 mavo-pt-190 mavo-pb-185"
+          className="swiper mavoBanner1 !pt-[190px] mavo-pb-185"
         >
           {bannerData.map((item) => (
             <SwiperSlide key={item.id} className="swiper-slide">
