@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ItemCard = ({ product }) => {
+const ItemCardThree = ({ product }) => {
   return (
-    <div className="mavo-collection-info mavo-mb-30">
+    <div className={`mavo-collection-info mavo-mb-30 mavo-pl-75`}>
       <div
         className={`mavo-collection-info-img ${
           product.tags ? "mavo-top-text" : ""
@@ -13,7 +13,7 @@ const ItemCard = ({ product }) => {
         <Image
           width={700}
           height={700}
-          className="collection-img w-[290px] h-auto aspect-square object-cover"
+          className="collection-img w-[500px] h-auto"
           src={product.variants[0].images[0]}
           alt="product"
         />
@@ -46,7 +46,7 @@ const ItemCard = ({ product }) => {
       <div className="collection-info-title">
         <h6>
           <Link
-            className="mavo-info-title text-black truncate overflow-hidden hover:!text-[#e9c96b]"
+            className="mavo-info-title text-white hover:!text-[#e9c96b]"
             href={`/jewelry/${product.id}`}
           >
             {product.name}
@@ -57,4 +57,4 @@ const ItemCard = ({ product }) => {
   );
 };
 
-export default ItemCard;
+export default ItemCardThree;

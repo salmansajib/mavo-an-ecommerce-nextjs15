@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useProducts } from "@/hooks/useProducts";
 import LoaderSpinner from "../LoaderSpinner";
 import ItemCard from "./ItemCard";
+import ItemCardThree from "./ItemCardThree";
 
 const FEATURED_PRODUCTS_LIMIT = 3;
 
@@ -99,7 +100,7 @@ const ProductSectionSecond = () => {
             <div className="row">
               {products.map((product) => (
                 <div key={product.id} className="col-lg-12 col-md-6">
-                  <ItemCard product={product} />
+                  <ItemCardThree product={product} />
                 </div>
               ))}
             </div>
