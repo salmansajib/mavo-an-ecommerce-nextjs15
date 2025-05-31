@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade, Autoplay } from "swiper/modules";
 import Icon from "../Icon";
 
+// ========== Banner Slides ==========
 const bannerSlides = [
   {
     id: 1,
