@@ -2,48 +2,48 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
 
+// Separate arrays for each menu
+const contactMenu = [
+  { name: "Jewelry", link: "#" },
+  { name: "All Collections", link: "#" },
+  { name: "Product Page", link: "#" },
+];
+
+const followUsMenu = [
+  { name: "Facebook", link: "#" },
+  { name: "Twitter", link: "#" },
+  { name: "LinkedIn", link: "#" },
+  { name: "Instagram", link: "#" },
+  { name: "Youtube", link: "#" },
+];
+
+const pagesMenu = [
+  { name: "My account", link: "#" },
+  { name: "Shop", link: "#" },
+  { name: "FAQs", link: "#" },
+  { name: "Terms", link: "#" },
+  { name: "Returns", link: "#" },
+  { name: "About us", link: "#" },
+];
+
+const productsMenu = [
+  { name: "Skin Care", link: "#" },
+  { name: "Beauty", link: "#" },
+  { name: "Hair Care", link: "#" },
+  { name: "Make-up", link: "#" },
+  { name: "Face Cream", link: "#" },
+];
+
+// Combine menus for middle section rendering
+const middleSectionMenus = [
+  { title: "Follow Us", items: followUsMenu },
+  { title: "Pages", items: pagesMenu },
+  { title: "Products", items: productsMenu },
+];
+
 const Footer = () => {
   // State for email input
   const [email, setEmail] = useState("");
-
-  // Separate arrays for each menu
-  const contactMenu = [
-    { name: "Jewelry", link: "#" },
-    { name: "All Collections", link: "#" },
-    { name: "Product Page", link: "#" },
-  ];
-
-  const followUsMenu = [
-    { name: "Facebook", link: "#" },
-    { name: "Twitter", link: "#" },
-    { name: "LinkedIn", link: "#" },
-    { name: "Instagram", link: "#" },
-    { name: "Youtube", link: "#" },
-  ];
-
-  const pagesMenu = [
-    { name: "My account", link: "#" },
-    { name: "Shop", link: "#" },
-    { name: "FAQs", link: "#" },
-    { name: "Terms", link: "#" },
-    { name: "Returns", link: "#" },
-    { name: "About us", link: "#" },
-  ];
-
-  const productsMenu = [
-    { name: "Skin Care", link: "#" },
-    { name: "Beauty", link: "#" },
-    { name: "Hair Care", link: "#" },
-    { name: "Make-up", link: "#" },
-    { name: "Face Cream", link: "#" },
-  ];
-
-  // Combine menus for middle section rendering
-  const middleSectionMenus = [
-    { title: "Follow Us", items: followUsMenu },
-    { title: "Pages", items: pagesMenu },
-    { title: "Products", items: productsMenu },
-  ];
 
   // Handle form submission
   const handleSubmit = (e) => {
