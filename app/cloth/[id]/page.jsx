@@ -62,7 +62,7 @@ function Page() {
 
   return (
     <>
-      <BreadCrumbClothDetails />
+      <BreadCrumbClothDetails product={product} />
       <SingleProduct product={product} />
       <ProductTabs product={product} />
       <SimilarProducts similarProducts={similarProducts} />

@@ -32,7 +32,7 @@ const ItemCardThree = ({ product }) => {
         )}
       </div>
       <div className="product-price mavo-mt-20 mavo-mb-10">
-        <span>${product.base_price}</span>
+        <span>${product.base_price.toFixed(2)}</span>
         <div className="rating-star">
           <ul className="space-x-1">
             {[...Array(5)].map((_, i) => (

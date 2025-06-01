@@ -49,7 +49,9 @@ const ItemCard = ({ product, wrapperClass = "mavo-mb-0" }) => {
           </h5>
         </div>
         <div className="mavo-post-slider-peoduct-price">
-          <span className="mavo-post-price">${product.base_price}</span>
+          <span className="mavo-post-price">
+            ${product.base_price.toFixed(2)}
+          </span>
           <i className="flaticon-star-1"></i>
           <i className="flaticon-star-1"></i>
           <i className="flaticon-star-1"></i>

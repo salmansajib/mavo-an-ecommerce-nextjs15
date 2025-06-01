@@ -42,7 +42,9 @@ const ItemCardTwo = ({ product }) => {
               {product.name}
             </Link>
           </h5>
-          <span className="meta-sub-title">${product.base_price}</span>
+          <span className="meta-sub-title">
+            ${product.base_price.toFixed(2)}
+          </span>
         </div>
       </div>
     </div>

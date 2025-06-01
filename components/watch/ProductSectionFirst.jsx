@@ -132,7 +132,9 @@ const ProductSectionFirst = () => {
                     <h6 className="product-title-link">
                       <Link href={`/watch/${product.id}`}>{product.name}</Link>
                     </h6>
-                    <span className="product-title">${product.base_price}</span>
+                    <span className="product-title">
+                      ${product.base_price.toFixed(2)}
+                    </span>
                   </div>
                 </div>
               </SwiperSlide>

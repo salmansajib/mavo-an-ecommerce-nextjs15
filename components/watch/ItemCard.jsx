@@ -60,7 +60,9 @@ const ItemCard = ({ product }) => {
             {product.name}
           </Link>
         </h6>
-        <span className="mavo-product-price">${product.base_price}</span>
+        <span className="mavo-product-price">
+          ${product.base_price.toFixed(2)}
+        </span>
       </div>
 
       <div className="mavo-color-variation">
