@@ -27,7 +27,7 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
         />
       </div>
 
-      <div>
+      <div className="border-[1px] border-t-0 border-black/20 p-[50px] rounded-b-[80px]">
         <Logo color="dark" />
       </div>
 

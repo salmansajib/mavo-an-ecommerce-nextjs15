@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute  px-[12px] top-0 left-1/2 -translate-x-1/2 z-50 flex items-center w-full h-[120px] max-w-[1600px] font-josefin-sans">
+      <header className="absolute  px-[12px] top-0 left-1/2 -translate-x-1/2 z-50 flex items-center w-full h-[120px] max-w-[1650px] font-josefin-sans">
         <DesktopHeader setIsSearchFormActive={setIsSearchFormActive} />
         <MobileHeader
           setShowMobileMenu={setShowMobileMenu}
