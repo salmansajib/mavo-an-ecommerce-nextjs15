@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import ItemCardOne from "../ItemCardOne";
 
 const ProductList = ({ products }) => {
@@ -12,21 +13,21 @@ const ProductList = ({ products }) => {
           <div className="mavo_dropdown text-end">
             <ul className="dropdown-list">
               <li>
-                <a className="drop-btn" href="#">
+                <Link className="drop-btn" href="#">
                   Year <i className="flaticon-down"></i>
-                </a>
+                </Link>
                 <ul className="sub-menu">
                   <li>
-                    <a href="#"> Watch Size</a>
+                    <Link href="#"> Watch Size</Link>
                   </li>
                   <li>
-                    <a href="#"> Brands</a>
+                    <Link href="#"> Brands</Link>
                   </li>
                   <li>
-                    <a href="#"> Price</a>
+                    <Link href="#"> Price</Link>
                   </li>
                   <li>
-                    <a href="#"> Year</a>
+                    <Link href="#"> Year</Link>
                   </li>
                 </ul>
               </li>
