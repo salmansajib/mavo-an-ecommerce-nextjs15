@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 const FilterSection = () => {
   const [minPrice, setMinPrice] = useState(55);
@@ -52,7 +52,7 @@ const FilterSection = () => {
   return (
     <div className="col-lg-3">
       <div className="mavo-product-widget">
-        <div className="mavo-range-slider mavo-range-slider-beauty mavo-mb-40 flex relative justify-center items-center rounded">
+        <div className="mavo-range-slider mavo-range-slider-beauty mavo-mb-40 flex flex-col relative justify-center items-center rounded">
           <h4 className="mavo-navigation-title mavo-mb-20">Price Filter</h4>
           <div className="wrapper">
             <div className="price-input">

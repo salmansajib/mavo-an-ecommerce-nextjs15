@@ -5,7 +5,7 @@ import ItemCardOne from "../ItemCardOne";
 const ProductList = ({ products }) => {
   return (
     <div className="col-lg-9">
-      <div className="row align-items-center mavo-mb-40">
+      <div className="row align-items-center mavo-mb-40 !mt-10">
         <div className="product-show d-flex justify-content-between">
           <div className="mavo-product-text">
             <p className="des-text">Showing 1-5 of 50 results</p>
