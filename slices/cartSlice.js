@@ -1,32 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { loadFromLocalStorage } from "../utils/persistState";
 
-// Utility function to safely load from localStorage on client side
-const loadFromLocalStorage = () => {
-  if (typeof window !== "undefined") {
-    try {
-      const serializedState = localStorage.getItem("cart");
-      return serializedState ? JSON.parse(serializedState) : undefined;
-    } catch (e) {
-      console.warn("Error loading cart from localStorage:", e);
-      return undefined;
-    }
-  }
-  return undefined;
-};
-
-// Utility function to save to localStorage
-const saveToLocalStorage = (state) => {
-  if (typeof window !== "undefined") {
-    try {
-      const serializedState = JSON.stringify(state);
-      localStorage.setItem("cart", serializedState);
-    } catch (e) {
-      console.warn("Error saving cart to localStorage:", e);
-    }
-  }
-};
-
-// Initialize state, using localStorage only on client side
+// Initialize state
 const initialState = {
   cartItems: [],
   totalQuantity: 0,
@@ -34,7 +9,7 @@ const initialState = {
 };
 
 // Load persisted state if available
-const persistedState = loadFromLocalStorage();
+const persistedState = loadFromLocalStorage("cart");
 const cartInitialState = persistedState || initialState;
 
 const cartSlice = createSlice({
@@ -69,9 +44,6 @@ const cartSlice = createSlice({
         (total, item) => total + item.price,
         0,
       );
-
-      // Save updated state to localStorage
-      saveToLocalStorage(state);
     },
 
     removeFromCart: (state, action) => {
@@ -95,15 +67,11 @@ const cartSlice = createSlice({
           0,
         );
       }
-
-      // Save updated state to localStorage
-      saveToLocalStorage(state);
     },
 
     updateQuantity: (state, action) => {
       const { id, type, attributes, newQuantity } = action.payload;
 
-      // Find the item to update
       const item = state.cartItems.find(
         (item) =>
           item.id === id &&
@@ -112,11 +80,9 @@ const cartSlice = createSlice({
       );
 
       if (item && newQuantity >= 1) {
-        // Update quantity and price
         item.quantity = newQuantity;
-        item.price = item.unitPrice * newQuantity; // Recalculate total price for item
+        item.price = item.unitPrice * newQuantity;
 
-        // Recalculate totals
         state.totalQuantity = state.cartItems.reduce(
           (total, item) => total + item.quantity,
           0,
@@ -125,17 +91,13 @@ const cartSlice = createSlice({
           (total, item) => total + item.price,
           0,
         );
-
-        saveToLocalStorage(state);
       }
-      // If newQuantity < 1, do nothing (handled in component with toast)
     },
 
     clearCart: (state) => {
       state.cartItems = [];
       state.totalQuantity = 0;
       state.totalPrice = 0;
-      saveToLocalStorage(state);
     },
   },
 });

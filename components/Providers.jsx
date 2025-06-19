@@ -2,10 +2,17 @@
 
 import React from "react";
 import { useState } from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider } from "react-redux";
 import { store } from "@/store/store";
+import { persistState } from "@/utils/persistState";
+
+// Initialize persistence for cart and favorite slices
+persistState(store, [
+  { name: "cart", key: "cart" },
+  // { name: 'favorite', key: 'favorites' },
+]);
 
 export default function Providers({ children }) {
   const [queryClient] = useState(() => new QueryClient());
