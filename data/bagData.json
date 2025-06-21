@@ -1,0 +1,1140 @@
+[
+  {
+    "id": "bag1",
+    "name": "Aurora Hobo Bag",
+    "type": "bag",
+    "base_price": 450,
+    "currency": "USD",
+    "tags": "Top",
+    "reviews": 87,
+    "description": "The Aurora Hobo Bag Trio is a captivating collection of three designer hobo bags, each showcasing a distinct hexagonal pattern. The Sunset Mosaic bag radiates warm amber and tan hues, exuding a cozy elegance. The Twilight Violet version dazzles with rich purple tones, offering a bold, modern vibe. The Emerald Scale piece blends green and gray for a striking, nature-inspired look. Framed in sleek black leather with gold-tone clasps, these estimated $450 bags combine spacious design, luxurious details, and vibrant versatility, making them perfect for any occasion with a unique, artistic flair.",
+    "variants": [
+      {
+        "color": "Sunset Mosaic",
+        "color_code": "#F4A261",
+        "sizes": [
+          { "size": "Small", "price": 450, "stock": 50 },
+          { "size": "Large", "price": 490, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/01-01.jpg"]
+      },
+      {
+        "color": "Twilight Violet",
+        "color_code": "#8A2BE2",
+        "sizes": [
+          { "size": "Small", "price": 450, "stock": 50 },
+          { "size": "Large", "price": 490, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/01-02.jpg"]
+      },
+      {
+        "color": "Emerald Scale",
+        "color_code": "#2E8B57",
+        "sizes": [
+          { "size": "Small", "price": 450, "stock": 50 },
+          { "size": "Large", "price": 490, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/01-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag2",
+    "name": "Mavgo Nomad Pack",
+    "type": "bag",
+    "base_price": 120,
+    "currency": "USD",
+    "reviews": 287,
+    "description": "The Mavgo Nomad Pack is a sleek, versatile backpack designed for the modern adventurer. Featuring a minimalist design with a bold brand imprint, it combines a soft upper section with a durable lower panel for all-day comfort and practicality. Equipped with padded straps and a sturdy handle, this bag offers ample storage for work or travel essentials. Its understated elegance and robust construction make it ideal for urban exploration or outdoor escapes, blending style with functionality at an estimated $120 price point.",
+    "variants": [
+      {
+        "color": "Sage Whisper",
+        "color_code": "#A9B7A6",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/02-01.jpg"]
+      },
+      {
+        "color": "Frosted Lattice",
+        "color_code": "#E6E8E6",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/02-02.jpg"]
+      },
+      {
+        "color": "Winter Diamond",
+        "color_code": "#E8ECEB",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/02-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag3",
+    "name": "Zebra Hobo",
+    "type": "bag",
+    "base_price": 150,
+    "currency": "USD",
+    "reviews": 413,
+    "description": "This stylish hobo bag features a bold zebra print pattern, adding a wild flair to your wardrobe. Crafted with a sleek design, it includes a spacious interior perfect for daily essentials. The adjustable strap ensures comfortable wear, while the secure clasp closure provides easy access. Ideal for an e-commerce collection targeting fashion-forward shoppers, this bag blends trendy aesthetics with practical functionality. Its modular design makes it a versatile addition to your clothing and accessory lineup, appealing to customers seeking unique statement pieces for various occasions.",
+    "variants": [
+      {
+        "color": "Light Gray",
+        "color_code": "#D3D3D3",
+        "sizes": [
+          { "size": "Small", "price": 150, "stock": 50 },
+          { "size": "Large", "price": 170, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/03-01.jpg"]
+      },
+      {
+        "color": "Black",
+        "color_code": "#000000",
+        "sizes": [
+          { "size": "Small", "price": 150, "stock": 50 },
+          { "size": "Large", "price": 170, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/03-02.jpg"]
+      },
+      {
+        "color": "Black",
+        "color_code": "#000000",
+        "sizes": [
+          { "size": "Small", "price": 150, "stock": 50 },
+          { "size": "Large", "price": 170, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/03-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag4",
+    "name": "Mavgo Backpack",
+    "type": "bag",
+    "base_price": 135,
+    "currency": "USD",
+    "reviews": 45,
+    "description": "The Mavgo Backpack is a stylish and functional bag featuring a rich mustard yellow body with contrasting dark gray accents. Designed with a spacious main compartment and a front pocket, it offers ample storage for daily essentials. The adjustable shoulder straps ensure comfort, while the sleek design and bold branding make it a standout accessory. Ideal for students or professionals, this backpack combines durability with a modern aesthetic, perfect for casual or urban use as of June 21, 2025.",
+    "variants": [
+      {
+        "color": "Mustard Yellow",
+        "color_code": "#DAA520",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/04-01.jpg"]
+      },
+      {
+        "color": "Purple",
+        "color_code": "#800080",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/04-02.jpg"]
+      },
+      {
+        "color": "Green",
+        "color_code": "#008000",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/04-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag5",
+    "name": "Venture Vibe",
+    "type": "bag",
+    "base_price": 135,
+    "currency": "USD",
+    "reviews": 893,
+    "description": "The VentureVibe Backpack blends timeless style with modern functionality. Crafted in a chic beige hue with rich brown leather accents, it features a spacious main compartment, a front flap with sturdy buckles, and a convenient side pocket. Perfect for adventurers or urban explorers, its durable design and adjustable straps offer comfort and versatility as of June 21, 2025.",
+    "variants": [
+      {
+        "color": "Beige",
+        "color_code": "#F5F5DC",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/05-01.jpg"]
+      },
+      {
+        "color": "Teal",
+        "color_code": "#008080",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/05-02.jpg"]
+      },
+      {
+        "color": "Taupe",
+        "color_code": "#483C32",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/05-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag6",
+    "name": "TrailBlaze Backpack",
+    "type": "bag",
+    "base_price": 200,
+    "currency": "USD",
+    "reviews": 365,
+    "description": "The TrailBlaze Backpack combines rugged style with practicality, featuring a sleek slate blue body and tan leather accents. Designed with multiple compartments, including padded side pockets for gear, and secure buckles, it’s perfect for outdoor enthusiasts or photographers as of June 21, 2025. The adjustable straps and durable fabric ensure comfort and longevity, making it ideal for adventures or daily use.",
+    "variants": [
+      {
+        "color": "Slate Blue",
+        "color_code": "#6D8299",
+        "sizes": [
+          { "size": "Small", "price": 200, "stock": 50 },
+          { "size": "Large", "price": 220, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/06-01.jpg"]
+      },
+      {
+        "color": "Charcoal Gray",
+        "color_code": "#333333",
+        "sizes": [
+          { "size": "Small", "price": 200, "stock": 50 },
+          { "size": "Large", "price": 220, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/06-02.jpg"]
+      },
+      {
+        "color": "Charcoal Gray",
+        "color_code": "#333333",
+        "sizes": [
+          { "size": "Small", "price": 200, "stock": 50 },
+          { "size": "Large", "price": 220, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/06-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag7",
+    "name": "UrbanTrail Messenger",
+    "type": "bag",
+    "base_price": 120,
+    "currency": "USD",
+    "reviews": 365,
+    "description": "The UrbanTrail Messenger blends rugged elegance with practicality, featuring a rich dark brown leather exterior and a spacious design. With multiple compartments, a secure flap, and an adjustable strap, it’s perfect for professionals or travelers as of June 21, 2025. The durable material and stylish stitching offer a timeless look, ideal for daily commutes or weekend getaways.",
+    "variants": [
+      {
+        "color": "Dark Brown",
+        "color_code": "#3C2F2F",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/07-01.jpg"]
+      },
+      {
+        "color": "Black",
+        "color_code": "#000000",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/07-02.jpg"]
+      },
+      {
+        "color": "Dark Brown",
+        "color_code": "#3C2F2F",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/07-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag8",
+    "name": "Map Backpack",
+    "type": "bag",
+    "base_price": 90,
+    "currency": "USD",
+    "reviews": 634,
+    "description": "The Explorer's Map Backpack blends adventure with style, featuring a beige map print accented with red and black details. With a zippered main compartment, a front flap, and adjustable straps, it’s perfect for travelers or trendsetters as of June 21, 2025. The durable design and unique map motif make it a standout accessory, ideal for carrying essentials on any journey.",
+    "variants": [
+      {
+        "color": "Beige",
+        "color_code": "#F5F5DC",
+        "sizes": [
+          { "size": "Small", "price": 90, "stock": 50 },
+          { "size": "Large", "price": 110, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/08-01.jpg"]
+      },
+      {
+        "color": "Vista Blue",
+        "color_code": "#8996E7",
+        "sizes": [
+          { "size": "Small", "price": 90, "stock": 50 },
+          { "size": "Large", "price": 110, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/08-02.jpg"]
+      },
+      {
+        "color": "Spanish Gray",
+        "color_code": "#9C9C9C",
+        "sizes": [
+          { "size": "Small", "price": 90, "stock": 50 },
+          { "size": "Large", "price": 110, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/08-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag9",
+    "name": "Aurora Hobo Bag",
+    "type": "bag",
+    "base_price": 450,
+    "currency": "USD",
+    "tags": "Top",
+    "reviews": 87,
+    "description": "The Aurora Hobo Bag Trio is a captivating collection of three designer hobo bags, each showcasing a distinct hexagonal pattern. The Sunset Mosaic bag radiates warm amber and tan hues, exuding a cozy elegance. The Twilight Violet version dazzles with rich purple tones, offering a bold, modern vibe. The Emerald Scale piece blends green and gray for a striking, nature-inspired look. Framed in sleek black leather with gold-tone clasps, these estimated $450 bags combine spacious design, luxurious details, and vibrant versatility, making them perfect for any occasion with a unique, artistic flair.",
+    "variants": [
+      {
+        "color": "Sunset Mosaic",
+        "color_code": "#F4A261",
+        "sizes": [
+          { "size": "Small", "price": 450, "stock": 50 },
+          { "size": "Large", "price": 490, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/01-01.jpg"]
+      },
+      {
+        "color": "Twilight Violet",
+        "color_code": "#8A2BE2",
+        "sizes": [
+          { "size": "Small", "price": 450, "stock": 50 },
+          { "size": "Large", "price": 490, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/01-02.jpg"]
+      },
+      {
+        "color": "Emerald Scale",
+        "color_code": "#2E8B57",
+        "sizes": [
+          { "size": "Small", "price": 450, "stock": 50 },
+          { "size": "Large", "price": 490, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/01-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag10",
+    "name": "Mavgo Nomad Pack",
+    "type": "bag",
+    "base_price": 120,
+    "currency": "USD",
+    "reviews": 287,
+    "description": "The Mavgo Nomad Pack is a sleek, versatile backpack designed for the modern adventurer. Featuring a minimalist design with a bold brand imprint, it combines a soft upper section with a durable lower panel for all-day comfort and practicality. Equipped with padded straps and a sturdy handle, this bag offers ample storage for work or travel essentials. Its understated elegance and robust construction make it ideal for urban exploration or outdoor escapes, blending style with functionality at an estimated $120 price point.",
+    "variants": [
+      {
+        "color": "Sage Whisper",
+        "color_code": "#A9B7A6",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/02-01.jpg"]
+      },
+      {
+        "color": "Frosted Lattice",
+        "color_code": "#E6E8E6",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/02-02.jpg"]
+      },
+      {
+        "color": "Winter Diamond",
+        "color_code": "#E8ECEB",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/02-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag11",
+    "name": "Zebra Hobo",
+    "type": "bag",
+    "base_price": 150,
+    "currency": "USD",
+    "reviews": 413,
+    "description": "This stylish hobo bag features a bold zebra print pattern, adding a wild flair to your wardrobe. Crafted with a sleek design, it includes a spacious interior perfect for daily essentials. The adjustable strap ensures comfortable wear, while the secure clasp closure provides easy access. Ideal for an e-commerce collection targeting fashion-forward shoppers, this bag blends trendy aesthetics with practical functionality. Its modular design makes it a versatile addition to your clothing and accessory lineup, appealing to customers seeking unique statement pieces for various occasions.",
+    "variants": [
+      {
+        "color": "Light Gray",
+        "color_code": "#D3D3D3",
+        "sizes": [
+          { "size": "Small", "price": 150, "stock": 50 },
+          { "size": "Large", "price": 170, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/03-01.jpg"]
+      },
+      {
+        "color": "Black",
+        "color_code": "#000000",
+        "sizes": [
+          { "size": "Small", "price": 150, "stock": 50 },
+          { "size": "Large", "price": 170, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/03-02.jpg"]
+      },
+      {
+        "color": "Black",
+        "color_code": "#000000",
+        "sizes": [
+          { "size": "Small", "price": 150, "stock": 50 },
+          { "size": "Large", "price": 170, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/03-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag12",
+    "name": "Mavgo Backpack",
+    "type": "bag",
+    "base_price": 135,
+    "currency": "USD",
+    "reviews": 45,
+    "description": "The Mavgo Backpack is a stylish and functional bag featuring a rich mustard yellow body with contrasting dark gray accents. Designed with a spacious main compartment and a front pocket, it offers ample storage for daily essentials. The adjustable shoulder straps ensure comfort, while the sleek design and bold branding make it a standout accessory. Ideal for students or professionals, this backpack combines durability with a modern aesthetic, perfect for casual or urban use as of June 21, 2025.",
+    "variants": [
+      {
+        "color": "Mustard Yellow",
+        "color_code": "#DAA520",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/04-01.jpg"]
+      },
+      {
+        "color": "Purple",
+        "color_code": "#800080",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/04-02.jpg"]
+      },
+      {
+        "color": "Green",
+        "color_code": "#008000",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/04-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag13",
+    "name": "Venture Vibe",
+    "type": "bag",
+    "base_price": 135,
+    "currency": "USD",
+    "reviews": 893,
+    "description": "The VentureVibe Backpack blends timeless style with modern functionality. Crafted in a chic beige hue with rich brown leather accents, it features a spacious main compartment, a front flap with sturdy buckles, and a convenient side pocket. Perfect for adventurers or urban explorers, its durable design and adjustable straps offer comfort and versatility as of June 21, 2025.",
+    "variants": [
+      {
+        "color": "Beige",
+        "color_code": "#F5F5DC",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/05-01.jpg"]
+      },
+      {
+        "color": "Teal",
+        "color_code": "#008080",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/05-02.jpg"]
+      },
+      {
+        "color": "Taupe",
+        "color_code": "#483C32",
+        "sizes": [
+          { "size": "Small", "price": 135, "stock": 50 },
+          { "size": "Large", "price": 175, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/05-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag14",
+    "name": "TrailBlaze Backpack",
+    "type": "bag",
+    "base_price": 200,
+    "currency": "USD",
+    "reviews": 365,
+    "description": "The TrailBlaze Backpack combines rugged style with practicality, featuring a sleek slate blue body and tan leather accents. Designed with multiple compartments, including padded side pockets for gear, and secure buckles, it’s perfect for outdoor enthusiasts or photographers as of June 21, 2025. The adjustable straps and durable fabric ensure comfort and longevity, making it ideal for adventures or daily use.",
+    "variants": [
+      {
+        "color": "Slate Blue",
+        "color_code": "#6D8299",
+        "sizes": [
+          { "size": "Small", "price": 200, "stock": 50 },
+          { "size": "Large", "price": 220, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/06-01.jpg"]
+      },
+      {
+        "color": "Charcoal Gray",
+        "color_code": "#333333",
+        "sizes": [
+          { "size": "Small", "price": 200, "stock": 50 },
+          { "size": "Large", "price": 220, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/06-02.jpg"]
+      },
+      {
+        "color": "Charcoal Gray",
+        "color_code": "#333333",
+        "sizes": [
+          { "size": "Small", "price": 200, "stock": 50 },
+          { "size": "Large", "price": 220, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/06-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag15",
+    "name": "UrbanTrail Messenger",
+    "type": "bag",
+    "base_price": 120,
+    "currency": "USD",
+    "reviews": 365,
+    "description": "The UrbanTrail Messenger blends rugged elegance with practicality, featuring a rich dark brown leather exterior and a spacious design. With multiple compartments, a secure flap, and an adjustable strap, it’s perfect for professionals or travelers as of June 21, 2025. The durable material and stylish stitching offer a timeless look, ideal for daily commutes or weekend getaways.",
+    "variants": [
+      {
+        "color": "Dark Brown",
+        "color_code": "#3C2F2F",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/07-01.jpg"]
+      },
+      {
+        "color": "Black",
+        "color_code": "#000000",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/07-02.jpg"]
+      },
+      {
+        "color": "Dark Brown",
+        "color_code": "#3C2F2F",
+        "sizes": [
+          { "size": "Small", "price": 120, "stock": 50 },
+          { "size": "Large", "price": 145, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/07-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  },
+  {
+    "id": "bag16",
+    "name": "Map Backpack",
+    "type": "bag",
+    "base_price": 90,
+    "currency": "USD",
+    "reviews": 634,
+    "description": "The Explorer's Map Backpack blends adventure with style, featuring a beige map print accented with red and black details. With a zippered main compartment, a front flap, and adjustable straps, it’s perfect for travelers or trendsetters as of June 21, 2025. The durable design and unique map motif make it a standout accessory, ideal for carrying essentials on any journey.",
+    "variants": [
+      {
+        "color": "Beige",
+        "color_code": "#F5F5DC",
+        "sizes": [
+          { "size": "Small", "price": 90, "stock": 50 },
+          { "size": "Large", "price": 110, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/08-01.jpg"]
+      },
+      {
+        "color": "Vista Blue",
+        "color_code": "#8996E7",
+        "sizes": [
+          { "size": "Small", "price": 90, "stock": 50 },
+          { "size": "Large", "price": 110, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/08-02.jpg"]
+      },
+      {
+        "color": "Spanish Gray",
+        "color_code": "#9C9C9C",
+        "sizes": [
+          { "size": "Small", "price": 90, "stock": 50 },
+          { "size": "Large", "price": 110, "stock": 50 }
+        ],
+        "images": ["/product-images/bag/08-03.jpg"]
+      }
+    ],
+    "additional_info": {
+      "Gender": "Unisex",
+      "Type": "Analog",
+      "Strap_Closure": "Buckle",
+      "Dial_Shape": "Round",
+      "Style": "Casual, Formal",
+      "Characteristic": "Water-resistant",
+      "Material": "Nylon, Leather, Steel",
+      "Colour": "Blue, Yellow, Orange",
+      "Season": "All seasons"
+    },
+    "customer_reviews": [
+      {
+        "id": "r1",
+        "user": "Emma Johnson",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-1.jpg",
+        "rating": 5,
+        "date": "2025-05-07",
+        "comment": "Stunning watch!",
+        "additional_text": "The blue nylon strap looks amazing, and it’s so comfortable to wear. Arrived quickly and works perfectly."
+      },
+      {
+        "id": "r2",
+        "user": "Michael Brown",
+        "status": "Verified Buyer",
+        "profile_image": "/images/services/review-2.jpg",
+        "rating": 4,
+        "date": "2025-05-10",
+        "comment": "Great quality",
+        "additional_text": "I got the leather strap in yellow, and it’s stylish. It took a bit to break in, but now it’s perfect."
+      }
+    ]
+  }
+]
