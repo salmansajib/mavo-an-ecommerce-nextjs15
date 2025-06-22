@@ -188,12 +188,12 @@ export const langAndCurrencyItems = [
     label: "eng",
     link: "/",
     subItems: [
-      { id: 11, label: "es", link: "/" },
-      { id: 12, label: "ru", link: "/" },
-      { id: 13, label: "ku", link: "/" },
-      { id: 14, label: "de", link: "/" },
-      { id: 15, label: "it", link: "/" },
-      { id: 16, label: "ar", link: "/" },
+      { id: 11, label: "es", link: "#" },
+      { id: 12, label: "ru", link: "#" },
+      { id: 13, label: "ku", link: "#" },
+      { id: 14, label: "de", link: "#" },
+      { id: 15, label: "it", link: "#" },
+      { id: 16, label: "ar", link: "#" },
     ],
   },
   {
@@ -201,10 +201,10 @@ export const langAndCurrencyItems = [
     label: "usd",
     link: "/",
     subItems: [
-      { id: 21, label: "dzd", link: "/" },
-      { id: 22, label: "eur", link: "/" },
-      { id: 23, label: "aoa", link: "/" },
-      { id: 24, label: "cny", link: "/" },
+      { id: 21, label: "dzd", link: "#" },
+      { id: 22, label: "eur", link: "#" },
+      { id: 23, label: "aoa", link: "#" },
+      { id: 24, label: "cny", link: "#" },
     ],
   },
 ];
