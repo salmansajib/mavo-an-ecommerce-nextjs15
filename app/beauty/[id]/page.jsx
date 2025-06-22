@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import { useParams } from "next/navigation";
-import ProductDetail from "@/components/beauty-product/product-details/ProductDetail";
+import ProductDetail from "@/components/beauty/product-details/ProductDetail";
 import LoaderSpinner from "@/components/LoaderSpinner";
 import { useSingleProduct } from "@/hooks/useSingleProduct";
-import ProductTabs from "@/components/beauty-product/product-details/ProductTabs";
-import ShopInfo from "@/components/beauty-product/ShopInfo";
+import ProductTabs from "@/components/beauty/product-details/ProductTabs";
+import ShopInfo from "@/components/beauty/ShopInfo";
 
 function page() {
   const { id } = useParams();

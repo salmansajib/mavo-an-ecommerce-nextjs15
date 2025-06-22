@@ -1,5 +1,5 @@
-import Footer from "@/components/beauty-product/Footer";
-import Header from "@/components/beauty-product/header/Header";
+import Footer from "@/components/beauty/Footer";
+import Header from "@/components/beauty/header/Header";
 
 export default function BeautyProductLayout({ children }) {
   return (
