@@ -810,6 +810,7 @@ __metadata:
     swiper: "npm:^11.2.5"
     tailwind-merge: "npm:^3.2.0"
     tailwindcss: "npm:^4"
+    use-debounce: "npm:^10.0.5"
   languageName: unknown
   linkType: soft
 
@@ -1276,6 +1277,15 @@ __metadata:
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+  languageName: node
+  linkType: hard
+
+"use-debounce@npm:^10.0.5":
+  version: 10.0.5
+  resolution: "use-debounce@npm:10.0.5"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/8232538aa2e2b1252716ef2918204709f16bd53661b56a3a29ad790bf61bc7cbf3bb1126d888408db276a2b05fa6a941e9452149be14bfe438aa22054ccf4e4a
   languageName: node
   linkType: hard
 

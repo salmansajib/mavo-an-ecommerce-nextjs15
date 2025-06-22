@@ -18,7 +18,7 @@ const ItemCardTwo = ({ product }) => {
           <div className="mavo-product-social">
             <ul>
               <li className="tooltip-1">
-                <Link href={`/beauty-product/${product.id}`}>
+                <Link href={`/beauty/${product.id}`}>
                   <img src="/images/icons/tool-1.png" alt="Icon" />
                 </Link>
                 <span>Quick view</span>
@@ -48,7 +48,7 @@ const ItemCardTwo = ({ product }) => {
           <h6>
             <Link
               className="specific-title-link"
-              href={`/beauty-product/${product.id}`}
+              href={`/beauty/${product.id}`}
             >
               {product.name}
             </Link>

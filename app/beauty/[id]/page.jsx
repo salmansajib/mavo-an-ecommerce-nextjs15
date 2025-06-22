@@ -15,7 +15,7 @@ function page() {
     data: singleProductData,
     isLoading: isProductLoading,
     error: productError,
-  } = useSingleProduct("beautyProduct", id);
+  } = useSingleProduct("beauty", id);
 
   if (isProductLoading) {
     return (

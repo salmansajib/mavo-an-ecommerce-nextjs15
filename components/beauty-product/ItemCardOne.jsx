@@ -24,19 +24,19 @@ const ItemCardOne = ({ product }) => {
         <div className="mavo-product-social">
           <ul>
             <li>
-              <Link href={`/beauty-product/${product.id}`}>
+              <Link href={`/beauty/${product.id}`}>
                 <i className="flaticon-eye"></i>
               </Link>
               <span> Quick view</span>
             </li>
             <li>
-              <Link href={`/beauty-product/${product.id}`}>
+              <Link href={`/beauty/${product.id}`}>
                 <i className="flaticon-star"></i>
               </Link>
               <span> Compare</span>
             </li>
             <li>
-              <Link href={`/beauty-product/${product.id}`}>
+              <Link href={`/beauty/${product.id}`}>
                 <i className="flaticon-sort"></i>
               </Link>
               <span> Wishlist</span>
@@ -46,10 +46,7 @@ const ItemCardOne = ({ product }) => {
       </div>
       <div className="mavo-product-info">
         <h6>
-          <Link
-            className="mavo-product-link"
-            href={`/beauty-product/${product.id}`}
-          >
+          <Link className="mavo-product-link" href={`/beauty/${product.id}`}>
             {product.name}
           </Link>
         </h6>
@@ -63,10 +60,10 @@ const ItemCardOne = ({ product }) => {
       </div>
       <div className="mavo-product-meta">
         <div className="mavo-product-add-cart">
-          <Link href={`/beauty-product/${product.id}`}>Add to Cart</Link>
+          <Link href={`/beauty/${product.id}`}>Add to Cart</Link>
         </div>
         <div className="mavo-product-quick-view">
-          <Link href={`/beauty-product/${product.id}`}>Quick View</Link>
+          <Link href={`/beauty/${product.id}`}>Quick View</Link>
         </div>
       </div>
     </>

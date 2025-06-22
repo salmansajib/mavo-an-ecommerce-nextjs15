@@ -15,7 +15,7 @@ const AllProduct = () => {
 
   // Fetch products for the current page (explicitly set direction="first" for clarity)
   const { data, isLoading, error } = useProducts(
-    "beautyProduct",
+    "beauty",
     currentPage,
     itemsPerPage,
     "first",

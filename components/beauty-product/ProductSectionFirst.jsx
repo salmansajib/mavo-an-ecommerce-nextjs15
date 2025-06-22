@@ -11,7 +11,7 @@ const FEATURED_PRODUCTS_LIMIT = 6;
 const ProductSectionFirst = () => {
   // Fetch first 6 products (page=1, limit=6)
   const { data, isLoading, error } = useProducts(
-    "beautyProduct",
+    "beauty",
     1,
     FEATURED_PRODUCTS_LIMIT,
     "first",

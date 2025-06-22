@@ -10,7 +10,7 @@ const FEATURED_PRODUCTS_LIMIT = 2;
 const ProductSectionThird = () => {
   // Fetch last 2 products (page=1, limit=2)
   const { data, isLoading, error } = useProducts(
-    "beautyProduct",
+    "beauty",
     1,
     FEATURED_PRODUCTS_LIMIT,
     "last",
