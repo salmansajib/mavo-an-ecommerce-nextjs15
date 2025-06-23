@@ -148,6 +148,7 @@
     "type": "bag",
     "base_price": 150,
     "currency": "USD",
+    "tags": "New",
     "reviews": 413,
     "description": "This stylish hobo bag features a bold zebra print pattern, adding a wild flair to your wardrobe. Crafted with a sleek design, it includes a spacious interior perfect for daily essentials. The adjustable strap ensures comfortable wear, while the secure clasp closure provides easy access. Ideal for an e-commerce collection targeting fashion-forward shoppers, this bag blends trendy aesthetics with practical functionality. Its modular design makes it a versatile addition to your clothing and accessory lineup, appealing to customers seeking unique statement pieces for various occasions.",
     "variants": [
@@ -361,6 +362,7 @@
     "type": "bag",
     "base_price": 200,
     "currency": "USD",
+    "tags": "New",
     "reviews": 365,
     "description": "The TrailBlaze Backpack combines rugged style with practicality, featuring a sleek slate blue body and tan leather accents. Designed with multiple compartments, including padded side pockets for gear, and secure buckles, it’s perfect for outdoor enthusiasts or photographers as of June 21, 2025. The adjustable straps and durable fabric ensure comfort and longevity, making it ideal for adventures or daily use.",
     "variants": [
@@ -646,6 +648,7 @@
     "type": "bag",
     "base_price": 120,
     "currency": "USD",
+    "tags": "Top",
     "reviews": 287,
     "description": "The Mavgo Nomad Pack is a sleek, versatile backpack designed for the modern adventurer. Featuring a minimalist design with a bold brand imprint, it combines a soft upper section with a durable lower panel for all-day comfort and practicality. Equipped with padded straps and a sturdy handle, this bag offers ample storage for work or travel essentials. Its understated elegance and robust construction make it ideal for urban exploration or outdoor escapes, blending style with functionality at an estimated $120 price point.",
     "variants": [
@@ -788,6 +791,7 @@
     "type": "bag",
     "base_price": 135,
     "currency": "USD",
+    "tags": "Top",
     "reviews": 45,
     "description": "The Mavgo Backpack is a stylish and functional bag featuring a rich mustard yellow body with contrasting dark gray accents. Designed with a spacious main compartment and a front pocket, it offers ample storage for daily essentials. The adjustable shoulder straps ensure comfort, while the sleek design and bold branding make it a standout accessory. Ideal for students or professionals, this backpack combines durability with a modern aesthetic, perfect for casual or urban use as of June 21, 2025.",
     "variants": [
@@ -930,6 +934,7 @@
     "type": "bag",
     "base_price": 200,
     "currency": "USD",
+    "tags": "New",
     "reviews": 365,
     "description": "The TrailBlaze Backpack combines rugged style with practicality, featuring a sleek slate blue body and tan leather accents. Designed with multiple compartments, including padded side pockets for gear, and secure buckles, it’s perfect for outdoor enthusiasts or photographers as of June 21, 2025. The adjustable straps and durable fabric ensure comfort and longevity, making it ideal for adventures or daily use.",
     "variants": [
