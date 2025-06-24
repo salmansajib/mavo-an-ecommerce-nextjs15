@@ -43,7 +43,7 @@ const ProductSectionGirls = () => {
   const products = data.products; // Already limited to 6 by the server
 
   return (
-    <div className="mavo-product-6 mavo-pt-70 mavo-md-pt-25 mavo-pb-25">
+    <div className="mavo-product-6 mavo-pt-70 mavo-md-pt-25 mavo-pb-25 bg-white">
       <div className="mavo-title-style-6">
         <h2 className="hiddenn">Collection</h2>
         <h2 className="visible">New Collection For GirlS</h2>
