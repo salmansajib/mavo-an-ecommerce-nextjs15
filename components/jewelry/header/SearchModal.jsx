@@ -42,6 +42,12 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
     return () => document.removeEventListener("keydown", handleEscape);
   }, [onClose]);
 
+  // Modified onClose handler to clear search
+  const handleClose = () => {
+    setSearch("");
+    onClose();
+  };
+
   return (
     <div
       className={`${
@@ -137,7 +143,7 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
       </div>
 
       <button
-        onClick={onClose}
+        onClick={handleClose}
         className="absolute top-2 right-2 p-2 hover:text-red-400 transition-colors"
       >
         <X size={24} />

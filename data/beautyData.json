@@ -2,7 +2,7 @@
   {
     "id": "beauty1",
     "name": "Beauty Cream Radiance",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 30.0,
     "currency": "USD",
     "tags": "New",
@@ -50,7 +50,7 @@
   {
     "id": "beauty2",
     "name": "Cosmetics Protect Gel",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 18.0,
     "currency": "USD",
     "reviews": 169,
@@ -97,7 +97,7 @@
   {
     "id": "beauty3",
     "name": "Face Cream Container",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 22.0,
     "currency": "USD",
     "reviews": 720,
@@ -144,7 +144,7 @@
   {
     "id": "beauty4",
     "name": "Cream Jar Thecodude",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 30.0,
     "currency": "USD",
     "tags": "-20%",
@@ -192,7 +192,7 @@
   {
     "id": "beauty5",
     "name": "Mavoo Facial Moisturizing Pump",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 20.0,
     "currency": "USD",
     "reviews": 502,
@@ -239,7 +239,7 @@
   {
     "id": "beauty6",
     "name": "Glass Dropper Beauty Oil",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 25.0,
     "currency": "USD",
     "tags": "Hot",
@@ -287,7 +287,7 @@
   {
     "id": "beauty7",
     "name": "Eye Tool Mascara",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 15.0,
     "currency": "USD",
     "reviews": 348,
@@ -334,7 +334,7 @@
   {
     "id": "beauty8",
     "name": "Mavoo Glass Toner",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 30.0,
     "currency": "USD",
     "reviews": 497,
@@ -381,7 +381,7 @@
   {
     "id": "beauty9",
     "name": "Mavoo Eucalyptus Moisturizer",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 25.0,
     "currency": "USD",
     "tags": "-15%",
@@ -429,7 +429,7 @@
   {
     "id": "beauty10",
     "name": "Beauty Cream Radiance",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 30.0,
     "currency": "USD",
     "tags": "New",
@@ -477,7 +477,7 @@
   {
     "id": "beauty11",
     "name": "Cosmetics Protect Gel",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 18.0,
     "currency": "USD",
     "reviews": 169,
@@ -524,7 +524,7 @@
   {
     "id": "beauty12",
     "name": "Face Cream Container",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 22.0,
     "currency": "USD",
     "reviews": 720,
@@ -571,7 +571,7 @@
   {
     "id": "beauty13",
     "name": "Cream Jar Thecodude",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 30.0,
     "currency": "USD",
     "tags": "-20%",
@@ -619,7 +619,7 @@
   {
     "id": "beauty14",
     "name": "Mavoo Facial Moisturizing Pump",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 20.0,
     "currency": "USD",
     "reviews": 502,
@@ -666,7 +666,7 @@
   {
     "id": "beauty15",
     "name": "Glass Dropper Beauty Oil",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 25.0,
     "currency": "USD",
     "tags": "Hot",
@@ -714,7 +714,7 @@
   {
     "id": "beauty16",
     "name": "Eye Tool Mascara",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 15.0,
     "currency": "USD",
     "reviews": 348,
@@ -761,7 +761,7 @@
   {
     "id": "beauty17",
     "name": "Mavoo Glass Toner",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 30.0,
     "currency": "USD",
     "reviews": 497,
@@ -808,7 +808,7 @@
   {
     "id": "beauty18",
     "name": "Mavoo Eucalyptus Moisturizer",
-    "type": "Beauty Product",
+    "type": "beauty",
     "base_price": 25.0,
     "currency": "USD",
     "tags": "-15%",

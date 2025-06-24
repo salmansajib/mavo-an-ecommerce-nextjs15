@@ -7,6 +7,7 @@ import { updateQuantity, removeFromCart } from "@/slices/cartSlice";
 import toast from "react-hot-toast";
 import Icon from "./Icon";
 import ConfirmDeleteModal from "./ConfirmDeleteModal";
+import Link from "next/link";
 
 function Cart() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -47,6 +48,41 @@ function Cart() {
       console.error("Error updating quantity:", error);
       toast.error("Failed to update quantity.", toastConfig);
     }
+  };
+
+  // Helper function to determine which attribute to display size or materal
+  const getItemAttributeDisplaySizeMaterial = (item) => {
+    if (item?.attributes?.size)
+      return (
+        <span>
+          <strong>Size:</strong> {item?.attributes?.size}
+        </span>
+      );
+    if (item?.attributes?.material)
+      return (
+        <span>
+          <strong>Material:</strong> {item?.attributes?.material}
+        </span>
+      );
+
+    return null;
+  };
+  // Helper function to determine which attribute to display color or length
+  const getItemAttributeDisplayColorLength = (item) => {
+    if (item?.attributes?.color)
+      return (
+        <span>
+          <strong>Color:</strong> {item?.attributes?.color}
+        </span>
+      );
+    if (item?.attributes?.length)
+      return (
+        <span>
+          <strong>Length:</strong> {item?.attributes?.length}
+        </span>
+      );
+
+    return null;
   };
 
   const openDeleteModal = (item) => {
@@ -110,15 +146,20 @@ function Cart() {
                           />
                         </div>
                         <div className="mavo-cart-text flex flex-col items-start">
-                          <h5 className="mavo-title">{item.name}</h5>
+                          <Link
+                            href={`/${item.type}/${item.id}`}
+                            className="text-2xl font-medium mb-2 hover:!text-[#C9A96B]"
+                          >
+                            {item.name}
+                          </Link>
                           <span className="cart-price">
                             ${item.unitPrice.toFixed(2)}
                           </span>
                           <div className="mavo-mt-10 font-josefin-sans">
-                            <span>Size:</span> {item.attributes.size}
+                            {getItemAttributeDisplaySizeMaterial(item)}
                           </div>
                           <div className="cart-color mavo-mt-10">
-                            <span>Color:</span> {item.attributes.color}
+                            {getItemAttributeDisplayColorLength(item)}
                           </div>
                         </div>
                       </div>
@@ -228,7 +269,7 @@ function Cart() {
         title="Confirm Deletion"
         message={
           <>
-            Are you sure you want to remove{" "}
+            Are you sure you want to remove
             <span className="font-bold">{itemToDelete?.name}</span> from your
             cart?
           </>

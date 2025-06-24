@@ -1,7 +1,7 @@
 // useSearchProducts.js
 import { useQuery } from "@tanstack/react-query";
 
-const DEFAULT_LIMIT = 6;
+const DEFAULT_LIMIT = 10;
 
 const fetchSearchProducts = async (search, page, limit = DEFAULT_LIMIT) => {
   try {

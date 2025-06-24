@@ -2,7 +2,7 @@
   {
     "id": "jewel1",
     "name": "Serpent Crown Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 450.0,
     "currency": "USD",
     "tags": "New",
@@ -57,7 +57,7 @@
   {
     "id": "jewel2",
     "name": "Moon and Star Earrings",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 120.0,
     "currency": "USD",
     "reviews": 1230,
@@ -111,7 +111,7 @@
   {
     "id": "jewel3",
     "name": "Lunar Charm Necklace",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 180.0,
     "currency": "USD",
     "reviews": 579,
@@ -165,7 +165,7 @@
   {
     "id": "jewel4",
     "name": "Crystal Bar Bracelet",
-    "type": "Jewelry",
+    "type": "jewelry",
     "tags": "Top",
     "base_price": 130.0,
     "currency": "USD",
@@ -220,7 +220,7 @@
   {
     "id": "jewel5",
     "name": "Radiant Gem Drop Earring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 90.0,
     "currency": "USD",
     "reviews": 302,
@@ -274,7 +274,7 @@
   {
     "id": "jewel6",
     "name": "Ruby Teardrop Necklace",
-    "type": "Jewelry",
+    "type": "jewelry",
     "tags": "Top",
     "base_price": 250.0,
     "currency": "USD",
@@ -329,7 +329,7 @@
   {
     "id": "jewel7",
     "name": "Diamond Eternity Bangles",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 300.0,
     "currency": "USD",
     "reviews": 519,
@@ -383,7 +383,7 @@
   {
     "id": "jewel8",
     "name": "Textured Gold Hoop Earrings",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 200.0,
     "currency": "USD",
     "reviews": 937,
@@ -437,7 +437,7 @@
   {
     "id": "jewel9",
     "name": "Leaf Dew Necklace",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 220.0,
     "currency": "USD",
     "reviews": 937,
@@ -491,7 +491,7 @@
   {
     "id": "jewel10",
     "name": "Geometric Crystal Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 280.0,
     "currency": "USD",
     "reviews": 387,
@@ -545,7 +545,7 @@
   {
     "id": "jewel11",
     "name": "Diamond Cluster Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 350.0,
     "currency": "USD",
     "reviews": 387,
@@ -599,7 +599,7 @@
   {
     "id": "jewel12",
     "name": "Heart Link Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 260.0,
     "currency": "USD",
     "reviews": 387,
@@ -653,7 +653,7 @@
   {
     "id": "jewel13",
     "name": "Serpent Crown Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 450.0,
     "currency": "USD",
     "tags": "New",
@@ -708,7 +708,7 @@
   {
     "id": "jewel14",
     "name": "Celestial Moon and Star Earrings",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 120.0,
     "currency": "USD",
     "reviews": 1230,
@@ -762,7 +762,7 @@
   {
     "id": "jewel15",
     "name": "Lunar Charm Necklace",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 180.0,
     "currency": "USD",
     "reviews": 579,
@@ -816,7 +816,7 @@
   {
     "id": "jewel16",
     "name": "Crystal Bar Bracelet",
-    "type": "Jewelry",
+    "type": "jewelry",
     "tags": "Top",
     "base_price": 130.0,
     "currency": "USD",
@@ -871,7 +871,7 @@
   {
     "id": "jewel17",
     "name": "Radiant Gem Drop Earring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 90.0,
     "currency": "USD",
     "reviews": 302,
@@ -925,7 +925,7 @@
   {
     "id": "jewel18",
     "name": "Ruby Teardrop Necklace",
-    "type": "Jewelry",
+    "type": "jewelry",
     "tags": "Top",
     "base_price": 250.0,
     "currency": "USD",
@@ -980,7 +980,7 @@
   {
     "id": "jewel19",
     "name": "Diamond Eternity Bangles",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 300.0,
     "currency": "USD",
     "reviews": 519,
@@ -1034,7 +1034,7 @@
   {
     "id": "jewel20",
     "name": "Textured Gold Hoop Earrings",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 200.0,
     "currency": "USD",
     "reviews": 937,
@@ -1088,7 +1088,7 @@
   {
     "id": "jewel21",
     "name": "Leaf Dew Necklace",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 220.0,
     "currency": "USD",
     "reviews": 937,
@@ -1142,7 +1142,7 @@
   {
     "id": "jewel22",
     "name": "Geometric Crystal Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 280.0,
     "currency": "USD",
     "reviews": 387,
@@ -1196,7 +1196,7 @@
   {
     "id": "jewel23",
     "name": "Diamond Cluster Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 350.0,
     "currency": "USD",
     "reviews": 387,
@@ -1250,7 +1250,7 @@
   {
     "id": "jewel24",
     "name": "Heart Link Ring",
-    "type": "Jewelry",
+    "type": "jewelry",
     "base_price": 260.0,
     "currency": "USD",
     "reviews": 387,
