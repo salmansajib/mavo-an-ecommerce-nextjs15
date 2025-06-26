@@ -10,7 +10,7 @@ const Banner = () => {
           <div className="col-lg-6">
             <div className="mavo-page-title">
               <div className="mavo-content-left">
-                <ul>
+                {/* <ul>
                   <li>
                     <Link href="/beauty-product">Home</Link>
                   </li>
@@ -18,7 +18,7 @@ const Banner = () => {
                   <li>
                     <Link href="#">Shop</Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
               <h1 className="mavo-beauty-shop-title text-uppercase">
                 Beauty Shop

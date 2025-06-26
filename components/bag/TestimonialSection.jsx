@@ -46,7 +46,7 @@ const testimonials = [
 
 const TestimonialSection = () => {
   return (
-    <div className="mavo-testimonial-6 mavo-pb-65 mavo-md-pb-0 mavo-pt-70 mavo-md-pt-45">
+    <div className="mavo-testimonial-6 mavo-pb-65 mavo-md-pb-0 mavo-pt-70 mavo-md-pt-45 bg-gray-50">
       <div className="mavo-title-style-6">
         <h2 className="hiddenn">Testimonial</h2>
         <div className="mavo-heading-area text-center mavo-mb-45 mavo-md-mb-15">

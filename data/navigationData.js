@@ -22,7 +22,7 @@ export const navItems = [
       { id: 24, label: "Watch Shop", link: "/watch/product" },
       { id: 26, label: "Jewelry Shop", link: "/jewelry/product" },
       { id: 22, label: "Beauty Shop", link: "/beauty/product" },
-      { id: 21, label: "Bag Shop", link: "bag-shop.html" },
+      { id: 21, label: "Bag Shop", link: "/bag/product" },
     ],
   },
   {
@@ -109,7 +109,7 @@ export const navItemsMobile = [
       { id: 24, label: "Watch Shop", link: "/watch/product" },
       { id: 26, label: "Jewelry Shop", link: "/jewelry/product" },
       { id: 22, label: "Beauty Shop", link: "/beauty/product" },
-      { id: 21, label: "Bag Shop", link: "bag-shop.html" },
+      { id: 21, label: "Bag Shop", link: "/bag/product" },
     ],
   },
   {

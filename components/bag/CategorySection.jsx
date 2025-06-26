@@ -28,7 +28,7 @@ const categoryData = [
 
 const CategorySection = () => {
   return (
-    <div className="mavo-category-6 mavo-pt-70 mavo-md-pt-25 mavo-pb-120 mavo-md-pb-80">
+    <div className="mavo-category-6 mavo-pt-70 mavo-md-pt-25 mavo-pb-120 mavo-md-pb-80 bg-gray-50">
       <div className="container">
         <div className="mavo-title-style-6">
           <h2 className="hidden">Categories</h2>

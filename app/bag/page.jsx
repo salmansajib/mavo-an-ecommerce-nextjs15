@@ -8,7 +8,6 @@ import ShopInfo from "@/components/bag/ShopInfo";
 import TestimonialSection from "@/components/bag/TestimonialSection";
 import BlogSection from "@/components/bag/BlogSection";
 import NewsletterSection from "@/components/bag/NewsletterSection";
-import Footer from "@/components/bag/Footer";
 
 function BagHome() {
   return (
@@ -22,7 +21,6 @@ function BagHome() {
       <TestimonialSection />
       <BlogSection />
       <NewsletterSection />
-      <Footer />
     </>
   );
 }

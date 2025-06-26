@@ -1,3 +1,4 @@
+import Footer from "@/components/bag/Footer";
 import Header from "@/components/bag/header/Header";
 
 export default function BagLayout({ children }) {
@@ -5,6 +6,7 @@ export default function BagLayout({ children }) {
     <>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 }

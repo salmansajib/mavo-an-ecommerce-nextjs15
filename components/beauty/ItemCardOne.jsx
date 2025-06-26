@@ -31,13 +31,13 @@ const ItemCardOne = ({ product }) => {
             </li>
             <li>
               <Link href={`/beauty/${product.id}`}>
-                <i className="flaticon-star"></i>
+                <i className="flaticon-sort"></i>
               </Link>
               <span> Compare</span>
             </li>
             <li>
               <Link href={`/beauty/${product.id}`}>
-                <i className="flaticon-sort"></i>
+                <i className="flaticon-star"></i>
               </Link>
               <span> Wishlist</span>
             </li>

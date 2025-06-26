@@ -31,13 +31,13 @@ const ItemCard = ({ product }) => {
             </li>
             <li>
               <Link href={`/cloth/${product.id}`}>
-                <i className="flaticon-star"></i>
+                <i className="flaticon-sort"></i>
                 <span> Compare</span>
               </Link>
             </li>
             <li>
               <Link href={`/cloth/${product.id}`}>
-                <i className="flaticon-sort"></i>
+                <i className="flaticon-star"></i>
                 <span> Wishlist</span>
               </Link>
             </li>

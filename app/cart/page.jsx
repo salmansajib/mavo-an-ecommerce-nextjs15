@@ -1,12 +1,14 @@
 import React from "react";
 import Cart from "@/components/Cart";
 import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
-import FooterCloth from "@/components/cloth/footer-cloth/FooterCloth";
 import BreadcrumbContact from "@/components/contact/BreadcrumbContact";
+import Header from "@/components/shoe/header/Header";
+import Footer from "@/components/shoe/Footer";
 
 function page() {
   return (
-    <>
+    <div className="pt-[150px]">
+      <Header />
       <BreadcrumbContact
         items={[
           { label: "Home", href: "/" },
@@ -16,8 +18,8 @@ function page() {
       />
       <Cart />
       <ShopInfoCloth />
-      <FooterCloth />
-    </>
+      <Footer />
+    </div>
   );
 }
 
