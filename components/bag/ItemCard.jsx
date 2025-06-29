@@ -1,8 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import useWishlist from "@/hooks/useWishlist";
+import Icon from "../Icon";
 
 const ItemCard = ({ product }) => {
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.variants[0].images[0],
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
+
   return (
     <div className="mavo-prodduct-slider-item text-center mavo-mt-35 mavo-mb-50 group">
       <div className="mavo-product-img">
@@ -13,27 +25,21 @@ const ItemCard = ({ product }) => {
           src={product.variants?.[0].images?.[0]}
           alt="product image"
         />
-        <div className="mavo-product-social">
-          <ul>
-            <li>
-              <Link href={`/bag/${product.id}`}>
-                <i className="flaticon-eye"></i>
-              </Link>
-              <span>Quick view</span>
-            </li>
-            <li>
-              <Link href={`/bag/${product.id}`}>
-                <i className="flaticon-sort"></i>
-              </Link>
-              <span>Compare</span>
-            </li>
-            <li>
-              <Link href={`/bag/${product.id}`}>
-                <i className="flaticon-star"></i>
-              </Link>
-              <span>Wishlist</span>
-            </li>
-          </ul>
+        <div className="absolute top-4 right-4 group">
+          <button onClick={() => handleWishlistToggle()}>
+            <Icon
+              name="Star"
+              size={32}
+              className={`${
+                isInWishlist
+                  ? "fill-red-500 stroke-red-500"
+                  : "stroke-green-300"
+              } transition-all duration-150`}
+            />
+          </button>
+          <span className="absolute hidden group-hover:block bg-black text-white font-prata capitalize text-xs rounded-[2px] py-1 px-2 -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap z-[1000]">
+            {isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
+          </span>
         </div>
         {product.tags && (
           <div className="product-tag">

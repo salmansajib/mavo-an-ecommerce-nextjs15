@@ -41,7 +41,7 @@ const ProductList = ({ products }) => {
                 </div>
               </div>
             </div>
-            <div className="row align-items-center justify-content-end">
+            <div className="row align-items-center justify-content-start">
               {products.map((product) => (
                 <div key={product.id} className="col-lg-3 col-md-4 col-sm-6">
                   <ItemCard product={product} />

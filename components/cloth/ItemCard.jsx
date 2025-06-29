@@ -25,7 +25,7 @@ const ItemCard = ({ product }) => {
             width={500}
             height={500}
             quality={100}
-            className="w-[500px] h-auto"
+            className="w-full h-auto object-cover"
           />
         </div>
         {product.tags && (
@@ -33,7 +33,7 @@ const ItemCard = ({ product }) => {
             <span>{product.tags}</span>
           </div>
         )}
-        <div className="absolute top-4 right-4">
+        <div className="absolute top-4 right-4 group">
           <button onClick={() => handleWishlistToggle()}>
             <Icon
               name="Star"
@@ -43,6 +43,9 @@ const ItemCard = ({ product }) => {
               } transition-all duration-150`}
             />
           </button>
+          <span className="absolute hidden group-hover:block bg-black text-white font-prata capitalize text-xs rounded-[2px] py-1 px-2 -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap z-[1000]">
+            {isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
+          </span>
         </div>
         <div className="mavo-product-cart">
           <Link href={`/cloth/${product.id}`}>Buy Now</Link>

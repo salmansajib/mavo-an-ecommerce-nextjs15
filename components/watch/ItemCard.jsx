@@ -1,15 +1,27 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import useWishlist from "@/hooks/useWishlist";
+import Icon from "../Icon";
 
 const ItemCard = ({ product }) => {
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.variants[0].materials[0].images[0],
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
+
   return (
     <div className="mavo-product-info text-center">
       <div className="mavo-product-img">
         <Image
           width={800}
           height={800}
-          className="w-[500px] h-auto"
+          className="w-full h-auto object-cover"
           src={product.variants[0].materials[0].images[0]}
           alt="product"
         />
@@ -18,27 +30,21 @@ const ItemCard = ({ product }) => {
             <span>{product.tags}</span>
           </div>
         )}
-        <div className="mavo-product-social">
-          <ul>
-            <li>
-              <Link href={`/watch/${product.id}`}>
-                <i className="flaticon-eye"></i>
-              </Link>
-              <span>Quick view</span>
-            </li>
-            <li>
-              <Link href={`/watch/${product.id}`}>
-                <i className="flaticon-sort"></i>
-              </Link>
-              <span>Compare</span>
-            </li>
-            <li>
-              <Link href={`/watch/${product.id}`}>
-                <i className="flaticon-star"></i>
-              </Link>
-              <span>Wishlist</span>
-            </li>
-          </ul>
+        <div className="absolute top-4 left-4 group">
+          <button onClick={() => handleWishlistToggle()}>
+            <Icon
+              name="Star"
+              size={32}
+              className={`${
+                isInWishlist
+                  ? "fill-red-500 stroke-red-500"
+                  : "stroke-green-300"
+              } transition-all duration-150`}
+            />
+          </button>
+          <span className="absolute hidden group-hover:block bg-black text-white font-prata capitalize text-xs rounded-[2px] py-1 px-2 -bottom-8 left-5 whitespace-nowrap z-[10000]">
+            {isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
+          </span>
         </div>
       </div>
 

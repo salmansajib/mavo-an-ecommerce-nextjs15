@@ -7,7 +7,7 @@ import ContentPage from "./ContentPage";
 import ProductList from "./ProductList";
 import Pagination from "./Pagination";
 
-const DEFAULT_LIMIT = 12;
+const DEFAULT_LIMIT = 8;
 
 const AllProduct = () => {
   const [currentPage, setCurrentPage] = useState(1);

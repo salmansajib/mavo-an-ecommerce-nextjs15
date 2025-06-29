@@ -67,7 +67,7 @@ const Wishlist = () => {
                 <div>
                   <Link
                     href={`${item.type}/${item.id}`}
-                    className="text-lg hover:!text-green-500"
+                    className="text-lg hover:!text-green-500 truncate"
                   >
                     {item.name}
                   </Link>

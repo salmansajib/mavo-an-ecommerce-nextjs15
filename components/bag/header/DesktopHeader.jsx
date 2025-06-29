@@ -14,6 +14,9 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
   const [visibleSvgId, setVisibleSvgId] = useState(null);
 
   const totalQuantity = useSelector((state) => state.cart.totalQuantity || 0);
+  const totalItemsInWishlist = useSelector(
+    (state) => state.wishlist.totalItems || 0,
+  );
 
   return (
     <div className="hidden w-full lg:flex items-center justify-between">
@@ -38,9 +41,9 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
               className="text-[#fff] hover:text-[#f7c490]"
             />
           </button>
-          <Link href="/" className="relative">
+          <Link href="/wishlist" className="relative">
             <span className="absolute font-prata -top-6 text-black left-1/2 -translate-x-1/2 text-[10px] bg-[#fff] size-5 rounded-full flex items-center justify-center">
-              0
+              {totalItemsInWishlist > 10 ? "10+" : totalItemsInWishlist}
             </span>
             <Icon
               name="Star"

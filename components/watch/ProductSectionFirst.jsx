@@ -6,6 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { useProducts } from "@/hooks/useProducts";
 import LoaderSpinner from "../LoaderSpinner";
+import useWishlist from "@/hooks/useWishlist";
+import Icon from "../Icon";
+import ItemCardTwo from "./ItemCardTwo";
 
 const FEATURED_PRODUCTS_LIMIT = 8;
 
@@ -98,45 +101,7 @@ const ProductSectionFirst = () => {
           >
             {products.map((product) => (
               <SwiperSlide className="swiper-slide" key={product.id}>
-                <div className="mavo-product-info">
-                  <div className="mavo-product-img">
-                    <Image
-                      width={500}
-                      height={500}
-                      className="w-[500px] h-auto"
-                      src={product.variants[0].materials[0].images[0]}
-                      alt="product-img"
-                    />
-                    {product.tags && (
-                      <div className="limited-product">
-                        <p className="">{product.tags}</p>
-                      </div>
-                    )}
-                    <div className="mavo-add-cart ">
-                      <Link
-                        href="/watch/product"
-                        className="!bg-gray-100 relative"
-                      >
-                        <Image
-                          width={100}
-                          height={100}
-                          className="w-[20px] h-auto absolute top-[12px] left-[15px]"
-                          src="/images/icons/add-cart.svg"
-                          alt="add-cart"
-                        />
-                        <span> Wishlist</span>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="mavo-heading-area">
-                    <h6 className="product-title-link">
-                      <Link href={`/watch/${product.id}`}>{product.name}</Link>
-                    </h6>
-                    <span className="product-title">
-                      ${product.base_price.toFixed(2)}
-                    </span>
-                  </div>
-                </div>
+                <ItemCardTwo product={product} />
               </SwiperSlide>
             ))}
 
