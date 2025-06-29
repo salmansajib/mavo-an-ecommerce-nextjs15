@@ -11,7 +11,7 @@ import { persistState } from "@/utils/persistState";
 // Initialize persistence for cart and favorite slices
 persistState(store, [
   { name: "cart", key: "cart" },
-  // { name: 'favorite', key: 'favorites' },
+  { name: "wishlist", key: "wishlist" },
 ]);
 
 export default function Providers({ children }) {

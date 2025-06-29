@@ -7,8 +7,11 @@ import { addToCart, updateQuantity } from "@/slices/cartSlice";
 import toast from "react-hot-toast";
 import Icon from "@/components/Icon";
 import ProductGallery from "./ProductGallery";
+import useCountdown from "@/hooks/useCountdown";
 
 const ProductDetail = ({ product }) => {
+  const timeLeft = useCountdown(7);
+
   // State for selections and cart
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
@@ -26,14 +29,14 @@ const ProductDetail = ({ product }) => {
         variant.sizes.map((sizeObj) => sizeObj.size),
       ),
     ),
-  ].sort((a, b) => a - b);
+  ].sort();
 
   // Calculate current price based on selected size and color
   const getCurrentPrice = () => {
     if (!selectedSize) {
       let price = product.base_price || 0;
-      if (product.tags && product.tags.includes("-20%")) {
-        price *= 0.8; // Apply 20% discount
+      if (product.tags && product.tags.includes("-29%")) {
+        price *= 0.71; // Apply 29% discount
       }
       return price.toFixed(2);
     }
@@ -49,8 +52,8 @@ const ProductDetail = ({ product }) => {
     let price = selectedSizeData
       ? selectedSizeData.price
       : product.base_price || 0;
-    if (product.tags && product.tags.includes("-20%")) {
-      price *= 0.8; // Apply 20% discount
+    if (product.tags && product.tags.includes("-29%")) {
+      price *= 0.71; // Apply 29% discount
     }
     return price.toFixed(2);
   };
@@ -58,6 +61,7 @@ const ProductDetail = ({ product }) => {
   // Handle color selection
   const handleColorSelect = (color) => {
     setSelectedColor(color);
+    setSelectedImageIndex(0); // Reset image index when color changes
     setErrorMessage("");
   };
 
@@ -72,7 +76,7 @@ const ProductDetail = ({ product }) => {
     const existingItem = cartItems.find(
       (item) =>
         item.id === product.id &&
-        item.type === (product.type || "shoes") &&
+        item.type === (product.type || "bag") &&
         item.attributes.color === selectedColor &&
         item.attributes.size === selectedSize,
     );
@@ -89,7 +93,7 @@ const ProductDetail = ({ product }) => {
         dispatch(
           updateQuantity({
             id: product.id,
-            type: product.type || "shoes",
+            type: product.type || "bag",
             attributes: { color: selectedColor, size: selectedSize },
             newQuantity,
           }),
@@ -152,7 +156,7 @@ const ProductDetail = ({ product }) => {
         unitPrice: parseFloat(getCurrentPrice()),
         price: parseFloat(getCurrentPrice()) * quantity,
         quantity,
-        type: product.type || "shoes",
+        type: product.type || "bag",
         attributes: {
           color: selectedColor,
           size: selectedSize,
@@ -176,7 +180,7 @@ const ProductDetail = ({ product }) => {
   };
 
   return (
-    <div className="mavo-single-product-2 mavo-shoes mavo-single-product !mb-0 pb-[100px]">
+    <div className="mavo-single-product-2 mavo-single-product mavo-single-product-bag mavo-pt-120 mavo-md-pt-80 mavo-pb-110 mavo-md-pb-55">
       <div className="container">
         <div className="row">
           {/* Product Gallery */}
@@ -189,64 +193,84 @@ const ProductDetail = ({ product }) => {
             />
           </div>
 
-          {/* Spacer Column */}
-          <div className="col-lg-1"></div>
-
           {/* Product Info */}
           <div className="col-lg-6 col-md-12">
             <div className="mavo-single-product-cart">
-              <div className="mavo-product-title">
-                <h5 className="mavo-shoes-title mavo-mb-15">{product.name}</h5>
-              </div>
-
-              <div className="mavo-product-price d-flex mavo-mb-15">
-                <span className="mavo-price">${getCurrentPrice()}</span>
-                <div className="mavo-producet-rating mavo-mr-10">
-                  {[...Array(5)].map((_, i) => (
-                    <i
-                      key={i}
-                      className={
-                        i <
-                        Math.round(
-                          product.customer_reviews.reduce(
-                            (sum, r) => sum + r.rating,
-                            0,
-                          ) / product.customer_reviews.length,
-                        )
-                          ? "flaticon-star-1"
-                          : "flaticon-star"
-                      }
-                    ></i>
-                  ))}
+              <div className="mavo-produt-content-area d-flex align-items-center justify-content-between">
+                <div className="mavo-product-price">
+                  <div className="mavo-product-price d-flex mavo-mb-15">
+                    <div className="mavo-producet-rating mavo-mr-10">
+                      {[...Array(5)].map((_, i) => (
+                        <i
+                          key={i}
+                          className={
+                            i <
+                            Math.round(
+                              product.customer_reviews.reduce(
+                                (sum, r) => sum + r.rating,
+                                0,
+                              ) / product.customer_reviews.length,
+                            )
+                              ? "flaticon-star-1"
+                              : "flaticon-star"
+                          }
+                        ></i>
+                      ))}
+                    </div>
+                    <span className="reviews">({product.reviews})</span>
+                  </div>
+                  <div className="mavo-product-title">
+                    <h5 className="mavo-shoes-title mavo-mb-15">
+                      {product.name}
+                    </h5>
+                  </div>
+                  <div className="mavo-product-meta mavo-mb-15 flex items-center">
+                    <span className="mavo-bag-price mavo-mr-30">
+                      ${getCurrentPrice()}
+                    </span>
+                    <Link
+                      className="review-icon flex items-center gap-2"
+                      href="#"
+                    >
+                      <img src="/images/icons/share.png" alt="png" /> Share
+                    </Link>
+                  </div>
                 </div>
-                <span className="reviews">{product.reviews} Reviews</span>
+                {product.tags && product.tags.includes("-29%") && (
+                  <div className="mavo-bag-price">
+                    <span className="mavo-price"> -29%</span>
+                  </div>
+                )}
               </div>
 
-              <div className="mavo-product-meta mavo-mb-15 flex flex-wrap items-center">
-                <Link
-                  className="review-icon mavo-mr-30 flex items-center gap-2"
-                  href="#"
-                >
-                  <img src="/images/icons/share.png" alt="png" /> Share
-                </Link>
-                <Link
-                  className="review-icon mavo-mr-30 flex items-center gap-2"
-                  href="#"
-                >
-                  <img src="/images/icons/quetions.png" alt="png" /> Ask a
-                  Question
-                </Link>
-                <Link
-                  className="review-icon mavo-mr-30 flex items-center gap-2"
-                  href="#"
-                >
-                  <img src="/images/icons/view.png" alt="png" /> 50 people are
-                  viewing this right now
-                </Link>
+              <div className="mavo-product-discount">
+                <div className="discount">
+                  <span>25% oFF</span>
+                </div>
+                <div className="discount-sale flex items-center">
+                  <span>Discount Sale ends in:</span>
+                  <div id="countdown">
+                    <ul className="flex items-center justify-center gap-4">
+                      {[
+                        { label: "D", value: timeLeft.days },
+                        { label: "H", value: timeLeft.hours },
+                        { label: "M", value: timeLeft.minutes },
+                        { label: "S", value: timeLeft.seconds },
+                      ].map((item, index) => (
+                        <li key={index} className="space-x-1 w-[60px]">
+                          <span className="text-2xl font-bold">
+                            {item.value}
+                          </span>
+                          <span className="text-sm">{item.label}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              <div className="mavo-product-size">
-                <h5 className="mavo-mb-25">Select Size:</h5>
+              <div className="mavo-product-size mavo-mb-25">
+                <h5 className="mavo-mb-25">Size:</h5>
                 <ul>
                   {sizes.map((size) => (
                     <li key={size}>
@@ -350,19 +374,6 @@ const ProductDetail = ({ product }) => {
                   >
                     Add to Cart
                   </button>
-                  <Link
-                    href="/cart"
-                    className="flex flex-wrap items-center gap-2"
-                  >
-                    <Image
-                      width={50}
-                      height={50}
-                      className="w-[20px] h-auto"
-                      src="/images/icons/wishlist.png"
-                      alt="wishlist"
-                    />{" "}
-                    Add to wish list
-                  </Link>
                 </div>
               </div>
 
@@ -372,16 +383,16 @@ const ProductDetail = ({ product }) => {
                 </div>
               )}
 
-              <div className="mavo-product-categorie">
-                <div className="categorie">
-                  <span>Categories :</span>
-                  <Link href="#">Shoe,</Link>
-                  <Link href="#"> Sneaker</Link>
+              <div className="mavo-product-category">
+                <span>IN STOCK - Estimated delivery 3-5 working days</span>
+                <div className="mavo-cate-logo">
+                  <img
+                    className="mavo-mb-20"
+                    src="/images/logos/bank-account-4.png"
+                    alt="Logo"
+                  />
                 </div>
-                <div className="categorie-tag">
-                  <span>Sku :</span>
-                  <Link href="#">{product.id}</Link>
-                </div>
+                <span>These payment options are available.</span>
               </div>
             </div>
           </div>

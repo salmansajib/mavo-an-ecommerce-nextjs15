@@ -15,7 +15,7 @@ export const navItems = [
   {
     id: 2,
     label: "Shop",
-    link: "#",
+    link: "/cloth/product",
     subItems: [
       { id: 23, label: "Cloth Shop", link: "/cloth/product" },
       { id: 25, label: "Shoes Shop", link: "/shoes/product" },
@@ -43,6 +43,32 @@ export const navItems = [
     label: "Pages",
     link: "#",
     subItems: [
+      {
+        id: 48,
+        label: "Watch Product Details",
+        link: "/watch/watch17",
+      },
+      {
+        id: 49,
+        label: "Jewellery Product Details",
+        link: "/jewelry/jewel6",
+      },
+      {
+        id: 50,
+        label: "Cloth Product Details",
+        link: "/cloth/cloth1",
+      },
+      {
+        id: 51,
+        label: "Beauty Product Details",
+        link: "/beauty/beauty1",
+      },
+      {
+        id: 516,
+        label: "Beauty Product Details",
+        link: "/shoe/shoe1",
+      },
+      { id: 52, label: "Bag Product Details", link: "/bag/bag1" },
       { id: 41, label: "About Us Beauty", link: "about-us-beauty.html" },
       { id: 42, label: "About Us Bag", link: "about-us-bag.html" },
       { id: 43, label: "About Us Clothing", link: "about-us-clothing.html" },
@@ -50,27 +76,6 @@ export const navItems = [
       { id: 45, label: "Checkout", link: "checkout.html" },
       { id: 46, label: "Faq", link: "faq.html" },
       { id: 47, label: "Thank You", link: "thank-you.html" },
-      {
-        id: 48,
-        label: "Watch Product Single",
-        link: "watch-product-single.html",
-      },
-      {
-        id: 49,
-        label: "Jewellery Product Single",
-        link: "jewellery-product-single.html",
-      },
-      {
-        id: 50,
-        label: "Cloth Product Single",
-        link: "cloth-product-single.html",
-      },
-      {
-        id: 51,
-        label: "Beauty Product Single",
-        link: "beauty-product-single.html",
-      },
-      { id: 52, label: "Bag Product Single", link: "bag-product-single.html" },
       { id: 53, label: "404 Page", link: "404-page.html" },
     ],
   },

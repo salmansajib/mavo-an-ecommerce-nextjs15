@@ -171,8 +171,8 @@
         "images": ["/product-images/bag/03-02.jpg"]
       },
       {
-        "color": "Black",
-        "color_code": "#000000",
+        "color": "Black Panther",
+        "color_code": "#080808",
         "sizes": [
           { "size": "Small", "price": 150, "stock": 50 },
           { "size": "Large", "price": 170, "stock": 50 }
@@ -385,8 +385,8 @@
         "images": ["/product-images/bag/06-02.jpg"]
       },
       {
-        "color": "Charcoal Gray",
-        "color_code": "#333333",
+        "color": "Gray",
+        "color_code": "#202020",
         "sizes": [
           { "size": "Small", "price": 200, "stock": 50 },
           { "size": "Large", "price": 220, "stock": 50 }
@@ -456,8 +456,8 @@
         "images": ["/product-images/bag/07-02.jpg"]
       },
       {
-        "color": "Dark Brown",
-        "color_code": "#3C2F2F",
+        "color": "Brown",
+        "color_code": "#33b456",
         "sizes": [
           { "size": "Small", "price": 120, "stock": 50 },
           { "size": "Large", "price": 145, "stock": 50 }

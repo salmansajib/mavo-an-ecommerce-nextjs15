@@ -12,6 +12,8 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
+  Trash,
+  Heart,
 } from "lucide-react";
 
 // Define a map of available icons
@@ -27,6 +29,8 @@ const icons = {
   ChevronLeft,
   ChevronRight,
   X,
+  Trash,
+  Heart,
 };
 
 const Icon = ({ name, size = 18, className = "", color, ...props }) => {

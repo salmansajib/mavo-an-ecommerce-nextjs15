@@ -1,8 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import useWishlist from "@/hooks/useWishlist";
+import Icon from "../Icon";
 
 const ItemCard = ({ product }) => {
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.variants[0].images[0],
+    attributes: {
+      color: product.variants[0].color_code,
+    },
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
+
   return (
     <div className="mavo-product-single mavo-md-mb-55">
       <div className="mavo-product-info">
@@ -21,27 +36,16 @@ const ItemCard = ({ product }) => {
             <span>{product.tags}</span>
           </div>
         )}
-        <div className="mavo-product-social">
-          <ul>
-            <li>
-              <Link href={`/cloth/${product.id}`}>
-                <i className="flaticon-eye"></i>
-                <span>Quick view</span>
-              </Link>
-            </li>
-            <li>
-              <Link href={`/cloth/${product.id}`}>
-                <i className="flaticon-sort"></i>
-                <span> Compare</span>
-              </Link>
-            </li>
-            <li>
-              <Link href={`/cloth/${product.id}`}>
-                <i className="flaticon-star"></i>
-                <span> Wishlist</span>
-              </Link>
-            </li>
-          </ul>
+        <div className=" absolute top-4 right-4">
+          <button onClick={() => handleWishlistToggle()}>
+            <Icon
+              name="Heart"
+              size={32}
+              className={`${
+                isInWishlist ? "fill-red-500 stroke-red-500" : "stroke-white"
+              } transition-all duration-150`}
+            />
+          </button>
         </div>
         <div className="mavo-product-cart">
           <Link href={`/cloth/${product.id}`}>Buy Now</Link>
