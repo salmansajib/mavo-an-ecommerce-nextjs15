@@ -79,7 +79,7 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
 
       {/* Search Results */}
       <div
-        className="w-full max-w-6xl max-h-[800px] overflow-y-auto mx-auto mt-5"
+        className="w-full max-w-6xl max-h-[800px] overflow-y-auto mx-auto mt-5 px-3"
         style={{
           scrollbarWidth: "thin",
           scrollbarColor: "oklch(37% 0.013 285.805) #1C2526",
