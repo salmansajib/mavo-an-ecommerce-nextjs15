@@ -18,11 +18,7 @@ const useWishlist = (itemData) => {
   const dispatch = useDispatch();
 
   // Check if item is in wishlist
-  const isInWishlist = wishlistItems.some(
-    (item) =>
-      item.id === itemData.id &&
-      item.attributes.color === itemData.attributes.color,
-  );
+  const isInWishlist = wishlistItems.some((item) => item.id === itemData.id);
 
   const handleWishlistToggle = () => {
     if (isInWishlist) {

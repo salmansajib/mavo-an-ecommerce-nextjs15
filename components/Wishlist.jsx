@@ -27,7 +27,6 @@ const Wishlist = () => {
         removeFromWishlist({
           id: item.id,
           type: item.type,
-          attributes: item.attributes || {},
         }),
       );
       toast.success(`${item.name} removed from wishlist!`, toastConfig);

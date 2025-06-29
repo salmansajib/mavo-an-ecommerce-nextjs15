@@ -18,11 +18,7 @@ const wishlistSlice = createSlice({
     addToWishlist: (state, action) => {
       const newItem = action.payload;
       const existingItem = state.wishlistItems.find(
-        (item) =>
-          item.id === newItem.id &&
-          item.type === newItem.type &&
-          JSON.stringify(item.attributes) ===
-            JSON.stringify(newItem.attributes),
+        (item) => item.id === newItem.id && item.type === newItem.type,
       );
 
       if (!existingItem) {
@@ -39,10 +35,7 @@ const wishlistSlice = createSlice({
       const itemToRemove = action.payload;
       const itemIndex = state.wishlistItems.findIndex(
         (item) =>
-          item.id === itemToRemove.id &&
-          item.type === itemToRemove.type &&
-          JSON.stringify(item.attributes) ===
-            JSON.stringify(itemToRemove.attributes),
+          item.id === itemToRemove.id && item.type === itemToRemove.type,
       );
 
       if (itemIndex !== -1) {

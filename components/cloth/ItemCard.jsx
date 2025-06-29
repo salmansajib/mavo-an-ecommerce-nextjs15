@@ -11,9 +11,6 @@ const ItemCard = ({ product }) => {
     name: product.name,
     price: product.base_price,
     image: product.variants[0].images[0],
-    attributes: {
-      color: product.variants[0].color_code,
-    },
   };
 
   const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
@@ -36,10 +33,10 @@ const ItemCard = ({ product }) => {
             <span>{product.tags}</span>
           </div>
         )}
-        <div className=" absolute top-4 right-4">
+        <div className="absolute top-4 right-4">
           <button onClick={() => handleWishlistToggle()}>
             <Icon
-              name="Heart"
+              name="Star"
               size={32}
               className={`${
                 isInWishlist ? "fill-red-500 stroke-red-500" : "stroke-white"
