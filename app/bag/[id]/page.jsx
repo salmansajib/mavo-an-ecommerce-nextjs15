@@ -5,6 +5,8 @@ import { useSingleProduct } from "@/hooks/useSingleProduct";
 import LoaderSpinner from "@/components/LoaderSpinner";
 import Breadcrumb from "@/components/bag/product-details/Breadcrumb";
 import ProductDetail from "@/components/bag/product-details/ProductDetail";
+import ProductTabs from "@/components/bag/product-details/ProductTabs";
+import ProductSectionMens from "@/components/bag/ProductSectionMens";
 
 export default function page() {
   const { id } = useParams();
@@ -44,6 +46,8 @@ export default function page() {
     <div>
       <Breadcrumb />
       <ProductDetail product={product} />
+      <ProductTabs product={product} />
+      <ProductSectionMens />
     </div>
   );
 }

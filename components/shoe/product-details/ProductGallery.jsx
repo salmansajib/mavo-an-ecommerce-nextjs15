@@ -111,7 +111,7 @@ const ProductGallery = ({
   return (
     <div className="gallery mavo-md-mb-50 relative">
       {/* Main Image Slider */}
-      <div className="swiper-container gallery-slider">
+      <div className="swiper-container gallery-slider !mx-0">
         <Swiper
           slidesPerView={1}
           spaceBetween={0}

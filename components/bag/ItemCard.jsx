@@ -25,7 +25,7 @@ const ItemCard = ({ product }) => {
           src={product.variants?.[0].images?.[0]}
           alt="product image"
         />
-        <div className="absolute top-4 right-4 group">
+        <div className="absolute top-4 right-4 group/star">
           <button onClick={() => handleWishlistToggle()}>
             <Icon
               name="Star"
@@ -37,7 +37,7 @@ const ItemCard = ({ product }) => {
               } transition-all duration-150`}
             />
           </button>
-          <span className="absolute hidden group-hover:block bg-black text-white font-prata capitalize text-xs rounded-[2px] py-1 px-2 -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap z-[1000]">
+          <span className="absolute hidden group-hover/star:block bg-black text-white font-prata capitalize text-xs rounded-[2px] py-1 px-2 -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap z-[1000]">
             {isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
           </span>
         </div>

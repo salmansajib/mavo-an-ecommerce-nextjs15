@@ -8,6 +8,9 @@ import { useSelector } from "react-redux";
 
 const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
   const totalQuantity = useSelector((state) => state.cart.totalQuantity || 0);
+  const totalItemsInWishlist = useSelector(
+    (state) => state.wishlist.totalItems || 0,
+  );
 
   return (
     <div className="w-full lg:hidden">
@@ -21,6 +24,16 @@ const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
               className="text-[#000] hover:text-[#ce2d37]"
             />
           </button>
+          <Link href="/wishlist" className="relative">
+            <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#c9a96b] size-5 rounded-full flex items-center justify-center">
+              {totalItemsInWishlist > 10 ? "10+" : totalItemsInWishlist}
+            </span>
+            <Icon
+              name="Star"
+              size={18}
+              className="text-[#000] hover:text-[#ce2d37]"
+            />
+          </Link>
           <Link href="/cart" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#c9a96b] size-5 rounded-full flex items-center justify-center">
               {totalQuantity > 10 ? "10+" : totalQuantity}

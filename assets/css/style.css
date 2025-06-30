@@ -10768,7 +10768,7 @@ blog-single
   display: block;
   width: auto;
   height: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .mavo-single-product .gallery-thumbs {

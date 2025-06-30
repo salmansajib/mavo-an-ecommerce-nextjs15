@@ -78,7 +78,19 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
       </div>
 
       {/* Search Results */}
-      <div className="w-full max-w-6xl mx-auto mt-8">
+      <div
+        className="w-full max-w-6xl max-h-[800px] overflow-y-auto mx-auto mt-5 px-3"
+        style={{
+          scrollbarWidth: "thin",
+          scrollbarColor: "oklch(37% 0.013 285.805) #1C2526",
+          "--webkit-scrollbar-width": "8px",
+          "--webkit-scrollbar-track-background": "#1C2526",
+          "--webkit-scrollbar-track-border-radius": "4px",
+          "--webkit-scrollbar-thumb-background": "#000000",
+          "--webkit-scrollbar-thumb-border-radius": "4px",
+          "--webkit-scrollbar-thumb-hover-background": "#6B7280",
+        }}
+      >
         {isLoading && (
           <div className="flex items-center justify-center">
             <LoaderSpinner />
