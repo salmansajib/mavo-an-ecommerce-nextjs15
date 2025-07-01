@@ -105,45 +105,39 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
               {data.total} Result{data.total !== 1 ? "s" : ""} Found
             </h3>
             {data.total > 0 ? (
-              <ul className="space-y-4">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {data.products.map((product) => (
                   <li
                     key={`${product.category || "unknown"}-${product.id}`}
-                    className="bg-zinc-900 rounded-md p-4 hover:bg-zinc-800 transition-colors"
+                    className="bg-zinc-900 rounded-md p-3 hover:bg-zinc-800 transition-colors"
                   >
-                    <Link
-                      href={`/${product.category}/${product.id}`}
-                      onClick={onClose}
-                      className="flex items-center gap-4"
-                    >
-                      <Image
-                        width={200}
-                        height={200}
-                        src={getProductImage(product)}
-                        alt={product.name}
-                        className="w-16 h-16 object-cover rounded"
-                      />
-
-                      <div>
-                        <h4 className="text-base md:text-lg text-white">
-                          {product.name}
-                        </h4>
-                        <p className="text-sm text-zinc-400">
-                          {product.type}{" "}
-                          {product.category && `| ${product.category}`}
-                          {product.tags && (
-                            <span className="ml-2 text-xs bg-zinc-700 px-2 py-1 rounded">
-                              {Array.isArray(product.tags)
-                                ? product.tags.join(", ")
-                                : product.tags}
-                            </span>
-                          )}
-                        </p>
-                        <p className="text-sm text-zinc-500 line-clamp-2">
-                          {product.description}
-                        </p>
+                    <div className="flex items-center gap-4">
+                      <div className="w-1/2">
+                        <Image
+                          width={200}
+                          height={200}
+                          src={getProductImage(product)}
+                          alt={product.name}
+                          className="w-full h-auto object-cover rounded"
+                        />
                       </div>
-                    </Link>
+
+                      <div className="w-1/2">
+                        <div>
+                          <h4 className="!text-sm md:!text-lg text-white">
+                            {product.name}
+                          </h4>
+                          <p>${product.base_price.toFixed(2)}</p>
+                        </div>
+                        <Link
+                          onClick={onClose}
+                          href={`/${product.category}/${product.id}`}
+                          className="bg-white text-black text-center py-2 px-4 rounded"
+                        >
+                          View
+                        </Link>
+                      </div>
+                    </div>
                   </li>
                 ))}
               </ul>

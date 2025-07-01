@@ -18,14 +18,14 @@ const bannerData = [
     title: "Take Your Next Step with Mavoo",
     description:
       "We are a modern and creative fabrics brand. We help brands to stand out through powerful, elegant visual design.",
-    image: "/images/sliders/slider-1/model.png",
+    image: "/images/sliders/slider-1/model-02.png",
   },
   {
     id: 3,
     title: "Step with Take Your Next Mavoo",
     description:
       "We are a modern and creative fabrics brand. We help brands to stand out through powerful, elegant visual design.",
-    image: "/images/sliders/slider-1/model.png",
+    image: "/images/sliders/slider-1/model-03.png",
   },
 ];
 
@@ -67,7 +67,7 @@ const BannerCloth = () => {
                   height={2000}
                   priority={true}
                   quality={100}
-                  className="w-[580px] h-auto"
+                  className="w-full h-auto"
                 />
               </div>
             </SwiperSlide>

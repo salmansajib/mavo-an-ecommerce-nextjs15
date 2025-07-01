@@ -60,11 +60,10 @@ const ProductSectionSecondCloth = () => {
                 <Image
                   src="/images/products/product-1.6.jpg"
                   alt="products"
-                  width={1000}
-                  height={1000}
+                  width={1500}
+                  height={1500}
                   quality={100}
-                  // priority={true}
-                  className="w-[1000px] h-auto"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
