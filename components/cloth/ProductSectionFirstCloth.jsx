@@ -56,7 +56,7 @@ const ProductSectionFirstCloth = () => {
                   width={1500}
                   height={1500}
                   quality={100}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto max-h-[1190px] object-cover"
                 />
               </div>
             </div>
