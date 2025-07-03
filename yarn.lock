@@ -811,6 +811,7 @@ __metadata:
     tailwind-merge: "npm:^3.2.0"
     tailwindcss: "npm:^4"
     use-debounce: "npm:^10.0.5"
+    zod: "npm:^3.25.71"
   languageName: unknown
   linkType: soft
 
@@ -1295,5 +1296,12 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   checksum: 10c0/1b8663515c0be34fa653feb724fdcce3984037c78dd4a18f68b2c8be55cc1a1084c578d5b75f158d41b5ddffc2bf5600766d1af3c19c8e329bb20af2ec6f52f4
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.25.71":
+  version: 3.25.71
+  resolution: "zod@npm:3.25.71"
+  checksum: 10c0/ccb251859609e6eed04b83f96ad7b2b7a189ca78b47176cde2c368102a5416b9c472e91b3fd96ceaa5043b2e513b3aec39fd99c36686ad2ad84f6c440afca53a
   languageName: node
   linkType: hard

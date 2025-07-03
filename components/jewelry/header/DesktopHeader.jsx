@@ -58,13 +58,13 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
               className="text-[#000] hover:text-[#ce2d37]"
             />
           </Link>
-          {/* <Link href="/">
+          <Link href="/signup">
             <Icon
               name="UserRound"
               size={18}
-              className="text-[#fff] hover:text-[#ce2d37]"
+              className="text-[#000] hover:text-[#ce2d37]"
             />
-          </Link> */}
+          </Link>
         </div>
         {/* <div className="w-[1px] h-[25px] bg-gray-50/20" /> */}
         {/* <LangCurrencyMenu
