@@ -46,7 +46,7 @@ const BannerCloth = () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          className="swiper mavoBanner1 !pt-[190px] mavo-pb-185"
+          className="swiper mavoBanner1 !pt-0 sm:!pt-[190px] mavo-pb-185"
         >
           {bannerData.map((item) => (
             <SwiperSlide key={item.id} className="swiper-slide">
@@ -59,7 +59,7 @@ const BannerCloth = () => {
                   Shop Now
                 </Link>
               </div>
-              <div className="mavo-banner-img">
+              <div className="mavo-banner-img hidden sm:block">
                 <Image
                   src={item.image}
                   alt="model"
@@ -67,7 +67,7 @@ const BannerCloth = () => {
                   height={2000}
                   priority={true}
                   quality={100}
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </SwiperSlide>

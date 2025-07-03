@@ -39,7 +39,7 @@ const ProductSectionFirst = () => {
                   <h3>Mavoo Woman Trendy Lora Boots</h3>
                 </div>
                 <div className="mavo-product-cart">
-                  <Link href="/cart">Add to Cart</Link>
+                  <Link href="/shoes/product">Shop Now</Link>
                 </div>
               </div>
             </div>

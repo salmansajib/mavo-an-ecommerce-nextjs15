@@ -181,11 +181,6 @@ export const navItemsMobile = [
     ],
   },
   {
-    id: 6,
-    label: "Wish List",
-    link: "/wish-list",
-  },
-  {
     id: 7,
     label: "My Account",
     link: "/user-account",
