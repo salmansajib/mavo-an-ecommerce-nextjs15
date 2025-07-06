@@ -8,7 +8,6 @@ import { useProducts } from "@/hooks/useProducts";
 import LoaderSpinner from "@/components/LoaderSpinner";
 import ProductTabs from "@/components/shoe/product-details/ProductTabs";
 import SimilarProducts from "@/components/shoe/product-details/SimilarProducts";
-import ShopInfo from "@/components/shoe/ShopInfo";
 
 const SIMILAR_PRODUCTS_LIMIT = 8;
 
@@ -64,7 +63,6 @@ const page = () => {
       <ProductDetail product={product} />
       <ProductTabs product={product} />
       <SimilarProducts similarProducts={similarProducts} />
-      <ShopInfo />
     </div>
   );
 };

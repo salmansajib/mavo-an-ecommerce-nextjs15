@@ -30,8 +30,8 @@ export const navItems = [
     label: "Blog",
     link: "#",
     subItems: [
-      { id: 31, label: "Shoes Blog", link: "shoes-blog.html" },
-      { id: 33, label: "Jewellery Blog", link: "jewellery-blog.html" },
+      { id: 31, label: "Shoes Blog", link: "/shoes/blog" },
+      { id: 33, label: "Jewellery Blog", link: "/jewelry/blog" },
       { id: 34, label: "Beauty Blog", link: "beauty-blog.html" },
       { id: 35, label: "Bag Blog", link: "bag-blog.html" },
       { id: 36, label: "Blog Single", link: "blog-single.html" },
@@ -122,8 +122,8 @@ export const navItemsMobile = [
     label: "Blog",
     link: "#",
     subItems: [
-      { id: 31, label: "Shoes Blog", link: "shoes-blog.html" },
-      { id: 33, label: "Jewellery Blog", link: "jewellery-blog.html" },
+      { id: 31, label: "Shoes Blog", link: "/shoes/blog" },
+      { id: 33, label: "Jewellery Blog", link: "/jewelry/blog" },
       { id: 34, label: "Beauty Blog", link: "beauty-blog.html" },
       { id: 35, label: "Bag Blog", link: "bag-blog.html" },
       { id: 36, label: "Blog Single", link: "blog-single.html" },

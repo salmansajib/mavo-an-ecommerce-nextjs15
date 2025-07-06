@@ -6,7 +6,6 @@ import Collection from "@/components/shoe/Collection";
 import ProductSectionSecond from "@/components/shoe/ProductSectionSecond";
 import NewestProducts from "@/components/shoe/NewestProducts";
 import RecentPosts from "@/components/shoe/RecentPosts";
-import ShopInfo from "@/components/shoe/ShopInfo";
 
 const ShoesHome = () => {
   return (
@@ -18,7 +17,6 @@ const ShoesHome = () => {
       <ProductSectionSecond />
       <NewestProducts />
       <RecentPosts />
-      <ShopInfo />
     </>
   );
 };

@@ -1,10 +1,37 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../Logo";
 
 const Footer = () => {
   // Get current year
   const currentYear = new Date().getFullYear();
+  // State for email input
+  const [email, setEmail] = useState("");
+  // State for email validation error
+  const [error, setError] = useState("");
+
+  // Email validation regex
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email) {
+      setError("Email is required");
+      return;
+    }
+    if (!isValidEmail(email)) {
+      setError("Please enter a valid email");
+      return;
+    }
+    setError("");
+    console.log("Submitted email:", email);
+    // Reset email input after successful submission
+    setEmail("");
+  };
 
   return (
     <footer className="mavo-footer-2 mavo-pt-120 mavo-md-pt-75 mavo-pb-10">
@@ -94,14 +121,17 @@ const Footer = () => {
                 <br />
                 Sign up for emails.
               </h3>
-              <form className="mavo-footer-form">
+              <form className="mavo-footer-form" onSubmit={handleSubmit}>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="enter your email"
-                  required=""
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
+                {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
                 <button type="submit">Subscribe</button>
               </form>
               <div className="mavo-footer-active-shoe">
