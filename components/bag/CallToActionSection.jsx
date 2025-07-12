@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const CallToActionSection = () => {
   return (
@@ -34,7 +35,7 @@ const CallToActionSection = () => {
           </div>
           <div className="col-lg-4">
             <div className="mavo-colltoaction-btn">
-              <a href="beauty-product-single.html">Shop Now</a>
+              <Link href="/bag/product">Shop Now</Link>
             </div>
           </div>
         </div>
