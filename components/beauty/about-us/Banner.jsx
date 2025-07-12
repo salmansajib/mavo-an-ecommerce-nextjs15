@@ -17,8 +17,9 @@ const Banner = () => {
           <div className="col-lg-6">
             <div className="about-banner-img flex items-center justify-center">
               <Image
-                width={1000}
-                height={1000}
+                width={700}
+                height={700}
+                quality={100}
                 priority
                 className="w-[640px] h-auto object-cover"
                 src="/images/about/about-2/banner/model.png"

@@ -40,7 +40,7 @@ const ProductServicesSection = () => {
             <div className="mavo-about-service-content mavo-mb-55">
               <div className="about-product-title mavo-mb-20">
                 <h2 className="mavo-product-title">
-                  Exclusive Service for 2022
+                  Exclusive Service for 2025
                 </h2>
               </div>
               <div className="abou-product-desc">
@@ -50,7 +50,7 @@ const ProductServicesSection = () => {
                   laoreet incididunt habitasse voluptate corrupti enim
                 </p>
                 <span className="product-sub-title text-uppercase">
-                  Learn More About Mavoo
+                  We Provide Best Quality
                 </span>
               </div>
             </div>
