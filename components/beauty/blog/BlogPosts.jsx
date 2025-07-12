@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import posts from "@/data/beautyBlogPosts.json";
 import Icon from "@/components/Icon";
 
@@ -40,7 +41,13 @@ const BlogPosts = () => {
             <div key={post.id} className="col-lg-4 col-md-6">
               <div className="post-wrapper mavo-md-mb-70">
                 <div className="post-img">
-                  <img src={post.image} alt="post" />
+                  <Image
+                    width={700}
+                    height={700}
+                    className="w-full h-auto object-cover"
+                    src={post.image}
+                    alt="post imgage"
+                  />
                 </div>
                 <div className="post-info">
                   <div className="post-date">

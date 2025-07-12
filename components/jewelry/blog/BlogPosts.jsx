@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Icon from "@/components/Icon";
 import posts from "@/data/jewelryBlogPosts.json";
 
@@ -39,7 +40,13 @@ const BlogPosts = () => {
           {currentPosts.map((post) => (
             <div key={post.id} className="col-lg-4 col-md-6">
               <div className="mavo-news-img">
-                <img src={post.image} alt="product" />
+                <Image
+                  width={700}
+                  height={700}
+                  className="w-full h-auto object-cover"
+                  src={post.image}
+                  alt="post image"
+                />
               </div>
               <div className="mavo-news-wrapper">
                 <div className="mavo-news-info">

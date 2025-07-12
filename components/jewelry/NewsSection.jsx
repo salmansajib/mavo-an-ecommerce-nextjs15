@@ -10,7 +10,7 @@ const newsData = [
     category: "News",
     date: "35 , Feb",
     title: "6 Companies have jumped on the NFT boom",
-    link: "jewellery-product-single.html",
+    link: "/blog-details",
     arrowIcon: "/images/icons/right-dark-arrow.svg",
   },
   {
@@ -20,7 +20,7 @@ const newsData = [
     category: "News",
     date: "35 , Feb",
     title: "Aut scelerisque impedit oues potenti aliqua conse",
-    link: "jewellery-product-single.html",
+    link: "/blog-details",
     arrowIcon: "/images/icons/right-dark-arrow.svg",
   },
   {
@@ -30,7 +30,7 @@ const newsData = [
     category: "News",
     date: "35 , Feb",
     title: "Voluptates consecter mollitia dictumst augue",
-    link: "jewellery-product-single.html",
+    link: "/blog-details",
     arrowIcon: "/images/icons/right-dark-arrow.svg",
   },
 ];
@@ -47,7 +47,7 @@ const NewsSection = () => {
                 <Image
                   width={800}
                   height={800}
-                  className="w-[500px] h-auto"
+                  className="w-full h-auto"
                   src={news.imageSrc}
                   alt={news.alt}
                 />

@@ -9,7 +9,7 @@ const posts = [
     day: "10",
     category: "Beauty ,Trends",
     title: "Fusce nisl vestibulum duior aliquip inceptos velit",
-    link: "beauty-product-single.html",
+    link: "/blog-details",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const posts = [
     day: "15",
     category: "Beauty ,Trends",
     title: "Malesuada reiciend mattis accus antium ovanrto",
-    link: "beauty-product-single.html",
+    link: "/blog-details",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const posts = [
     day: "25",
     category: "Beauty ,Trends",
     title: "Irure similique occaecat oi similique id eius stnor",
-    link: "beauty-product-single.html",
+    link: "/blog-details",
   },
 ];
 
@@ -45,9 +45,9 @@ const RecentPosts = () => {
               <div className="post-wrapper mavo-md-mb-70">
                 <div className="post-img">
                   <Image
-                    width={900}
-                    height={900}
-                    className="w-[500px] h-auto"
+                    width={500}
+                    height={500}
+                    className="w-full h-auto"
                     src={post.image}
                     alt="post"
                   />

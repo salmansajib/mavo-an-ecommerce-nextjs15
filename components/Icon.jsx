@@ -14,6 +14,7 @@ import {
   X,
   Trash,
   Heart,
+  Play,
 } from "lucide-react";
 
 // Define a map of available icons
@@ -31,6 +32,7 @@ const icons = {
   X,
   Trash,
   Heart,
+  Play,
 };
 
 const Icon = ({ name, size = 18, className = "", color, ...props }) => {

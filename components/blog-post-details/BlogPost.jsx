@@ -428,8 +428,9 @@ const BlogPost = () => {
                   </label>
                 </div>
                 <button
+                  type="submit"
                   onClick={handleSubmit}
-                  className="bg-[#C9A96B] text-white px-6 py-3 rounded"
+                  className="bg-[#C9A96B] text-black px-6 py-3 rounded"
                 >
                   Post Comment
                 </button>

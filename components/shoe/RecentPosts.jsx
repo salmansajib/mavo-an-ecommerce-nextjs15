@@ -10,7 +10,7 @@ const posts = [
     date: "Sep 26, 2022",
     category: "Fashion, Trends",
     title: "What's the main challenge for bleached heels?",
-    link: "shoes-blog.html",
+    link: "/blog-details",
     readMoreIcon: "/images/icons/right-dark-arrow.svg",
   },
   {
@@ -20,7 +20,7 @@ const posts = [
     date: "Sep 26, 2022",
     category: "Fashion, Trends",
     title: "Pop sugar how to clean your sneakers according?",
-    link: "shoes-blog.html",
+    link: "/blog-details",
     readMoreIcon: "/images/icons/right-dark-arrow.svg",
   },
   {
@@ -30,7 +30,7 @@ const posts = [
     date: "Sep 26, 2022",
     category: "Fashion, Trends",
     title: "The heels we're living in right now your own side.",
-    link: "shoes-blog.html",
+    link: "/blog-details",
     readMoreIcon: "/images/icons/right-dark-arrow.svg",
   },
 ];

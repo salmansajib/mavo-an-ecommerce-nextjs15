@@ -128,8 +128,8 @@ const Banner = () => {
                         src="/images/icons/circle_1.png"
                         alt="video-icon"
                       />
-                      <div
-                        className="video-play-btn"
+                      <button
+                        className="video-play-btn flex items-center justify-center"
                         onClick={() => openVideo(slide.videoLink)}
                       >
                         <span>
@@ -141,7 +141,7 @@ const Banner = () => {
                             alt="Play"
                           />
                         </span>
-                      </div>
+                      </button>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -208,7 +208,6 @@ const Banner = () => {
                 className="absolute top-0 left-0 w-full h-full"
                 src={getEmbedUrl(videoUrl)}
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>

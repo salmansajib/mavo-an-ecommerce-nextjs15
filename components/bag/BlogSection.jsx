@@ -10,7 +10,7 @@ const blogPosts = [
     month: "Sep",
     category: "Backpack, Shoe",
     title: "Fusce nisl vestibulum duior aliquip inceptos velit",
-    link: "beauty-product-single.html",
+    link: "/blog-details",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const blogPosts = [
     month: "Sep",
     category: "Backpack, Shoe",
     title: "Etiam hac explicabo veniam metu magnis egestas interdum",
-    link: "beauty-product-single.html",
+    link: "/blog-details",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const blogPosts = [
     month: "Sep",
     category: "Backpack, Fashion",
     title: "Repellat risus luctus incidunt enim euismod litora placeat",
-    link: "beauty-product-single.html",
+    link: "/blog-details",
   },
 ];
 
@@ -52,9 +52,9 @@ const BlogSection = () => {
               >
                 <div className="blog-img">
                   <Image
-                    width={700}
-                    height={700}
-                    className="w-[450px] h-auto"
+                    width={500}
+                    height={500}
+                    className="w-full h-auto"
                     src={post.image}
                     alt="post"
                   />
