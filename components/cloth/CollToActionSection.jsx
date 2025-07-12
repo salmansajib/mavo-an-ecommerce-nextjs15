@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const CollectionSectionCloth = () => {
+const CollToActionSection = () => {
   return (
     <div className="mavo-colltoaction-1 mavo-pt-210 mavo-md-pt-75 mavo-pb-160 mavo-md-pb-90">
       <div className="container">
@@ -28,4 +28,4 @@ const CollectionSectionCloth = () => {
   );
 };
 
-export default CollectionSectionCloth;
+export default CollToActionSection;

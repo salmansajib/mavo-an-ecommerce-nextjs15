@@ -2,7 +2,7 @@ import BannerCloth from "@/components/cloth/BannerCloth";
 import CollectionCloth from "@/components/cloth/CollectionCloth";
 import FooterCloth from "@/components/cloth/footer-cloth/FooterCloth";
 import TestimonialCloth from "@/components/cloth/TestimonialCloth";
-import CollectionSectionCloth from "@/components/cloth/CollectionSectionCloth";
+import CollectionSectionCloth from "@/components/cloth/CollToActionSection";
 import ProductSectionFirstCloth from "@/components/cloth/ProductSectionFirstCloth";
 import ProductSectionSecondCloth from "@/components/cloth/ProductSectionSecondCloth";
 import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";

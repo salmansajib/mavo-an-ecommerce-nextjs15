@@ -4,12 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import ItemCard from "../ItemCard";
 
-const SimilarProducts = ({ similarProducts }) => {
+const SimilarProducts = ({ similarProducts, title = "Similar Product" }) => {
   return (
     <div className="mavo-product-1 mavo-md-pt-50 mavo-pb-75 mavo-md-pb-20">
       <div className="container-fluid">
         <div className="mavo-heading-area text-center mavo-mb-70 mavo-md-mb-35">
-          <h3 className="mavo-title">Similar Products</h3>
+          <h3 className="mavo-title">{title}</h3>
         </div>
         <Swiper
           modules={[Autoplay]}
