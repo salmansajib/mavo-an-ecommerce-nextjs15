@@ -7,4 +7,32 @@
   --font-gilda-display: "Gilda Display", "serif";
   --font-chivo: "Chivo", "sans-serif";
   --font-sofia: "Sofia", "cursive";
+
+  --animate-loader: spin 1s linear infinite;
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+      background: conic-gradient(
+        from 0deg,
+        #a3e635 0deg,
+        rgba(163, 230, 53, 0) 60deg
+      );
+    }
+    50% {
+      transform: rotate(180deg);
+      background: conic-gradient(
+        from 0deg,
+        #a3e635 0deg,
+        rgba(163, 230, 53, 0) 120deg
+      );
+    }
+    100% {
+      transform: rotate(360deg);
+      background: conic-gradient(
+        from 0deg,
+        #a3e635 0deg,
+        rgba(163, 230, 53, 0) 60deg
+      );
+    }
+  }
 }

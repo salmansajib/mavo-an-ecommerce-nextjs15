@@ -72,11 +72,11 @@ export const navItems = [
       { id: 41, label: "About Us Beauty", link: "/beauty/about-us" },
       { id: 42, label: "About Us Bag", link: "/bag/about-us" },
       { id: 43, label: "About Us Clothing", link: "/cloth/about-us" },
-      { id: 44, label: "Cart", link: "cart.html" },
+      { id: 44, label: "Cart", link: "/cart" },
       { id: 45, label: "Checkout", link: "checkout.html" },
       { id: 46, label: "Faq", link: "faq.html" },
       { id: 47, label: "Thank You", link: "thank-you.html" },
-      { id: 53, label: "404 Page", link: "404-page.html" },
+      { id: 53, label: "404 Page", link: "/404" },
     ],
   },
   {
@@ -164,7 +164,7 @@ export const navItemsMobile = [
       { id: 41, label: "About Us Beauty", link: "/beauty/about-us" },
       { id: 42, label: "About Us Bag", link: "/bag/about-us" },
       { id: 43, label: "About Us Clothing", link: "/cloth/about-us" },
-      { id: 44, label: "Cart", link: "cart.html" },
+      { id: 44, label: "Cart", link: "/cart" },
       { id: 45, label: "Checkout", link: "checkout.html" },
       { id: 46, label: "Faq", link: "faq.html" },
       { id: 47, label: "Thank You", link: "thank-you.html" },
@@ -183,7 +183,7 @@ export const navItemsMobile = [
   {
     id: 7,
     label: "My Account",
-    link: "/user-account",
+    link: "/signup",
   },
 ];
 

@@ -67,7 +67,7 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
                 className="text-[#fff] hover:text-[#c9a96b]"
               />
             </Link>
-            <Link href="/">
+            <Link href="/signup">
               <Icon
                 name="UserRound"
                 size={18}

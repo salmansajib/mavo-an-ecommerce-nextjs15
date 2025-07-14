@@ -17,7 +17,7 @@ const CollToActionSection = () => {
                 </h2>
               </div>
               <div className="mavo-colltoaction-btn">
-                <Link href="/#">Read more</Link>
+                <Link href="/cloth/product">Shop Now</Link>
               </div>
             </div>
           </div>
