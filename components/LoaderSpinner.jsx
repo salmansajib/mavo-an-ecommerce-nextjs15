@@ -7,11 +7,11 @@ const LoaderSpinner = () => {
       <div
         className="absolute inset-0 rounded-full"
         style={{
-          border: "4px solid rgba(163, 230, 53, 0.2)", // faint light green border
+          border: "4px solid rgba(201, 169, 107, 0.2)", // faint border with specified color
         }}
       />
 
-      {/* Your original spinner (unchanged) */}
+      {/* Spinner with specified color */}
       <div
         className="size-[50px] rounded-full animate-loader"
         style={{
@@ -20,7 +20,7 @@ const LoaderSpinner = () => {
           maskImage:
             "radial-gradient(farthest-side, transparent 85%, black 15%)",
           background:
-            "conic-gradient(from 0deg, #a3e635 0deg, rgba(163,230,53,0) 90deg)",
+            "conic-gradient(from 0deg, rgb(201, 169, 107) 0deg, rgba(201, 169, 107, 0) 90deg)",
         }}
       />
     </div>
