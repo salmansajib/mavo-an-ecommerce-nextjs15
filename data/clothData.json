@@ -6,6 +6,8 @@
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Sale",
+    "category": "unisex",
+    "material": "polyester",
     "reviews": 2034,
     "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
     "variants": [
@@ -124,6 +126,8 @@
     "base_price": 340.0,
     "currency": "USD",
     "tags": "Hots",
+    "category": "men",
+    "material": "cotton",
     "reviews": 4075,
     "description": "Upgrade your wardrobe with our Classic Tailored Blazer, designed for the modern professional. Crafted from a premium wool blend, this blazer offers a structured yet comfortable fit, perfect for boardroom meetings or formal occasions. The sleek lapel, refined stitching, and breathable lining ensure all-day sophistication and comfort. Pair it with dress pants for a sharp office look or jeans for a smart-casual vibe.",
     "variants": [
@@ -243,6 +247,8 @@
     "base_price": 120.0,
     "currency": "USD",
     "tags": "Best",
+    "category": "unisex",
+    "material": "cotton",
     "reviews": 6005,
     "description": "Stay cozy and stylish with our ultra-soft hoodie. Perfect for casual outings or lounging at home, this hoodie is made from high-quality cotton blend for all-day comfort.",
     "variants": [
@@ -362,6 +368,8 @@
     "base_price": 120.0,
     "currency": "USD",
     "tags": null,
+    "category": "men",
+    "material": "wool",
     "reviews": 1050,
     "description": "Stay ahead of the fashion game with this modern jumper, crafted from premium materials for a sleek yet comfortable look. Featuring a perfect blend of style and warmth, it's an ideal layering piece for any casual or chic outfit.",
     "variants": [
@@ -481,6 +489,8 @@
     "base_price": 80.0,
     "currency": "USD",
     "tags": "Best",
+    "category": "men",
+    "material": "cotton",
     "reviews": 7004,
     "description": "Upgrade your formal wardrobe with the Prestige Dress Shirt, crafted from premium cotton for a polished and comfortable fit. Designed with a tailored silhouette, it's the perfect choice for both business and special occasions.",
     "variants": [
@@ -600,6 +610,8 @@
     "base_price": 180.0,
     "currency": "USD",
     "tags": null,
+    "category": "women",
+    "material": "wool",
     "reviews": 2010,
     "description": "Stay stylish and protected with this weather-resistant trench coat. Designed with a water-repellent finish, deep pockets, and a tailored fit, it’s the perfect companion for unpredictable days.",
     "variants": [
@@ -719,6 +731,8 @@
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Hots",
+    "category": "unisex",
+    "material": "polyester",
     "reviews": 3026,
     "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
     "variants": [
@@ -837,6 +851,8 @@
     "base_price": 200.0,
     "currency": "USD",
     "tags": "Sale",
+    "category": "women",
+    "material": "silk",
     "reviews": 6002,
     "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
     "variants": [
@@ -956,6 +972,8 @@
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Sale",
+    "category": "unisex",
+    "material": "polyester",
     "reviews": 2034,
     "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
     "variants": [
@@ -1074,6 +1092,8 @@
     "base_price": 340.0,
     "currency": "USD",
     "tags": "Hots",
+    "category": "men",
+    "material": "cotton",
     "reviews": 4075,
     "description": "Upgrade your wardrobe with our Classic Tailored Blazer, designed for the modern professional. Crafted from a premium wool blend, this blazer offers a structured yet comfortable fit, perfect for boardroom meetings or formal occasions. The sleek lapel, refined stitching, and breathable lining ensure all-day sophistication and comfort. Pair it with dress pants for a sharp office look or jeans for a smart-casual vibe.",
     "variants": [
@@ -1193,6 +1213,8 @@
     "base_price": 120.0,
     "currency": "USD",
     "tags": "Best",
+    "category": "unisex",
+    "material": "cotton",
     "reviews": 6005,
     "description": "Stay cozy and stylish with our ultra-soft hoodie. Perfect for casual outings or lounging at home, this hoodie is made from high-quality cotton blend for all-day comfort.",
     "variants": [
@@ -1312,6 +1334,8 @@
     "base_price": 120.0,
     "currency": "USD",
     "tags": null,
+    "category": "men",
+    "material": "wool",
     "reviews": 1050,
     "description": "Stay ahead of the fashion game with this modern jumper, crafted from premium materials for a sleek yet comfortable look. Featuring a perfect blend of style and warmth, it's an ideal layering piece for any casual or chic outfit.",
     "variants": [
@@ -1431,6 +1455,8 @@
     "base_price": 80.0,
     "currency": "USD",
     "tags": "Best",
+    "category": "men",
+    "material": "cotton",
     "reviews": 7004,
     "description": "Upgrade your formal wardrobe with the Prestige Dress Shirt, crafted from premium cotton for a polished and comfortable fit. Designed with a tailored silhouette, it's the perfect choice for both business and special occasions.",
     "variants": [
@@ -1550,6 +1576,8 @@
     "base_price": 180.0,
     "currency": "USD",
     "tags": null,
+    "category": "women",
+    "material": "wool",
     "reviews": 2010,
     "description": "Stay stylish and protected with this weather-resistant trench coat. Designed with a water-repellent finish, deep pockets, and a tailored fit, it’s the perfect companion for unpredictable days.",
     "variants": [
@@ -1669,6 +1697,8 @@
     "base_price": 150.0,
     "currency": "USD",
     "tags": "Hots",
+    "category": "unisex",
+    "material": "polyester",
     "reviews": 3026,
     "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
     "variants": [
@@ -1787,6 +1817,8 @@
     "base_price": 200.0,
     "currency": "USD",
     "tags": "Sale",
+    "category": "women",
+    "material": "silk",
     "reviews": 6002,
     "description": "Brave the cold in style with this timeless winter jacket. Designed for maximum warmth and comfort, it features a soft inner lining, wind-resistant shell, and a sleek fit that pairs effortlessly with any outfit.",
     "variants": [
