@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${marcellus.variable} ${prata.variable} ${josefin_sans.variable} ${gilda_display.variable} ${chivo.variable} ${sofia.variable} antialiased`}
+        className={`${marcellus.variable} ${prata.variable} ${josefin_sans.variable} ${gilda_display.variable} ${chivo.variable} ${sofia.variable} antialiased overflow-clip`}
       >
         <Providers>
           {children}

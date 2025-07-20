@@ -9,18 +9,21 @@ const fetchProducts = async (
   direction = "first",
   random = false,
   excludeFirst = 0,
+  filters = {},
 ) => {
-  try {
-    const url = `/api/products/${category}?page=${page}&limit=${limit}&direction=${direction}&random=${random}&excludeFirst=${excludeFirst}`;
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error(`Failed to fetch ${category} products`);
-    }
-    return await res.json(); // { products, total }
-  } catch (error) {
-    console.error(error); // Replace with proper logging in production
-    throw error;
-  }
+  const params = new URLSearchParams({
+    page,
+    limit,
+    direction,
+    random,
+    excludeFirst,
+    ...filters, // filters = { filterCategory: "men", priceMin: 100 }
+  });
+
+  const url = `/api/products/${category}?${params.toString()}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error("Failed to fetch products");
+  return await res.json();
 };
 
 export const useProducts = (
@@ -30,6 +33,7 @@ export const useProducts = (
   direction = "first",
   random = false,
   excludeFirst = 0,
+  filters = {},
 ) => {
   return useQuery({
     queryKey: [
@@ -40,10 +44,19 @@ export const useProducts = (
       direction,
       random,
       excludeFirst,
+      filters,
     ],
     queryFn: () =>
-      fetchProducts(category, page, limit, direction, random, excludeFirst),
-    staleTime: 600000, // 10 minutes
+      fetchProducts(
+        category,
+        page,
+        limit,
+        direction,
+        random,
+        excludeFirst,
+        filters,
+      ),
+    staleTime: 600000,
     refetchOnWindowFocus: false,
   });
 };
