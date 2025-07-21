@@ -54,8 +54,8 @@ const AllProductCloth = () => {
       id="sc-popular-courses"
       className="mavo-product-1 mavo-cloth-product mavo-pt-115 mavo-md-pt-75 mavo-pb-115 mavo-md-pb-75"
     >
+      <FilterSectionCloth onChange={setFilters} />
       <div className="container">
-        <FilterSectionCloth onChange={setFilters} />
         {data.products.length === 0 ? (
           <div className="text-center space-y-4 py-5">
             <p className="!text-lg md!text-xl font-medium">

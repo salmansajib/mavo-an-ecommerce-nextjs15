@@ -15,6 +15,7 @@ export async function GET(request, { params }) {
 
   const filterCategory = url.searchParams.get("filterCategory") || "";
   const filterMaterial = url.searchParams.get("filterMaterial") || "";
+  const filterSize = url.searchParams.get("filterSize") || "";
   const priceMin = parseFloat(url.searchParams.get("priceMin"));
   const priceMax = parseFloat(url.searchParams.get("priceMax"));
 
@@ -43,6 +44,13 @@ export async function GET(request, { params }) {
       const matchMaterial = filterMaterial
         ? product.material === filterMaterial
         : true;
+      const matchSize = filterSize
+        ? product.variants.some((variant) =>
+            variant.sizes.some(
+              (size) => size.size.toLowerCase() === filterSize.toLowerCase(),
+            ),
+          )
+        : true;
 
       const variantPrices = product.variants.flatMap((variant) =>
         variant.sizes.map((size) => size.price),
@@ -57,7 +65,13 @@ export async function GET(request, { params }) {
         ? true
         : minVariantPrice <= priceMax;
 
-      return matchCategory && matchMaterial && matchMinPrice && matchMaxPrice;
+      return (
+        matchCategory &&
+        matchMaterial &&
+        matchSize &&
+        matchMinPrice &&
+        matchMaxPrice
+      );
     });
 
     const total = filteredProducts.length;

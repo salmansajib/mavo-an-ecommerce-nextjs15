@@ -12,12 +12,12 @@ const fetchProducts = async (
   filters = {},
 ) => {
   const params = new URLSearchParams({
-    page,
-    limit,
+    page: page.toString(),
+    limit: limit.toString(),
     direction,
-    random,
-    excludeFirst,
-    ...filters, // filters = { filterCategory: "men", priceMin: 100 }
+    random: random.toString(),
+    excludeFirst: excludeFirst.toString(),
+    ...filters, // filters = { filterCategory: "men", filterMaterial: "cotton", filterSize: "M", priceMin: 100 }
   });
 
   const url = `/api/products/${category}?${params.toString()}`;
