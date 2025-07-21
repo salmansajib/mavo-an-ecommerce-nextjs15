@@ -69,7 +69,7 @@ const FilterSectionCloth = ({ onChange }) => {
   return (
     <div className="bg-[#F2F1EC] font-marcellus mb-[100px] py-[50px]">
       <div className="container space-y-4">
-        {/* Category, Material, and Size Filters */}
+        {/* Category and Material*/}
         <div className="w-full max-w-[800px] flex items-start md:items-center gap-4">
           {/* Category Dropdown */}
           <DropdownMenu onOpenChange={setIsCategoryDropdownOpen} modal={false}>
@@ -135,6 +135,7 @@ const FilterSectionCloth = ({ onChange }) => {
           </DropdownMenu>
         </div>
 
+        {/* size selector, price selector and buttons*/}
         <div className="bg-white flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:!gap-[50px] px-3 lg:!px-[40px] py-4">
           {/* size selector */}
           <div className="space-y-2">
