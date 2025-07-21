@@ -67,7 +67,7 @@ const FilterSectionCloth = ({ onChange }) => {
   };
 
   return (
-    <div className="bg-[#F2F1EC] font-marcellus mb-[100px] py-[50px]">
+    <div className="bg-[#F2F1EC] font-marcellus mb-[50px] py-[50px]">
       <div className="container space-y-4">
         {/* Category and Material*/}
         <div className="w-full max-w-[800px] flex items-start md:items-center gap-4">
@@ -158,7 +158,7 @@ const FilterSectionCloth = ({ onChange }) => {
           </div>
 
           {/* vertical line */}
-          <div className="hidden lg:block w-[1px] h-[120px] bg-[#BEBDB6]" />
+          <div className="hidden lg:block w-[1px] h-[120px] bg-[#BEBDB6]/50" />
 
           {/* Price Range Slider */}
           <div className="w-full lg:flex-1 flex flex-col items-start">
@@ -180,19 +180,19 @@ const FilterSectionCloth = ({ onChange }) => {
           </div>
 
           {/* vertical line */}
-          <div className="hidden lg:block w-[1px] h-[120px] bg-[#BEBDB6]" />
+          <div className="hidden lg:block w-[1px] h-[120px] bg-[#BEBDB6]/50" />
 
           {/* filter buttons */}
-          <div className="flex lg:flex-col items-center gap-3">
+          <div className="w-full sm:w-auto flex lg:flex-col items-center gap-3">
             <button
               onClick={handleSubmit}
-              className="bg-black hover:!bg-gray-800 transition text-white w-[150px] h-[40px]"
+              className="bg-black hover:!bg-gray-800 transition text-white w-full sm:w-[150px] h-[40px]"
             >
               Apply Filters
             </button>
             <button
               onClick={handleAllProduct}
-              className="bg-black hover:!bg-gray-800 transition text-white w-[150px] h-[40px]"
+              className="bg-black hover:!bg-gray-800 transition text-white w-full sm:w-[150px] h-[40px]"
             >
               All Product
             </button>
