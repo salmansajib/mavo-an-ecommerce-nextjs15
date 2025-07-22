@@ -52,7 +52,7 @@ const AllProductCloth = () => {
   return (
     <div
       id="sc-popular-courses"
-      className="mavo-product-1 mavo-cloth-product mavo-pt-115 mavo-md-pt-75 mavo-pb-115 mavo-md-pb-75"
+      className="mavo-product-1 mavo-cloth-product pt-[50px] mavo-pb-115 mavo-md-pb-75"
     >
       <FilterSectionCloth onChange={setFilters} />
       <div className="container">

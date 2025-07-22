@@ -2,27 +2,20 @@
 
 import { useState } from "react";
 import ReactSlider from "react-slider";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import Icon from "../Icon";
 
 const FilterSectionCloth = ({ onChange }) => {
   const [category, setCategory] = useState("");
   const [material, setMaterial] = useState("");
   const [size, setSize] = useState("");
-  const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
-  const [isMaterialDropdownOpen, setIsMaterialDropdownOpen] = useState(false);
   const [priceRange, setPriceRange] = useState([0, 5000]);
 
   const categoryOptions = [
     { value: "", label: "All Categories" },
     { value: "men", label: "Men" },
     { value: "women", label: "Women" },
+    { value: "children", label: "Children" },
     { value: "unisex", label: "Unisex" },
   ];
 
@@ -70,69 +63,82 @@ const FilterSectionCloth = ({ onChange }) => {
     <div className="bg-[#F2F1EC] font-marcellus mb-[50px] py-[50px]">
       <div className="container space-y-4">
         {/* Category and Material*/}
-        <div className="w-full max-w-[800px] flex items-start md:items-center gap-4">
+        <div className="w-full max-w-[800px] flex items-start md:items-center gap-3">
           {/* Category Dropdown */}
-          <DropdownMenu onOpenChange={setIsCategoryDropdownOpen} modal={false}>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                className="border-1 flex justify-between items-center shadow-none"
-              >
+          <Menu
+            as="div"
+            className="relative inline-block w-full sm:w-auto group"
+          >
+            <div>
+              <MenuButton className="inline-flex w-full sm:w-[180px] h-[40px] items-center justify-center gap-2 bg-white hover:!bg-gray-50 transition-colors">
                 <span>
                   {categoryOptions.find((opt) => opt.value === category)
                     ?.label || "Select Category"}
                 </span>
                 <Icon
                   name="ChevronDown"
-                  className={`transition-transform duration-200 ${
-                    isCategoryDropdownOpen ? "rotate-180" : "rotate-0"
-                  }`}
+                  className="transform group-data-[open]:rotate-180 transition-transform duration-200"
                 />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              {categoryOptions.map((option) => (
-                <DropdownMenuItem
-                  key={option.value}
-                  onClick={() => setCategory(option.value)}
-                  className="font-marcellus"
-                >
-                  {option.label}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
+              </MenuButton>
+            </div>
+
+            <MenuItems
+              modal={false}
+              static={false}
+              className="absolute left-0 top-10 !w-40 z-10 mt-2 origin-top-left bg-white shadow-lg focus:outline-none animate-in fade-in zoom-in duration-100 data-[closed]:animate-out data-[closed]:fade-out data-[closed]:zoom-out"
+            >
+              <div className="flex flex-col items-start p-2">
+                {categoryOptions.map((option) => (
+                  <MenuItem
+                    as="button"
+                    key={option.value}
+                    onClick={() => setCategory(option.value)}
+                    className="font-marcellus w-full text-left data-[focus]:bg-gray-100 py-2 px-2"
+                  >
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </div>
+            </MenuItems>
+          </Menu>
+
           {/* Material Dropdown */}
-          <DropdownMenu onOpenChange={setIsMaterialDropdownOpen} modal={false}>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                className="border-1 flex justify-between items-center shadow-none"
-              >
+          <Menu
+            as="div"
+            className="relative inline-block w-full sm:w-auto group"
+          >
+            <div>
+              <MenuButton className="inline-flex w-full sm:w-[180px] h-[40px] items-center justify-center gap-2 bg-white hover:!bg-gray-50 transition-colors">
                 <span>
                   {materialOptions.find((opt) => opt.value === material)
                     ?.label || "Select Material"}
                 </span>
                 <Icon
                   name="ChevronDown"
-                  className={`transition-transform duration-200 ${
-                    isMaterialDropdownOpen ? "rotate-180" : "rotate-0"
-                  }`}
+                  className=" transform group-data-[open]:rotate-180 transition-transform duration-200"
                 />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              {materialOptions.map((option) => (
-                <DropdownMenuItem
-                  key={option.value}
-                  onClick={() => setMaterial(option.value)}
-                  className="font-marcellus"
-                >
-                  {option.label}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
+              </MenuButton>
+            </div>
+
+            <MenuItems
+              modal={false}
+              static={false}
+              className="absolute left-0 top-10 !w-40 z-10 mt-2 origin-top-left bg-white shadow-lg focus:outline-none animate-in fade-in zoom-in duration-100 data-[closed]:animate-out data-[closed]:fade-out data-[closed]:zoom-out"
+            >
+              <div className="flex flex-col items-start p-2">
+                {materialOptions.map((option) => (
+                  <MenuItem
+                    as="button"
+                    key={option.value}
+                    onClick={() => setMaterial(option.value)}
+                    className="font-marcellus w-full text-left data-[focus]:bg-gray-100 py-2 px-2"
+                  >
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </div>
+            </MenuItems>
+          </Menu>
         </div>
 
         {/* size selector, price selector and buttons*/}
@@ -140,7 +146,7 @@ const FilterSectionCloth = ({ onChange }) => {
           {/* size selector */}
           <div className="space-y-2">
             <label className="block">Size</label>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-start flex-wrap gap-3">
               {sizeOptions.map((option) => (
                 <button
                   key={option.value}
@@ -186,13 +192,13 @@ const FilterSectionCloth = ({ onChange }) => {
           <div className="w-full sm:w-auto flex lg:flex-col items-center gap-3">
             <button
               onClick={handleSubmit}
-              className="bg-black hover:!bg-gray-800 transition text-white w-full sm:w-[150px] h-[40px]"
+              className="bg-black hover:!bg-gray-800 transition text-white w-full sm:w-[180px] h-[40px]"
             >
               Apply Filters
             </button>
             <button
               onClick={handleAllProduct}
-              className="bg-black hover:!bg-gray-800 transition text-white w-full sm:w-[150px] h-[40px]"
+              className="bg-black hover:!bg-gray-800 transition text-white w-full sm:w-[180px] h-[40px]"
             >
               All Product
             </button>
