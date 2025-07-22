@@ -130,11 +130,11 @@ const FilterSectionCloth = ({ onChange }) => {
                   id="category-menu"
                   role="menu"
                   aria-labelledby="category-button"
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.5 }}
-                  transition={{ duration: 0.1, exit: { duration: 0.1 } }}
-                  className="absolute left-0 top-10 w-40 z-10 mt-2 origin-top-left bg-white shadow-lg focus:outline-none"
+                  initial={{ opacity: 0, y: -10, filter: "blur(4px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
+                  className="absolute left-0 top-10 w-40 z-10 mt-2 origin-top-left bg-white shadow-lg focus:outline-none will-change-transform"
                 >
                   <div className="flex flex-col items-start p-2">
                     {categoryOptions.map((option) => (
@@ -190,14 +190,14 @@ const FilterSectionCloth = ({ onChange }) => {
             <AnimatePresence>
               {isMaterialOpen && (
                 <motion.div
-                  id="material-menu"
+                  id="category-menu"
                   role="menu"
-                  aria-labelledby="material-button"
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.5 }}
-                  transition={{ duration: 0.1, exit: { duration: 0.1 } }}
-                  className="absolute left-0 top-10 w-40 z-10 mt-2 origin-top-left bg-white shadow-lg focus:outline-none"
+                  aria-labelledby="category-button"
+                  initial={{ opacity: 0, y: -10, filter: "blur(4px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
+                  className="absolute left-0 top-10 w-40 z-10 mt-2 origin-top-left bg-white shadow-lg focus:outline-none will-change-transform"
                 >
                   <div className="flex flex-col items-start p-2">
                     {materialOptions.map((option) => (
