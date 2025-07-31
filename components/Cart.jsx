@@ -67,6 +67,7 @@ function Cart() {
 
     return null;
   };
+
   // Helper function to determine which attribute to display color or length
   const getItemAttributeDisplayColorLength = (item) => {
     if (item?.attributes?.color)

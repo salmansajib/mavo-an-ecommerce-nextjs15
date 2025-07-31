@@ -33,14 +33,14 @@ const SearchModal = ({ isSearchFormActive, onClose }) => {
   // Close modal and clear search on Escape key
   useEffect(() => {
     const handleEscape = (e) => {
-      if (e.key === "Escape") {
+      if (e.key === "Escape" && isSearchFormActive) {
         setSearch(""); // Clear search input
         onClose(); // Close modal
       }
     };
     document.addEventListener("keydown", handleEscape);
     return () => document.removeEventListener("keydown", handleEscape);
-  }, [onClose]);
+  }, [onClose, isSearchFormActive]);
 
   // Modified onClose handler to clear search
   const handleClose = () => {
