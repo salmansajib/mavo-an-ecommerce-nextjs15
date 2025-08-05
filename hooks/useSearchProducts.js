@@ -23,7 +23,8 @@ export const useSearchProducts = (search, page, limit = DEFAULT_LIMIT) => {
   return useQuery({
     queryKey: ["search", search, page, limit],
     queryFn: () => fetchSearchProducts(search, page, limit),
-    staleTime: 600000, // 10 minutes
+    staleTime: 300000, // 5 minutes
+    cacheTime: 600000, // 10 minutes
     refetchOnWindowFocus: false,
     enabled: !!search && page >= 1, // Only fetch if search query and valid page are provided
   });

@@ -56,7 +56,8 @@ export const useProducts = (
         excludeFirst,
         filters,
       ),
-    staleTime: 600000,
+    staleTime: 300000, // 5 minutes
+    cacheTime: 600000, // 10 minutes
     refetchOnWindowFocus: false,
   });
 };

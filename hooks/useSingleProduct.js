@@ -18,7 +18,8 @@ export const useSingleProduct = (category, id) => {
   return useQuery({
     queryKey: [category, "product", id],
     queryFn: () => fetchSingleProduct(category, id),
-    staleTime: 600000, // 10 minutes
+    staleTime: 300000, // 5 minutes
+    cacheTime: 600000, // 10 minutes
     refetchOnWindowFocus: false,
     enabled: !!category && !!id, // Only fetch if category and id are provided
   });
