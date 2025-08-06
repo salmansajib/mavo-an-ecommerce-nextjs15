@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
-
 import { useSelector } from "react-redux";
 
 const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {

@@ -3,10 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
-
 import { useSelector } from "react-redux";
-import React from "react";
-import React from "react";
 
 const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
   const [isMounted, setIsMounted] = useState(false);

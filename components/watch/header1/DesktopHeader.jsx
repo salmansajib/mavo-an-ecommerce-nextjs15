@@ -7,7 +7,6 @@ import LangCurrencyMenu from "./LangCurrencyMenu";
 import Icon from "@/components/Icon";
 import { navItems, langAndCurrencyItems } from "@/data/navigationData";
 import { useSelector } from "react-redux";
-import React from "react";
 
 const DesktopHeader = ({ setIsSearchFormActive }) => {
   const [hoveredMenuId, setHoveredMenuId] = useState(null);

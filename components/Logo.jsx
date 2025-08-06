@@ -17,7 +17,7 @@ const Logo = ({ color = "light", className }) => {
           alt="company logo"
           width={125}
           height={100}
-          className={twMerge("w-[125px] h-auto", className)}
+          className={twMerge("w-[125px]", className)}
         />
       </Link>
     </div>
