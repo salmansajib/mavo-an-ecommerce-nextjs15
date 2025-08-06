@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateQuantity, removeFromCart } from "@/slices/cartSlice";
 import toast from "react-hot-toast";
@@ -12,9 +12,15 @@ import Link from "next/link";
 function Cart() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [itemToDelete, setItemToDelete] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
 
   const dispatch = useDispatch();
   const { cartItems, totalPrice } = useSelector((state) => state.cart);
+
+  // Set isMounted to true after the component mounts on the client
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const toastConfig = {
     duration: 3000,
@@ -123,121 +129,129 @@ function Cart() {
             <div className="mavo-cart-content-area mavo-md-mb-80 mavo-pr-55">
               <div className="mavo-cart-title mavo-mb-45">
                 <h5 className="cart-title">
-                  Your Cart ({cartItems.length} Items)
+                  {isMounted
+                    ? `Your Cart (${cartItems.length})`
+                    : "Your Cart (0)"}
                 </h5>
               </div>
 
-              {cartItems.length === 0 ? (
-                <p className="font-josefin-sans">Your cart is empty</p>
-              ) : (
-                <>
-                  {/* Map through cart items */}
-                  {cartItems.map((item) => (
-                    <div
-                      key={item.id}
-                      className="mavo-cart-item mavo-pb-45 mavo-mb-45 d-flex align-items-center justify-content-between"
-                    >
-                      <div className="mavo-cart-text-box d-flex align-items-center">
-                        <div className="mavo-cart-image mavo-mr-30">
-                          <Image
-                            src={item.image}
-                            alt="Cart"
-                            width={100}
-                            height={100}
-                          />
-                        </div>
-                        <div className="mavo-cart-text flex flex-col items-start">
-                          <Link
-                            href={`/${item.type}/${item.id}`}
-                            className="text-2xl font-medium mb-2 hover:!text-[#C9A96B]"
-                          >
-                            {item.name}
-                          </Link>
-                          <span className="cart-price">
-                            ${item.unitPrice.toFixed(2)}
-                          </span>
-                          <div className="mavo-mt-10 font-josefin-sans">
-                            {getItemAttributeDisplaySizeMaterial(item)}
-                          </div>
-                          <div className="cart-color mavo-mt-10">
-                            {getItemAttributeDisplayColorLength(item)}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="mavo-cown-number-area d-flex align-items-center">
-                        <div className="mavo-cown-box mavo-pr-80 d-flex align-items-center">
-                          <div className="quantity">
-                            <input
-                              className="sc_quantity_number"
-                              type="text"
-                              value={item.quantity}
-                              readOnly
+              {isMounted &&
+                (cartItems.length === 0 ? (
+                  <p className="font-josefin-sans">Your cart is empty</p>
+                ) : (
+                  <>
+                    {/* Map through cart items */}
+                    {cartItems.map((item) => (
+                      <div
+                        key={item.id}
+                        className="mavo-cart-item mavo-pb-45 mavo-mb-45 d-flex align-items-center justify-content-between"
+                      >
+                        <div className="mavo-cart-text-box d-flex align-items-center">
+                          <div className="mavo-cart-image mavo-mr-30">
+                            <Image
+                              src={item.image}
+                              alt="Cart"
+                              width={100}
+                              height={100}
                             />
-                            <button
-                              className="minus bg-gray-100 flex items-center justify-center"
-                              onClick={() =>
-                                handleQuantityChange(item, item.quantity - 1)
-                              }
-                            >
-                              <Icon name="Minus" size={16} />
-                            </button>
-                            <button
-                              className="plus bg-gray-100 flex items-center justify-center"
-                              onClick={() =>
-                                handleQuantityChange(item, item.quantity + 1)
-                              }
-                            >
-                              <Icon name="Plus" size={16} />
-                            </button>
                           </div>
-                          <div
-                            className="mavo-delete-icon"
-                            onClick={() => openDeleteModal(item)}
-                            style={{ cursor: "pointer" }}
-                          >
-                            <img src="/images/icons/delete.png" alt="Delete" />
+                          <div className="mavo-cart-text flex flex-col items-start">
+                            <Link
+                              href={`/${item.type}/${item.id}`}
+                              className="text-2xl font-medium mb-2 hover:!text-[#C9A96B]"
+                            >
+                              {item.name}
+                            </Link>
+                            <span className="cart-price">
+                              ${item.unitPrice.toFixed(2)}
+                            </span>
+                            <div className="mavo-mt-10 font-josefin-sans">
+                              {getItemAttributeDisplaySizeMaterial(item)}
+                            </div>
+                            <div className="cart-color mavo-mt-10">
+                              {getItemAttributeDisplayColorLength(item)}
+                            </div>
                           </div>
                         </div>
-                        <div className="mavo-price-list">
-                          <div className="price-list">
-                            <span className="mavo-price">
-                              ${item.price.toFixed(2)}
-                            </span>
+                        <div className="mavo-cown-number-area d-flex align-items-center">
+                          <div className="mavo-cown-box mavo-pr-80 d-flex align-items-center">
+                            <div className="quantity">
+                              <input
+                                className="sc_quantity_number"
+                                type="text"
+                                value={item.quantity}
+                                readOnly
+                              />
+                              <button
+                                className="minus bg-gray-100 flex items-center justify-center"
+                                onClick={() =>
+                                  handleQuantityChange(item, item.quantity - 1)
+                                }
+                              >
+                                <Icon name="Minus" size={16} />
+                              </button>
+                              <button
+                                className="plus bg-gray-100 flex items-center justify-center"
+                                onClick={() =>
+                                  handleQuantityChange(item, item.quantity + 1)
+                                }
+                              >
+                                <Icon name="Plus" size={16} />
+                              </button>
+                            </div>
+                            <div
+                              className="mavo-delete-icon"
+                              onClick={() => openDeleteModal(item)}
+                              style={{ cursor: "pointer" }}
+                            >
+                              <img
+                                src="/images/icons/delete.png"
+                                alt="Delete"
+                              />
+                            </div>
+                          </div>
+                          <div className="mavo-price-list">
+                            <div className="price-list">
+                              <span className="mavo-price">
+                                ${item.price.toFixed(2)}
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
 
-                  <div className="mavo-cart-form d-flex align-items-center justify-content-between">
-                    <div className="mavo-cart-button">
-                      <img src="/images/icons/coopon.png" alt="Coupon" />
-                      <input
-                        type="text"
-                        id="cart"
-                        name="name"
-                        placeholder="Coupon Code"
-                        required=""
-                      />
-                      <button type="submit" value="apply">
-                        Apply
-                      </button>
-                    </div>
-                    {/* <div className="mavo-update-button">
+                    <div className="mavo-cart-form d-flex align-items-center justify-content-between">
+                      <div className="mavo-cart-button">
+                        <img src="/images/icons/coopon.png" alt="Coupon" />
+                        <input
+                          type="text"
+                          id="cart"
+                          name="name"
+                          placeholder="Coupon Code"
+                          required=""
+                        />
+                        <button type="submit" value="apply">
+                          Apply
+                        </button>
+                      </div>
+                      {/* <div className="mavo-update-button">
                       <a className="mavo-update-btn" href="cart-page.html">
                         Update Cart
                       </a>
                     </div> */}
-                  </div>
-                </>
-              )}
+                    </div>
+                  </>
+                ))}
             </div>
           </div>
           <div className="col-lg-4">
             <div className="mavo-car-inner-price mavo-mb-20 d-flex align-items-center justify-content-between">
               <div className="sub-title">Subtotal</div>
               <div className="sub-title">:</div>
-              <div className="sub-title">${totalPrice.toFixed(2)}</div>
+              <div className="sub-title">
+                {isMounted ? `$${totalPrice.toFixed(2)}` : "$0.00"}
+              </div>
             </div>
             <div className="mavo-car-inner-price mavo-mb-20 d-flex align-items-center justify-content-between">
               <div className="sub-title">Shipping</div>
@@ -251,7 +265,9 @@ function Cart() {
             <div className="mavo-car-inner-price mavo-mb-45 d-flex align-items-center justify-content-between">
               <div className="sub-title">Total</div>
               <div className="sub-title mavo-pl-20">:</div>
-              <div className="sub-title">${totalPrice.toFixed(2)}</div>
+              <div className="sub-title">
+                {isMounted ? `$${totalPrice.toFixed(2)}` : "$0.00"}
+              </div>
             </div>
             <div className="mavo-checkout-button">
               <a className="mavo-checkout-btn" href="#">
