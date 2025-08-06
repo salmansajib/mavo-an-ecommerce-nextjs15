@@ -1,5 +1,5 @@
 import React from "react";
-import Cart from "@/components/Cart";
+import Cart from "@/components/cart/Cart";
 import ShopInfoCloth from "@/components/cloth/ShopInfoCloth";
 import BreadcrumbContact from "@/components/contact/BreadcrumbContact";
 import Header from "@/components/shoe/header/Header";
