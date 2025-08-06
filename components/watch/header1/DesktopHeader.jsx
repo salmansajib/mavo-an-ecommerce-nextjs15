@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import NavMenu from "./NavMenu";
@@ -7,16 +7,23 @@ import LangCurrencyMenu from "./LangCurrencyMenu";
 import Icon from "@/components/Icon";
 import { navItems, langAndCurrencyItems } from "@/data/navigationData";
 import { useSelector } from "react-redux";
+import React from "react";
 
 const DesktopHeader = ({ setIsSearchFormActive }) => {
   const [hoveredMenuId, setHoveredMenuId] = useState(null);
   const [hoverLangAndCurrencyId, setHoverLangAndCurrencyId] = useState(null);
   const [visibleSvgId, setVisibleSvgId] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
 
   const totalQuantity = useSelector((state) => state.cart.totalQuantity || 0);
   const totalItemsInWishlist = useSelector(
     (state) => state.wishlist.totalItems || 0,
   );
+
+  // Set isMounted to true after the component mounts on the client
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="hidden w-full h-full lg:flex items-center justify-between">
@@ -49,7 +56,11 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
             </button>
             <Link href="/wishlist" className="relative">
               <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#c9a96b] size-5 rounded-full flex items-center justify-center">
-                {totalItemsInWishlist > 10 ? "10+" : totalItemsInWishlist}
+                {isMounted
+                  ? totalItemsInWishlist > 10
+                    ? "10+"
+                    : totalItemsInWishlist
+                  : 0}
               </span>
               <Icon
                 name="Star"
@@ -59,7 +70,7 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
             </Link>
             <Link href="/cart" className="relative">
               <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#c9a96b] size-5 rounded-full flex items-center justify-center">
-                {totalQuantity > 10 ? "10+" : totalQuantity}
+                {isMounted ? (totalQuantity > 10 ? "10+" : totalQuantity) : 0}
               </span>
               <Icon
                 name="ShoppingBag"

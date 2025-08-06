@@ -1,16 +1,22 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
-
 import { useSelector } from "react-redux";
 
 const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
+  const [isMounted, setIsMounted] = useState(false);
+
   const totalQuantity = useSelector((state) => state.cart.totalQuantity || 0);
   const totalItemsInWishlist = useSelector(
     (state) => state.wishlist.totalItems || 0,
   );
+
+  // Set isMounted to true after the component mounts on the client
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="w-full lg:hidden">
@@ -26,7 +32,11 @@ const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
           </button>
           <Link href="/wishlist" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
-              {totalItemsInWishlist > 10 ? "10+" : totalItemsInWishlist}
+              {isMounted
+                ? totalItemsInWishlist > 10
+                  ? "10+"
+                  : totalItemsInWishlist
+                : 0}
             </span>
             <Icon
               name="Star"
@@ -36,7 +46,7 @@ const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
           </Link>
           <Link href="/cart" className="relative">
             <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
-              {totalQuantity > 10 ? "10+" : totalQuantity}
+              {isMounted ? (totalQuantity > 10 ? "10+" : totalQuantity) : 0}
             </span>
             <Icon
               name="ShoppingBag"
