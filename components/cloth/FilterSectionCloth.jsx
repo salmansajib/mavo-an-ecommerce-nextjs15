@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 import ReactSlider from "react-slider";
 import Icon from "../Icon";
@@ -13,6 +14,9 @@ const FilterSectionCloth = ({ onChange }) => {
   const [isMaterialOpen, setIsMaterialOpen] = useState(false);
   const categoryRef = useRef(null);
   const materialRef = useRef(null);
+
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
   const categoryOptions = [
     { value: "", label: "All Categories" },
@@ -71,6 +75,25 @@ const FilterSectionCloth = ({ onChange }) => {
   };
 
   const handleSubmit = () => {
+    // Keep current params in case you want to preserve others
+    const params = new URLSearchParams(searchParams.toString());
+
+    if (category) params.set("category", category);
+    else params.delete("category");
+
+    if (material) params.set("material", material);
+    else params.delete("material");
+
+    if (size) params.set("size", size);
+    else params.delete("size");
+
+    params.set("minPrice", priceRange[0]);
+    params.set("maxPrice", priceRange[1]);
+
+    // Push new URL without full reload
+    router.push(`?${params.toString()}`);
+
+    // Still call parent onChange for local updates
     onChange({
       filterCategory: category,
       filterMaterial: material,
@@ -85,6 +108,10 @@ const FilterSectionCloth = ({ onChange }) => {
     setMaterial("");
     setSize("");
     setPriceRange([0, 5000]);
+
+    const params = new URLSearchParams();
+    router.push("?"); // clear query string
+
     onChange({
       filterCategory: "",
       filterMaterial: "",
@@ -235,7 +262,9 @@ const FilterSectionCloth = ({ onChange }) => {
               {sizeOptions.map((option) => (
                 <button
                   key={option.value}
-                  onClick={() => setSize(option.value)}
+                  onClick={() =>
+                    setSize(size === option.value ? "" : option.value)
+                  }
                   className={`border-1 border-gray-10 px-3 py-1 hover:text-white transition-colors ${
                     size === option.value
                       ? "bg-black text-white border-black"
@@ -256,8 +285,10 @@ const FilterSectionCloth = ({ onChange }) => {
             <label className="block !mb-4">Price</label>
             <ReactSlider
               className="w-full lg:max-w-3xl h-6"
+              ariaLabel={["Minimum price", "Maximum price"]}
+              step={10}
               thumbClassName="size-6 bg-black rounded-full cursor-pointer -top-2"
-              trackClassName="h-2 bg-gray-300"
+              trackClassName="h-2 bg-gray-300 rounded-full"
               min={0}
               max={5000}
               value={priceRange}
@@ -266,7 +297,19 @@ const FilterSectionCloth = ({ onChange }) => {
               minDistance={10}
             />
             <div>
-              ${priceRange[0]} - ${priceRange[1]}
+              {new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+              }).format(priceRange[0])}
+              {" - "}
+              {new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+              }).format(priceRange[1])}
             </div>
           </div>
 
