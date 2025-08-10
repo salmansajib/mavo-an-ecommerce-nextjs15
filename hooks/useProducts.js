@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 
 const DEFAULT_LIMIT = 6;
 
-export const fetchProducts = async (
+const fetchProducts = async (
   category,
   page,
   limit = DEFAULT_LIMIT,
@@ -17,7 +17,7 @@ export const fetchProducts = async (
     direction,
     random: random.toString(),
     excludeFirst: excludeFirst.toString(),
-    ...filters,
+    ...filters, // filters = { filterCategory: "men", filterMaterial: "cotton", filterSize: "M", priceMin: 100 }
   });
 
   const url = `/api/products/${category}?${params.toString()}`;
@@ -25,37 +25,6 @@ export const fetchProducts = async (
   if (!res.ok) throw new Error("Failed to fetch products");
   return await res.json();
 };
-
-export const getProductQueryOptions = (
-  category,
-  page,
-  limit = DEFAULT_LIMIT,
-  direction = "first",
-  random = false,
-  excludeFirst = 0,
-  filters = {},
-) => ({
-  queryKey: [
-    category,
-    "products",
-    page,
-    limit,
-    direction,
-    random,
-    excludeFirst,
-    filters,
-  ],
-  queryFn: () =>
-    fetchProducts(
-      category,
-      page,
-      limit,
-      direction,
-      random,
-      excludeFirst,
-      filters,
-    ),
-});
 
 export const useProducts = (
   category,
@@ -67,17 +36,28 @@ export const useProducts = (
   filters = {},
 ) => {
   return useQuery({
-    ...getProductQueryOptions(
+    queryKey: [
       category,
+      "products",
       page,
       limit,
       direction,
       random,
       excludeFirst,
       filters,
-    ),
-    staleTime: 5 * 60 * 1000, // 5 minutes
-    cacheTime: 10 * 60 * 1000, // 10 minutes
+    ],
+    queryFn: () =>
+      fetchProducts(
+        category,
+        page,
+        limit,
+        direction,
+        random,
+        excludeFirst,
+        filters,
+      ),
+    staleTime: 300000, // 5 minutes
+    cacheTime: 600000, // 10 minutes
     refetchOnWindowFocus: false,
   });
 };
