@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { loadFromLocalStorage } from "@/utils/persistState";
+import { recalculateTotals } from "./cartUtils";
 
 // Initialize state
 const initialState = {
@@ -36,37 +37,22 @@ const cartSlice = createSlice({
         });
       }
 
-      state.totalQuantity = state.cartItems.reduce(
-        (total, item) => total + item.quantity,
-        0,
-      );
-      state.totalPrice = state.cartItems.reduce(
-        (total, item) => total + item.price,
-        0,
-      );
+      Object.assign(state, recalculateTotals(state.cartItems));
     },
 
     removeFromCart: (state, action) => {
       const itemToRemove = action.payload;
-      const itemIndex = state.cartItems.findIndex(
+      state.cartItems = state.cartItems.filter(
         (item) =>
-          item.id === itemToRemove.id &&
-          item.type === itemToRemove.type &&
-          JSON.stringify(item.attributes) ===
-            JSON.stringify(itemToRemove.attributes),
+          !(
+            item.id === itemToRemove.id &&
+            item.type === itemToRemove.type &&
+            JSON.stringify(item.attributes) ===
+              JSON.stringify(itemToRemove.attributes)
+          ),
       );
 
-      if (itemIndex !== -1) {
-        state.cartItems.splice(itemIndex, 1);
-        state.totalQuantity = state.cartItems.reduce(
-          (total, item) => total + item.quantity,
-          0,
-        );
-        state.totalPrice = state.cartItems.reduce(
-          (total, item) => total + item.price,
-          0,
-        );
-      }
+      Object.assign(state, recalculateTotals(state.cartItems));
     },
 
     updateQuantity: (state, action) => {
@@ -82,16 +68,9 @@ const cartSlice = createSlice({
       if (item && newQuantity >= 1) {
         item.quantity = newQuantity;
         item.price = item.unitPrice * newQuantity;
-
-        state.totalQuantity = state.cartItems.reduce(
-          (total, item) => total + item.quantity,
-          0,
-        );
-        state.totalPrice = state.cartItems.reduce(
-          (total, item) => total + item.price,
-          0,
-        );
       }
+
+      Object.assign(state, recalculateTotals(state.cartItems));
     },
 
     clearCart: (state) => {
