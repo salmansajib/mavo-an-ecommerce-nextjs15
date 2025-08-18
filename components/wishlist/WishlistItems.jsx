@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Icon from "../Icon";
 
-const WishlistItems = ({ wishlistItems }) => {
+const WishlistItems = ({ wishlistItems, handleRemoveFromWishlist }) => {
   return (
     <>
       {wishlistItems.map((item) => (

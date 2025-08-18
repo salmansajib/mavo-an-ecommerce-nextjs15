@@ -62,7 +62,10 @@ const Wishlist = () => {
             Your wishlist is empty!
           </p>
         ) : (
-          <WishlistItems wishlistItems={wishlistItems} />
+          <WishlistItems
+            wishlistItems={wishlistItems}
+            handleRemoveFromWishlist={handleRemoveFromWishlist}
+          />
         )}
       </div>
     </div>

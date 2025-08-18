@@ -1,5 +1,3 @@
-"use client";
-
 // Load state from localStorage for a given key
 export const loadFromLocalStorage = (key) => {
   if (typeof window === "undefined") return undefined;
