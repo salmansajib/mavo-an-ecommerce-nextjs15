@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, updateQuantity } from "@/slices/cartSlice";
+import { addToCart, updateQuantity } from "@/features/cart/cartSlice";
 
 import ProductGallery from "./ProductGallery";
 import ProductRating from "./ProductRating";

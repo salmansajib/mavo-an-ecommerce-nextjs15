@@ -1,6 +1,9 @@
 // useWishlist.js
 import { useDispatch, useSelector } from "react-redux";
-import { addToWishlist, removeFromWishlist } from "@/slices/wishlistSlice";
+import {
+  addToWishlist,
+  removeFromWishlist,
+} from "@/features/wishlist/wishlistSlice";
 import toast from "react-hot-toast";
 
 const toastConfig = {

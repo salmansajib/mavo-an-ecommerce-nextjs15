@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, updateQuantity } from "@/slices/cartSlice";
+import { addToCart, updateQuantity } from "@/features/cart/cartSlice";
 import toast from "react-hot-toast";
 import Icon from "@/components/Icon";
 import ProductGallery from "./ProductGallery";

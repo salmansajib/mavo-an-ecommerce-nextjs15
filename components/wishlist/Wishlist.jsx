@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import toast from "react-hot-toast";
-import { removeFromWishlist } from "@/slices/wishlistSlice";
+import { removeFromWishlist } from "@/features/wishlist/wishlistSlice";
 import { useDispatch, useSelector } from "react-redux";
 import LoaderSpinner from "../LoaderSpinner";
 import WishlistItems from "./WishlistItems";

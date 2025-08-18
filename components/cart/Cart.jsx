@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateQuantity, removeFromCart } from "@/slices/cartSlice";
+import { updateQuantity, removeFromCart } from "@/features/cart/cartSlice";
 import toast from "react-hot-toast";
 import ConfirmDeleteModal from "../ConfirmDeleteModal";
 import LoaderSpinner from "../LoaderSpinner";
