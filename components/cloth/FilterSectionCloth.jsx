@@ -1,9 +1,10 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 import ReactSlider from "react-slider";
 import Icon from "../Icon";
+import { useProducts } from "@/hooks/useProducts";
 
 const FilterSectionCloth = ({ onChange }) => {
   const [category, setCategory] = useState("");
@@ -17,6 +18,56 @@ const FilterSectionCloth = ({ onChange }) => {
 
   const router = useRouter();
   const searchParams = useSearchParams();
+
+  // Fetch all products to calculate dynamic price range
+  const { data: allProductsData } = useProducts(
+    "cloth",
+    1,
+    1000,
+    "first",
+    false,
+    0,
+    {},
+  );
+
+  // Calculate dynamic min and max prices from actual product data
+  const { minPrice, maxPrice } = useMemo(() => {
+    if (!allProductsData?.products) {
+      return { minPrice: 0, maxPrice: 5000 }; // fallback
+    }
+
+    const allPrices = [];
+    allProductsData.products.forEach((product) => {
+      // Extract prices from all variants and sizes
+      product.variants?.forEach((variant) => {
+        variant.sizes?.forEach((size) => {
+          if (size.price) {
+            allPrices.push(size.price);
+          }
+        });
+      });
+      // Also check base_price as fallback
+      if (product.base_price) {
+        allPrices.push(product.base_price);
+      }
+    });
+
+    if (allPrices.length === 0) {
+      return { minPrice: 0, maxPrice: 5000 };
+    }
+
+    const calculatedMin = Math.floor(Math.min(...allPrices) / 10) * 10; // Round down to nearest 10
+    const calculatedMax = Math.ceil(Math.max(...allPrices) / 10) * 10; // Round up to nearest 10
+
+    return { minPrice: calculatedMin, maxPrice: calculatedMax };
+  }, [allProductsData]);
+
+  // Update price range when min/max prices are calculated
+  useEffect(() => {
+    if (minPrice !== undefined && maxPrice !== undefined) {
+      setPriceRange([minPrice, maxPrice]);
+    }
+  }, [minPrice, maxPrice]);
 
   const categoryOptions = [
     { value: "", label: "All Categories" },
@@ -101,13 +152,20 @@ const FilterSectionCloth = ({ onChange }) => {
       priceMin: priceRange[0],
       priceMax: priceRange[1],
     });
+
+    // Scroll to products section (same as pagination behavior)
+    setTimeout(() => {
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 500, behavior: "smooth" });
+      }
+    }, 150);
   };
 
   const handleAllProduct = () => {
     setCategory("");
     setMaterial("");
     setSize("");
-    setPriceRange([0, 5000]);
+    setPriceRange([minPrice || 0, maxPrice || 5000]);
 
     const params = new URLSearchParams();
     router.push("?"); // clear query string
@@ -116,9 +174,16 @@ const FilterSectionCloth = ({ onChange }) => {
       filterCategory: "",
       filterMaterial: "",
       filterSize: "",
-      priceMin: 0,
-      priceMax: 5000,
+      priceMin: minPrice || 0,
+      priceMax: maxPrice || 5000,
     });
+
+    // Scroll to products section (same as pagination behavior)
+    setTimeout(() => {
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 500, behavior: "smooth" });
+      }
+    }, 150);
   };
 
   return (
@@ -289,8 +354,8 @@ const FilterSectionCloth = ({ onChange }) => {
               step={10}
               thumbClassName="size-6 bg-black rounded-full cursor-pointer -top-2"
               trackClassName="h-2 bg-gray-300 rounded-full"
-              min={0}
-              max={5000}
+              min={minPrice || 0}
+              max={maxPrice || 5000}
               value={priceRange}
               onChange={(value) => setPriceRange(value)}
               pearling
