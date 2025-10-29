@@ -13,8 +13,12 @@ const FilterSectionCloth = ({ onChange }) => {
   const [priceRange, setPriceRange] = useState([0, 5000]);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isMaterialOpen, setIsMaterialOpen] = useState(false);
+
   const categoryRef = useRef(null);
   const materialRef = useRef(null);
+
+  const SCROLL_OFFSET = 500;
+  const SCROLL_DELAY = 150;
 
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -156,9 +160,9 @@ const FilterSectionCloth = ({ onChange }) => {
     // Scroll to products section (same as pagination behavior)
     setTimeout(() => {
       if (typeof window !== "undefined") {
-        window.scrollTo({ top: 500, behavior: "smooth" });
+        window.scrollTo({ top: SCROLL_OFFSET, behavior: "smooth" });
       }
-    }, 150);
+    }, SCROLL_DELAY);
   };
 
   const handleAllProduct = () => {
@@ -181,9 +185,9 @@ const FilterSectionCloth = ({ onChange }) => {
     // Scroll to products section (same as pagination behavior)
     setTimeout(() => {
       if (typeof window !== "undefined") {
-        window.scrollTo({ top: 500, behavior: "smooth" });
+        window.scrollTo({ top: SCROLL_OFFSET, behavior: "smooth" });
       }
-    }, 150);
+    }, SCROLL_DELAY);
   };
 
   return (
@@ -282,9 +286,9 @@ const FilterSectionCloth = ({ onChange }) => {
             <AnimatePresence>
               {isMaterialOpen && (
                 <motion.div
-                  id="category-menu"
+                  id="material-menu"
                   role="menu"
-                  aria-labelledby="category-button"
+                  aria-labelledby="material-button"
                   initial={{ opacity: 0, y: -10, filter: "blur(4px)" }}
                   animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                   exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}
