@@ -2,9 +2,9 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
+import { useProducts } from "@/hooks/useProducts";
 import ReactSlider from "react-slider";
 import Icon from "../Icon";
-import { useProducts } from "@/hooks/useProducts";
 
 const FilterSectionCloth = ({ onChange }) => {
   const [category, setCategory] = useState("");
@@ -22,6 +22,30 @@ const FilterSectionCloth = ({ onChange }) => {
 
   const router = useRouter();
   const searchParams = useSearchParams();
+
+  const categoryOptions = [
+    { value: "", label: "All Categories" },
+    { value: "men", label: "Men" },
+    { value: "women", label: "Women" },
+    { value: "children", label: "Children" },
+    { value: "unisex", label: "Unisex" },
+  ];
+
+  const materialOptions = [
+    { value: "", label: "All Materials" },
+    { value: "cotton", label: "Cotton" },
+    { value: "wool", label: "Wool" },
+    { value: "polyester", label: "Polyester" },
+    { value: "silk", label: "Silk" },
+  ];
+
+  const sizeOptions = [
+    { value: "XS", label: "XS" },
+    { value: "S", label: "S" },
+    { value: "M", label: "M" },
+    { value: "L", label: "L" },
+    { value: "XL", label: "XL" },
+  ];
 
   // Fetch all products to calculate dynamic price range
   const { data: allProductsData } = useProducts(
@@ -72,30 +96,6 @@ const FilterSectionCloth = ({ onChange }) => {
       setPriceRange([minPrice, maxPrice]);
     }
   }, [minPrice, maxPrice]);
-
-  const categoryOptions = [
-    { value: "", label: "All Categories" },
-    { value: "men", label: "Men" },
-    { value: "women", label: "Women" },
-    { value: "children", label: "Children" },
-    { value: "unisex", label: "Unisex" },
-  ];
-
-  const materialOptions = [
-    { value: "", label: "All Materials" },
-    { value: "cotton", label: "Cotton" },
-    { value: "wool", label: "Wool" },
-    { value: "polyester", label: "Polyester" },
-    { value: "silk", label: "Silk" },
-  ];
-
-  const sizeOptions = [
-    { value: "XS", label: "XS" },
-    { value: "S", label: "S" },
-    { value: "M", label: "M" },
-    { value: "L", label: "L" },
-    { value: "XL", label: "XL" },
-  ];
 
   // Handle clicks outside to close dropdowns
   useEffect(() => {
