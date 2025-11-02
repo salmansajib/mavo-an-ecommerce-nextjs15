@@ -1,23 +1,22 @@
 import React from "react";
-import Link from "next/link";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import Breadcrumbs from "../Breadcrumbs";
 
-const Breadcrumb = () => {
+const HeroAllProductCloth = () => {
   return (
-    <div className="mavo-breadcrumb-product-page mavo-shoes-product-page">
+    <div className="mavo-breadcrumb-page mavo-breadcrumb-product-page">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className="mavo-breadcrumb-content-area text-center">
               <div className="mavo-creadcrumb-title mavo-mb-20">
-                <h1 className="title-white-color text-uppercase">Shop</h1>
+                <h1 className="title-white-color">Mavoo Shopping</h1>
               </div>
-              <div className="mavo-breadcrumb-list">
+              <div className="">
                 <Breadcrumbs
-                  homeVariant="light"
                   linkVariant="light"
-                  separatorVariant="light"
+                  homeVariant="light"
                   currentVariant="light"
+                  separatorVariant="light"
                 />
               </div>
             </div>
@@ -28,4 +27,4 @@ const Breadcrumb = () => {
   );
 };
 
-export default Breadcrumb;
+export default HeroAllProductCloth;

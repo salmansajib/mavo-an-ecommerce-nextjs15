@@ -1,11 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-const breadcrumbs = [
-  { text: "Home", href: "/watch" },
-  { text: "Shop", href: "/watch/product" },
-];
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const BannerSectionShop = () => {
   return (
@@ -16,17 +12,6 @@ const BannerSectionShop = () => {
             <div className="mavo-banner-single-left">
               <div className="mavo-banner-title-left">
                 <h2>20th Century Watches</h2>
-                <ul>
-                  {breadcrumbs.map((item, index) => (
-                    <li key={index}>
-                      {item.href ? (
-                        <Link href={item.href}>{item.text}</Link>
-                      ) : (
-                        item.text
-                      )}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>
