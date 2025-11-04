@@ -3,7 +3,7 @@ import React from "react";
 
 const ContentPage = () => {
   return (
-    <div className="mavo-jewellery-content-page mavo-pt-175">
+    <div className="mavo-jewellery-content-page mavo-pt-175 !pb-20">
       <div className="container page-container2">
         <div className="row align-items-center">
           <div className="col-lg-6">

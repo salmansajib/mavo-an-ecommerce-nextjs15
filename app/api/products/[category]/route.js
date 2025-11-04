@@ -63,7 +63,7 @@ export async function GET(request, { params }) {
             filterCategory.toLowerCase()
         : true;
 
-      // matchMaterial: Use top-level material (clothes), nested materials.material (watches), or additional_info.Material (beauty/shoes)
+      // matchMaterial: Use top-level material (clothes), nested materials.material (watches), additional_info.Material (beauty/shoes), or variant.material (jewelry string)
       const matchMaterial = filterMaterial
         ? product.material === filterMaterial ||
           product.additional_info?.Material === filterMaterial ||
@@ -71,10 +71,13 @@ export async function GET(request, { params }) {
             variant.materials?.some(
               (material) => material.material === filterMaterial,
             ),
+          ) ||
+          product.variants?.some(
+            (variant) => variant.material === filterMaterial,
           )
         : true;
 
-      // matchSize: Use nested sizes.size (clothes/shoes), or top-level sizes.size (beauty); gracefully false if missing (watches)
+      // matchSize: Use nested sizes.size (clothes/shoes), top-level sizes.size (beauty), or variant.lengths.length (jewelry); gracefully false if missing (watches)
       const matchSize = filterSize
         ? product.sizes?.some(
             (size) =>
@@ -85,15 +88,23 @@ export async function GET(request, { params }) {
               (size) =>
                 size.size.toString().toLowerCase() === filterSize.toLowerCase(),
             ),
+          ) ||
+          product.variants?.some((variant) =>
+            variant.lengths?.some(
+              (len) =>
+                len.length.toString().toLowerCase() ===
+                filterSize.toLowerCase(),
+            ),
           )
         : true;
 
-      // Variant prices: Collect from nested sizes.price (clothes/shoes) / materials.price (watches), or top-level sizes.price (beauty), fallback to base_price
+      // Variant prices: Collect from nested sizes.price (clothes/shoes) / materials.price (watches) / lengths.price (jewelry), or top-level sizes.price (beauty), fallback to base_price
       const variantPrices = [
         ...(product.sizes?.map((size) => size.price) || []),
         ...(product.variants?.flatMap((variant) => [
           ...(variant.sizes?.map((size) => size.price) || []),
           ...(variant.materials?.map((material) => material.price) || []),
+          ...(variant.lengths?.map((len) => len.price) || []),
         ]) || []),
       ];
 
