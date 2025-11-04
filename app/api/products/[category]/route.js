@@ -13,13 +13,27 @@ export async function GET(request, { params }) {
     10,
   );
 
-  const filterCategory = url.searchParams.get("filterCategory") || "";
-  const filterMaterial = url.searchParams.get("filterMaterial") || "";
-  const filterSize = url.searchParams.get("filterSize") || "";
-  const priceMin = parseFloat(url.searchParams.get("priceMin"));
-  const priceMax = parseFloat(url.searchParams.get("priceMax"));
+  const filterCategory =
+    url.searchParams.get("filterCategory") ||
+    url.searchParams.get("category") ||
+    "";
+  const filterMaterial =
+    url.searchParams.get("filterMaterial") ||
+    url.searchParams.get("material") ||
+    "";
+  const filterSize =
+    url.searchParams.get("filterSize") || url.searchParams.get("size") || "";
 
-  // Input validation (unchanged)
+  // Handle both parameter name variations for price - with proper defaults
+  const priceMinParam =
+    url.searchParams.get("priceMin") || url.searchParams.get("minPrice");
+  const priceMaxParam =
+    url.searchParams.get("priceMax") || url.searchParams.get("maxPrice");
+
+  const priceMin = priceMinParam ? parseFloat(priceMinParam) : null;
+  const priceMax = priceMaxParam ? parseFloat(priceMaxParam) : null;
+
+  // Input validation
   if (
     !category ||
     page < 1 ||
@@ -36,20 +50,20 @@ export async function GET(request, { params }) {
   try {
     const allProducts = await getProductsByCategory(category);
 
-    // Updated filter logic: Handles beauty (top-level sizes, additional_info.Material), watches (variants.materials), and clothes (variants.sizes, top-level material/category)
+    // Updated filter logic
     const filteredProducts = allProducts.filter((product) => {
-      // matchCategory: Use top-level category (clothes), type (watches/beauty fallback), or extend to additional_info if needed (e.g., Gender or Type for beauty)
+      // matchCategory: Use top-level category (clothes), type (watches/beauty fallback), or extend to additional_info if needed
       const matchCategory = filterCategory
         ? product.category === filterCategory ||
           product.type === filterCategory ||
           product.additional_info?.Gender?.toLowerCase().includes(
             filterCategory.toLowerCase(),
-          ) || // Optional: For beauty Gender like "Men, Women"
+          ) ||
           product.additional_info?.Type?.toLowerCase() ===
-            filterCategory.toLowerCase() // Optional: For beauty Type like "Classic"
+            filterCategory.toLowerCase()
         : true;
 
-      // matchMaterial: Use top-level material (clothes), nested materials.material (watches), or additional_info.Material (beauty)
+      // matchMaterial: Use top-level material (clothes), nested materials.material (watches), or additional_info.Material (beauty/shoes)
       const matchMaterial = filterMaterial
         ? product.material === filterMaterial ||
           product.additional_info?.Material === filterMaterial ||
@@ -60,26 +74,29 @@ export async function GET(request, { params }) {
           )
         : true;
 
-      // matchSize: Use nested sizes.size (clothes), or top-level sizes.size (beauty); gracefully false if missing (watches)
+      // matchSize: Use nested sizes.size (clothes/shoes), or top-level sizes.size (beauty); gracefully false if missing (watches)
       const matchSize = filterSize
         ? product.sizes?.some(
-            (size) => size.size.toLowerCase() === filterSize.toLowerCase(),
+            (size) =>
+              size.size.toString().toLowerCase() === filterSize.toLowerCase(),
           ) ||
           product.variants?.some((variant) =>
             variant.sizes?.some(
-              (size) => size.size.toLowerCase() === filterSize.toLowerCase(),
+              (size) =>
+                size.size.toString().toLowerCase() === filterSize.toLowerCase(),
             ),
           )
         : true;
 
-      // Variant prices: Collect from nested sizes.price (clothes) / materials.price (watches), or top-level sizes.price (beauty), fallback to base_price
+      // Variant prices: Collect from nested sizes.price (clothes/shoes) / materials.price (watches), or top-level sizes.price (beauty), fallback to base_price
       const variantPrices = [
-        ...(product.sizes?.map((size) => size.price) || []), // Beauty top-level sizes
+        ...(product.sizes?.map((size) => size.price) || []),
         ...(product.variants?.flatMap((variant) => [
-          ...(variant.sizes?.map((size) => size.price) || []), // Clothes nested sizes
-          ...(variant.materials?.map((material) => material.price) || []), // Watches nested materials
+          ...(variant.sizes?.map((size) => size.price) || []),
+          ...(variant.materials?.map((material) => material.price) || []),
         ]) || []),
       ];
+
       const minVariantPrice =
         variantPrices.length > 0
           ? Math.min(...variantPrices)
@@ -89,21 +106,20 @@ export async function GET(request, { params }) {
           ? Math.max(...variantPrices)
           : product.base_price;
 
-      // Price matches: Handle NaN gracefully
-      const matchMinPrice = isNaN(priceMin)
-        ? true
-        : maxVariantPrice >= priceMin;
-      const matchMaxPrice = isNaN(priceMax)
-        ? true
-        : minVariantPrice <= priceMax;
+      // Price matches: Only apply filter if both priceMin and priceMax are provided
+      const hasPriceFilter =
+        priceMin !== null &&
+        priceMax !== null &&
+        !isNaN(priceMin) &&
+        !isNaN(priceMax);
 
-      return (
-        matchCategory &&
-        matchMaterial &&
-        matchSize &&
-        matchMinPrice &&
-        matchMaxPrice
-      );
+      let matchPrice = true;
+      if (hasPriceFilter) {
+        // A product matches if ANY of its variant prices fall within the range
+        matchPrice = maxVariantPrice >= priceMin && minVariantPrice <= priceMax;
+      }
+
+      return matchCategory && matchMaterial && matchSize && matchPrice;
     });
 
     const total = filteredProducts.length;
@@ -125,6 +141,7 @@ export async function GET(request, { params }) {
 
     return Response.json({ products: paginatedProducts, total });
   } catch (error) {
+    console.error("Filter error:", error);
     return Response.json({ error: error.message }, { status: 500 });
   }
 }
