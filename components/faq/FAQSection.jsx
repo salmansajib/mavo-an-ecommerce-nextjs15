@@ -45,7 +45,7 @@ export default function FAQSection() {
                 onClick={() => setActiveCategory(categoryKey)}
                 className={`w-[250px] h-[70px] py-4 px-3 transition-colors bg-gray-100 text-left ${
                   isActive
-                    ? "font-semibold"
+                    ? "font-semibold border-l-3 border-[#C9A96B]"
                     : "border-transparent text-gray-500 hover:text-gray-700"
                 }`}
               >

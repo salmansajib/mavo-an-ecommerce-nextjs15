@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import Icon from "../Icon";
-import { ChevronDown } from "lucide-react";
 
 export default function FAQItem({ id, question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +17,7 @@ export default function FAQItem({ id, question, answer }) {
         aria-expanded={isOpen}
         aria-controls={answerId}
       >
-        <span className="flex justify-between items-center">
+        <span className="flex justify-between items-center gap-2">
           <span>{question}</span>
           <span
             className={`transform transition-transform ${
@@ -44,7 +43,7 @@ export default function FAQItem({ id, question, answer }) {
               ease: "easeInOut",
             }}
           >
-            <p className="py-4 max-w-[50ch] !text-gray-600">{answer}</p>
+            <p className="py-2 max-w-[70ch] !text-gray-600">{answer}</p>
           </motion.div>
         )}
       </AnimatePresence>
