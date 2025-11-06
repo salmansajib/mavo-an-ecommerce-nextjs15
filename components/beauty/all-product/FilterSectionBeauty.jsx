@@ -188,16 +188,16 @@ const FilterSectionBeauty = ({ onChange }) => {
           </div>
 
           {/* Filter buttons */}
-          <div className="w-full flex items-center gap-3 mt-4">
+          <div className="w-full flex flex-col items-center gap-3 mt-4">
             <button
               onClick={handleSubmit}
-              className="bg-black hover:!bg-gray-800 transition text-white px-4 py-2"
+              className="w-full bg-black hover:!bg-gray-800 transition text-white px-4 py-2"
             >
               Apply Filters
             </button>
             <button
               onClick={handleAllProduct}
-              className="bg-black hover:!bg-gray-800 transition text-white px-4 py-2"
+              className="w-full bg-black hover:!bg-gray-800 transition text-white px-4 py-2"
             >
               All Products
             </button>
