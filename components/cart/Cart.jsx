@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import { updateQuantity, removeFromCart } from "@/features/cart/cartSlice";
 import toast from "react-hot-toast";
@@ -203,9 +204,9 @@ function Cart() {
               <div className="sub-title">${totalPrice.toFixed(2)}</div>
             </div>
             <div className="mavo-checkout-button">
-              <a className="mavo-checkout-btn" href="#">
+              <Link className="mavo-checkout-btn" href="/checkout">
                 Proceed to Checkout
-              </a>
+              </Link>
             </div>
           </div>
         </div>
