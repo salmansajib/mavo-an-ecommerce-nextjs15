@@ -82,11 +82,11 @@ export const navItems = [
   {
     id: 5,
     label: "Contact",
-    link: "#",
-    subItems: [
-      { id: 51, label: "Contact", link: "contact.html" },
-      { id: 52, label: "Contact Us", link: "contact-us.html" },
-    ],
+    link: "/contact",
+    // subItems: [
+    //   { id: 51, label: "Contact", link: "contact.html" },
+    //   { id: 52, label: "Contact Us", link: "contact-us.html" },
+    // ],
   },
 ];
 
@@ -174,11 +174,11 @@ export const navItemsMobile = [
   {
     id: 5,
     label: "Contact",
-    link: "#",
-    subItems: [
-      { id: 51, label: "Contact", link: "contact.html" },
-      { id: 52, label: "Contact Us", link: "contact-us.html" },
-    ],
+    link: "/contact",
+    // subItems: [
+    //   { id: 51, label: "Contact", link: "contact.html" },
+    //   { id: 52, label: "Contact Us", link: "contact-us.html" },
+    // ],
   },
   {
     id: 7,
