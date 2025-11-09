@@ -76,7 +76,7 @@ export const navItems = [
       { id: 45, label: "Checkout", link: "/checkout" },
       { id: 46, label: "Faq", link: "/faq" },
       { id: 47, label: "Thank You", link: "/thankyou" },
-      { id: 53, label: "404 Page", link: "/404" },
+      { id: 53, label: "404 Page", link: "/not-found" },
     ],
   },
   {
@@ -168,7 +168,7 @@ export const navItemsMobile = [
       { id: 45, label: "Checkout", link: "/checkout" },
       { id: 46, label: "Faq", link: "/faq" },
       { id: 47, label: "Thank You", link: "/thankyou" },
-      { id: 53, label: "404 Page", link: "/404" },
+      { id: 53, label: "404 Page", link: "/not-found" },
     ],
   },
   {
