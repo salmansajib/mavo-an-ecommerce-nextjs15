@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import Icon from "@/components/Icon";
 import ProductGallery from "./ProductGallery";
 import useCountdown from "@/hooks/useCountdown";
+import useWishlist from "@/hooks/useWishlist";
 
 const ProductDetail = ({ product }) => {
   const timeLeft = useCountdown(7);
@@ -18,6 +19,17 @@ const ProductDetail = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  // Wishlist item data
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.variants[0].images[0],
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
 
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
@@ -373,6 +385,22 @@ const ProductDetail = ({ product }) => {
                     className="!uppercase w-[180px] h-[60px] border !border-black flex items-center justify-center bg-black text-white"
                   >
                     Add to Cart
+                  </button>
+                </div>
+                <div>
+                  <button
+                    onClick={() => handleWishlistToggle()}
+                    className="size-[60px] border !border-black/40 flex items-center justify-center"
+                  >
+                    <Icon
+                      name="Star"
+                      size={32}
+                      className={`${
+                        isInWishlist
+                          ? "stroke-black fill-black"
+                          : "fill-white stroke-black"
+                      } transition-colors duration-150`}
+                    />
                   </button>
                 </div>
               </div>

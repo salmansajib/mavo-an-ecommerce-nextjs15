@@ -7,6 +7,7 @@ import { addToCart, updateQuantity } from "@/features/cart/cartSlice";
 import toast from "react-hot-toast";
 import Icon from "@/components/Icon";
 import ProductGallery from "./ProductGallery";
+import useWishlist from "@/hooks/useWishlist";
 
 const ProductDetail = ({ product }) => {
   // State for selections and cart
@@ -15,6 +16,17 @@ const ProductDetail = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  // Wishlist item data
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.variants[0].images[0],
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
 
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
@@ -347,19 +359,20 @@ const ProductDetail = ({ product }) => {
                   >
                     Add to Cart
                   </button>
-                  <Link
-                    href="/cart"
-                    className="flex flex-wrap items-center gap-2"
+                  <button
+                    onClick={() => handleWishlistToggle()}
+                    className="size-[60px] bg-black flex items-center justify-center"
                   >
-                    <Image
-                      width={50}
-                      height={50}
-                      className="w-[20px] h-auto"
-                      src="/images/icons/wishlist.png"
-                      alt="wishlist"
-                    />{" "}
-                    Add to wish list
-                  </Link>
+                    <Icon
+                      name="Star"
+                      size={32}
+                      className={`${
+                        isInWishlist
+                          ? "fill-white stroke-white"
+                          : "stroke-white"
+                      }`}
+                    />
+                  </button>
                 </div>
               </div>
 

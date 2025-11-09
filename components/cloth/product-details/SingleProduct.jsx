@@ -15,6 +15,8 @@ import ProductColorSelector from "./ProductColorSelector";
 import ProductQuantitySelector from "./ProductQuantitySelector";
 import ProductCheckoutInfo from "./ProductCheckoutInfo";
 import ProductCategoryTags from "./ProductCategoryTags";
+import Icon from "@/components/Icon";
+import useWishlist from "@/hooks/useWishlist";
 
 const SingleProduct = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(null);
@@ -22,6 +24,17 @@ const SingleProduct = ({ product }) => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
+
+  // Wishlist item data
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.variants[0].images[0],
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
 
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
@@ -225,6 +238,19 @@ const SingleProduct = ({ product }) => {
                     Add to Cart
                   </button>
                 </div>
+
+                <button
+                  onClick={() => handleWishlistToggle()}
+                  className="size-[60px] bg-black flex items-center justify-center"
+                >
+                  <Icon
+                    name="Star"
+                    size={32}
+                    className={`${
+                      isInWishlist ? "fill-white stroke-white" : "stroke-white"
+                    }`}
+                  />
+                </button>
               </div>
 
               {errorMessage && (

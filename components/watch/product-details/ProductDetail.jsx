@@ -7,6 +7,7 @@ import { addToCart, updateQuantity } from "@/features/cart/cartSlice";
 import toast from "react-hot-toast";
 import Icon from "@/components/Icon";
 import ProductGallery from "./ProductGallery";
+import useWishlist from "@/hooks/useWishlist";
 
 const ProductDetail = ({ product }) => {
   // State for selections and cart
@@ -15,6 +16,17 @@ const ProductDetail = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  // wishlist item data
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.variants[0].materials[0].images[0],
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
 
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
@@ -355,12 +367,21 @@ const ProductDetail = ({ product }) => {
                   >
                     Add to Cart
                   </button>
-                  <Link
-                    href="/cart"
-                    className="flex items-center justify-center size-[60px] bg-[#9b8959] rounded-full"
+                  <button
+                    className="flex items-center justify-center size-[60px] bg-[#9b8959] !rounded-full"
+                    onClick={() => handleWishlistToggle()}
                   >
-                    <Icon name="Star" size={32} color="#fff" />
-                  </Link>
+                    <Icon
+                      className={`${
+                        isInWishlist
+                          ? "fill-white stroke-white"
+                          : "stroke-white"
+                      } transition-all duration-150`}
+                      name="Star"
+                      size={32}
+                      color="#fff"
+                    />
+                  </button>
                 </div>
               </div>
 

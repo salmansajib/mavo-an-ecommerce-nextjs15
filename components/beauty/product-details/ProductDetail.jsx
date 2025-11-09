@@ -6,12 +6,24 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart, updateQuantity } from "@/features/cart/cartSlice";
 import toast from "react-hot-toast";
 import Icon from "@/components/Icon";
+import useWishlist from "@/hooks/useWishlist";
 
 const ProductDetail = ({ product }) => {
   // State for selections and cart
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
+
+  // Wishlist item data
+  const itemData = {
+    id: product.id,
+    type: product.type,
+    name: product.name,
+    price: product.base_price,
+    image: product.images[0],
+  };
+
+  const { isInWishlist, handleWishlistToggle } = useWishlist(itemData);
 
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
@@ -245,8 +257,8 @@ const ProductDetail = ({ product }) => {
                   </ul>
                 </div>
               </div>
-              <div className="mavo-cown-number-area mavo-pb-20 mavo-mb-15 flex gap-3 flex-wrap items-center justify-between">
-                <div className="flex items-center justify-between w-[180px] h-[60px] border !border-black/40 mx-auto sm:!mx-0 mb-3 sm:!mb-0">
+              <div className="flex items-center flex-wrap gap-3 pb-[20px] border-b border-[#d9d9d9]">
+                <div className="flex items-center justify-between w-[180px] h-[60px] border !border-black/40">
                   <button
                     className="h-full w-[35px] flex items-center justify-center border-r !border-black/40"
                     onClick={() => handleQuantityChange("decrease")}
@@ -272,23 +284,35 @@ const ProductDetail = ({ product }) => {
                     <Icon name="Plus" size={16} />
                   </button>
                 </div>
-                <div className="mavo-cart-button-area d-flex align-items-center">
-                  <div className="mavo-add-cart mavo-mr-45">
-                    <button className="mavo-cart" onClick={handleAddToCart}>
-                      Add to Cart
-                    </button>
-                  </div>
-                  <div className="mavo-star">
-                    <i className="flaticon-star"></i>
-                  </div>
+                <div className="font-josefin-sans">
+                  <button
+                    className="w-[180px] h-[60px] flex items-center justify-center border !border-black/40"
+                    onClick={handleAddToCart}
+                  >
+                    Add to Cart
+                  </button>
                 </div>
+                <button
+                  onClick={() => handleWishlistToggle()}
+                  className="border !border-black/40 h-[60px] w-[60px] flex items-center justify-center"
+                >
+                  <Icon
+                    name="Star"
+                    size={24}
+                    className={`${
+                      isInWishlist
+                        ? "fill-black stroke-black"
+                        : "stroke-black fill-white"
+                    }`}
+                  />
+                </button>
               </div>
               {errorMessage && (
                 <div className="text-red-500 mb-4 font-josefin-sans">
                   {errorMessage}
                 </div>
               )}
-              <div className="mavo-delevery-content mavo-mb-20">
+              <div className="mavo-delevery-content mavo-mb-20 mt-[20px]">
                 <div className="mavo-product-delivery mavo-mb-15 flex items-center">
                   <img src="/images/icons/delivery-van-1.png" alt="png" />
                   <span>Estimated Delivery : 3 - 5 Working Days</span>
