@@ -273,9 +273,9 @@ const ProductDetail = ({ product }) => {
               </div>
 
               <div className="mavo-product-color mavo-mb-25">
-                <div className="flex items-center gap-[20px] mb-[10px]">
+                <div className="flex items-center gap-[20px] mb-[10px] font-josefin-sans">
                   <span className="!m-0">Colour:</span>
-                  <p className="!m-0">{selectedColor || "Select a color"}</p>
+                  <p className="!m-0 ">{selectedColor || "Select a color"}</p>
                 </div>
                 <div className="mavo-product-variation mavo-mb-20 flex flex-wrap items-center">
                   {product.variants.map((variant) => (
@@ -300,7 +300,7 @@ const ProductDetail = ({ product }) => {
                   ))}
                 </div>
                 <span
-                  className="clear flex items-center gap-1"
+                  className="clear flex items-center gap-1 font-josefin-sans"
                   onClick={() => {
                     setSelectedColor(null);
                     setSelectedMaterial(null);
