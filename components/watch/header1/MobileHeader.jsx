@@ -31,7 +31,7 @@ const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
             />
           </button>
           <Link href="/wishlist" className="relative">
-            <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
+            <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#c9a96b] size-5 rounded-full flex items-center justify-center">
               {isMounted
                 ? totalItemsInWishlist > 10
                   ? "10+"
@@ -45,7 +45,7 @@ const MobileHeader = ({ setShowMobileMenu, setIsSearchFormActive }) => {
             />
           </Link>
           <Link href="/cart" className="relative">
-            <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#cb222c] size-5 rounded-full flex items-center justify-center">
+            <span className="absolute font-prata -top-6 text-white left-1/2 -translate-x-1/2 text-[10px] bg-[#c9a96b] size-5 rounded-full flex items-center justify-center">
               {isMounted ? (totalQuantity > 10 ? "10+" : totalQuantity) : 0}
             </span>
             <Icon

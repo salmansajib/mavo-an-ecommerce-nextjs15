@@ -3,14 +3,12 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import NavMenu from "./NavMenu";
-import LangCurrencyMenu from "./LangCurrencyMenu";
 import Icon from "@/components/Icon";
-import { navItems, langAndCurrencyItems } from "@/data/navigationData";
+import { navItems } from "@/data/navigationData";
 import { useSelector } from "react-redux";
 
 const DesktopHeader = ({ setIsSearchFormActive }) => {
   const [hoveredMenuId, setHoveredMenuId] = useState(null);
-  const [hoverLangAndCurrencyId, setHoverLangAndCurrencyId] = useState(null);
   const [visibleSvgId, setVisibleSvgId] = useState(null);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -81,12 +79,6 @@ const DesktopHeader = ({ setIsSearchFormActive }) => {
             />
           </Link>
         </div>
-        <div className="w-[1px] h-[25px] bg-gray-50/20" />
-        <LangCurrencyMenu
-          langAndCurrencyItems={langAndCurrencyItems}
-          hoverLangAndCurrencyId={hoverLangAndCurrencyId}
-          setHoverLangAndCurrencyId={setHoverLangAndCurrencyId}
-        />
       </div>
     </div>
   );
