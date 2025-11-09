@@ -230,7 +230,7 @@ const ProductDetail = ({ product }) => {
                   </div>
                   <div className="reviews">{product.reviews} Reviews</div>
                 </div>
-                <div className="product-share">
+                {/* <div className="product-share">
                   <Link href="#" className="flex items-center gap-2">
                     <Image
                       width={30}
@@ -241,7 +241,7 @@ const ProductDetail = ({ product }) => {
                     />{" "}
                     Share
                   </Link>
-                </div>
+                </div> */}
               </div>
 
               <div className="mavo-product-price mavo-mb-15">
@@ -402,7 +402,7 @@ const ProductDetail = ({ product }) => {
                 />
               </div>
 
-              <div className="mavo-product-categorie">
+              {/* <div className="mavo-product-categorie">
                 <div className="categorie mavo-mb-20">
                   <span>Categories:</span>
                   <Link href="#">Watch,</Link>
@@ -412,7 +412,7 @@ const ProductDetail = ({ product }) => {
                   <span>Product ID:</span>
                   <Link href="#">{product.id}</Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

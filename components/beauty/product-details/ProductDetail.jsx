@@ -173,7 +173,7 @@ const ProductDetail = ({ product }) => {
                   fringilla laboriosam quaina rerbosn
                 </p>
               </div>
-              <div className="mavo-share-content mavo-pb-30 mavo-mb-20 d-flex align-items-center">
+              {/* <div className="mavo-share-content mavo-pb-30 mavo-mb-20 d-flex align-items-center">
                 <div className="product-share mavo-mr-30">
                   <Link href="#" className="flex items-center">
                     <img src="/images/icons/share.png" alt="png" />
@@ -186,14 +186,14 @@ const ProductDetail = ({ product }) => {
                     <span>Ask a Question</span>
                   </Link>
                 </div>
-              </div>
+              </div> */}
               <div className="mavo-product-categorie">
                 <div className="categorie mavo-mb-10">
-                  <Link href="#">SUK: {product.id}</Link>
+                  <p className="font-josefin-sans">SUK: {product.id}</p>
                 </div>
-                <div className="categorie-tag">
+                <div className="categorie-tag ">
                   <span>Discount Sale end in:</span>
-                  <Link href="#">356 D - 14h - 29m</Link>
+                  <p className="font-josefin-sans">356 D - 14h - 29m</p>
                 </div>
               </div>
             </div>
@@ -204,11 +204,11 @@ const ProductDetail = ({ product }) => {
               <div className="mavo-single-product-view">
                 <ul>
                   {product.tags && (
-                    <li>
-                      <Link href="#">{product.tags}</Link>
-                    </li>
+                    <p className="font-josefin-sans bg-[#F7C490] rounded-full size-15 flex items-center justify-center text-black">
+                      {product.tags}
+                    </p>
                   )}
-                  <li>
+                  {/* <li>
                     <Link href="#">
                       <i className="flaticon-search"></i>
                     </Link>
@@ -217,7 +217,7 @@ const ProductDetail = ({ product }) => {
                     <Link href="#">
                       <i className="flaticon-sort"></i>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

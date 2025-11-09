@@ -12,7 +12,7 @@ const shopInfoItems = [
     title: "Naturally",
     description:
       "Justo rhoncus sit idor repellendus eligendi pulvinar dignissi",
-    link: "/beauty-product/product",
+    link: "/beauty/product",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const shopInfoItems = [
     alt: "skin",
     title: "Skin Deep",
     description: "Enim tempora torquent totamor aie laboriosam mauris odio",
-    link: "/beauty-product/product",
+    link: "/beauty/product",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const shopInfoItems = [
     alt: "hair",
     title: "Hair Care",
     description: "Perspiciatis cursus iaculis notoma voluptatum pulvinar",
-    link: "/beauty-product/product",
+    link: "/beauty/product",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const shopInfoItems = [
     alt: "make-up",
     title: "Make-up",
     description: "Lacinia rhoncus posuere neque or quibusdam nobis conseq",
-    link: "/beauty-product/product",
+    link: "/beauty/product",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const shopInfoItems = [
     alt: "vegan",
     title: "Vegan",
     description: "Numquam suscipit bibendum olaer vulputate eius saepe onem",
-    link: "/beauty-product/product",
+    link: "/beauty/product",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const shopInfoItems = [
     title: "Naturally",
     description:
       "Justo rhoncus sit idor repellendus eligendi pulvinar dignissi",
-    link: "/beauty-product/product",
+    link: "/beauty/product",
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ const shopInfoItems = [
     alt: "skin",
     title: "Skin Deep",
     description: "Enim tempora torquent totamor aie laboriosam mauris odio",
-    link: "/beauty-product/product",
+    link: "/beauty/product",
   },
 ];
 

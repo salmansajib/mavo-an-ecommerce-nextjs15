@@ -122,14 +122,14 @@ const ProductGallery = ({
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="mavo-single-product-view">
+              {/* <div className="mavo-single-product-view">
                 <a href="#" className="tcd-search-icon">
                   <i className="flaticon-search"></i>
                 </a>
                 <a href="#" className="ted-search-icon">
                   <i className="flaticon-sort"></i>
                 </a>
-              </div>
+              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>

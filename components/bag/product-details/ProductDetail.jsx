@@ -228,12 +228,12 @@ const ProductDetail = ({ product }) => {
                     <span className="mavo-bag-price mavo-mr-30">
                       ${getCurrentPrice()}
                     </span>
-                    <Link
+                    {/* <Link
                       className="review-icon flex items-center gap-2"
                       href="#"
                     >
                       <img src="/images/icons/share.png" alt="png" /> Share
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 {product.tags && product.tags.includes("-29%") && (

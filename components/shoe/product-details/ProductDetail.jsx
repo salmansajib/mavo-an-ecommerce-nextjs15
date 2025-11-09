@@ -223,7 +223,7 @@ const ProductDetail = ({ product }) => {
               </div>
 
               <div className="mavo-product-meta mavo-mb-15 flex flex-wrap items-center">
-                <Link
+                {/* <Link
                   className="review-icon mavo-mr-30 flex items-center gap-2"
                   href="#"
                 >
@@ -235,14 +235,11 @@ const ProductDetail = ({ product }) => {
                 >
                   <img src="/images/icons/quetions.png" alt="png" /> Ask a
                   Question
-                </Link>
-                <Link
-                  className="review-icon mavo-mr-30 flex items-center gap-2"
-                  href="#"
-                >
+                </Link> */}
+                <p className="review-icon mavo-mr-30 flex items-center gap-2 font-marcellus text-black">
                   <img src="/images/icons/view.png" alt="png" /> 50 people are
                   viewing this right now
-                </Link>
+                </p>
               </div>
 
               <div className="mavo-product-size">
@@ -375,12 +372,12 @@ const ProductDetail = ({ product }) => {
               <div className="mavo-product-categorie">
                 <div className="categorie">
                   <span>Categories :</span>
-                  <Link href="#">Shoe,</Link>
-                  <Link href="#"> Sneaker</Link>
+                  <Link href="/shoes/product">Shoe,</Link>
+                  <Link href="/shoes/product"> Sneaker</Link>
                 </div>
-                <div className="categorie-tag">
+                <div className="categorie-tag flex items-center">
                   <span>Sku :</span>
-                  <Link href="#">{product.id}</Link>
+                  <p className="font-marcellus !mb-0">{product.id}</p>
                 </div>
               </div>
             </div>

@@ -233,14 +233,14 @@ const ProductDetail = ({ product }) => {
                   <p className="product-cord">Product SKU - {product.id}</p>
                 </div>
                 <div className="right">
-                  <Link href="#" className=" flex items-center gap-1">
+                  {/* <Link href="#" className=" flex items-center gap-1">
                     <img src="/images/icons/share.png" alt="png" />
                     <span className="text-black">Share</span>
                   </Link>
                   <Link className="question flex items-center gap-1" href="#">
                     <img src="/images/icons/quetions.png" alt="png" />
                     <span className="text-black">Ask a Question</span>
-                  </Link>
+                  </Link> */}
                   {product.tags && product.tags.includes("-20") && (
                     <p className="discount">-20%</p>
                   )}
@@ -261,25 +261,24 @@ const ProductDetail = ({ product }) => {
                   </span>
                 </div>
               </div>
-              <div className="mavo-product-material">
+              <div className="mavo-product-material font-josefin-sans">
                 <h5>Material</h5>
                 <ul>
                   {materials.map((material) => (
                     <li key={material}>
-                      <a
-                        href="#"
-                        className={
+                      <button
+                        className={`${
                           selectedMaterial === material
                             ? "bg-black text-white"
                             : ""
-                        }
+                        } border !border-black px-3 py-2 rounded`}
                         onClick={(e) => {
                           e.preventDefault();
                           handleMaterialSelect(material);
                         }}
                       >
                         {material}
-                      </a>
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -358,7 +357,7 @@ const ProductDetail = ({ product }) => {
                   src="/images/icons/card-1.png"
                   alt="card"
                 />
-                <p>More payment options</p>
+                {/* <p>More payment options</p> */}
               </div>
             </div>
           </div>
