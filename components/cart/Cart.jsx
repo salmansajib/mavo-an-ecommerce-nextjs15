@@ -133,7 +133,7 @@ function Cart() {
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-            <div className="mavo-cart-content-area mavo-md-mb-80 mavo-pr-55">
+            <div className="mavo-cart-content-area mavo-md-mb-80 mavo-pr-55 !pr-0">
               <div className="mavo-cart-title mavo-mb-45">
                 <h5 className="cart-title">
                   {isMounted
@@ -159,25 +159,31 @@ function Cart() {
                     openDeleteModal={openDeleteModal}
                   />
 
-                  <div className="mavo-cart-form d-flex align-items-center justify-content-between">
-                    <div className="mavo-cart-button">
-                      <img src="/images/icons/coopon.png" alt="Coupon" />
-                      <input
-                        type="text"
-                        id="cart"
-                        name="name"
-                        placeholder="Coupon Code"
-                        required=""
+                  <div className="mt-5">
+                    <form className="relative border border-[#dddddd] h-[50px] w-full max-w-[500px] flex items-center">
+                      <img
+                        className=" absolute left-4 top-1/2 -translate-y-1/2"
+                        src="/images/icons/coopon.png"
+                        alt="Coupon"
                       />
-                      <button type="submit" value="apply">
-                        Apply
-                      </button>
-                    </div>
-                    {/* <div className="mavo-update-button">
-                      <a className="mavo-update-btn" href="cart-page.html">
-                        Update Cart
-                      </a>
-                    </div> */}
+                      <div className="h-full w-full flex items-center">
+                        <input
+                          className="text-black pl-[50px] pr-2 flex-1"
+                          type="text"
+                          id="cart"
+                          name="name"
+                          placeholder="Coupon Code"
+                          required=""
+                        />
+                        <button
+                          type="submit"
+                          value="apply"
+                          className="h-full bg-[#C9A96B] !font-josefin-sans text-white !px-2 sm:!px-5"
+                        >
+                          Apply
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </>
               )}
