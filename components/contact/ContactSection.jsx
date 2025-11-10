@@ -25,7 +25,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="mavo-contact-map mavo-pt-120 mavo-md-pt-70 mavo-pb-100 mavo-md-pb-80">
+    <div className="mavo-contact-map mavo-pt-120 mavo-md-pt-70 mavo-pb-100 mavo-md-pb-80 !pt-[120px]">
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-6">

@@ -43,7 +43,7 @@ const ProductSectionFirst = () => {
   const products = data.products;
 
   return (
-    <div className="mavo-product-5">
+    <div className="mavo-product-5 px-2">
       <div className="mavo-heading-area text-center mavo-mb-75 mavo-md-mb-45 flex flex-col items-center gap-2">
         <h2 className="mavo-title mavo-mb-15">Our Beauty Products</h2>
         <img src="/images/icons/product-shape-5.1.png" alt="shape" />

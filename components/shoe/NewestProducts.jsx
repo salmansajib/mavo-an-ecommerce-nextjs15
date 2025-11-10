@@ -54,7 +54,7 @@ const NewestProducts = () => {
               <Image
                 width={500}
                 height={500}
-                className="w-[480px] h-auto"
+                className="w-full h-auto"
                 src="/images/products/product-new-shoe-1.jpg"
                 alt="Banner"
               />

@@ -55,7 +55,8 @@ const CollectionSection = () => {
                     height={500}
                     src={item.image}
                     alt={item.alt}
-                    className="w-[305px] h-auto"
+                    quality={100}
+                    className="w-full h-auto"
                   />
                   <div className="mavo-collection-iesm-number">
                     <span>{item.itemsCount}</span>

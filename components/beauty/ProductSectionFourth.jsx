@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
@@ -94,13 +95,13 @@ const slidesData = [
 const ProductSectionFourth = () => {
   return (
     <div className="mavo-product-style-5 mavo-pt-110 mavo-md-pt-70 mavo-pb-110 mavo-md-pb-70">
-      <div className="container">
-        <div className="mavo-product-title mavo-mb-50">
-          <h2 className="flex flex-wrap items-center justify-center gap-3">
+      <div className="container mb-5">
+        <div className="flex gap-2 flex-col md:flex-row items-start md:items-center md:justify-between">
+          <h2 className="flex flex-wrap items-start sm:items-center gap-3 !text-4xl md:!text-5xl lg:!text-6xl">
             Just Launched
             <img src="/images/icons/product-shape-5.1.png" alt="product" />
           </h2>
-          <Link className="mavo-explore-link" href="/beauty-product/product">
+          <Link className="mavo-explore-link" href="/beauty/product">
             Explore All New Releases
           </Link>
         </div>
@@ -134,10 +135,7 @@ const ProductSectionFourth = () => {
                             alt={product.alt}
                           />
                           {product.addCart && (
-                            <Link
-                              className="add-cart"
-                              href="/beauty-product/product"
-                            >
+                            <Link className="add-cart" href="/beauty/product">
                               <img
                                 src="/images/icons/add-cart-light.svg"
                                 alt="add-cart"
@@ -160,7 +158,7 @@ const ProductSectionFourth = () => {
                             <h6>
                               <Link
                                 className="product-title-link"
-                                href="/beauty-product/product"
+                                href="/beauty/product"
                               >
                                 {product.title}
                               </Link>

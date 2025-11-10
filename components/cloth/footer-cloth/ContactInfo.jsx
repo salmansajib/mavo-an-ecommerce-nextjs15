@@ -16,7 +16,7 @@ const ContactInfo = () => {
       <div className="mavo-footer-title2">
         <ul className="menu-list">
           <li>
-            E:{" "}
+            E:
             <Link
               href="mailto:call@mavoo.com"
               style={{ textDecoration: "none" }}
@@ -25,7 +25,7 @@ const ContactInfo = () => {
             </Link>
           </li>
           <li>
-            P:{" "}
+            P:
             <Link href="tel:+441923965123" style={{ textDecoration: "none" }}>
               +44 192 3965 123
             </Link>

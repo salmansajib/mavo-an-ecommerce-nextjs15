@@ -14,7 +14,7 @@ const Collection = () => {
             <h3 className="mavo-title title-white-color">Leather Accesories</h3>
           </div>
           <div className="mavo-colltoaction-btn">
-            <Link href="/cart">Discover it Now</Link>
+            <Link href="/shoes/product">Discover it Now</Link>
           </div>
           <div className="mavo-colltoaction-offer">
             <Image

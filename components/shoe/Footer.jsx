@@ -121,8 +121,12 @@ const Footer = () => {
                 <br />
                 Sign up for emails.
               </h3>
-              <form className="mavo-footer-form" onSubmit={handleSubmit}>
+              <form
+                className="font-josefin-sans bg-[#3a3a3a] h-[50px] flex items-center w-full max-w-[400px]"
+                onSubmit={handleSubmit}
+              >
                 <input
+                  className="flex-1 placeholder:!text-white/50 px-3 text-white"
                   type="email"
                   id="email"
                   name="email"
@@ -132,7 +136,12 @@ const Footer = () => {
                   required
                 />
                 {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
-                <button type="submit">Subscribe</button>
+                <button
+                  type="submit"
+                  className="!font-marcellus text-white !text-lg h-full bg-[#252525] px-3"
+                >
+                  Subscribe
+                </button>
               </form>
               <div className="mavo-footer-active-shoe">
                 <Image
