@@ -15,7 +15,7 @@ export default function CartItems({
       {cartItems.map((item) => (
         <div
           key={item.id}
-          className="py-5 border-b border-black/10 font-josefin-sans flex flex-col items-center sm:flex-row gap-4"
+          className="py-5 border-b border-black/10 font-josefin-sans flex flex-col items-start sm:flex-row gap-4"
         >
           <div>
             <Image
