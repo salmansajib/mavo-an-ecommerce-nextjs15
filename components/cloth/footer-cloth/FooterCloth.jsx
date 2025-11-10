@@ -6,19 +6,19 @@ import ContactInfo from "./ContactInfo";
 import Copyright from "./Copyright";
 
 const customerCareLinks = [
-  { text: "Login", href: "#" },
-  { text: "Register", href: "#" },
-  { text: "FAQs", href: "#" },
-  { text: "Shipping and Returns", href: "#" },
-  { text: "About us", href: "#" },
+  { text: "Login", href: "/signup" },
+  { text: "Register", href: "/signup" },
+  { text: "FAQs", href: "/faq" },
+  { text: "Shipping and Returns", href: "/faq" },
+  { text: "About us", href: "/cloth/about-us" },
 ];
 
 const productLinks = [
-  { text: "Coats", href: "#" },
-  { text: "Shoes", href: "#" },
-  { text: "Sweater", href: "#" },
-  { text: "Fleece Jacket", href: "#" },
-  { text: "Bag", href: "#" },
+  { text: "Coats", href: "/cloth/product" },
+  { text: "Shoes", href: "/shoes/product" },
+  { text: "Sweater", href: "/cloth/product" },
+  { text: "Fleece Jacket", href: "/cloth/product" },
+  { text: "Bag", href: "/bag/product" },
 ];
 
 const socialIcons = [
