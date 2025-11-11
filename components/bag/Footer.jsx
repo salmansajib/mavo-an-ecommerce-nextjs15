@@ -1,49 +1,50 @@
 import React from "react";
 import Logo from "../Logo";
+import Link from "next/link";
 
 const footerLinks = [
   {
     id: 1,
     title: "Follow Us",
     links: [
-      { text: "Facebook", href: "#" },
-      { text: "Twitter", href: "#" },
-      { text: "LinkedIn", href: "#" },
-      { text: "Instagram", href: "#" },
-      { text: "Youtube", href: "#" },
+      { text: "Facebook", href: "/" },
+      { text: "Twitter", href: "/" },
+      { text: "LinkedIn", href: "/" },
+      { text: "Instagram", href: "/" },
+      { text: "Youtube", href: "/" },
     ],
   },
   {
     id: 2,
     title: "Collection",
     links: [
-      { text: "Handbags", href: "#" },
-      { text: "Shoulder bags", href: "#" },
-      { text: "Bags carried acros", href: "#" },
-      { text: "Shopping bags", href: "#" },
-      { text: "All bags", href: "#" },
+      { text: "Handbags", href: "/bag/product" },
+      { text: "Shoulder bags", href: "/bag/product" },
+      { text: "Bags carried acros", href: "/bag/product" },
+      { text: "Shopping bags", href: "/bag/product" },
+      { text: "All bags", href: "/bag/product" },
     ],
   },
   {
     id: 3,
     title: "Atelier",
     links: [
-      { text: "About", href: "#" },
-      { text: "The use of bag", href: "#" },
-      { text: "All stockists", href: "#" },
-      { text: "Showroom", href: "#" },
-      { text: "FAQs", href: "#" },
+      { text: "About", href: "/bag/about-us" },
+      { text: "The use of bag", href: "/bag/about-us" },
+      { text: "All stockists", href: "/bag/product" },
+      { text: "Showroom", href: "/bag" },
+      { text: "FAQs", href: "/faq" },
     ],
   },
   {
     id: 4,
     title: "Useful Links",
     links: [
-      { text: "My account", href: "#" },
-      { text: "Shipping", href: "#" },
-      { text: "Dailvery and returns", href: "#" },
-      { text: "Customer service", href: "#" },
-      { text: "Careers", href: "#" },
+      { text: "My account", href: "/signup" },
+      { text: "Shipping", href: "/faq" },
+      { text: "Dailvery and returns", href: "/faq" },
+      { text: "Customer service", href: "/faq" },
+      { text: "Careers", href: "/" },
     ],
   },
   {
@@ -89,14 +90,21 @@ const Footer = () => {
               <Logo color="light" className="w-[150px]" />
             </div>
             <div className="copy-right">
-              <a className="condition" href="#">
+              <Link className="condition" href="/terms">
                 Terms & Conditions
-              </a>
-              <a className="policy" href="#">
+              </Link>
+              <Link className="policy" href="/privacy">
                 Privacy Policy
-              </a>
+              </Link>
               <p>
-                &copy; {currentYear} Mavoo, Powered by <a href="#">Thecodude</a>
+                &copy; {currentYear} Mavoo, Powered by{" "}
+                <a
+                  href="https://thecodude.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Thecodude
+                </a>
               </p>
             </div>
           </div>

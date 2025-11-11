@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../Logo";
 
 const Footer = () => {
@@ -45,19 +46,19 @@ const Footer = () => {
               </h5>
               <ul className="menu-list">
                 <li>
-                  <a href="#">Our Story</a>
+                  <Link href="/cloth/about-us">Our Story</Link>
                 </li>
                 <li>
-                  <a href="#">Shoes</a>
+                  <Link href="/shoes/product">Shoes</Link>
                 </li>
                 <li>
-                  <a href="#">FAQs</a>
+                  <Link href="/faq">FAQs</Link>
                 </li>
                 <li>
-                  <a href="#">Shipping & Cart</a>
+                  <Link href="/faq">Shipping & Cart</Link>
                 </li>
                 <li>
-                  <a href="#">Returns</a>
+                  <Link href="/faq">Returns</Link>
                 </li>
               </ul>
             </div>
@@ -71,19 +72,19 @@ const Footer = () => {
               </h5>
               <ul className="menu-list">
                 <li>
-                  <a href="#">Facebook</a>
+                  <Link href="/">Facebook</Link>
                 </li>
                 <li>
-                  <a href="#">Twitter</a>
+                  <Link href="/">Twitter</Link>
                 </li>
                 <li>
-                  <a href="#">LinkedIn</a>
+                  <Link href="/">LinkedIn</Link>
                 </li>
                 <li>
-                  <a href="#">Instagram</a>
+                  <Link href="/">Instagram</Link>
                 </li>
                 <li>
-                  <a href="#">Youtube</a>
+                  <Link href="/">Youtube</Link>
                 </li>
               </ul>
             </div>

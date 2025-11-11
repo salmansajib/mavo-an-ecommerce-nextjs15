@@ -4,34 +4,34 @@ import Logo from "../Logo";
 
 // Separate arrays for each menu
 const contactMenu = [
-  { name: "Jewelry", link: "#" },
-  { name: "All Collections", link: "#" },
-  { name: "Product Page", link: "#" },
+  { name: "Jewelry", link: "/jewelry" },
+  { name: "All Collections", link: "/cloth/product" },
+  { name: "Product Page", link: "/beauty/product" },
 ];
 
 const followUsMenu = [
-  { name: "Facebook", link: "#" },
-  { name: "Twitter", link: "#" },
-  { name: "LinkedIn", link: "#" },
-  { name: "Instagram", link: "#" },
-  { name: "Youtube", link: "#" },
+  { name: "Facebook", link: "/" },
+  { name: "Twitter", link: "/" },
+  { name: "LinkedIn", link: "/" },
+  { name: "Instagram", link: "/" },
+  { name: "Youtube", link: "/" },
 ];
 
 const pagesMenu = [
-  { name: "My account", link: "#" },
-  { name: "Shop", link: "#" },
-  { name: "FAQs", link: "#" },
-  { name: "Terms", link: "#" },
-  { name: "Returns", link: "#" },
-  { name: "About us", link: "#" },
+  { name: "My account", link: "/signup" },
+  { name: "Shop", link: "/beauty/product" },
+  { name: "FAQs", link: "/faq" },
+  { name: "Terms", link: "/terms" },
+  { name: "Returns", link: "/faq" },
+  { name: "About us", link: "/beauty/about-us" },
 ];
 
 const productsMenu = [
-  { name: "Skin Care", link: "#" },
-  { name: "Beauty", link: "#" },
-  { name: "Hair Care", link: "#" },
-  { name: "Make-up", link: "#" },
-  { name: "Face Cream", link: "#" },
+  { name: "Skin Care", link: "/beauty/product" },
+  { name: "Beauty", link: "/beauty/product" },
+  { name: "Hair Care", link: "/beauty/product" },
+  { name: "Make-up", link: "/beauty/product" },
+  { name: "Face Cream", link: "/beauty/product" },
 ];
 
 // Combine menus for middle section rendering
@@ -145,7 +145,15 @@ const Footer = () => {
         <div className="container">
           <div className="copy-right d-flex align-items-center justify-content-between">
             <p className="mb-0">
-              &copy; {currentYear} Mavoo, Powered by <a href="#">Thecodude</a>
+              &copy; {currentYear} Mavoo, Powered by
+              <a
+                href="https://thecodude.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:!text-[#F7C490] transition-colors duration-150"
+              >
+                Thecodude
+              </a>
             </p>
             <div className="bank-account">
               <img src="/images/logos/bank-account-4.png" alt="account" />

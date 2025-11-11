@@ -15,16 +15,22 @@ const Copyright = () => {
               <div className="copy-right mavo-md-mb-15">
                 <div className="text">
                   &copy; {currentYear} Mavoo, Powered by{" "}
-                  <Link href="/#">Thecodude</Link>
+                  <a
+                    href="https://thecodude.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Thecodude
+                  </a>
                 </div>
               </div>
               <div className="right-text">
                 <ul>
                   <li>
-                    <Link href="/#">Terms</Link>
+                    <Link href="/terms">Terms</Link>
                   </li>
                   <li>
-                    <Link href="/#">Privacy Policy</Link>
+                    <Link href="/privacy">Privacy Policy</Link>
                   </li>
                 </ul>
               </div>

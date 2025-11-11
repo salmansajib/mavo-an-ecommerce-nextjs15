@@ -6,32 +6,32 @@ import Image from "next/image";
 
 // Data arrays for menu lists
 const shopAllLinks = [
-  { id: 1, text: "Jewelry", href: "#" },
-  { id: 2, text: "All Collections", href: "#" },
-  { id: 3, text: "Product Page", href: "#" },
+  { id: 1, text: "Jewelry", href: "/jewelry/product" },
+  { id: 2, text: "All Collections", href: "/jewelry/product" },
+  { id: 3, text: "Product Page", href: "/jewelry/product" },
 ];
 
 const usefulLinks = [
-  { id: 1, text: "Main Page", href: "#" },
-  { id: 2, text: "Our Story", href: "#" },
-  { id: 3, text: "FAQs", href: "#" },
-  { id: 4, text: "Shipping & Cart", href: "#" },
-  { id: 5, text: "Returns", href: "#" },
+  { id: 1, text: "Main Page", href: "/" },
+  { id: 2, text: "Our Story", href: "/bag/about-us" },
+  { id: 3, text: "FAQs", href: "/faq" },
+  { id: 4, text: "Shipping & Cart", href: "/faq" },
+  { id: 5, text: "Returns", href: "/faq" },
 ];
 
 const followUsLinks = [
-  { id: 1, text: "Facebook", href: "#" },
-  { id: 2, text: "Twitter", href: "#" },
-  { id: 3, text: "LinkedIn", href: "#" },
-  { id: 4, text: "Instagram", href: "#" },
-  { id: 5, text: "Youtube", href: "#" },
+  { id: 1, text: "Facebook", href: "/" },
+  { id: 2, text: "Twitter", href: "/" },
+  { id: 3, text: "LinkedIn", href: "/" },
+  { id: 4, text: "Instagram", href: "/" },
+  { id: 5, text: "Youtube", href: "/" },
 ];
 
 const pagesLinks = [
-  { id: 1, text: "Home", href: "#" },
-  { id: 2, text: "Blog", href: "#" },
-  { id: 3, text: "Shop", href: "#" },
-  { id: 4, text: "Products", href: "#" },
+  { id: 1, text: "Home", href: "/" },
+  { id: 2, text: "Blog", href: "/jewelry/blog" },
+  { id: 3, text: "Shop", href: "/cloth/product" },
+  { id: 4, text: "Products", href: "/jewelry/product" },
 ];
 
 const Footer = () => {

@@ -95,7 +95,7 @@ const ShopInfo = () => {
                   </div>
                   <div className="mavo-info-title">
                     <h4 className="mavo-mb-15">
-                      <Link className="shop-link-title" href="#">
+                      <Link className="shop-link-title" href="/bag/product">
                         {item.title}
                       </Link>
                     </h4>

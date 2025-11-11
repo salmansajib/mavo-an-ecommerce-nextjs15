@@ -72,7 +72,7 @@ const GallerySection = () => {
                     src={item.image}
                     alt="gallery"
                   />
-                  <Link href="#">
+                  <Link href="/">
                     <i className="flaticon-instagram-1"></i>
                   </Link>
                 </div>

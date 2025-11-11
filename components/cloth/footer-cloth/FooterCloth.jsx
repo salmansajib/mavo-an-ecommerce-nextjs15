@@ -22,10 +22,10 @@ const productLinks = [
 ];
 
 const socialIcons = [
-  { href: "#", className: "flaticon-twitter" },
-  { href: "#", className: "flaticon-instagram" },
-  { href: "#", className: "flaticon-pinterest-circular-logo-symbol" },
-  { href: "#", className: "flaticon-facebook-app-symbol" },
+  { href: "/", className: "flaticon-twitter" },
+  { href: "/", className: "flaticon-instagram" },
+  { href: "/", className: "flaticon-pinterest-circular-logo-symbol" },
+  { href: "/", className: "flaticon-facebook-app-symbol" },
 ];
 
 const FooterCloth = () => {

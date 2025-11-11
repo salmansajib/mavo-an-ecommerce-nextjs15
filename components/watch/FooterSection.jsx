@@ -5,27 +5,27 @@ import Image from "next/image";
 import Logo from "../Logo";
 
 const services = [
-  { text: "Login", href: "#" },
-  { text: "Register", href: "#" },
-  { text: "FAQs", href: "#" },
-  { text: "Shipping & Returns", href: "#" },
-  { text: "About us", href: "#" },
+  { text: "Login", href: "/signup" },
+  { text: "Register", href: "/signup" },
+  { text: "FAQs", href: "/faq" },
+  { text: "Shipping & Returns", href: "/faq" },
+  { text: "About us", href: "/cloth/about-us" },
 ];
 
 const products = [
-  { text: "Watch", href: "#" },
-  { text: "Shoes", href: "#" },
-  { text: "Sweater", href: "#" },
-  { text: "Cloth", href: "#" },
-  { text: "Digital Watch", href: "#" },
+  { text: "Watch", href: "/watch/product" },
+  { text: "Shoes", href: "/shoes/product" },
+  { text: "Sweater", href: "/cloth/product" },
+  { text: "Cloth", href: "/cloth/product" },
+  { text: "Digital Watch", href: "/watch/product" },
 ];
 
 const socialMedia = [
-  { text: "Facebook", href: "#" },
-  { text: "Twitter", href: "#" },
-  { text: "LinkedIn", href: "#" },
-  { text: "Instagram", href: "#" },
-  { text: "Youtube", href: "#" },
+  { text: "Facebook", href: "/" },
+  { text: "Twitter", href: "/" },
+  { text: "LinkedIn", href: "/" },
+  { text: "Instagram", href: "/" },
+  { text: "Youtube", href: "/" },
 ];
 
 const contactInfo = [
