@@ -20,7 +20,6 @@ import "@/assets/css/responsive.css";
 import "@/assets/css/sal.css";
 import "@/assets/css/animate.css";
 import "@/assets/css/magnific-popup.css";
-// import "@/assets/css/odometer.min.css";
 
 const marcellus = Marcellus({
   variable: "--font-marcellus",
